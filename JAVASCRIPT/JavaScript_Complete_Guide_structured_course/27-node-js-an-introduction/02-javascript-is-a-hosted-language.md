@@ -1,0 +1,11 @@
+# 27.2 — JavaScript is a Hosted Language
+
+> Section 27: Node.js: An Introduction
+
+As you learned, Javascript is a hosted language, that means Javascript itself, the definition of the language can be implemented in different environments. All you need in the end is a Javascript engine that parses the code and executes it in the end and one very common environment of course is the browser. Browsers have their own Javascript engines, like the V8 engine in the case of Chrome and this in the end hosts and executes the Javascript code therefore. Now togetger with the browser APIs you learned about, like the DOM or the browser storage or the fetch API and so on, you got tools to build rich client-side applications where you utilize the language and all its key features and keywords and so on combined with the browser APIs to provide the user experience you want to provide, all of that then runs in the browser, so directly where your users are but of course nothing speaks against taking Javascript and executing it somewhere else.
+
+We can do that, we can execute Javascript anywhere else we want by simply taking the Javascript engine and taking it out of the browser basically and that's it. We can then add our own APIs if we want to, so not APIs to work with the DOM for example because if the Javascript engine, if the environment is detached from the web page, there is no DOM right, there is no HTML code which we could parse if we run Javascript somewhere else but instead we might want to add new APIs, APIs which don't exist in the browser, for example to work with the local file system which is not possible in the browser due to security reasons and that's exactly what Node.js does. Node.js is essentially the extracted V8 engine Chrome offers enriched by extra APIs, so its that engine you know from the browser but basically instead of the browser APIs, it has access to other APIs and it runs outside of the browser, this is Node.js and of course this also implies that what you learned about Javascript still is relevant, just the browser specific parts like the DOM or the browser storage of course are not important when we work with Javascript outside of the browser.
+
+So let's now have a look at Node.js.
+
+----------------------------------------

@@ -1,0 +1,21 @@
+# 29.10 — Install JDK 11 for Linux
+
+> Section 29: Software Tools Setup - Old content for Java 11
+
+In this video, we're going to install Amazon Corretto JDK version 11 for the Linux platform and specifically we're going to installing it on Ubuntu 18.04 LTS. Now the reason that I was selecting Amazon Corretto, I have discussed that in another video in this section of the course so check on that if you need to. But for now we're gonna start by going to a browser and we're gonna do a search in Google for Amazon Corretto. C-O-R-R-E-T-T-O and we'll click on to go to that page, come over here and select Download Amazon Corretto 11.
+
+Now, there are installation instructions. I'm gonna open those in a new tab but the version I'm going to be selecting here is the Debian version, .deb file, for my installation. So I'm going to save that and I'm just going to save that to the downloads folder. It doesn't really matter where we save it. Give that a moment to finish. Now, obviously there's also an RPM version if you're running RedHat, or some other distro, and there's also a .tar.gz version there as well, if you need that.
+
+Right, the installation's finished and the installation instructions are pretty basic as you can see there, but you can refer to those if you need to. For now, what I'm going to do is go to the terminal to do the rest of the installation. All right, so I'm just going to, I should put the instructions over to the left there. So I'm gonna start by going into the downloads folder cd, space, then a tilda, forward slash Downloads with a capital D because that happens to be the folder on this version of Ubuntu that that file's been downloaded to.
+
+The next thing I'm going to do is follow those instructions in the browser, I'm gonna type in sudo apt get apt dash get space update space two ampersands sudo apt dash get with a space obviously space install space java common type in my password, give that a moment to complete and next thing we're going to do is install the installation file in this case the dot deb file. So I'm going to type sudo space dpkg space dash dash instal space and the name of the file there I'm just going to type the first two letters and press tab And that's our java 11 debian file.
+
+All right so, that's it, it's a pretty simple installation as you can see there. And what we are going to do is just check the version number So java space dash version Now note that the output that I've got there is a different version. It says Java HotSpot, it doesn't say anything about Amazon and that's because I've already had an installation of java on this computer. And what I'm going to do is show you how to change that so if you don't see Amazon in the output down the bottom Amazon Corretto this is how to change it.
+
+So again, the instructions are here. So it's pretty straightforward. Firstly we need to type sudo space update alternatives update dash alternatives space dash dash config space java You get presented with this option. The option we want to select here is option one for java So you can see that instead of using the oracle version I've got configured as option two there selection two I'm gonna use option one. And I'm also gonna do exactly the same, I'm just gonna press the up arrow and change java to java c And I'm also gonna select option one as well .
+
+And this is obviously for the java executable but also the java compiler, java c executable from command line We're setting that up in case you wanna use it from the command line. And now if we type jave space dash version this time now we can see that it says open jdk server vm Corretto I think I mentioned in earlier in the video that would show Amazon but of course it's not showing that it just shows Corretto. In any event you can see clearly now by using the open jdk which is exactly what we need here.
+
+Now the other thing that you should take note of is the folder that it is actually installed in. We can see that on the screen there in the terminal window in this case usr lib jbm and then java dash eleven dash amazon dash Corretto . So just keep a note of that folder you may need that later but for now though that's the installation of Amazon Corretto JDK version 11 the open jdk installed successfully on Linux.
+
+----------------------------------------

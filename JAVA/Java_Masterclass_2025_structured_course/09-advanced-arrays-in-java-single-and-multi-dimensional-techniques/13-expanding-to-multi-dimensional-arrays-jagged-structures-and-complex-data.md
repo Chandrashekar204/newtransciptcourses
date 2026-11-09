@@ -1,0 +1,36 @@
+# 9.13 — Expanding to Multi-dimensional Arrays: Jagged Structures and Complex Data
+
+> Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques
+
+Kind: captions Language: en In the last video, all the examples of two-dimensional arrays, had the same size. All of the nested arrays were arrays with four elements. But in Java, there's no requirement for nested arrays to be any particular size or even to have any values at all. In fact, even though I initialized those arrays as a 4 by 4 matrix of integers, I'm not restricted to that. I can actually assign any array of integer to one of the outer array's elements.
+
+I'll assign array two's second element to a new int array containing three elements. And use Arrays dot deep too string to print out array two. On this line, I set the 2nd element of the outer array to a new integer array. Here, I'm using an array initializer with new int array and then a list of different values in curly braces. Notice there's only 3 elements in this array. This code compiles without issue. And if I run it. We see confirmation of an array of 4 arrays, but now, my second nested array contains 3 integers, 10, 20, and 30.
+
+One other thing I want to point out with this code is that I can't use an anonymous array in this assignment. What do I mean by that? Let's see what happens if I remove the new int square brackets in that last assignment. And you can see, IntelliJ is flagging that as an error that an array initializer can't be used there. This means I need the new int and square brackets for this code to compile. Let's undo that last change. This concept of nested arrays may initially be confusing. As a result, I want to spend a bit of time in review so that it becomes clearer.
+
+When we declare multi-dimensional arrays, the declared type can itself be an array, and this is how Java supports two-dimensional arrays: We can take that even further, the outer array can have references to any kind of array itself. In this example, we have an outer array with three elements. The first element is itself a single-dimensional array. The second element is a two-dimensional array. And lastly, the third element is a three-dimensional array.
+
+The easiest way to examine this multidimensional aspect is to create an array of object, as I showed on the last slide. I've said everything can be referred to as an object including arrays themselves, so I'll use this to help you to understand how Java implements arrays simply as nested arrays. Object array, any Array = new Object array of 3 elements. And print it out using Arrays dot too string. Let's see the output. You can see an array of 3 elements, all initialized to null.
+
+I can really assign anything I want to any of these three elements including an array, so let's do that. I'll assign element zero on our array to a new string array, containing 3 string elements. And print the value with a call to deep too string. Let's see the output. You can now see a nested array, and that I've nested the ABC string array in my outer array. At this point, you could say I have a two-dimensional array. Let's keep going with this.
+
+Let's set element two of my array to a 2 dimensional string array this time. The first string array will have 2 elements. The next array will have 3 elements. And the last element, 4. And lets print it out. Here, the 2nd element of my outermost array is a two-dimensional string array, and I'm using an array creation expression with an array initializer. I have three string arrays in this two dimensional array, and this is being assigned to the second element.
+
+At this point, I've made this outer array, any array, a multidimensional array in which the dimensions are different now for each element. And I can run this code and confirm it. Finally, I'll initialize the last element. I'll assign element 3 to a three-dimensional array. And use Arrays dot deep too string. This last element, the third element of the outer array, is being assigned a three-dimensional, initialized array of 2 by 2 by 2 ints. Ok, so let's run this.
+
+So this is harder to look at and figure out which arrays are nested in which. Let's print these nested arrays out by using a for each loop. The loops element will be an Object called element, and we are traversing any array. I'll print element dot get class dot get simple name. Then use Object too string on element. and call arrays dot deep to string on element, with a cast. Notice, in the for each loop, I'm using object as the type of my element in the loop declaration.
+
+I start by printing the class name of each element in this array. Second, I print out the too string representation of each array element. And then I print out each element contained in this multi-dimensional array. Now, we know that each element is an array, but the Java compiler doesn't know that. The arrays dot deep to string method takes an array, so I need to cast my element to an array of object, before I pass it to this method. Now, if I'd assigned something other than an array, this would break the code, but I didn't.
+
+I'll talk more about this issue later. Running this now. Each type is printed out. For the type for the first element, the element type is string with a single pair of square brackets. The second element is a two-dimensional string array. And the last one is a three-dimensional integer array with all its values set to the default, zero. We can also see the elements printed out in each case. In general, it's not good practice to create object arrays like this.
+
+This is because the compiler won't do any type checking, which means anything can be assigned to this outer array, and we won't see the error until runtime. This code wouldn't work if I simply assigned a string to array element 2, as an example. Let's do that to see what happens. I'm going to comment out this line, and type in a replacement statement below that. I'll assign element 3 to a string literal, "Hello". Now, with this change in place, the arrays dot deep to string method still works, the one that I call immediately after that.
+
+But the call to the deep to string in the for loop will give me an exception when I run it. I'm trying to cast something that's a string to an array of object, and I can't do that. When using arrays, you should really stick to more strictly-typed arrays as a general rule. This will prevent any calling code from inserting object types that you don't expect and can't handle, just like I did here. I'll revert that last change, removing that new statement and uncommenting the previous statement.
+
+And I'll end this video here which is also the end of this section. Java supports two-dimensional and multi-dimensional arrays with the concept of nested arrays, as I've shown you in the last few videos. An array can be an array of primitive data elements, an array of any type in Java, or simply an array of object, which is the most generic class you can declare anything to be. In the next section, we'll be looking at different types of array classes.
+
+These classes differ from arrays because they can be resized, but they also don't support primitive data types. There are workarounds for that, however. I'll see you in the next section.
+
+
+########################################

@@ -1,0 +1,35 @@
+# 30.6 — Starting out with Expressions
+
+> Section 30: First Steps - Old content for Java 11
+
+In this video, we'll extend what we've done to using other variables in expressions. To date we've used literal values in our expressions, and used operators such as in the example we ended up with on line six, which is 10 plus five in parenthesis plus two times 10 in parenthesis. We need to declare two more variables, and I think it's time for a challenge to get you to do just that. So the challenge is to create additional variables, two in fact.
+
+So we want to declare the following variables and add them to our programme. We want a variable called mySecondNumber which is an int, and you want to assign a value of 12 to that variable. The second variable to create is called myThirdNumber, also of type int and assign a value six to that. So put the declaration statements above the system.out.prinln. And you'll see why later on in the video. So for now, pause the video, add the declarations for our two variables to the programme, and come back and resume when you're ready to move forward.
+
+Pause the video now. All right, so welcome back. Let's go ahead and add our two additional variables. We'll declare two lines there. Immediately under our first line and above our System.out.println. The first one will be int mySecondNumber is equal to, we want a value of 12 for that. Semicolon to end the line, then int myThirdNumber equals six, semicolon. All right, I'll just put a return there just to space out the code. All right so that's our two additional variables.
+
+Is there a way that we can sum the values of mySecondNumber and myThirdNumber into another variable? Why yes, yes there is. So instead of using a literal number, which is all we've really seen so far in the course for assigning a value to our variables, let's use a variable name directly in the expression. And we can do that by typing int, myTotal is equal to, and let's actually start by typing myFirstNumber. Noting that intellij is helping us here.
+
+Plus, mySecondNumber, and the good thing about this is we're not limited to two parts in this expression. We can continue, so let's add another one. Plus myThirdNumber. I'm gonna add a semicolon to complete the line. Now if you have the variables or expressions that you wanted to add, you could keep going and make this an extremely complicated expression. Java will quite happily read that and convert it and be able to process that. Right, so the expression now, according to me, should be myFirstNumber, and we know that myFirstNumber was 35, cause we can still see in the output.
+
+MySecondNumber is 12, and MyThirdNumber is six. So 35 plus 12 is 47, plus six is 53. Let's try printing that out, but just to note here first, that note that we're printing out myFirstNumber and not myTotal. Now I just wanted to point out there that if you hover over this one here, this variable of myTotal, Intellij helping tells us that it's not in use. This is a great know to know of any variables that you've created or declared and haven't actually used in your programme.
+
+So here it's just telling us it's never been used. And notice that It's also in a light grey to indicate that. So what we need to do is change this myFirstNumber, and I've just double clicked that. We want to double click any part of that name. Intellij helpfully highlights the whole thing so I can just type, and since I start typing, it gets deleted, and we've got the variable down on the bottom there. Total. Use up or down arrow keys if I want to select it.
+
+And there's the output, which in this case is my total, so now if I run this programme, we should see the value of 53 and there it is 53 showing on the screen. And just to show you another example, let's change myThirdNumber, currently that's defined to be the value six. Let's change that to be, instead of six, to be myFirstNumber multiplied by two. So now what we've done is we've assigned myFirstNumber, we know the value is 35 times two is seventy, so myThirdNumber has now got a value of 70.
+
+So my total equals 35 plus 12 is 47 plus 70 should be 117. So let's run this, and confirm that we've got that value. And there's the result, 117, okay. Alright, so let's end the video now with a challenge. So your challenge is to create a new variable and call it myLastOne, with the value to be 1000 less the current value of myTotal, and the data type should also be an int. And then you want to print out the value of myLastOne on the line after you declare it.
+
+Now as a hint here, we need to use another operator that we haven't actually used in the code before, but if you think about this, it should be easy to figure out which operator you need to use for this. All right, so pause the video. See if you can complete the challenge, and when you're ready, come back and resume the video. Go ahead, I'll wait here. Pause the video now. All right, so welcome back. So hopefully you managed to complete the challenge.
+
+And let's see what we can do here. What I'm going to do is start after the System.out.println, and I'm going to type in there int, myLastOne is equal to. We need to figure out a thousand less the current value of myTotal. We can just type 1000 and use the new operator we haven't specifically used which is the minus, or subtraction, myTotal. So we wanted the value of a thousand, minus myTotal, which is what we've done here. Semicolon to end the line.
+
+And let's use the Sout template and then we'll type in myLastOne to print out the value. Let's run this and we should see one thousand. Take 187, and if my calculations are correct, it should be 883. And there we go. That's the value of 883. All right, I just want to end by saying if you ever get stuck here and you're finding weird errors, one of the first things to look at is it's spelling of a variable name and the case you use, whether it's up or lowercase.
+
+You'll see later on that there is a need for things to be in uppercase, but most of the time, things will be, the keywords will be in lowercase. And variables need to be defined exactly how you specify it. So in other words, like with myLastOne, I couldn't put a capital N here. When I tried to print it out, I'm getting an error there because myLastOne was defined on line 11 as myLastOne with a lowercase m, and it's using an uppercase M on line 12.
+
+And as a hint there. We saw this before, but we're getting a note here from intellij that that variable is not being used. That can often be a good hint that you made a typo and to go back and actually fix it, like so. We'll just run it again to make sure we're good to go. All right, so that's variables. Now later on in the course, we'll be looking at best practises for naming variables cause there is specific rules we should follow, but we'll check with that later on in the course.
+
+For now though, we've looked at one data type so far which is of type int. In the next video, we'll be looking at some more, so see you in that next video.
+
+----------------------------------------

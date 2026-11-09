@@ -1,0 +1,35 @@
+# How to Self-Host n8n for Unlimited Workflows (Hostinger VPS)
+
+*Section: [NEW] Self-Hosting on VPS & Maintenance: Take Full Control of n8n*
+
+Welcome back to the course. In this video I will show you how to use anything for free. So how to sell for 2010 on your own virtual private server, which gives you unlimited workflows, unlimited executions, and full control over your data. So let's dive in. Yes, N810 is an open source project, which means the source code is public so anyone can view it and use it. The community can improve the project.
+
+Developers can create new nodes. We call them community nodes. One of the benefits of self-hosting n810 is that when you pay for the standard plan, you are limited to two and a half K executions monthly, but with self-hosting you get unlimited execution. If you want to save a lot of money and create solutions that are more production ready, this is for you. Also, if you want to have an access to projects from anywhere, the projects that you deploy for yourself or for your clients, and not just on a local server, this option is great because if you decide to sell it locally, it would be more technical and require a lot more configuration in the future.
+
+Of course, I will show you how to sell them locally so you can do that too. However, all the solutions will build in this course will work perfectly when you subscribe to N-r10 or N-r10 on Vpps. So virtual private server if you sell anything locally on your own machine. So on a local server for some of these solutions, you might experience some technical issues, especially when connecting to a certain applications.
+
+That's why in this course I recommend either using a subscription or on your own virtual private server, which will save you a lot of time and make your projects more production ready. I will show you the easiest method for beginners and honestly, the best I've found so far, which makes the whole process super easy. I've tested practically all the popular hosting platforms like Hetzner, Railway Render and for example, DigitalOcean.
+
+And so far Hostinger has been the easiest to use. It's also very affordable for the resources you get, especially with the current promotion. So we'll be creating our own private server on Hostinger to self-hosted. Since we partnered with them, I also have an extra 10% discount that you can use, and I can honestly recommend them because I've been using Hostinger myself for a long time. When you use the link and the coupon code I added to the resources section of this lesson, you will get additional 10% discount on top of the main promotion if you purchase a 12 or 24 month plan.
+
+The setup is very simple. In this video I will walk you through every single step. First click the link I added in the resources. Now to access the hosting options. Scroll down to see the different options. I personally recommend going with the CVM two plan because this plan provides two virtual CPUs, eight gigabytes of Ram, and 100GB of storage. Right now, Hostinger offers a huge discount about 60% off on their 24 month plan, which is the most cost effective option.
+
+Plus, you will get an extra 10% on top of that by using my coupon. So please select the plan you want to go with. I'm going to choose this one. Just to mention Hostinger is very well established company, so they have data centers all over the world. So no matter where you are based you will get solid performance and low latency. Hostinger is also super secure and reliable. Remember, this promo is only for 12 months and 24 months plans.
+
+But if you want to test their service, you can go with one month plan. So I'm going to choose this one. Hostinger will automatically detect the best server location for you for Miss United Kingdom. And now when you scroll down you will see select Operating System. Here you can see that you can choose different operating systems. Our instance will be hosted using ubuntu. So click on application. And here I recommend going with this option.
+
+So Na ten plus 100 workflows now confirm. So this template will automatically import over 100 workflows to our instance. Now to use the coupon code simply type Damien or in capital D a m I a n then click apply. Continue. Now we need to register your account, so provide an email address and password. Once you have paid, you will land on your hosting dashboard. Click Register. Then you will get a confirmation that the payment is done.
+
+So let's go get started. You will be directed to initiate the setup process. So we land on this page. And here we need to create a root password. And this password grants complete admin access to the server. So just make sure it's strong and write it down. Remember you can always change it later. Now click next. Setup. Now let's finish the process and configure the server. It takes just a few minutes.
+
+Yes. So as an additional bonus we get a 100 pre-built workflows imported to our instance, but we've got a special gift for you which gives you more than that, so make sure to watch the next lessons. All right. Great. Now once the setup completes, click on manage. Now for this options you can select whatever you want I'm going to choose for personal reasons and website or content site. Then hit save.
+
+All right. Perfect. Now this is your main hosting dashboard. As you can see, you already have an app installed. Now in order to open your instance click on Manage App. And here you need to set up your account. So just provide your email address first name, last name and password. Now Nathan gives you this form to customize anything for you. And as you can see these questions help us tailor anything to you.
+
+I'm gonna choose software as a service business owner myself or my team. Less than 20 people. And get started. And this is really important. Now Nathan is offering you a free license for some premium features. And I strongly recommend using it because this will unlock useful additional features such as workflow history, advanced debugging, and folders. So I'm gonna click send me a free license key.
+
+Just make sure the email address is correct. All right. Perfect. Now you should receive an email. So let's open it. Let's activate our license key. All right. Awesome. Once we have activated everything, you should now see that you are running the community edition of an 810, which means you officially installed an 810 on your own virtual private server. Here you can manage your instance. You've got access to the community nodes, and as you can see, you also have access to 100 pre-built workflows, as promised.
+
+Awesome. Now you've got your own instance hosted on Hostinger. You can access your account by going to your server's URL or by going to your dashboard. And here you've got on the left hand side you've got the section. And this is your instance running on your server. Click on manage Manage Up and you'll be redirected to your account. Congratulations. You set up your own virtual private server and now your self-hosted.
+
+In the next lesson I will show you how to update your instance on Hostinger. So see you there!

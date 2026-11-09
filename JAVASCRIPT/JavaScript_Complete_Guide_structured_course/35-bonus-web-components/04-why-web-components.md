@@ -1,0 +1,13 @@
+# 35.4 — Why Web Components?
+
+> Section 35: Bonus: Web Components
+
+Now that we have a rough idea of what web components are and you will hear me use the term web components and custom elements interchangeably in this course by the way, now that we know that, the question is, why would we use web components? Well one great advantage is that a web component, like this modal component you saw, allows us to encapsulate logic and a user interface in one custom HTML tag which we then, another advantage, can also reuse across our page or even reuse across multiple projects.
+
+We can just take that Javascript file and drop it into any other project, just as you did it with my modal.js file. So encapsulated logic and an encapsulated user interface is of course great because it's easier to understand, we have connected code in one element and another element cares about something totally different so we have separated code which is always great, it's therefore also easy to maintain and we have a separation of concerns. Every element takes care about one tag, the modal takes care about displaying itself and showing some content in this pop-up window style, it does not care about the side drawer or sending HttpRequests or anything like that.
+
+The reusability across the page means that we only have to write a certain logic once and then we can use it multiple times, that modal might be something we show when the user orders an item but also when the user login fails. So we can write this logic one and then just pass different dynamic content into it in the different parts of our page where we use it. So we don't have to worry about overlapping logic and we also don't have to write logic in the user interface more than once, which is great and the same advantages are true when we share our component across multiple projects.
+
+We still use it like a normal HTML element, we don't have to worry about setting up a complex development environment there or using a special framework, we can even have projects written in different frameworks, let's say in Angular and in React and we can use one and the same web component in both. So that is a great advantage, we wouldn't be able to share React Components with an Angular project for example. We also of course can reuse core UI elements across multiple projects, so you could create a set of core UI elements that have your corporate identity baked in, like a toolbar, the modal, the side drawer which you use in all your projects then, so that can be really helpful and save you a lot of time and we again also don't have to repeat ourselves when it comes to writing all the logic and the user interface.
+
+----------------------------------------

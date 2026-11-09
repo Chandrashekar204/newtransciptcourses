@@ -1,0 +1,35 @@
+# 30.20 — Assignment Operator VS Equals to Operator
+
+> Section 30: First Steps - Old content for Java 11
+
+All right so let's continue. Now I've got a little bit of a challenge for you here and it relates to a common bug that people who are starting out programming may encounter. And you start by typing the code "int newValue equals 50". In the next line I'm gonna type "if" left parenthesis "newValue equals 50" right parenthesis and with a code block like we normally do. And I'm a put down a message, print out a message "this is an error". Right so my question to you is what is wrong with this code?
+
+So note that IntelliJ flagging that line line 68 with an error. So if you hover over that, we can see it says "incompatible types, required: boolean, found: int." So aren't we testing newValue? Which we know is an int, against the whole number 50? Which we know from our primitive types discussion is treated as an int by default? So why are we getting this error? So have a think about why it's doing that. Pause the video if you like and see if you can figure it out.
+
+All right, so welcome back. Well the problem is the equals sign. Let's talk about the difference between the assignment and the equals to operators. So as you can see in the code we typed we've declared the newValue int using the assignment operator which is one equals sign. And we assigned the value 50 to it. What we need to do in the code to check whether it's equal to, is to not use the assignment operator which is a single equals sign. But rather we need to use the equals to operator which has two equals sign.
+
+So this is what the code should look like. Noting that it's got "if" in parenthesis "newValue equals equals 50". and not as we typed it, "newValue equals 50". So we're not assigning a value here. we want to test if the values are equal to each other. All right, so I'm back in the code. What we need to do to fix this is we need to come down here and put the second equals sign in. Which is now an equals to operator and we're now correctly comparing the value of newValue to the value 50.
+
+The error's disappeared and if we run this code we're getting the output which now doesn't make sense because we've fixed the error so we should probably change the output. Going to put "this is true". Which would probably make more sense if we're reading the text. All right, so "this is true". All right, so that's a, again that's a common problem you'll come across, using a single equals sign which is the assignment operator instead of the two equals signs which of course, is the equals to operator.
+
+But let's continue on with that I wanna show you another problem. This time we're gonna use a boolean. We're gonna type "boolean isCar equals false". Now on the next line we're going to type a similar thing. "if" and in parenthesis "isCar equals true" noting that I'm using the assignment operator and not the equals to operataor. And I'm just going to print out a message in our code block. Which simply says "this is not supposed to happen". So what do you think's going to happen in this scenario?
+
+Noting that there's no error here. So pause the video if you like and come back and we'll go through it. All right, so firstly let's run the code now. And look what's happened there, we've got the output "this is not supposed to happen". We can clearly see that on line 72, we've defined the value of isCar to be false. And it appears that at first glance that we're comparing isCar to the value true and for some reason the code on line 74 is being executed.
+
+And what's more, unlike the int example used above when we use the assignment operator instead of the equals to operator, we haven't got an error here. So why isn't IntelliJ flagging this as an error? So in the case of where we had the newValue equals 20 in other words we used the assignment instead of the equals to value, and I'll change that back again. This is why we're getting incompatible types. If we hover over that again. So in line 68, "newValue equals 50" well that actually returns to value 50 and that's why we have the error showing found an int.
+
+When in fact what it requires is a boolean. And that's because the assignment operator returns the value, it has been assigned to the variable and the equals to operator that returns a true or false on whether the two values are the same. Now in the case of the code on line 73 "isCar equals true", even though that's an equals operator that is returning true because the isCar variable is a boolean and has been assigned to the value true. So that's why we're not getting an error on line 73 when we in fact, did get an error on line 68.
+
+So just undo that change again to go back to where we were before. So the bottom line is to make sure that you're using the equals to operator when you're testing to see whether things are equal, and you're not using an assignment operator like we're using here. So I'm gonna go back and fix this. We're now using the equals to operator. We run the code now. We no longer get the message and that's because we're using the proper equals to operator.
+
+Now just a note about booleans as well, we can simplify the expression we've got on line 73 by removing the "equals equals true" altogether. And simply having it like so, "if isCar". Now that's a shortcut and tests to see whether Car is set to true, which we were doing previously with the equals to operator. Now we can also do a test for not here. So if we wanted to specifically check that Car wasn't equal to true, we can obviously put "if is car "not equal to true".
+
+In this case, someone would be testing for false. We could also put "if isCar is equal to false" to specifically check whether it's false. But we can also come up here and put "not" so the exclamation mark is the not operator and what that does is basically tests to make sure that isCar is not equal to true. All right, so the exclamation mark or the not operator is also known as the Logical Complement Operator. Now it's for use with booleans. And it tests the alternate value.
+
+So we saw isCar in parenthesis tests for true. By adding the not operator before the value we're checking the opposite, false in this case. So boolean isCar equals false. We can do a test there. You saw me do this in the code before, "if" parenthesis "isCar is equal equal false", cause we're using the equals to operator. That's just testing for false but we can also put if and in parenthesis "not isCar" to check also if the boolean value isCar is false.
+
+Now, I generally recommend using the abbreviated form of both for two reasons. And abbreviated form, I'm just talking about "if" parenthesis "isCar" or "if" parenthesis "not isCar" depending whether you're wanting to test for true or false. So the reason I recommend using those is to avoid the potential for error by accidentally using an assignment operator as we did earlier in the code. But secondly, the code's more concise. All right, so let's end the video here.
+
+In the next video, I wanna talk about something called the ternary operator. See you in the next video.
+
+----------------------------------------

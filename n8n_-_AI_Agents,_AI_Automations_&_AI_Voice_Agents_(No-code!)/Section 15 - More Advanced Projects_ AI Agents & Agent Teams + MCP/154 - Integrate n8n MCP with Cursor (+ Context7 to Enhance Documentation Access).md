@@ -1,0 +1,43 @@
+# Integrate n8n MCP with Cursor (+ Context7 to Enhance Documentation Access)
+
+*Section: More Advanced Projects: AI Agents & Agent Teams + MCP*
+
+And then is the best tool to build a agents and automate almost everything without coding. And now you can use a new MVP server to automate the process of building automations and generate workflows like this one on autopilot, which is crazy. You just give it an idea for your automation, and it will build the workflow and even add it to your account automatically. So in this tutorial, I'm going to show you step by step how to set this up and how to use it in cloud, desktop app and cursor.
+
+And I promise it's really easy to do this. And it's powerful because it uses the official documentation and covers 90% from official docs, including AI notes. It also has dedicated AI tools, so detects AI nodes from the documentation. I'm also going to show you how to add the contact seven MVP server, which can automatically fetch docs for all the other nodes, making this setup even more powerful.
+
+In my previous tutorial, I explained how it works in more detail and how to generate complex workflows using this MCP include desktop app, but some of my students asked me to record a tutorial on how to integrate it with cursor, because when generating more complex workflows, close Contacts window can sometimes get limited. Also, if you want to set up this MCP properly, you need to copy and paste this prompt into a cloud project.
+
+But you can only create projects on the cloud paid Pro plan, which you don't need when using cursor. First, I'm going to show you step by step how to integrate this cursor. And then we will do the same thing in Cloud desktop app. Now if you have never used cursor, it's a powerful code editor where you can write, edit and run code, but with built in AI support. So you can just describe what you want in plain English, and it helps you type code apps from scratch.
+
+So coding skills help, but they are not required. First thing first, please go to cursor and click on download and download the cursor on your operating system and install it. Then we need to go to the GitHub repo People. This Nmcp setup was created by Rommel Frankowski. He did a great job and deserves all the kudos. It's open source so anyone can use it. Now once you are on that page, just scroll down.
+
+We are going to use the main option which is the easiest one. The main prerequisite is to have Node.js installed on your system. If you don't have Node.js installed on your system, click on that link, click on Get Node.js and install Node.js on your operating system. It's very simple to install. Now, once you install Node.js, the next step is to run this simple command. So let's copy it. Let's open the terminal.
+
+So I'm going to press Command space and search for terminal. I'm going to paste this command and hit enter. So that's going to download and run the MCP for the first time. Now let's open cursor. And now we need to create a new project. So click on Open Project. Create a new folder. And let's open it. Now this is how the interface looks like. Now let's create new folder. So on the left sidebar right click new folder and let's call it dot cursor and hit enter.
+
+Now let's add a new file. So right click on cursor file. Let's call it mcp dot JSON and hit enter. Now let's go back to the GitHub repo. Now we are going to copy and paste configuration. And I recommend using full configuration which will allow plot or cursor not only generate workflows for you but also deploy it to your instance. So click on copy. Go back to cursor. And paste it right here. Now we need to change two things.
+
+We need to replace an API URL and an API key. So in order to get an API URL, go to your account, login into your dashboard and look at the URL at the top of your browser. So that's your N810 API URL. Make sure to copy the full address, including the https, all the way up to cloud. And leave everything up to that. So let's copy it. Let's go back to cursor. Now let's replace this API URL. So let's paste it here.
+
+Now let's find our API key. So let's go back to N810 account. Inside your dashboard, go to the bottom left panel. Click on the three dots. Click on settings. Go to edit an API and create an API key. Give it a name. Save and copy your API key. Go back to cursor and paste your API key here. Great. Now let's save this file. So click on file and hit save. Perfect. As you can see new MCP server detected and an MCP.
+
+So it's working. Now if you go to settings. So click on Cursor settings Cursor Settings and go to Tools Integrations. You will see that under MCP tools, there is an MCP with 39 tools enabled. So just make sure this is switch on. Now when you click on it you will see that this MCP has access to 39 different tools. Now to set up this properly we need to provide a prompt to instructions to let cursor know how to use this MCP server.
+
+So what tools to use and in which order. So let's go back to our GitHub repo. Let's scroll down and you should see Cloud Project setup. So by using this prompt we are providing guidelines on how to use this MCP server. So let's copy it. Let's type add. And type cursor. Let's add new rule. Let's call it MCP. Let's switch over to apply. Always. Always apply. Here let's type. This rule and let's paste the prompt we just copied.
+
+Perfect. And thanks to that person will be referring to this prompt every time. We are going to generate workflow within this project. Here you can click enable. Now let's give it an access to contact seven repo to make it more powerful. I'm going to leave the link to this GitHub repo in the description. So now let's scroll down. Let's find cursor. So inserting cursor. And we are going to add this configuration to our MCP JSON file.
+
+So let's copy it. Let's go to any large language model ChatGPT or cloud and let's ask it to please combine. JSON. Let's parse the JSON. Let's go to the repo. Let's copy the configuration again and paste it right after this one. And hit enter. Thanks to that we are not going to mess with formatting. Let's copy it. Let's go back to cursor and let's paste it here. Now let's copy our API URL. And paste it here.
+
+The same with API key. Now you can remove this one. Perfect. Now let's save the file. New server detected. Contact seven. Enable it. Perfect. Now when you go to cursor settings. Under Tools integrations. Now under tools you should see contact seven as well. So this means that it's working properly. So let's generate a simple workflow. Let's say create workflow that watches for new emails in Gmail.
+
+Extract the subject and sender and sends a message with that information and enter waiting for approval. So let's run this tool. Let's wait a moment. Let's accept. Generating the workflow for us. The workflow generated slack email notification has been created using contact seven. Here's what it does right. Let's check our instance. And as you can see this simple automation has been deployed two minutes ago.
+
+Let's open it. Yeah that's great. Now let's set up everything inside the cloud desktop app. So if you don't have installed it, just Google Cloud Desktop and go to the official site and install it. Once it's installed, open the app and log in. Or if you don't have cloud account, create one and log in. Now you need to open the settings, so click on cloud in the top left. Click on settings. A new window will pop up.
+
+Go to developer mode and you will see a button that says Edit Config. So go ahead and click on it and that will open a configuration file on your computer. So just double click on Cloud Desktop config dot JSON. Now if you are setting up any server with Cloud Desktop app for the first time, your configuration file will be empty. Now let's reuse the configuration file we created for cursor. So I'm going back to my project.
+
+I'm going to copy this JSON. Now let's go to cloud configuration file. And let's paste it here. Now let's save the file. Great. Now this is really important. You need to completely close cloud desktop app and reopen it. So let's quit. Now let's relaunch the cloud desktop app. Now if everything was installed properly, when you open cloud, just click on this tools panel next to the plus button and you should see an MCP as well as contact seven.
+
+So that's how you know everything is connected and working. So from here you can actually easily toggle different tools on and off. So when you click on it you can see you can switch them on and off or disable all the tools before you use an MCP. Always. And it's really important. Make sure to double check that these MCP are connected and all the tools are enabled.

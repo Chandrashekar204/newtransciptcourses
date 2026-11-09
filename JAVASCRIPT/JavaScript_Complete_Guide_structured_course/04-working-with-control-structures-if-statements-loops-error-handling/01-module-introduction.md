@@ -1,0 +1,11 @@
+# 4.1 — Module Introduction
+
+> Section 4: Working with Control Structures (if Statements, Loops, Error Handling)
+
+After covering variables, operators and all these core basics that you need to know in Javascript and actually in most programming languages, there is another important block or set of features which you will also need in basically any programming language you are going to learn, Javascript included, and that would be control structures. Now that's kind of a strange term, what does control structures mean? It means that when you're writing code, you don't always want to execute exactly the same code top to bottom. Sometimes you have some condition that should be met for some code to be executed and execute some other code if the condition is not met or you need to repeat some code execution and instead of writing every cycle on your own, you can use some built-in features built into Javascript to run through a code snippet multiple times until some condition is met or until some data is exhausted, so that's exactly what we'll have a look at in this module. To be precise, we'll have a look at conditional statements, if statements, you might have heard about if statements if you worked with some other programming language in the past and we'll also have look at conditional expressions. We'll therefore also have a look at another very important related topic and that would
+
+be boolean values and operators that help you generate boolean values, which turn out to be rather important in if statements and conditional expressions and we'll also have a look at loops and how you can run the same code with different data maybe multiple times with help of the many loops that are available in Javascript. Last but not least, after having a look at loops, we'll also dive into error handling and that will be different from what you learned in the debugging section as you will learn, here I'm talking about errors which you can't avoid, that might happen in your program as it executes and how you can then react to them and what you can do to still fail gracefully, maybe show an error message to the user or even fall back and make sure that your program works even though an error occurred.
+
+So these are all very important control structures and with that, let's dive right into them.
+
+----------------------------------------

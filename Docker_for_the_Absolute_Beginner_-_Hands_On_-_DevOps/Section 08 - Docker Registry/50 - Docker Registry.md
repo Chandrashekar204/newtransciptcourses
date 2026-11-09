@@ -1,0 +1,27 @@
+# Docker Registry
+
+*Section: Docker Registry*
+
+1 Where do docker images actually live? 2 Behind every docker pull is a docker registry, a central place where images get stored. 3 Let's look at how registries work, the public ones you'll use most and how to run your own. 4 We will now look at docker registry. 5 So what is a registry? 6 If the containers were the rain, then they would rain from the docker 7 registry, which are the clouds. 8 That's where docker images are stored.
+
+9 It's a central repository of all docker images. 10 Let's look at a simple engine X container. 11 You run the docker run engine X command to run an instance of the engine X image. 12 Now let's take a closer look at that image name. 13 The name is engine X, but what is this image and where is this image pulled from? 14 This name follows docker's image naming convention. 15 Engine X here is the image or the repository name.
+
+16 When you say engine X, it's actually library slash engine X. 17 The first part stands for the user or account name. 18 So if you don't provide an account or a repository name, it uses the default 19 namespace for official docker hub images, which is library. 20 The username is usually your docker hub account name, or if it is an organization, 21 then it's the name of the organization. 22 If you go and create your own account and create your own repositories or images 23 under it, then you would use a similar pattern.
+
+24 Now, where are these images stored and pulled from? 25 Since we have not specified the location where these images are to be pulled from, 26 it is assumed to be on docker's default registry, docker hub, the DNS name for 27 which is docker.io. 28 So the fully qualified reference looks like this docker.io slash library slash engine X. 29 The registry is where all the images are stored. 30 Whenever you create a new image or update an existing image, you push it to the registry.
+
+31 And every time anyone deploys this application, it is pulled from that registry. 32 There are many other popular registries as well. 33 GitHub container registry runs at ghcr.io. 34 AWS has elastic container registry. 35 Azure has its own container registry. 36 And Google now uses artifact registry at star dash docker.pkg.dev. 37 That one replaced the older gcr.io registry, which was retired on March 18th, 2025.
+
+38 These are all publicly accessible images that anyone can download and access 39 depending on how they're configured. 40 One thing to be aware of with docker hub, there are pull rate limits, 41 unauthenticated pulls are capped at a hundred per six hours per IP, authenticated 42 free tier pulls at 200 per six hours and paid tiers are unlimited. 43 So if you're pulling a lot, especially in CI pipelines, log in with docker login 44 or push your images to a registry like ghcr, ecr, acr, or Google artifact 45 registry, where the limits are more generous.
+
+46 When you have applications built in-house that shouldn't be made available to the 47 public, hosting an internal private registry may be a good solution. 48 Many cloud service providers such as AWS, Azure, or GCP provide a private 49 registry by default. 50 When you open an account with them on any of these solutions, whether it's 51 docker hub, a cloud registry, or your internal private registry, you may choose 52 to make a repository private so that it can only be accessed using a set of 53 credentials from docker's perspective to run a container using an image from a 54 private registry.
+
+55 You first log into your private registry using the docker login command and put in 56 your credentials. 57 Once successful, run the application using the private registry as part of the 58 image name like this. 59 Now, if you did not log into the private registry, it will come back saying that 60 the image cannot be found. 61 So remember to always log in before pulling or pushing to a private registry.
+
+62 We said that cloud providers like AWS or GCP provide a private registry when you 63 create an account with them. 64 But what if you are running your application on premise and don't have a 65 private registry? 66 How do you deploy your own private registry within your organization? 67 The docker registry is itself another application. 68 And of course, it's available as a docker image. 69 The name of the image is registry and it exposes the API on port 5000.
+
+70 Now that you have your custom registry running at port 5000 on this docker host, 71 how do you push your own image to it? 72 Use the docker image tag command to tag the image with the private registry URL in it. 73 In this case, since it is running on the same docker host, I can use localhost 74 port 5000 followed by the image name. 75 I can then push my image to my local private registry using docker push and the 76 new image name with the registry information in it.
+
+77 From there on, I can pull my image from anywhere within this network using either 78 localhost if I'm on the same host or the IP or domain name of my docker host if 79 I'm accessing from another host in my environment. 80 So that's registries, docker hub by default, mind the pull rate limits and 81 authenticate when you can. 82 Private registries from cloud providers or your own on prem registry running as a container.
+
+83 Well, that's it for this lecture. 84 Head over to the practice test and practice working with private docker registries.

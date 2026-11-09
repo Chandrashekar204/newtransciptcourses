@@ -1,0 +1,11 @@
+# 7.26 — Setting Up the Practice Project
+
+> Section 7: Working with the DOM (Browser HTML Code) in JavaScript
+
+So now that we had a thorough look at all the core building blocks or all the basics that you need to know in order to work with the DOM, work with this HTML page from inside your Javascript code, I also want to apply some of these things in a more realistic project because thus far in this module, we always played around in the console which is great to quickly get a feeling for what you can select and which way and how you can work with things but now let's take the things we learned and put them into the context of a more realistic project.
+
+And for this, attached you find some starting files, an index.html file and an assets folder, that's what you get when you extract the attached file, you get some basic styles in there, get an empty app.js file because now, there is no vendor.js file, now we'll write all the Javascript logic, also for communicating with the web page on our own and then we get this index.html file here with a basic HTML skeleton that in the end leads to this page and here, we're going to build a very simple application where we can click add movie, currently nothing happens there, we'll of course change that and when we click this, a modal, so an overlay should open up where we can enter the title of our favorite movie, add an image and also give it a rating and then we'll display a list of the movies here instead of this box which we currently see and we'll also be able to click on these items, so click on the movies and then remove them if we want to get rid of them after we added them, so a lot of interaction going on. We'll also dynamically create and remove elements, we'll have to connect to a lot of elements on the page, so there will be plenty of opportunities to apply what we learned.
+
+So with that, let's not lose any time and dive right into it, just one more word, if you feel like it, of course you can always pause in this or in the next lectures and try out some of the next steps on your own or when I start with a certain step, pause and try that step on your own. It's not a must do but it might be a nice practice.
+
+----------------------------------------

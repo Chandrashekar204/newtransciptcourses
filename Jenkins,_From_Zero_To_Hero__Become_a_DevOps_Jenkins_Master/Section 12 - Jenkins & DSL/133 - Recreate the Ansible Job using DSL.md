@@ -1,0 +1,43 @@
+# Recreate the Ansible Job using DSL
+
+*Section: Jenkins & DSL*
+
+Instructor: Hello and welcome back. I think that you have already learned a little bit about DSL, so it's time to put all of that knowledge in practice and we're going to recreate the Ansible users db that we created manually and we're going to create this using DSL. So, we want to know the configuration options that we need so let's click on configure. And based on this configuration, we're going to start creating our DSL file.
+
+So let's go to our terminal and I will leave you a file which is a an Ansible template and you have all the things that you have been learning and a couple more. So don't worry because we're going to be explaining everything. So, okay, let's go to the first line, job. This is cool. We need to change this name, how we want to name this job. In this case, the name is Ansible users db. So let's call it like Ansible users DSL or something like that, or exactly the same name.
+
+So let's say Ansible users, db and we're going to say dash DSL to differentiate that job. Cool, we don't have any description in here that let's add a new description. So our new job will have a description like update the HTML table based on the input, something like that. Now let's go to our job, and we're going to see that the first thing that we need to define is a parameter. So we need to say that this project is parameterized and we need to add a choice parameter with the name of age and these options.
+
+So let's take a look to our file. We don't want this string parameter so we're going to delete this. We don't want any boolean parameter. So let's delete this. And we do want a choice parameter which is this choice parameter. Okay, so let's start modifying this. The name should be age as you can see here and the choices are going to be 21, 22, 23. So one. So let's go ahead and modify this. We're going to say 21, 22, 23, 24.
+
+So now we have our choice parameter in place. That's good. Let's see what else we need. We don't need any source code management so let's keep scrolling down. And we need colors. So let's look in here in the documentation how we can add colors. So let's look for color. And you can see this colorized output, which is exactly this, that says colorized console output. And if you see here, this is how we should define that colorized output.
+
+And then we define external, and this is exactly the option that we're defining in here. So if we take a look to our file, well we don't need this, so we're going to delete this SCM, we don't need triggers. So let's delete the triggers. And in the steps, as you can see, we're passing that colorized output, color map xterm which comes from the documentation. And this is how you use it. You pass the wrappers and then you pass the colorized output function in here.
+
+So this is it. We already have colors in this place and now we need to start defining the Ansible stuff. So if we go to our job after the colors, you can see that we're starting invoking the Ansible Playbook. So how do we know which parameters to use in here? So let's go to Google And let's look for it. Let's type Ansible DSL, and we should have an answer. Let's go to the second one. Let's scroll down a little bit and as you can see, we have a lot of choices in here, and you can use the ones that you need.
+
+So in this case, we're only going to be using a couple of these options. So the first thing that you need to do to define an Ansible playbook is you know, say in steps. And inside of the steps You define Ansible Playbook. So let's take a look to our file, steps, okay. Ansible Playbook, okay. And in here we need to pass the path to the playbook. So let's go to our job. And the path for the playbook is this path.
+
+So let's copy that. And we're going to change the path that we have in this example, and we're going to paste the correct one. So let's delete this string and we're going to paste the correct one. Okay so we need the inventory path. And you know these values, inventory, path, forks, colorized output, they all are coming from this page. If you take a look, here they are, inventory path, forks, colorized output, extra vars, you have everything in here.
+
+If you want to use any Ansible parameter look for it and then use it. So let's keep looking to our job. We already have the playbook path, okay? Now we need to define the inventory. This is the path for the inventory. So let's go and modify the inventory path in here. Let's delete this. We're going to paste in here the new path for the inventory. We're not using tags, so let's delete this. We're not using forks, so let's delete this.
+
+Let's see if we are using colorized output. So let's click on advanced. And we are actually using colorized standard output. So we're going to mark this as true because we're using colorized output. We're not using any additional parameters. So let's delete this. As you can see, we're not using any additional parameters, but we're using extra variables. So here we have an example of extra variables.
+
+Remember that you can go to the documentation in here and you're going to find how to use them. So let's go to our extra variables. We only need one. So let's delete one and let's modify the one that we need. So in the extra variables we have the key, which is people age. So let's copy that key and we're going to paste that in here. And then we need to pass the value. In this case, the value is age.
+
+So let's copy this. And as you can see we need to define the age inside of these curly braces. So let's say age. And this third argument means this little box. It means if you want to hide it or if you don't. In this case, we have this unchecked so this should be false, and that's it. Pretty cool. We're not using any publishers in here. So let's go ahead and delete these publishers. And if you scroll down, this is everything we need.
+
+That's all the configuration for this Ansible playbook. So let's save this. And now we're going to save our file. Let's cut this Ansible file. Let's copy this. And we're going to paste this in the seed job. So let's go to the dashboard. Let's go to job DSL. Let's configure this. And here is an important tip. For example, if you want to keep this new job you can just hit enter and paste your new job under that job.
+
+If you want to delete this job then just go ahead and delete it. It doesn't matter. You can have all of the jobs that you want in here. So in this case, we have one which is the one that we created previously, and this one which is going to be the one that we're going to create. So let's hit on save and now we're going to build this project and we're going to see what happens. So the execution succeeded.
+
+Let's go to the dashboard, and we're going to look for the Ansible user, DSL, as you can see. That's nice, so let's click on this. You can see that the seed job was the one that created this job. And if we go to configure we're gonna take a look at what we did. So we have here a description, the parameters and we have the Ansible playbook. The color, looks like everything is in place. So let's go ahead and build with parameters.
+
+We're gonna try to build this job to make sure that this is working. So let's choose like 24. Let's go ahead and build this. In here, I will open up the Jenkins dot local on port 80 which is our HTML table. And here we have a forbidden, well, at least in my case because I deleted the containers yesterday or these days. The index file was deleted. That's why you're seeing a forbidden in here. So let's take a look to our execution and this failed.
+
+So let's take a look why this failed. And this is because the destination is not readable. Remember that we had that error before. Docker exec dash TI web bash, and we're going to fix that. Do you remember how we should fix that? And that's changing the ownership of the var WW directory. So let's say remote user, colon remote user, var WW HTML, recursively, and that's it. Let's exit and let's try to build this job again, build with parameters.
+
+Let's skip like 21 and let's go to the console output. And now this should work. And as you can see the playbook and the execution itself was success. So let's go to our table. Let's refresh. And as you can see, we have only the records that have 21 as a value for the age. So this is pretty cool. You already know how to create the Ansible job that we created manually, but now using DSL. So I hope that you have learned a lot from this and you can create all of your jobs from now using DSL.
+
+So this is it for this video. I'll see you in the next lesson.

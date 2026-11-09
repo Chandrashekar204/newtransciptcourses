@@ -1,0 +1,13 @@
+# 16.5 — The Global "Number" and "Math" Objects
+
+> Section 16: More on Numbers & Strings
+
+Now that we learned a lot about numbers and big integer, before we move on to strings, let's have a look at the number and the math global object. We used some of the features of these objects already and now I just want to have a second look and walk you through the important ones, let's start with number. There we saw MAX_SAFE_INTEGER, MAX_VALUE, MIN_SAFE_INTEGER and MIN_VALUE, you also have negative and positive infinity. These are special values in Javascript which you also can just type like this by the way, infinity and -infinity and this is the value you for example get if you divide by zero, you'll not get an error which you might expect, instead you get infinity because it basically approximates the result you could say.
+
+So infinity is a special value you can get and you can also check for infinity in places where you need true or false, for that you've got the isFinite method, also on the number object but also available just on a global object to which you can pass a number to find out if this is finite, like an example of 10 is true or if it's infinite as an example of infinity because that is not finite and therefore, this returns false. So number isFinite can be useful, we also have isNaN there, we saw that earlier already, also exists as a global method.
+
+We got parseFloat and parseInt here which also exists globally though and therefore we don't really need that here and that's therefore basically it for the number object. More interesting than that is the math object, there you get various methods and constants or properties that help you with mathematical operations. You've got the value for the E number, for Pi if you need that in calculations, methods for calculating the square root, for working with the sin for example, also the power of method we saw a second ago in this module already, the abs method to give you an absolute number based on some number you pass in as an input and many more methods, like for example also the random method you already learned about which also can often be very convenient.
+
+I can only recommend that you scroll through the various methods you've got there, as you can see, there are a lot, of course the MDN docs are also a great place to learn all about them and whenever you have a mathematical operation you need to perform in your code, chances are that you don't need to reinvent the wheel and you don't need to write your own logic but that the math object has got you covered and provides the operation you want to perform.
+
+----------------------------------------

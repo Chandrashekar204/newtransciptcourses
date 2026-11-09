@@ -1,0 +1,13 @@
+# 27.8 — Introducing & Installing Express.js
+
+> Section 27: Node.js: An Introduction
+
+Doing all of this data parsing and response generation code on our own is quite cumbersome and hard to scale, this already is quite unreadable here and of course we could optimized this in certain ways but it's certainly not how you would want to build bigger applications. Now similar issues exist on client side Javascript though, there also if you have very complex apps with a lot of access to your documents, where you create elements and insert elements, this can get cumbersome. Therefore there we also learned about React.js or other frameworks that help us with that and we also learned that there are in general libraries that can make certain tasks easier, the same exists for Node.js.
+
+You can google for Express.js to find one of the most popular Node.js libraries you can use, you can visit its page, expressjs.com to learn more about it and in the end this is just a framework for Node.js which makes building web applications, web servers with Node.js easier. We install it with npm and in order to do that, we first of all need to turn this into an npm project here, so we can do that by running npm init here, npm is available since we installed Node.js and you can just confirm all the defaults here.
+
+Once you did that, you have a package.json file and now you can install new dependencies in this project, it's the same approach and idea as we had it on the client side when we managed our project there and enriched it by npm packages. The only difference is that now we will not need webpack or any other tool to use that because Node.js natively support these packages in Node modules which is also why the folder is called Node modules as you will see and we don't need webpack or anything like that to combine all these files.
+
+That's one difference, we need it on the client side, we don't need it on the server side. So let's now install Express.js with npm install express --save which will install it as a production dependency and you see this new dependency entry here in package.json and you see the node modules folder and as I said, Node.js is natively capable of working with node modules, you don't need any extra tools to combine all these different files. With that, I will rename the file here to pure Node.js and add a new empty app.js file where we now can get started with Express.js and learn how we set up a web server with that and how that makes it much easier to work with incoming data and also to send back responses, how to outsource our HTML code into separate files and not have it inline here and how we can then build web applications with that.
+
+----------------------------------------

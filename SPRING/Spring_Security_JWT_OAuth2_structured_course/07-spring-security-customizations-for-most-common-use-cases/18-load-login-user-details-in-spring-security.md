@@ -1,0 +1,26 @@
+# 7.18 — Load login user details in Spring Security
+
+> Section 7: Spring Security customizations for most common use cases
+
+Instructor: Inside this lecture, let's try to understand how to load the login user details in your business logic or in your controller classes. The scenario can be anything but many times you may have a requirement inside your business logic to know who is the current authenticated user. You may want to execute these logic inside your controller layer or service layer or any other layer, in all these kind of scenarios, you can use either of these two approaches to load the authentication details from the SecurityContext.
+
+The very first approach is with the help of the SecurityContextHolder. You need to invoke the getContext() method and this is going to return the SecurityContext. Using the same SecurityContext, maybe you can perform the null check. Once the null check is completed. You can invoke the getAuthentication() method, so this is going to return the authentication object. Once you have the authentication object, you can find the what is the name of the authenticated user by invoking the getName() method.
+
+Similarly, you should be able to know the authorities of the user, so whatever information that are stored inside this authentication object will be accessible inside your controller layer. So this is my controller, which is marked with rest controller. The same kind of strategy you can follow inside any layer. And the second approach is you can directly mention the authentication object as an method input parameter. With this, what is going to happen is whenever the spring security seeing this object is being mentioned as a method input parameter behind the scenes, it is going to load the authentication object from the SecurityContext and provide the same as an input to the method where you are trying to use.
+
+Both approaches, they have their pros and cons. Let me show you the demo of these approaches very quickly. Inside that DashboardController that we have in this easy school application, we already using these second approach, you can see here for this displayDashboard() method, I'm trying to pass the authentication as one of the method input parameter. Using this authentication, I try to fetch the name details and authorities, the same I'm trying to display inside that dashboard page, let me keep a breakpoint here inside the browser, I will try to log in with the username as admin and the password as EasyBytes@54321.
+
+. As soon as I press enter, the breakpoint is going to stop inside my DashboardController. If you closely observe the authentication object right now has so much of information. It is a type UsernamePasswordAuthenticationToken. Inside this we have details like what is the principle, which is going to how username details, authorities, and other details. We also have authorities information and other details like what is the remote address and what is the sessionId and whether the authentication is successful or not.
+
+So this is one approach. The other approach is you can get rid of these authentication input parameter. Instead, what you can do, you can invoke the SecurityContextHolder using the same class, you can invoke the static method, which is getContext(). Using the SecurityContext object, you can try to invoke the getAuthentication() method. On the left hand side, let me try to catch the output with the variable name authentication. So this should also work very similarly. Let me do the build.
+
+Once the build is completed, I'll try to log out and try to log in again with admin credentials. As soon as I press login, the breakpoint stopped here and this time also you can see inside the authentication object. We have the same details. So if I release the breakpoint, the username, and the authority details are going to be displayed here on the UI page. These two approaches you should be able to use in any kind of application. It can be a REST API focused application or it can be a MVC based application or it can be a microservice as long as you have the Spring Security library inside your dependencies, you can use these two approaches to load the current authenticated details.
+
+How this is possible? This is possible because behind the scenes Spring Security framework storing the SecurityContext details using the THREADLOCALMODE approach inside the same thread at any place or at any method, I should be able to use these two approaches to get the details from the thread local memory. I'm going to conclude this section, but before I try to conclude this section, let me highlight you that this EasySchool related code, I'm going to upload into the section7 folder.
+
+Under the section7, you should be able to see three different folders. Please use the EasySchool start application if you want to get started with the form login changes, logout changes, or any other changes that we have discussed so far inside this section and all the updated code that we have discussed so far is going to be available inside the eazyschool-end and the code related to our normal spring boot application is available inside the springsecuritysection7 folder.
+
+I hope this is clear. Thank you and I'll catch you in the next lecture, bye.
+
+
+########################################

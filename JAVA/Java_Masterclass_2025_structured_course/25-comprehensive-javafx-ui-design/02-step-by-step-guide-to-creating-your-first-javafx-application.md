@@ -1,0 +1,31 @@
+# 25.2 — Step-by-Step Guide to Creating Your First JavaFX Application
+
+> Section 25: Comprehensive JavaFX UI Design
+
+In this video, we're going to go ahead and create our first javafx applications, so make sure that if you haven't already that you've watched the last video and if you're running on JDK 11, you'll need to go through the steps to define the global library because we're going to be using that in this video. All right, so intellij's got a plugin that supports javafx applications. When you install intellij, the plugin was installed and enabled by default.
+
+So we're going to go ahead and use that in this project. So you click on create new project, as you normally would. And you'll notice the option here. To the left you've probably seen that before, we've got java which we've used traditionally, but there's also this javafx. We're going to be using that in this section, every time we've created a new javafx application, make sure your project SDK is set to 11 in this case if you're running JDK 11 running, JDK 8 obviously it'll be JDK8.
+
+Click on next, we need to define a name. So I'm going to call this one hello world fx. It's effectively going to be creating our first hello world project, but using javafx. I'm going to click on finish now and create the project. Now if you're running JDK 8, you should find this is ready to go. And you won't need to take the steps I'm about to go through. But if you're running JDK 11, click over to main. You'll see right away that there's some errors.
+
+So you've got the arrows and that's because the javafx library is now no longer part of the JDK. So we need to actually configure it and set it up so that the global library we've defined is used for this project. So you'll need to do the following steps every time you create a new javafx project if you're running JDK 11. The first things first. You want to click on the project, right click and select open module settings. Come up to project. When I firstly check the project SDK is correctly configured, 11 in my case, the project language level needs to be configured the same as the project SDK.
+
+So the same number in the case of 11, JDK 11, obviously I'm selecting 11. If you're on JDK 8, you would select 8 there. And by doing that, if you come over to modules, you should then find that because we're using the project default that's now also set to version 11. Now for JDK 11 users, the next step we also need to do is go to global libraries remembering that we defined that in a previous video, then you need to right click here, we need to click on add to modules.
+
+So what that's doing is adding this module that we've defined this global module we're telling intellij that we want to use that in this particular intellij project. So we click on that. So once only set up and it confirms that it's going to be added to the selected modules which in this case is the name of our project. Click ok, click ok again. Now you can see that that has actually fixed some of the import errors. We're now no longer getting any errors, but you'll find that if you go to run this now just expand this out so we can see a little bit better we will find that we'll get an error.
+
+So I'll click on run. We've got an error there, javafx runtime components are missing. Basically, what we've done so far is we've added the global library to our JDK 11 application. But at this stage, it's not working because we need to configure it so that it works when we're running the application as well. And again, this is only for JDK 11, for JDK 8 you won't have. This issue it should work out of the box. So what we need to do to actually fix this is we need to add a module-info.java file so that we've defined the javafx controls so they'll actually work.
+
+And the way we do that for JDK 11 is we right click the source folder, noticing that I'm not clicking on the package name and clicking on the at source level, right click, select new. We need to select module info.java and that should open up a little file like this. And by the way, if you don't see the option here, when you right click and select new, if you don't see an option there, we won't see module info there now because you've already created it.
+
+But prior to that actually what I'll do is just undo it just to show you, I'm going to cancel that. Right click again new. So if you don't see this module info.java package, what that means is you haven't correctly configured in project, the project language level, so 11 is either not set there or set there because once you do that that option should come up for you automatically. So I'm going to go ahead and create that file again module.info.java.
+
+And what we now need to do is add a few commands here so that javafx will work. The first one I'm going to type is requires javafx dot and it's going to be fxml, that's number one. And the second one requires javafx.controls. Then the last line we need to add then is opens, we're going to go sample. Sample is the name that we've defined here, basically the package name. So we're specifying that there at that point we will now find that this application which previously would have worked for JDK 8 will now also work for JDK 11.
+
+So let's actually give that a test run. And you can see now we've got basically a GUI interface. There's no controls on it at this stage, and that's normal because we haven't added any controls to the application yet. Bottom line is that it's now working. We've correctly configured the javafx library, the global library. We've configured and added it to this project. We've also added the module.info.java file. So at this point in time it's now working under JDK 11.
+
+And also, you didn't need to type to make the change to moduleinfo.java for JDK 8 users. But in your case that will also be working as well. So I'm going to finish the video here. Now that we know that we've got an application that's configured to work for both JDK 8 and JDK 11, moving forward, we can now start focusing on the javafx controls and how to actually use them and not be too worried about which particular version of java that we're actually working on.
+
+So let's start working on this application and getting it to do something meaningful in the next video.
+
+----------------------------------------

@@ -1,0 +1,140 @@
+[
+  {
+    "section": 1,
+    "title": "Introduction",
+    "folder": "01-introduction",
+    "lectures": 2
+  },
+  {
+    "section": 2,
+    "title": "Big O",
+    "folder": "02-big-o",
+    "lectures": 11
+  },
+  {
+    "section": 3,
+    "title": "Classes & References",
+    "folder": "03-classes-and-references",
+    "lectures": 2
+  },
+  {
+    "section": 4,
+    "title": "Linked Lists",
+    "folder": "04-linked-lists",
+    "lectures": 16
+  },
+  {
+    "section": 5,
+    "title": "<> LL: Interview / LeetCode Exercises",
+    "folder": "05-ll-interview-leetcode-exercises",
+    "lectures": 8
+  },
+  {
+    "section": 6,
+    "title": "Doubly Linked Lists",
+    "folder": "06-doubly-linked-lists",
+    "lectures": 9
+  },
+  {
+    "section": 7,
+    "title": "<> DLL: Interview / LeetCode Exercises",
+    "folder": "07-dll-interview-leetcode-exercises",
+    "lectures": 3
+  },
+  {
+    "section": 8,
+    "title": "Stacks & Queues",
+    "folder": "08-stacks-and-queues",
+    "lectures": 8
+  },
+  {
+    "section": 9,
+    "title": "<> S&Q: Interview / LeetCode Exercises",
+    "folder": "09-sandq-interview-leetcode-exercises",
+    "lectures": 4
+  },
+  {
+    "section": 10,
+    "title": "Trees",
+    "folder": "10-trees",
+    "lectures": 8
+  },
+  {
+    "section": 11,
+    "title": "<> BST: Interview / LeetCode Exercises",
+    "folder": "11-bst-interview-leetcode-exercises",
+    "lectures": 1
+  },
+  {
+    "section": 12,
+    "title": "Hash Tables",
+    "folder": "12-hash-tables",
+    "lectures": 9
+  },
+  {
+    "section": 13,
+    "title": "<> HT: Interview / LeetCode Exercises",
+    "folder": "13-ht-interview-leetcode-exercises",
+    "lectures": 10
+  },
+  {
+    "section": 14,
+    "title": "Graphs",
+    "folder": "14-graphs",
+    "lectures": 8
+  },
+  {
+    "section": 15,
+    "title": "Heaps",
+    "folder": "15-heaps",
+    "lectures": 7
+  },
+  {
+    "section": 16,
+    "title": "Recursion",
+    "folder": "16-recursion",
+    "lectures": 3
+  },
+  {
+    "section": 17,
+    "title": "Recursive Binary Search Trees",
+    "folder": "17-recursive-binary-search-trees",
+    "lectures": 7
+  },
+  {
+    "section": 18,
+    "title": "Tree Traversal",
+    "folder": "18-tree-traversal",
+    "lectures": 9
+  },
+  {
+    "section": 19,
+    "title": "Basic Sorts",
+    "folder": "19-basic-sorts",
+    "lectures": 7
+  },
+  {
+    "section": 20,
+    "title": "Merge Sort",
+    "folder": "20-merge-sort",
+    "lectures": 6
+  },
+  {
+    "section": 21,
+    "title": "Quick Sort",
+    "folder": "21-quick-sort",
+    "lectures": 5
+  },
+  {
+    "section": 22,
+    "title": "Dynamic Programming",
+    "folder": "22-dynamic-programming",
+    "lectures": 5
+  },
+  {
+    "section": 23,
+    "title": "Coding Exercises",
+    "folder": "23-coding-exercises",
+    "lectures": 2
+  }
+]

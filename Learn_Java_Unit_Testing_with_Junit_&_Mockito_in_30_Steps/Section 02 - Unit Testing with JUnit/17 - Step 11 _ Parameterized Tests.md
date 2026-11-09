@@ -1,0 +1,49 @@
+# Step 11 : Parameterized Tests
+
+*Section: Unit Testing with JUnit*
+
+Instructor: Okay, in this section let's discuss something about parameterized tests. What are parameterized tests and why do we need parameterized? Let's start with the example which we wrote earlier. If you look at these two methods, they're exactly same except for the fact that I'm parsing a different input and I'm expecting a different output. Other than that, the entire code in these two methods is the same.
+
+So how can I really make these parameters and not really keep, I mean repeating the whole thing again and again. So how do I do that? That's the problem that the parameterized test solve. So how can I, can I parse these values in an array and execute the test repeatedly or over again? So that's the problem that a parameterized tries to solve. And let's try and convert this test to use a parameterized test.
+
+What I'll do is I'll make a copy of this. So I'll see a Ctrl C Ctrl V and I'll call string helper parameterized. Okay, that's good. Let's open the class up. And I don't really want the before and everything in here. So I'll just put it is equal to new string helper and I'll remove all the tests for the first method I'll leave them in, the second example I will remove them out. Now, I would want to parameterize these two things.
+
+So I would parse this input I would want to get this output. I would want to parse this input. I would want to get this output. I could refactor and create a method out of it. But if there were complex things that needs to be done in the test, that would not be an option. So junit supports something called a parameterized test. How do we say this is a parameterized test? That starts with a small thing.
+
+So you, we need to say, this particular class runs parameterized tests. How do we do that? We do that by using a runs with Parameterized.class. So I'll input runs with, and then I would input the parameterized class as well. So it's run with Parameterized.class. That's the first step. So the first step is defining the fact that this is a parameterized test. This is not a normal test. I will not run these tests in a normal way.
+
+I will run with a few parameters. That's what I'm putting it as, run with parameterized that class. The second thing that I would need to define is the arguments that we would need to parse. So I wanna make these arguments to the test. How do we make these as arguments that we can parse to a particular test? How do we do that? That's the next step. The way we do that is by creating one method public there should be only one set of conditions for a test so it's also static And it's a collection.
+
+I mean, it returns, your method should return a collection and I'll just call it testConditions. On this method this is not returning anything right now but let's make it return something. You need to add a annotation called @Parameters. That's now let's return null for now to just make it succeed. But what we are trying to define in here is all the test conditions. For now, I'm returning null but we would make it to return something very soon.
+
+So it's public static collection. This name does not really matter. I just call test conditions. And these are the parameters for this particular test. We really need to define the parameters in here. The important parameters for us are CD , AACD, CD, ACD. How do we do that? First, let's create an array with the expected input and the output. So expected input is CD. Sorry the expected input is AACD and the expected output is CD.
+
+That's one input output pair. The second input output pair is CD and ACD. So ACD is the input. When ACD is the input, CD is output. So this is kind of the expected input array. So I'll just create a int array with expected output. It's a two-dimensional array with all the conditions that I would want to check. It's a string array. When I parse an AACD output should be CD. When I parse an ACD, the output is CD or it's the same output actually for both the input.
+
+So that's the expected output but this is expecting a collection and not an array. So how do I convert an array into collection? I can use Arrays.asList and I can parse in expected. Ha, that's great. So now I have a parameters in here. I mean, it's complaining that I'm not saying which type it is. It's the warning in here. Actually, it's a collection of string arrays That's what we are parsing in here.
+
+So I'll make it much more clearer by putting collection of string arrays in there. So now we are parsing in the parameters. So we have now defined the parameters that we would want to parse. So each condition is parsed in as an array. So this array contains the input and the output, input output. Now this test is not using these parameters. How do I make this test use the parameters that are parsed in here?
+
+That's the next step. So until now, we did two things If I can summarize. First thing is we said @RunWith parameterized.class and the second thing we did is we defined a collection. I mean we defined @Parameters method which returns a collection back. So in the collection, we have defined the expected input and output as a series of conditions. So now how do we write tests which use this these things?
+
+That's what we'll do right now. So the way the parameterized tests work is these two things are parsed as constructor arguments and a new instance of this particular test is created. So what we'll do is we'll try to create member variables in here, which will accept those values in. So the first thing is string input, string expected. Those are the two variables which we need, right? To be really clear, let's make them private because we don't want them to be.
+
+Now let's generate some constructor in here. So I'll do right click, source, generate constructor using fields and I don't need the helper there. I just need the input and the expected output. Now I have the constructor also generated in. So I have the constructor generated. So now this string helper parameterized test accepts these two as input. So the AACD goes to input, CD goes to output. So what we should do is we should now change the test to use the variables.
+
+So we created these variables in here. One is input and the expected output. So let's use the input. So the input is parsed and the expected output is expected. That's good. So now I can remove the other test condition and we are all set. So if I can, I mean if this is really, real confusing, that's okay. I mean, you can find this piece of class on the GitHub repository in the examples that we have.
+
+And you can look at these things step by step and do it on your own. There are three things that we did. The first thing was run with parameterized. That's the first step. The second thing was we defined the actual parameters. So what we did is we created an array of parameters and then converted it into collections and parsed them as parameters. So this is input output. So these are set of conditions.
+
+So this is condition one, condition two that we wanted to test. I could add any number of conditions that I want. So that's good. So that's the second step, creating the parameters. The third step is I have, these are actually in parsed as constructor arguments. So I'm creating the constructor and storing them as local arguments. I need them as local arguments because I want to make use of them in the test.
+
+So I'm making use of them in the test and trying to run this test. So let's run this test. There you go. The first thing you can notice is this class has only one @Test, but I, when I run this test, you'd see that it's showing two conditions succeeded. So it shows that two conditions are succeeding zero and one. So testTruncateAInFirst2Positions. You can see that it's showing an index zero, index one.
+
+So it's saying test condition one passed and test condition two also. I mean actually the index is zero and one, this is the first test condition, this is the second test condition. And let's say if one of the test conditions failed, what would happen? Let's say I parsed an AAD. The output then would be AD, just D. What would happen? So it says, this condition failed. So it would also say clearly, which thing failed.
+
+So if I double click, it's showing this particular thing. So the thing you need to use is index. So index zero failed. So it means the first condition failed. So I mean this is first condition index zero. This is second condition index one. So index zero failed. So this is the condition which failed. So you, you can guess that this particular condition is the one which is failing out of the list of conditions.
+
+That's how you can use parameterized tests to write really good tests when your entire setup for the test is similar except that the input and output that you want to check are a little different to each other. So in those kind of situations you can go for parameterized tests. The parameterized test can be confusing when you're doing them for the first time. I mean it's a little tricky to get the concept and implement it.
+
+So I would really recommend you to play around with this a couple of times. And also I would recommend to try and implement this as an exercise for this second example. I mean we wrote the string helper test with Booleans as well, right? So we had the Booleans in here as well. So for this test first and last characters the same. Try and give it a try and try and write a parameterized test for it. One clue I can already give is it should be a separate class.
+
+I cannot have two parameter two different parameterized tests in the same class. So you have to create a new class. You cannot do it in the same parameterized test class 'cause it can only have one constructor. So it cannot have other construct. I mean, it can only expect one kind of an input. So just go ahead and try it and if you have any questions, do leave a comment in.

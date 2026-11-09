@@ -1,0 +1,19 @@
+# Install Docker
+
+*Section: Introduction & Installation*
+
+Instructor: Hello, and welcome back. In the previous video, we created a connection through PuTTY using SSH to connect to our virtual machine. We are already connected here, as you can see, and now what we're going to do is that we're going to use Docker. If you have never used Docker before, don't worry. We're gonna learn a little bit of Docker here, and you must know that Docker is only available for certain platforms on Linux.
+
+So in this case, I'm gonna look for CentOS, Docker for CentOS, because we're going to start looking for the documentation. Something pretty important. Please, before doing it, make sure that you can reach internet from your machine. So if you type ping google.com, you should have an output like this. Okay, so we're going to look for this result, which is the first one, and as you can see here on the left side, these are the steps to install Docker on CentOS or Debian or Fedora or Ubuntu or whatever you have used to create a virtual machine, and we're going to install this.
+
+As you can see here, we're just gonna copy this command and we're gonna paste it in here. Oh, how you paste in PuTTY? That's a good question. You paste using the right click button on your mouse, so you click your right button on your mouse, and then you can paste it. Cool. So what we're going to do here is that we're gonna paste it, we hit enter, and then we give the password of 1234. After doing this, as you can see, there is going to be a screen that is going to show you all the installation for this packages.
+
+So let's wait until this finishes. Great. The installation already finished, so we're going to be following the guide. We're going to copy and paste this command, which is going to, as you can see here, it's going to add the repository for CentOS. Please remember that these steps are for CentOS only. If you are using another distribution, please read the Debian, Fedora, or Ubuntu documentation. Okay, so the next thing that we're going to do is that we're gonna install the repository as simple as this, yum install docker-ce, and that's it.
+
+So this is going to ask for approval. We're gonna say yes here, hit enter, and then we just need to wait until this installation finishes. It's going to ask for approval again, so you hit yes, and then we wait until this finishes. It may take some minutes, so don't worry if the screen gets stuck for some seconds. It's normal. Okay, as you can see here, the installation already finished and we are ready to go.
+
+So after this, we're done with this guide. We can just start the service. As you can see here, we're just gonna copy this command and we're gonna start the Docker service. Now we're going to enable the Docker service at boot. It means that whenever our machine reboots, the Docker service is going to start with our system. So for doing this, we type sudo systemctl enable docker. Okay, nice. And now, if you want to test your installation, you do a docker ps, and you have an error here.
+
+So how do you fix this error? This is pretty simple. We're going to do a sudo usermod -aG, and then we say docker jenkins. We hit an error, and what do we do here? Usermod is a Linux command that allows us to modify an existing user. As you can see here, we're using the user Jenkins, so we are telling here to Linux this. We're saying, hey, Linux, please add the user Jenkins to the group Docker. So that's what we have just done, and if we type docker ps, we still have that error, and that's because we need to log out and then log back in.
+
+So we're gonna log out of here and we're gonna open up our PuTTY session again. We click on load, we click on open. then we type the user, Jenkins, the password, 1234, and we try again typing Docker, and nice. This is working like a charm.

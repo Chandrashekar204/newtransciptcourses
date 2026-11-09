@@ -1,0 +1,11 @@
+# 4.34 — Error Handling with "try-catch" - An Introduction
+
+> Section 4: Working with Control Structures (if Statements, Loops, Error Handling)
+
+Now after all these if statements and all these loops, I want to conclude this module by diving into error handling, another form of controlled structure you'll need in your Javascript code to build code that runs under different and also under harder circumstances. Now what do I mean by that? In the Javascript applications, in the programs you're going to write, you can't always avoid all errors. Some errors can't be avoided and with that I of course mean errors that are beyond your control as a developer.
+
+So I'm not talking about bugs which you introduced into your code or about syntax errors, you should have a look at the debugging module in this course to learn how you can fix and avoid such errors, I'm talking about errors which you can't rule out when you're writing your code, for example user input errors, that a user enters text like hi in a field where you expect a number or network errors, that you're maybe communicating with some server, something we haven't done yet but which we'll do later down in the course and that server is offline or something like that, so basically things where you have no chance of ruling out that this problem occurs because you can't control what a user types into the input field.
+
+You can do your best to kind of restrict the options to user has but ultimately, users might always find a way of breaking your code so to say and the same for network errors, you can't rule out that a server might be offline when you're trying to talk to it. So the best you can do in these cases is that you throw your own errors and catch errors to fail gracefully, which means maybe at least show the user a nice error message or in the best possible case, maybe you can write some fallback code so that you can recover and you don't even need to show an error message to the user and you can do that with try catch, another control structure which Javascript exposes to you that allows you to try a certain code which might fail and then catch potential errors thrown in that code to then do something with them or to do something indicates that such an error occurred.
+
+----------------------------------------

@@ -1,0 +1,19 @@
+# Persist the script on the remote host
+
+*Section: Jenkins & AWS*
+
+Instructor: Hello and welcome back. In this video, we're going to learn how to persist the script that we just created in the remote host container. So I'm outside of the container, as you can see here, but remember that we created the script inside of the container for the remote host service. So if we go here and we'll look for that file, it's going to be there. But what happens if for some reason you delete all of your services, or not all of your services, but you delete your remote host service.
+
+So let's delete this. To delete a container, you type docker rm -fv and then you hit enter and your container is no longer alive. So if you recreate your container with Docker compose up -d, please make sure that you are at the same level of your Docker compose file. You are going to see that Docker is going to recreate it. So if you tap Docker ps, you have your host back. But if you exec into that host again and you try to look for your script, then it's not going to be there, because whenever a container is deleted, everything is deleted as well.
+
+So that's why we use volumes. As you can see, the script doesn't exist, which means that if I run this job, this is going to fail, because the file is not going to be found. So we should have a network in here exactly like this, console output, and then exactly the same error. There is no file with that name. So we're going to make this file permanent using volumes in Docker. So this AWS-S3 file is the file that we created.
+
+I just copied this outside of the container and now we're going to mount this file permanently in the container. So let's modify our Docker compose file. Let's look for the remote host. And now we're going to add a volume section in here. So let's go ahead and add the volumes. And now we're going to save. From the current path, which is PWD, we're going to use the AWS-S3, the AH file that we created.
+
+Remember that this file is only a name. You can name it whatever you want. And now we type column, which means that this is the host, your virtual machine. Now we're going to talk about the container. So we want this to be copied to /tmp /script.sh, because remember, that's the name that we define in Jenkins. So once we do this, our script is going to be permanently mounted to this directory. So if I save this, remember that for your changes to take effect, you need to do a docker compose app -d to recreate your services, as you can see here.
+
+So now if you take a look on your remote host and then you look for tmp script.sh you are going to find your script there. And now if you delete your host and then you recreated it, you are going to see that the file is still there. Because we mount this file as a volume, it means that this file is always going to be available inside of the container. So in here, we're just going to execute this script back.
+
+Let's click on the build with parameters button. Let's hit build. Let me reload the page in here. And this is still failing, why? Oh, because it's permission denied, as you can see here. So if we go outside of the container and you look for the permissions in this file, this is not green. So we need to give executable permissions. Change mode plus X to this guy. And if we go inside of the container and we look for the type directory, you are going to see that this is exactly the same file and the permissions change exactly the same, because this is the same file.
+
+So if now we execute this back, this should work. So let's wait until this finishes and cool, let's look for the console output. Okay, right, it worked. So let's refresh this and we have our dump in here. Pretty nice. So now your script is permanent on your remote host and even if you delete the container, your script is going to survive. So this is it for this video. I'll see you in the next lesson.

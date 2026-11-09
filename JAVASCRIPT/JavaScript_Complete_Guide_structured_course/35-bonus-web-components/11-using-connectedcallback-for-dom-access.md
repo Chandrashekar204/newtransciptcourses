@@ -1,0 +1,9 @@
+# 35.11 — Using "connectedCallback" for DOM Access
+
+> Section 35: Bonus: Web Components
+
+Now with the lifecycle methods on your elements explained, it should be clear why append child causes an error here. In the constructor, the element has been created but it has not been added to the DOM yet and therefore trying to append a child which tries to append it to the real DOM will fail, instead you should add the connected callback method here and make sure you spell this right because the browser will look for exactly that method, spelled exactly like that, it is case sensitive so make sure you have a capital C in there but a lowercase c at the beginning and now we can grab all that code here where we want to append a child or where we create a child, we can move that into the connected callback. Now with that, no other changes, if I now save that and I then reload this page, now you see we get no error and we see our question mark being rendered here at the beginning.
+
+Now obviously, it's added in front of our web components text and not after it and that is not the place where we want to have it, I'll come back to how it ends up there later but at least we can see we can now render something without errors and the key takeaway, which already shows a little bit of the use custom components give us, is that this question mark is not part of our HTML markup here but it's really something that is controlled by our web component and again, we'll add more usefulness to that and more features over the next lectures but this is now a crucial first step and it's also important to understand that we are using the connected callback here because we are accessing the DOM and our element has only been mounted onto the real DOM when this method gets called.
+
+----------------------------------------

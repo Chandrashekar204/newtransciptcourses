@@ -1,0 +1,15 @@
+# 2.35 — The "typeof" Operator
+
+> Section 2: Basics: Variables, Data Types, Operators & Functions
+
+Now that we had a thorough look at these basic and very important types you can use in Javascript, these types of data, I want to show you a little keyword which you can use in your code here of course as well and that's the typeof keyword. The typeof keyword lets you evaluate the type of a variable at runtime. Now we could use it here but to quickly see the result, I'll just do it here in this console. You use it by typing typeof and then the name of the variable which you want to evaluate or of course just the hardcoded value like this string here.
+
+So here if I run this, you see I get back a string which contains the name of the type I used, so here it's a string with the name string in it and indeed that is the case here, right, that is a string. Now of course we could also use our userName variable which we initialized earlier, set this to Max and check typeof userName here and we'd also get string, right. So we can also use a variable here and you'll get the type of the value that's stored in the variable.
+
+Now we can of course also check the type of a number and you see it is number then, it's a string which simply contains that description of the type, so in this case number or the name of the type, so in this case number and that's the same no matter if we use an integer as here or a floating point number as we do here. We also can check typeof true, now we haven't really worked with true or false yet but these are these booleans I mentioned and hence of course it prints boolean here. We can also check the type of an array, like this and you see here we actually get object and that's interesting, an array is a very important feature, very technically though it's of type object, so there is no special array type.
+
+It's a special type of object if you will but the overall type is just object. So thus far, we saw a string, number, boolean and now object. Now unsurprisingly, if I check the type of an object which I create with curly braces here, I also see object being logged here. So they are of the same type and array is just a special type of object you could say. Now if we check undefined, we see as I mentioned that this has its own type, undefined, on the other hand null is also just of type object, so it also has a type, a special type which is not the same as undefined but it's not type null but instead type object, so another special kind of object if you will. If you on the other hand check not a number written like this, we see it's of type not a number, so this is not an object, this is not undefined, this is not its own type, this is a number instead.
+
+So typeof, quite nice here to get an understanding of which kind of data you're working with, of course we'll see all these different types of data in action throughout this course and all the examples where we need to work with numbers, with strings, with arrays, with objects and so much more.
+
+----------------------------------------

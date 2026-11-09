@@ -1,0 +1,13 @@
+# 38.1 — Module Introduction
+
+> Section 38: [BONUS / OPTIONAL] React State & Working with Events
+
+Maximilian: Now, that we learned about some important basics of React, most importantly, about components and props It's time to take the next step. And in this course section, we're going to take a closer look at user interaction and handling user events like clicks or input into text fields and so on. And we're going to have a look at the very important concept of state in React apps because, you might remember, that I mentioned earlier in the course that with React we follow that declarative approach where we, in the end, define desired target states and React then takes care about reaching that state.
+
+Well, that is correct and that is already something we're using but, at the moment, in the application we built thus far and with the knowledge we gained, up to this point, we can only build static applications where the state never changes, where we always output exactly the same. And that's typically not what you want. You want to have applications which are interactive, so that you can React to clicks by the user and to data being entered by the user and which are reactive so that the application also changes when certain things happen.
+
+And, therefore, in this course module we are going to take a look at handling events, handling user events, like clicks and so on. And we'll see how that works in React apps, how we can add such event handlers and more. And then, we're going to take a look at how we can ensure that what's visible on the screen changes, that we reach a different target state. And for that, we're going to take a closer look at this state concept in React and we'll learn how we can manipulate the state and transition from state A to state B, if we want to.
+
+And, in general, in this section we're going to learn about a couple of key concepts. This is a section you absolutely should not skip. And we're also going to take a closer look at components and state again. So, this is another fundamental section covering core features of React, so let's dive in.
+
+----------------------------------------

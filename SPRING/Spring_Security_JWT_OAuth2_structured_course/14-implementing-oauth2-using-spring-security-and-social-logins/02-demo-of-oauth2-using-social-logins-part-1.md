@@ -1,0 +1,29 @@
+# 14.2 — Demo of OAUTH2 using social logins - Part 1
+
+> Section 14: Implementing OAUTH2 using spring security & social logins
+
+Instructor: To create a new Spring Boot application, I came to the website start.spring.io. Here, I have selected the options Maven, Java, and Spring Boot defaulted version. Coming to the group, I have mentioned com.eazybytes and the artifact as springsecurityOAUTH2. The same artifact ID name I have mentioned under the name as well. Under that description, we can say OAUTH2 demos using social logins. So this is the description, and package name, I have mentioned the com.eazybytes, packaging as Jar, and the Java version I have selected 21, which is the latest and the greatest LDS version while I'm recording this lecture.
+
+Coming to the dependencies, first we need to add Spring Web since we are looking to build an web application with a secured API path. After selecting the Spring Web, I'm also going to add devtool so that we don't have to restart manually every time. And after the devtools, we need to add our hero, which is spring security. And after the spring security, I'm going to add OAuth2 Client because my Spring Boot application itself is going to act as a both client and the Resource Server.
+
+That's why I'm going to select both OAuth2 Client and OAuth2 Resource Server. Whereas the other dependency that we have which is, OAuth2 Authorization Server, we need to use this when we are trying to build our own Spring Authorization Server. We're going to explore this library in the coming sections. For now, we should be good with these five dependencies. Let me click on this Generate button. The downloaded project I'm going to paste inside the section_14 inside my workspace.
+
+So let me paste this archive and let me extract this. Once the extraction is completed, I can go to my IntelliJ and try to open this project. Inside this IntelliJ window, I'm going to click on this Open and I will go to Storage, Workspaces, spring-security, section_14, springsecurityOAUTH2. I'm going to select and click on this Open button. As a very first step, I'm going to create a new package with the name controller. Inside this controller package, I'm going to create a new Java class with the name SecureController.
+
+Let me mention the annotation, which is @Controller. I'm not going to build an REST API here. I'm going to build an MVC path. That's why I'm using @Controller annotation instead of @RestController annotation. Next, I'm going to create a method which is going to support @GetMapping with the path name as secure. So let me create the method with the public string, and the method name, I'm going to keep it as securePage(). So this method, it is not going to accept anything for now.
+
+Later on we are going update this method. So whenever someone is trying to invoke this method, they're going to get an HTML page with the name secure.html. This is just a simple MVC path. We don't want to build complex logic because we're trying to see the demo of OAuth2 but not the MVC paths or REST APIs. As a next step, I need to create an HTML file inside my static folder under the resources. So let me select this new HTML file and give this file name as secure.
+
+Inside the secure.html, I'm going to mention the title as Sample OAuth2 Client App. Under the body, I'm going to create an h1 tag. Inside this h1 tag, I'm going to have a simple message, which is, Hey, I'm a secured page with some exclamation marks. So this is my simple secure.html. Next I'll go to the application.properties. I'll try to add some username and password, which we can use whenever we're trying to access the secured page using normal login flow.
+
+So here I'm going to paste few properties. The very first property is spring.security.username. I have set the username as eazybytes and the password as 12345. If you want to override these values, you can provide these environment variables. Apart from these username and password, I also enable the trace level login for the Spring Security related packages. At last, I also mentioned a logging pattern to display the logs inside my console. All these properties we already discussed in the previous sections.
+
+I'm just trying to copy them here as well. So once I pasted these properties, let me save these changes and do the build. Once the build is completed, I'll go to the Spring Boot main application. As of now, I have not done any changes related to the Spring Security configurations, or OAuth2 related configurations. So let's try to do that once we saw the behavior of this application with these code changes. So I'm going to start this application in a debug mode.
+
+Once the application is started, I'm going to access my secure path by providing the URL as localhost:8080/secure. As soon as I press Enter, you'll be able to see I'm getting a login page, and here I'm going to enter the username as eazybytes and the password as 12345. Once I click on the Sign in button, I'm going to get a response from my backend saying that, Hey, I'm a secured page. So this is the content that we have mentioned inside the secure.html.
+
+So this is simple Spring Boot application, which is being secured by default since we have added the Spring Security dependency inside the pom.xml. So as of now, we only have a normal login flow. As a next step, what we can do is we can try to add the OAuth2 capabilities as well. What I'm trying to build here is, I'll give an option to my end user to either use normal login operation where he can enter normal credentials, or he will be able to login into the application with the social logins as well.
+
+I'll give options like GitHub and Facebook using which my end user can access the secured API. So let's try to enhance this web application further inside the next lecture. Thank you, bye.
+
+----------------------------------------

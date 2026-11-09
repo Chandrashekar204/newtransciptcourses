@@ -1,0 +1,27 @@
+# 6.4 — Traditional Switch Statement Challenge And Practical Exercises
+
+> Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications
+
+Kind: captions Language: en In the previous few videos, we looked at the switch statement, and how we can use it in a similar way, to an "if" statement. We talked about the traditional version, which you'll see in older applications. We've also looked at the enhanced version, which I would recommend if you're using JDK 14 or greater, and if you also have the luxury of not having to have your source code be compatible with older versions of Java.
+
+In this video, I'll give you a chance to work on a challenge, using the traditional switch statement. Let's look at the slide we saw in the last video, which describes the syntax of both: The version on the left uses colons to start a case block, case 1: for example, which makes it a traditional switch. This means it permits fall through to occur, and it can't be used as an expression. Therefore, in this type of switch, it's important to ensure you include a break statement in each case block, to prevent accidental fall through.
+
+On the right, where the switch expression arrow replaces the colon in the case label, the break statement isn't part of the new syntax, and you shouldn't use it. Ok, so keep these two variations in mind. You can come back to this slide, to refer to what we mean by traditional vs. enhanced. Now, for the first challenge. In this challenge, you'll be using the NATO alphabet to replace a character or letter, with NATO's standardized word for that letter.
+
+In radio transmissions, the word car, "C", "A", "R", would be read, "Charlie Able Roger", for clarity. You'll take a single character and return the matching word from the NATO phonetic alphabet, shown on this slide. We'll just do this for the letters A, through E. To do this: Create a new char variable. Use the traditional switch statement (with a colon in case labels) that tests the value in the variable from Step 1. Create cases for the characters, A, B, C, D, and E. Display a message in each case block, with the letter and the NATO word, then break. Add a default block, which displays the letter with a message saying not found.
+
+Okay, so your challenge is to create the switch statement, testing for the values, "a", through "e", in the cases. Display a message, if any of these are found, that prints the character and the NATO word, that represents that letter, and then break. Add a default label, which displays a message saying, "Letter was not found in the switch", and include the letter in the message. All right, go ahead and do that, and pause the video now. When you're finished, come back, and you can check out my solution.
+
+Ok so, did you figure it out? What we need to do is very similar to what we've already done, in the previous videos, using the traditional switch statement. The main difference will be, that we're using a char, instead of an int. So let's add this code: char and I'll call it char value and assign it the letter A. switch charValue in parentheses and a left curly brace. case A in single quotes, and a colon. print A is able. and break. close the switch statement.
+
+Ok, so what we have first here, is our variable declaration and assignment. I hope you remembered that char uses single quotes, as you can see on line 5. And then, just like we did before, we have our switch statement with the value to test, which is inside parentheses, and we're testing charValue here. This is followed then by the opening curly brace to start our switch block. Next, I'll add our first case, which is case "A", using the single quotes for our char value, and then followed by the colon, which is how Java determines what type of switch it is.
+
+If the case is true, we print out, "A is able", and then break. So that's the first case. But of course, we have more tests we need to do, and a default message we need to add. So let's quickly add those in: case B this time. and print B is baker. and break. C this time. printing C is charlie. break. Case D. print D is Dog. break. case E. print E is easy. and break. So here, we've just set up the other cases. Because we're printing something different for each letter, we don't have the need for multiple case labels.
+
+And now let's include that default label: default colon. I'll print letter with a space at the end in double quotes, then append char value, and then append another literal string indicating we didn't find a match. and break. All right so that's our switch statement, with the first 5 letters in the alphabet coded. If we give that a go, we've got the value "A" that we've defined, so we should get a message saying, "A" is able. And we can see we get "A" is able, printed out.
+
+I'll change the value to B, and run the code again: make char value B this time. And of course now, "B is baker". Lastly, we can put something like an X there. And now we get the default case, "Letter X was not found in the switch". So that's how we use the primitive type char, in a switch statement. So that was pretty easy, and basically what we saw with using an int type. Ok, so that was using a traditional switch statement to do some work conditionally, based on the value of the character that was passed to it.
+
+In the next video, I'll have another challenge for you, but in that challenge, you'll be using the enhanced switch statement.
+
+----------------------------------------

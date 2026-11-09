@@ -1,0 +1,25 @@
+# Install MySQL Client and AWS CLI
+
+*Section: Jenkins & AWS*
+
+-: Hello and welcome back. In this video we're going to learn how to install the MySQL client and how to install the AWS client as well. So remember that we're going to be taking a backup from a MySQL database. So for that we need to have MySQL, right? And the second thing is that we're going to take that backup and we're going to upload it to Amazon. So we need to have the AWS client installed. So if you see here, this is our remote host.
+
+So let's go ahead and get inside of this container. Type in docker exec dash ti remote host bash. My bad. And then if you type MySQL you are going to have this error. mysql command not found. So if you type aws, you're going to have command not found. So we need to fix this. We need to install this client and this client because with this one we're going to take the MySQL backup. And with this one we're going to upload that backup to Amazon as three.
+
+So, okay, to fix this we need to modify the remote host docker file. Remember that docker file? This is under the centos7 directory. This is our docker file. So let's go ahead and modify this. And in here we're going to run a new command. And the first thing that we need to do is that we need to install MySQL. So let's go ahead and type yum dash y, install mysql. So in this way this is how we install mysql client for centos.
+
+So if you want to know, you can Google and you say install mysql client for centos 7. And you're going to find out the same text that I'm typing here which should be pretty simple. As you can see here, yum install mysql actually installs the client, pretty nice. So cool. In this way we're going to have mysql install here the client in that remote host. So now we need to start installing AWS CLI in order to upload our backup to Amazon S3.
+
+So let's go to google.com and let's look for how to install aws cli or maybe using pip. Pip is a utility for Python which actually allows you to install a lot of packages. So let's go to this result. And as you can see here, this is exactly what we need. So we're going to copy this in our docker file. So we're going to create a new run instruction here. Let's paste this. And as you can see here we're only downloading a Python script in here.
+
+So let's see what else we need to do after that. We need to execute this script using Python. We're not going to be using this dash dash user flag because we're working as the root user and the root user doesn't need this. So let's copy this. Let's paste this in here and let's say ampersand ampersand back slash. And after that the only one thing that we need to do is to install AWS CLI using this dash dash upgrade.
+
+Remember that we're not going to be using this dash dash user because we're using the user route. So let's copy this, let's paste this in here. And this is pretty cool. So in this line, we're telling Docker to install mysql. In this second line we're instructing Docker to first download this Python script. Second, run that script, and third install AWS CLI using this Pip utility that we installed above.
+
+So cool, let's go ahead and save this. At this point our Docker file contains all the instructions that we need to install MySQL and AWS CLI. So now we need to build this image. So remember that we're in the centos7 folder and we don't have any Docker compose file here. So let's go back to the folder where we have our Docker compose file and let's build our image in here. So let's go ahead and type docker compose build, hit enter.
+
+And as you can see, this is going to start installing MySQL and then it's going to start downloading this script it's going to execute it, and finally it's going to install AWS CLI. Cool. So we only need to wait until this process completed and then we will have our image ready, the process already completed. And as you can see, our image was built without any problem. So now we need to recreate our remote host service because if you go ahead inside of that remote host container, and if you type my SQL, you still don't have MySQL even though when you already built the image.
+
+So for those changes to take effect, you need to recreate that remote host container to use the new image. So if you do a docker compose up, dash d let me clean this screen here, and then you hit enter you are going to see that that remote host container it's going to be automatically recreated. And that's because Docker knows that we created a new image and now Docker, it's going to update this service using that new image, which has MySQL client and AWS client as well.
+
+So now if we go again inside of the remote host container and we type MySQL, you can see that we now have different erroring here, which is pretty cool. And if we type aws now we have options, which is pretty good. It means that our installation was successful. So now you have in your container mysql and aws client to start playing around with your process. So this is it for this video. I'll see you in the next lesson.

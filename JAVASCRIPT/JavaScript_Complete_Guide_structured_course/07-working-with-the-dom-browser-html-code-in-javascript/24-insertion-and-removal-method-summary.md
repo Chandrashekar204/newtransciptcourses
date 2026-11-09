@@ -1,0 +1,13 @@
+# 7.24 — Insertion & Removal Method Summary
+
+> Section 7: Working with the DOM (Browser HTML Code) in JavaScript
+
+So we learned about a lot of different insertion and removal methods, let me now summarize the important ones which we used here. Now I'll not dive into the innerHTML and insert adjacent HTML methods which I also showed you but focus on the ones where we created a new DOM object programmatically in Javascript. We can then add such an object with append child, with insert adjacent element, replace child or remove child. Now I haven't shown you replace child, in the end this also just is a convenient method for replacing one element with another one. Now attached you also find a detailed summary document which you can have a look at to find an overview over all the methods you have available and when to use which, I strongly also recommend having a look at that.
+
+We also had a look at some of the more modern methods - append, prepend, before, after, replace with and remove. Now the main difference here is really browser support, also a minor thing might be that you find more examples on the Internet using these older methods which have been around for longer than for these newer methods because these have also a good browser support as you saw but some browsers are not supporting all methods, for example Safari doesn't support before and after, it supports the other methods but Internet Explorer is a big problem there.
+
+So this might be an issue if you need to support these browsers and you will also see them a bit less often used in some of the other tutorials you find on the web which is why I find it important to learn all of them. If you want to be super safe regarding support and so on, you want to use the left ones but the right ones also are pretty good, mostly if Internet Explorer users are not that important for you and as I already mentioned, later down in the course, you will also learn how you can actually ensure proper browser support even if you are using features that are not supported in all browsers out of the box. So you will even learn about ways of making these methods run in older browsers as well later down in the course, in the browser support course module.
+
+Now again, check out the attached document as well, there you find a full list of all the methods you have available for that, what they do and when to use which and with that, that should be all, super clear. Now still, that was a lot of theoretical knowledge now, now it's also time to apply at least some of these methods and features in a simple project so that we can see how we would use them in a more realistic app.
+
+----------------------------------------

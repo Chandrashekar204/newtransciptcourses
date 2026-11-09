@@ -1,0 +1,29 @@
+# 4.5 — Creating our own custom tables for Authentication
+
+> Section 4: Defining & Managing Users using a database
+
+Instructor: As we are discussing in the previous lecture, many times we will end up into the situations where the business people or the team manager or the team lead, they may not be comfortable in using the exact schema recommended by the SpringSecurity team. As of now, we can see we have the user table, and this user table, it has a simple three fields like username, password, and enabled. We don't have any sequence-related columns and it misses a lot, many other fields.
+
+Like sometimes we may want to have the column name as email instead of username because some automations, they accept the email as a username. So for all these kind of situations we should obviously create our own custom tables and inside these custom tables we should store the user details. Once we set up all the custom tables and data, we should update our SpringSecurity code to leverage these custom tables while performing the authentication.
+
+This is going to be our next enhancement inside our application. What I'm going to do is, I'll try to create one of the custom table. So here, I'm trying to create a customer table instead of users table. I want to have a different table name. That's why I'm trying to have the table named as customer, and I'm trying to create an ID column, which is going to have a sequence number for each customer record. And this is going to act as a primary key, that's why I'm trying to mention this primary key, and the sequence value, and say this ID is going to be auto-incremented.
+
+Next, instead of username, I'm trying to mention email of type, varchar, with the length of 45, and coming to the password, instead of password, I just wanted to keep a short name for the password column, which is PWD. And the varchar length, I'm trying to provide 200 because when we try to hash the passwords, the length is not going to be small. That's why I'm trying to give some 200 as the length. And at last, I also have a column representing the roles or the authorities the user is going to have.
+
+So the column name, I'm trying to give role. So this is a just a simple custom table I'm trying to create here. But in reality, in real projects, you may have more than 50 columns representing your customer like mobile number, what are the address details? You may have a lot, many other columns, but I want to keep it simple for our discussion. Since we are landing only SpringSecurity, let's focus on a SpringSecurity perspective and let's try not to complicate our discussion by creating so many columns.
+
+I hope you are with me. So all these three columns are going to be Not Null columns. So I'm going to execute these queries, and with that we are going to have a new table inside the eazybank database. So let me log out and log in again to confirm if the table is created. Yes, the table is created with the columns, ID, email, PWD, and role. For your reference, I'm going to keep the create script that I have executed just now inside the scripts.sql.
+
+You can find this inside the GitHub repo under the section4. Next, we need to populate some dummy data into this table. What I'm going to do is I'll try to copy the script here and I'll try to paste it here and post that I'll try to remove these ignore and I will just mention insert into customer values. I'm going to mention the username as some email, like maybe I'll just mention happy@example.com. This is the email value, and the password, I will try to keep it the same password.
+
+And the role I'm going to mention read role. As of now, we don't have any logic related to the role or authorities. When we start discussing about the authorization and role-based access mechanism in the coming sections, I'm going to further upgrade this table. But now I just have some dummy role data here for this user. So let me try to copy the script one more time. And this time I'll try to mention the email as admin@example.com, and I'll try to copy the same password that we have here.
+
+So this is a hash value representing the password, which is EasyBytes@54321. And at last I will try to give admin role to this user with the email admin@example.com. So let me copy these two scripts and paste it here. Now I'm trying to exclude these statements. I'm getting an error here because we have a total four columns inside the customer table, ID, email, PWD, and role. This ID column value, we want the database server to automatically generate a new sequence value for each record.
+
+So to resolve this issue, we just have to provide the column names that we're trying to insert the value. So let me try to mention the column names after the table name. So after the table name, I'm trying to mention the column names as email, PWD, and role. Let me do the same in the next script as well. And now I'll try to execute these scripts. This time the scripts execution is successful. We can validate the data inside the customer table. You can see there are two different users with the ID, one and two.
+
+You can also validate the data that we have provided. The same data is inserted into the table. Let me paste the updated script values here for your reference. So please use them to insert the similar data inside your database as well. In the coming lectures, we are going to build a REST API, which is going to support registration of a new user with the code. Instead of we inserting all these data every time, we're going to build a REST API using which we can create any number of customer data.
+
+I hope you are with me. In the next lecture, let's try to update the backend code as per the new table that we have created so far. Thank you and I'll catch you in the next lecture. Bye.
+
+----------------------------------------

@@ -1,0 +1,29 @@
+# 16.1 — Introduction to Spring Authorization Server
+
+> Section 16: OAUTH2 Auth Server using Spring Authorization Server
+
+Instructor: Inside this section we are going to discuss on how to build our own auth server based upon the OAuth2 framework by using Spring Authorizations Server project. Inside this spring.io website, if you can go to the projects and click on the Spring Boot, you'll be able to see list of projects supported by the Spring framework. Here there is an option with the name Spring Authorization Server. Using this project or using this framework, we should be able to implement our own authorization server that follows the standards of OAuth2.1 under OpenID Connect 1.0.
+
+So here you may have a question, which is when we already have good products like KeyCloak and Okta, why should we want to build our own auth server? So this can be your question. To answer this question, I want to take some real life example. Inside your friends circle or inside your family, you'll always see two kinds of people. The very first set of people, they always encourage you to buy your own house by putting some good amount of investment and taking a loan.
+
+Whereas other set of people, they'll advise you don't buy any own home, be on the rent. If you are on the rent, you'll always have flexibility, like you can move to any new place. You don't have to worry about selling your own home. So these kind of advices you'll see, I don't want to comment who is right or who is wrong here. The same kind of example or scenario applicable for auth service as well. So few organizations, they may want to leverage the readily available products like KeyCloak, Okta.
+
+So when they're using these products, they will hire people who are experts in setting up these products. And most of the times companies also will end up paying money to the companies who own the product. In the scenario of Okta, they will end up paying some monthly based amount. So this is like a rent scenario. By using this option, companies always can throw the product and they can move on to the new product in the coming days. Whereas few organizations, if they want to save some money on the monthly bills, what they can do is they can invest some amount initially by bringing some developers and forming a team.
+
+So with the help of this new team, they're going to build their own auth server. So when a team is trying to build their own auth server, they don't have to start from scratch. They can leverage this framework, which is Spring Authorization Server to build their own auth server. This project also is introduced pretty recently by the Spring team. Spring Security was there from more than a decade, whereas Spring Authorization Server, it is released around 2023.
+
+So it is a pretty new project. That's why you'll be able to see right now the version that I'm teaching is 1.3 0.1. I'll try to teach you on how to build our own auth server with the help of this framework so that you are aware of both the options. If your company chooses products like KeyCloak or Okta, you can happily use them. You just have to make some configurations inside your resource server. And with that you should be good. Whereas if your organization decided to build their own auth server, then this is the framework that you can rely on.
+
+So let's try to create our own auth server. For the same, I will go to the start.spring.io website. Here in this website, I have selected the options language as Java, build tool as Maven. Coming to the spring boot version, I'm fine with these default select latest to stable version. Under the group I have mentioned com.eazybytes and the artifact and name I have mentioned as auth server and description you can see, I have mentioned demo project for auth server and the Java version right now I'm using is Java 21.
+
+Coming to the dependencies. First I need to add the dependency, which is OAuth2 authorization server. So this is going to provide Spring Boot integration for Spring Authorization Framework. So let me add this. When you add this dependency, you don't have to specifically add the spring security dependency. It is going to be transit dependency. That means whenever you are adding this dependency by default, Spring Security will also be added behind the scenes.
+
+Next, let me add dev Tools dependency followed by, I'm also going to add the Lambda related dependency. After these three dependencies, I'm going to add the MySQL related dependencies along with the JPA and JDBC dependencies because I want my authorizations server to use the MySQL database as a storage system to store the end user details. Inside the KeyCloak scenario, we have created the end user details and client details by using the admin console.
+
+Behind the scenes KeyCloak server leverage the Inmemory h2 database for the authentication and for storing other details. But coming to our own auth server, we can leverage the proper production setup by using MySQL database as a storage system. That's why I have added all these dependencies. Now I can click on this generate button. Once the project is downloaded inside my workspace location, I'm going to create a new folder with the name section_16.
+
+So inside this folder I'm going to paste the downloaded project. So let me extract this ZIP. Once the extraction is completed, I can delete the .zip file and I'm going to open this auth server inside my IntelliJ. So this is my auth server, which I just now downloaded. As of now. You can see this is going to be completely an empty project, which does not have any useful configurations. As a next step, let's try to make some configurations inside this project to set up our own auth server.
+
+Thank you and I'll catch you in the next lecture, bye.
+
+----------------------------------------

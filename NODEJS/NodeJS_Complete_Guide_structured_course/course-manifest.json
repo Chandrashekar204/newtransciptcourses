@@ -1,0 +1,218 @@
+[
+  {
+    "section": 1,
+    "title": "Introduction",
+    "folder": "01-introduction",
+    "lectures": 9
+  },
+  {
+    "section": 2,
+    "title": "Optional: JavaScript - A Quick Refresher",
+    "folder": "02-optional-javascript-a-quick-refresher",
+    "lectures": 14
+  },
+  {
+    "section": 3,
+    "title": "Understanding the Basics",
+    "folder": "03-understanding-the-basics",
+    "lectures": 17
+  },
+  {
+    "section": 4,
+    "title": "Improved Development Workflow and Debugging",
+    "folder": "04-improved-development-workflow-and-debugging",
+    "lectures": 16
+  },
+  {
+    "section": 5,
+    "title": "Working with Express.js",
+    "folder": "05-working-with-express-js",
+    "lectures": 21
+  },
+  {
+    "section": 6,
+    "title": "Working with Dynamic Content & Adding Templating Engines",
+    "folder": "06-working-with-dynamic-content-and-adding-templating-engines",
+    "lectures": 18
+  },
+  {
+    "section": 7,
+    "title": "The Model View Controller (MVC)",
+    "folder": "07-the-model-view-controller-mvc",
+    "lectures": 10
+  },
+  {
+    "section": 8,
+    "title": "Optional: Enhancing the App",
+    "folder": "08-optional-enhancing-the-app",
+    "lectures": 9
+  },
+  {
+    "section": 9,
+    "title": "Dynamic Routes & Advanced Models",
+    "folder": "09-dynamic-routes-and-advanced-models",
+    "lectures": 20
+  },
+  {
+    "section": 10,
+    "title": "SQL Introduction",
+    "folder": "10-sql-introduction",
+    "lectures": 14
+  },
+  {
+    "section": 11,
+    "title": "Understanding Sequelize",
+    "folder": "11-understanding-sequelize",
+    "lectures": 27
+  },
+  {
+    "section": 12,
+    "title": "Working with NoSQL & Using MongoDB",
+    "folder": "12-working-with-nosql-and-using-mongodb",
+    "lectures": 33
+  },
+  {
+    "section": 13,
+    "title": "Working with Mongoose",
+    "folder": "13-working-with-mongoose",
+    "lectures": 21
+  },
+  {
+    "section": 14,
+    "title": "Sessions & Cookies",
+    "folder": "14-sessions-and-cookies",
+    "lectures": 20
+  },
+  {
+    "section": 15,
+    "title": "Adding Authentication",
+    "folder": "15-adding-authentication",
+    "lectures": 21
+  },
+  {
+    "section": 16,
+    "title": "Sending Emails",
+    "folder": "16-sending-emails",
+    "lectures": 6
+  },
+  {
+    "section": 17,
+    "title": "Advanced Authentication",
+    "folder": "17-advanced-authentication",
+    "lectures": 12
+  },
+  {
+    "section": 18,
+    "title": "Understanding Validation",
+    "folder": "18-understanding-validation",
+    "lectures": 17
+  },
+  {
+    "section": 19,
+    "title": "Error Handling",
+    "folder": "19-error-handling",
+    "lectures": 13
+  },
+  {
+    "section": 20,
+    "title": "File Upload & Download",
+    "folder": "20-file-upload-and-download",
+    "lectures": 19
+  },
+  {
+    "section": 21,
+    "title": "Adding Pagination",
+    "folder": "21-adding-pagination",
+    "lectures": 9
+  },
+  {
+    "section": 22,
+    "title": "Understanding Async Requests",
+    "folder": "22-understanding-async-requests",
+    "lectures": 7
+  },
+  {
+    "section": 23,
+    "title": "Adding Payments",
+    "folder": "23-adding-payments",
+    "lectures": 5
+  },
+  {
+    "section": 24,
+    "title": "Working with REST APIs - The Basics",
+    "folder": "24-working-with-rest-apis-the-basics",
+    "lectures": 11
+  },
+  {
+    "section": 25,
+    "title": "Working with REST APIs - The Practical Application",
+    "folder": "25-working-with-rest-apis-the-practical-application",
+    "lectures": 29
+  },
+  {
+    "section": 26,
+    "title": "Understanding Async Await in Node.js",
+    "folder": "26-understanding-async-await-in-node-js",
+    "lectures": 7
+  },
+  {
+    "section": 27,
+    "title": "Understanding Websockets & Socket.io",
+    "folder": "27-understanding-websockets-and-socket-io",
+    "lectures": 14
+  },
+  {
+    "section": 28,
+    "title": "Working with GraphQL",
+    "folder": "28-working-with-graphql",
+    "lectures": 28
+  },
+  {
+    "section": 29,
+    "title": "Deploying our App",
+    "folder": "29-deploying-our-app",
+    "lectures": 16
+  },
+  {
+    "section": 30,
+    "title": "Testing Node.js Applications",
+    "folder": "30-testing-node-js-applications",
+    "lectures": 17
+  },
+  {
+    "section": 31,
+    "title": "Node.js as a Build Tool & Using npm",
+    "folder": "31-node-js-as-a-build-tool-and-using-npm",
+    "lectures": 7
+  },
+  {
+    "section": 32,
+    "title": "Modern JavaScript & NodeJS",
+    "folder": "32-modern-javascript-and-nodejs",
+    "lectures": 6
+  },
+  {
+    "section": 33,
+    "title": "NodeJS & TypeScript",
+    "folder": "33-nodejs-and-typescript",
+    "lectures": 21
+  },
+  {
+    "section": 34,
+    "title": "An Introduction to Deno",
+    "folder": "34-an-introduction-to-deno",
+    "lectures": 18
+  },
+  {
+    "section": 35,
+    "title": "Deno, CRUD & Databases (MongoDB)",
+    "folder": "35-deno-crud-and-databases-mongodb",
+    "lectures": 8
+  },
+  {
+    "section": 36,
+    "title": "Roundup",
+    "folder": "36-roundup",
+    "lectures": 3
+  }
+]

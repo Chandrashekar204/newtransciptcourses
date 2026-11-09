@@ -1,0 +1,29 @@
+# 18.5 — DFS: PreOrder - Code
+
+> Section 18: Tree Traversal
+
+So now we're going to write our code for depth first search preorder. So we'll bring our tree up like this and our call stack. And we'll start out our method like this. It returns an array list of integers. And we'll create that like this. We'll call that array list results. And I'll bring that up on the bottom here. So depth first search is going to use recursion. So that'll be different than what we saw with breadth first search. And what I really want to do here is create a method inside of this method.
+
+But Java doesn't allow you to just create a method inside of a method. But there is a workaround. So I'm going to show you a trick here for putting a method inside of a method. You do this by putting a class? I'm going to call this traverse, because we're going to use this to traverse through the binary search tree. And then you put the method inside of this class. So that's the workaround to put a method inside of a method. So since this has the same name as the class this is the constructor for this class.
+
+So we'll pass this a node. And you'll see in a minute that we're going to pass this the root. So I'm just going to bring in all of the lines of code for this method. And then we'll walk through it. So I'll bring all these in like this. And we'll walk through these in detail in a moment. But we're going to call this method like this. And we do have to use this new keyword because traverse is a constructor inside of a class. And then when we call this we are calling it with the root of the binary search tree.
+
+So now let's just walk through this method line by line. We're going to pass this a node. And then in the next line we're going to add the value of that node to that results array list. And then we're going to look to the left to see if there's a node there. If there is we're going to call traverse on that node. And we have to use the new keyword here as well because we're calling a constructor on a new instance of traverse. And then we'll do the same thing on the right if there's a node on the right.
+
+So that is everything in the traverse method. So remember, we're kicking this off down here by passing it the route. So now I'm going to take these lines of code out and focus just on this method. And we're going to move this up and bring all of this stuff back. So when we kick this off and run traverse on the route it adds that to the call stack. So for this instance of traverse we'll run this line first and add the value to the results array list.
+
+And then we'll check to see is there a node on the left. If there is we're going to run traverse on that node. And that adds that to the call stack. Now for this instance of traverse that we're running on the 21 node, we're going to run this line. And that adds that to the results array list. And now the 21 is going to look to the left. And there is a node to the left. That's the 18 node. So now it's going to write its value to the array list. Now the 18 node is going to look to the left.
+
+And there's not a node there. And then it's going to look to the right. And now that instance of traverse is done running and will be popped from the call stack. Now the 21 is the top of the call stack. It already looked to the left. Now it's going to look to the right and add that 27 onto the call stack. And now we'll add that value to results. And then the 27 node is going to look left and look right. And there isn't anything on the left or the right.
+
+So we can pop that from the call stack. Now the 21 is the top of the call stack. It has looked left and it has looked right. So it is done running and we can pop that from the call stack. Now our instance of traverse that we called on the 47 node is the top of the call stack. It has already gone left. Now it needs to go right. So now we'll call traverse on the 76 node. And then we'll run this line and add 76 to results. And then it's going to look left.
+
+And we'll add the 52 node to our call stack. And we'll run this line and add 52 to results. It's going to look left and right, and there's nothing to the left or the right of the 52 node. So we'll pop that from the call stack. Now the 76 is the top of the call stack. It's already gone left. Now it can go right. So we run traverse on the 82 node. And then we'll write its value to the results array list. So we're going to look left and right from that 82 node.
+
+But it is a leaf node so it doesn't have anything to the left or the right. So we can pop that from the call stack. The 76 has now gone left and right. And we can pop that from the call stack. And the 47 has also gone left and right now. And we can pop that from the call stack. So now we're done running all of our instances of traverse. And we've added all of the values to the results array list. So now let's bring back the rest of our code like this.
+
+And we just need to add one line. We need to return the results array list. And that is all of our code for depth. First search preorder. We'll look at this code in a moment in IntelliJ. And when we do we'll create this binary search tree. And we'll run depth first search preorder on that and we'll expect to see this ArrayList returned. So now let's flip over to IntelliJ and take a look at this. So there is our depth first search preorder method that we just created and added to our binary search tree class.
+
+Then I'll come up here to our main class that contains our main method. With this line we'll create our binary search tree, my binary search tree, and then we'll create that tree that we just saw. And then with this line down here we'll run depth. First search preorder on that binary search tree. And I'll run this. And that has returned the array list that we were expecting. And that is our method for depth. First search. Preorder.
+
+----------------------------------------

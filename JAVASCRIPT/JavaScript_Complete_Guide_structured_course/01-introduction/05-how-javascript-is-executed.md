@@ -1,0 +1,15 @@
+# 1.5 — How JavaScript Is Executed
+
+> Section 1: Introduction
+
+Let's have a look at this interpreted on-the-fly compile thing. How is the Javascript code in our browser executed and not just in our browser but typically in any environment where you run Javascript? Let's say you write your Javascript code and you want it to have some effect on the web page if we talk about the browser as the environment where we run our script. Then you have one important thing built into any environment where you want to run Javascript code and that's a Javascript engine.
+
+It's built into the browser as I said, there in Chrome for example, in the Chrome browser, it's v8, that's the name of the engine, in Firefox the name would be spider monkey and of course other browsers also either reuse these engines or have their own engines. Now the job of the engine is to parse code, so parse, read and understand your Javascript code, then on the fly compile it to machine code because machine code executes faster, so it reads your code but it does not necessarily execute it like that but instead, it now takes that code and compiles it to code which is faster to execute by the machine and then it executes that machine code.
+
+This all happens in the browser with the help of the Javascript engine and then when that code is executed, we have that effect on our web page. Now important, modern engines have a lot of optimizations there, they might start executing your uncompiled code and then compile the code whilst they're also already executing it to get started executing faster and then switch to the compiled code dynamically and so on, so we have a lot of optimizations going on here and we will dig a bit deeper into what the Javascript engine is exactly in a separate module in the course, for now this is all we need to know, the browser has a built-in tool that takes our code, compiles it, optimizes it and executes it and also a bit more technical side note, all of that happens on a single thread.
+
+Now this is very technical but you might know that in a computer, you have certain tasks that are executed, for example the browser you opened is a task or actually might consist of multiple different tasks that are executed together. The Javascript code is also yet another task which your operating system in the end has to take care of and this runs on a single thread. Of course we have multi-threading on modern machines so that they can do multiple tasks at the same time but the Javascript code execution runs on one single thread there, so the Javascript code execution always happens in one single thread on your operating system.
+
+Right now this doesn't really matter, it will become more important later in the course though when I will come back to this concept of single threading and which implications this has for Javascript. But with that we know what interpreted means, what compilation means and how the Javascript code is executed. What does dynamic and weakly type mean then?
+
+----------------------------------------

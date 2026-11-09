@@ -1,0 +1,206 @@
+[
+  {
+    "section": 1,
+    "title": "Course Introduction - AWS Certified Developer Associate",
+    "folder": "01-course-introduction-aws-certified-developer-associate",
+    "lectures": 6
+  },
+  {
+    "section": 2,
+    "title": "Code & Slides Download",
+    "folder": "02-code-and-slides-download",
+    "lectures": 1
+  },
+  {
+    "section": 3,
+    "title": "Getting started with AWS",
+    "folder": "03-getting-started-with-aws",
+    "lectures": 3
+  },
+  {
+    "section": 4,
+    "title": "IAM & AWS CLI",
+    "folder": "04-iam-and-aws-cli",
+    "lectures": 20
+  },
+  {
+    "section": 5,
+    "title": "EC2 Fundamentals",
+    "folder": "05-ec2-fundamentals",
+    "lectures": 14
+  },
+  {
+    "section": 6,
+    "title": "EC2 Instance Storage",
+    "folder": "06-ec2-instance-storage",
+    "lectures": 13
+  },
+  {
+    "section": 7,
+    "title": "AWS Fundamentals: ELB + ASG",
+    "folder": "07-aws-fundamentals-elb-asg",
+    "lectures": 19
+  },
+  {
+    "section": 8,
+    "title": "AWS Fundamentals: RDS + Aurora + ElastiCache",
+    "folder": "08-aws-fundamentals-rds-aurora-elasticache",
+    "lectures": 11
+  },
+  {
+    "section": 9,
+    "title": "Route 53",
+    "folder": "09-route-53",
+    "lectures": 19
+  },
+  {
+    "section": 10,
+    "title": "VPC Fundamentals",
+    "folder": "10-vpc-fundamentals",
+    "lectures": 6
+  },
+  {
+    "section": 11,
+    "title": "Amazon S3 Introduction",
+    "folder": "11-amazon-s3-introduction",
+    "lectures": 13
+  },
+  {
+    "section": 12,
+    "title": "AWS CLI, SDK, IAM Roles & Policies",
+    "folder": "12-aws-cli-sdk-iam-roles-and-policies",
+    "lectures": 7
+  },
+  {
+    "section": 13,
+    "title": "Advanced Amazon S3",
+    "folder": "13-advanced-amazon-s3",
+    "lectures": 6
+  },
+  {
+    "section": 14,
+    "title": "Amazon S3 Security",
+    "folder": "14-amazon-s3-security",
+    "lectures": 14
+  },
+  {
+    "section": 15,
+    "title": "CloudFront",
+    "folder": "15-cloudfront",
+    "lectures": 12
+  },
+  {
+    "section": 16,
+    "title": "ECS, ECR & Fargate - Docker in AWS",
+    "folder": "16-ecs-ecr-and-fargate-docker-in-aws",
+    "lectures": 14
+  },
+  {
+    "section": 17,
+    "title": "AWS Elastic Beanstalk",
+    "folder": "17-aws-elastic-beanstalk",
+    "lectures": 13
+  },
+  {
+    "section": 18,
+    "title": "AWS CloudFormation",
+    "folder": "18-aws-cloudformation",
+    "lectures": 18
+  },
+  {
+    "section": 19,
+    "title": "AWS Integration & Messaging: SQS, SNS & Kinesis",
+    "folder": "19-aws-integration-and-messaging-sqs-sns-and-kinesis",
+    "lectures": 21
+  },
+  {
+    "section": 20,
+    "title": "AWS Monitoring & Audit: CloudWatch, X-Ray and CloudTrail",
+    "folder": "20-aws-monitoring-and-audit-cloudwatch-x-ray-and-cloudtrail",
+    "lectures": 29
+  },
+  {
+    "section": 21,
+    "title": "AWS Serverless: Lambda",
+    "folder": "21-aws-serverless-lambda",
+    "lectures": 47
+  },
+  {
+    "section": 22,
+    "title": "AWS Serverless: DynamoDB",
+    "folder": "22-aws-serverless-dynamodb",
+    "lectures": 25
+  },
+  {
+    "section": 23,
+    "title": "AWS Serverless: API Gateway",
+    "folder": "23-aws-serverless-api-gateway",
+    "lectures": 21
+  },
+  {
+    "section": 24,
+    "title": "AWS CICD: CodeCommit, CodePipeline, CodeBuild, CodeDeploy",
+    "folder": "24-aws-cicd-codecommit-codepipeline-codebuild-codedeploy",
+    "lectures": 16
+  },
+  {
+    "section": 25,
+    "title": "AWS Serverless: SAM - Serverless Application Model",
+    "folder": "25-aws-serverless-sam-serverless-application-model",
+    "lectures": 8
+  },
+  {
+    "section": 26,
+    "title": "Cloud Development Kit (CDK)",
+    "folder": "26-cloud-development-kit-cdk",
+    "lectures": 5
+  },
+  {
+    "section": 27,
+    "title": "Cognito: Cognito User Pools, Cognito Identity Pools & Cognito Sync",
+    "folder": "27-cognito-cognito-user-pools-cognito-identity-pools-and-cognito-sync",
+    "lectures": 8
+  },
+  {
+    "section": 28,
+    "title": "Other Serverless: Step Functions & AppSync",
+    "folder": "28-other-serverless-step-functions-and-appsync",
+    "lectures": 12
+  },
+  {
+    "section": 29,
+    "title": "Advanced Identity",
+    "folder": "29-advanced-identity",
+    "lectures": 4
+  },
+  {
+    "section": 30,
+    "title": "AWS Security & Encryption: KMS, Encryption SDK, SSM Parameter Store, IAM & STS",
+    "folder": "30-aws-security-and-encryption-kms-encryption-sdk-ssm-parameter-store-iam-and-sts",
+    "lectures": 20
+  },
+  {
+    "section": 31,
+    "title": "AWS Other Services",
+    "folder": "31-aws-other-services",
+    "lectures": 11
+  },
+  {
+    "section": 32,
+    "title": "AWS Final Cleanup",
+    "folder": "32-aws-final-cleanup",
+    "lectures": 2
+  },
+  {
+    "section": 33,
+    "title": "Preparing for the Exam - AWS Certified Developer Associate",
+    "folder": "33-preparing-for-the-exam-aws-certified-developer-associate",
+    "lectures": 6
+  },
+  {
+    "section": 34,
+    "title": "Congratulations - AWS Certified Developer Associate",
+    "folder": "34-congratulations-aws-certified-developer-associate",
+    "lectures": 3
+  }
+]

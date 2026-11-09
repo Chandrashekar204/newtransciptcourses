@@ -1,0 +1,5 @@
+# Kustomize ApiVersion & Kind
+
+*Section: (2025 Updates)Kustomize Basics*
+
+(gentle piano music) Narrator: Just like any other Kubernetes resource file, you can set the API version and kind properties on a customization.yaml file. There are technically optional, customizable pick up default values, but I recommend that you hard code these values just in case there's any kind of breaking changes in the future.

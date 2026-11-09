@@ -1,0 +1,35 @@
+# 3.9 — Styling Hyperlinks
+
+> Section 3: CSS Fundamentals
+
+-: All right in this lecture we will learn how to style hyperlinks using pseudo classes. But let's start by quickly fixing this red text here that we don't want. And actually what I will do here is to put this back to first child, which remember doesn't work. And then I will place a comment here using command, or control slash, and then I will simply write that this is that misconception that we talked about in the last video. So this won't work.
+
+Okay. And so with this we are starting to document, or code, just a little bit. And so now I will actually add another comment here to say that here we will now be styling links or hyperlinks. Now we could think that this is how we style links. So we just write the A, so selecting all the anchor elements on the page. And then we could, for example, style their color and let's say that we wanted to go with this same blue color here. And then as we reload it, actually these links look already nice.
+
+So this one turned blue, and these ones down here, and probably also these ones, yeah, right. However, doing simply this is actually not a good practice. So we shouldn't simply select the anchor and then style it. Instead, we should style a pseudo class of the anchor because that will then allow us to target different states. So the first one that we want to style is the link pseudo class. So this will basically target all the anchor elements that have an href attribute.
+
+Because remember that we can actually specify anchors, so A elements without the href attribute. And so they would then be targeted with the code that we had before, even though they are not really a link. But with this, so by specifying the link pseudo class this will then only target actual links. So if we reload, it still looks nice. Let me actually show that to you very quickly. So here if we had the color of red and if I then specified an A element somewhere here, A test A, so that's somewhere here.
+
+And so you see that this one is now actually red. And so that's coming from this style here but not from this. And again, that's because this one only targets A element that do actually have an href attribute, which this one does not. So let's get rid of it and also of this rule here. And yeah, so now you know that this is how it should be done. Let's actually keep looking at these links here. Now another thing that's common to do when we style links is to get rid of the underline.
+
+So here is another CSS property to style text, which is text decoration, which we can set in this case to none. But there are a bunch of other values that I will show you in a second, but for now we just want to get rid of the underline. And so in these situations it's very common in multiples, as properties, to use the value of none. And indeed, now it's gone. And the same of course down here, great. Next up we have the visited pseudo class. So, many sites actually display links differently if they have been clicked before.
+
+And one good example of that is Google, and in CSS that would be really easy to do. All we had to do was to select the anchors with the visited pseudo class. So here we could then give them a different color let's say like a light gray, something like this, okay? But in practice we never do that actually. So on normal pages usually we always just give the visited links the same color as on the link pseudo class. So let's just do that and call it a day.
+
+And these two rules are actually now very similar, and so usually we actually group them together. But now let's not do that and keep everything just nicely separated, just for the purpose of learning here. Anyway, let's now go to our next pseudo class for anchors, which is the most important one I would say, and that is hover. So in the hover pseudo class we can define any styles that we want to be applied to the anchor as soon as the element is hovered by the mouse.
+
+So for example, let's say that in this situation we wanted to change the color to something like orange-red, which is one of these color names that I actually like a little bit. And then let's say that we also wanted to change the font weight to bold. So kind of a bit of a crazy style here. And let's actually also bring back the underline. So text decoration. And this one is another one of these shorthand properties where we can define multiple values.
+
+So in this case we can define the text decoration line, text decoration style, and text decoration color. We can say underline. Then we can define the style of the underline, which is very similar to the style of the border. So let's say dotted for example. And then finally the color. So let's set it also to orange-red and let's see what now happens as we hover this link. And it worked. So the color changed, the font weight also changed, and also the text decoration.
+
+Let's try another one like a wavy, which is also fun, and that looks like this. So again, a little bit of a crazy style. And if we wanted to be a bit less crazy we can actually omit the second one and CSS will then automatically figure out that the second one here is now the color. And so this looks a little bit more normal, right? And so let's keep it like this. Finally, we can also specify a fourth pseudo class and this one is the active pseudo class.
+
+And this is the state in which we are actually clicking. So when we do actually click on a link then the active pseudo class is added to the element and we can then select that here like this. So just like we did with all these other four link states. So let's keep adding some crazy styles here like setting the background color to black in those situations. And let's even make the font style italic. Okay. So that's it. And so the hover state looks the same, but now I'm going to click, and so this is what it looks like during the duration of the click.
+
+Now if I move out here and let it go, then it goes back to the normal state. All right. And I think that's actually it. What matters here is that these four states are always defined in this exact order. So always link, visited, hover, and active. So that is, if it's easier to memorize for you, LVHA. All right? But of course we will keep doing this a couple more times throughout the rest of the course, and then things will become even easier for you.
+
+And now with this, we actually reach the end of the very basics of some simple visual styling with CSS. Now, there is of course a lot of other visual stuff like border radios, shadows, gradients, background images, and more, but we will leave that for a bit later. But for now, we will leave it at this point. And this is already great progress so congratulations for making it this far and for already having learned all of this CSS. Next up, we will learn something about the browser so a very helpful tool.
+
+And then we will of course keep learning CSS fundamentals by learning some theory and then learn some more properties that are related to some other stuff.
+
+----------------------------------------

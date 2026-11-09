@@ -1,0 +1,11 @@
+# 2.38 — Wrap Up
+
+> Section 2: Basics: Variables, Data Types, Operators & Functions
+
+This is it for this module, this was a crucial module where you learned a lot about the basics of Javascript. You learned about the variables and constants which you create with let and const, about the differences between declaring a variable or constant with let or const and initializing by assigning a value of the equal sign. You learned about all operators like the equal sign to assign a value to a variable or the plus and minus operator, multiplication, these shorthand operators and also the increment and decrement operators if you remember. You learned about functions which allow you to define code that can execute multiple times whenever you call the function or also as we're doing it here, whenever you click somewhere or whenever some event occurs for example which is something we'll also dive way deeper into later throughout this course because we'll work a lot with the webpage and events and so on there. You learned about how to manage data in general, how to pass data into functions, how to work with parameters you receive in functions, how to write proper code, how to use the right syntax, how to work with numbers and strings, how to work with objects and how to work with arrays which are
+
+lists of data. You also learned how to import your scripts properly which is of course important because you want to optimize such things as well to ship the best possible experience to your users and with all of that, you have a solid foundation for the next chapters in this course. We're still only getting started, there's so much more we can learn but it's super important that these basics are set. So really make sure that all these concepts are clear, also use the additional resources you find in this section, the attached resources, the attached lectures where I also clarify and summarize the things, where you can also come back to if something is unclear at a later point of time or if you forget something.
+
+And with that, let's move on and dive deeper into some core features which you need in pretty much any Javascript application you're going to build.
+
+----------------------------------------

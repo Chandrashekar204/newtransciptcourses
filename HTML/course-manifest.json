@@ -1,0 +1,1194 @@
+[
+  {
+    "section": 1,
+    "sectionTitle": "Welcome and First Steps",
+    "lecture": "1.1",
+    "title": "Course Structure and Projects",
+    "file": "01-welcome-and-first-steps/01-course-structure-and-projects.md",
+    "chars": 4263
+  },
+  {
+    "section": 1,
+    "sectionTitle": "Welcome and First Steps",
+    "lecture": "1.2",
+    "title": "Read Before You Start!",
+    "file": "01-welcome-and-first-steps/02-read-before-you-start.md",
+    "chars": 153
+  },
+  {
+    "section": 1,
+    "sectionTitle": "Welcome and First Steps",
+    "lecture": "1.3",
+    "title": "A High-Level Overview of Web Development",
+    "file": "01-welcome-and-first-steps/03-a-high-level-overview-of-web-development.md",
+    "chars": 8679
+  },
+  {
+    "section": 1,
+    "sectionTitle": "Welcome and First Steps",
+    "lecture": "1.4",
+    "title": "Setting Up Our Code Editor",
+    "file": "01-welcome-and-first-steps/04-setting-up-our-code-editor.md",
+    "chars": 7122
+  },
+  {
+    "section": 1,
+    "sectionTitle": "Welcome and First Steps",
+    "lecture": "1.5",
+    "title": "Your Very First Webpage!",
+    "file": "01-welcome-and-first-steps/05-your-very-first-webpage.md",
+    "chars": 7480
+  },
+  {
+    "section": 1,
+    "sectionTitle": "Welcome and First Steps",
+    "lecture": "1.6",
+    "title": "Downloading Course Material",
+    "file": "01-welcome-and-first-steps/06-downloading-course-material.md",
+    "chars": 3453
+  },
+  {
+    "section": 1,
+    "sectionTitle": "Welcome and First Steps",
+    "lecture": "1.7",
+    "title": "Watch Before You Start!",
+    "file": "01-welcome-and-first-steps/07-watch-before-you-start.md",
+    "chars": 4450
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.1",
+    "title": "Section Intro",
+    "file": "02-html-fundamentals/01-section-intro.md",
+    "chars": 539
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.2",
+    "title": "Introduction to HTML",
+    "file": "02-html-fundamentals/02-introduction-to-html.md",
+    "chars": 3296
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.3",
+    "title": "HTML Document Structure",
+    "file": "02-html-fundamentals/03-html-document-structure.md",
+    "chars": 8609
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.4",
+    "title": "Text Elements",
+    "file": "02-html-fundamentals/04-text-elements.md",
+    "chars": 11160
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.5",
+    "title": "More Text Elements: Lists",
+    "file": "02-html-fundamentals/05-more-text-elements-lists.md",
+    "chars": 7524
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.6",
+    "title": "Images and Attributes",
+    "file": "02-html-fundamentals/06-images-and-attributes.md",
+    "chars": 9658
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.7",
+    "title": "Hyperlinks",
+    "file": "02-html-fundamentals/07-hyperlinks.md",
+    "chars": 10473
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.8",
+    "title": "Structuring our Page",
+    "file": "02-html-fundamentals/08-structuring-our-page.md",
+    "chars": 8355
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.9",
+    "title": "A Note on Semantic HTML",
+    "file": "02-html-fundamentals/09-a-note-on-semantic-html.md",
+    "chars": 5080
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.10",
+    "title": "Installing Additional VS Code Extensions",
+    "file": "02-html-fundamentals/10-installing-additional-vs-code-extensions.md",
+    "chars": 5258
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.11",
+    "title": "CHALLENGE #1",
+    "file": "02-html-fundamentals/11-challenge-1.md",
+    "chars": 8062
+  },
+  {
+    "section": 2,
+    "sectionTitle": "HTML Fundamentals",
+    "lecture": "2.12",
+    "title": "CHALLENGE #2",
+    "file": "02-html-fundamentals/12-challenge-2.md",
+    "chars": 12093
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.1",
+    "title": "Section Intro",
+    "file": "03-css-fundamentals/01-section-intro.md",
+    "chars": 746
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.2",
+    "title": "Introduction to CSS",
+    "file": "03-css-fundamentals/02-introduction-to-css.md",
+    "chars": 3142
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.3",
+    "title": "Inline, Internal and External CSS",
+    "file": "03-css-fundamentals/03-inline-internal-and-external-css.md",
+    "chars": 9032
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.4",
+    "title": "Styling Text",
+    "file": "03-css-fundamentals/04-styling-text.md",
+    "chars": 10998
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.5",
+    "title": "Combining Selectors",
+    "file": "03-css-fundamentals/05-combining-selectors.md",
+    "chars": 6463
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.6",
+    "title": "Class and ID Selectors",
+    "file": "03-css-fundamentals/06-class-and-id-selectors.md",
+    "chars": 10858
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.7",
+    "title": "Working With Colors",
+    "file": "03-css-fundamentals/07-working-with-colors.md",
+    "chars": 17500
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.8",
+    "title": "Pseudo-classes",
+    "file": "03-css-fundamentals/08-pseudo-classes.md",
+    "chars": 6975
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.9",
+    "title": "Styling Hyperlinks",
+    "file": "03-css-fundamentals/09-styling-hyperlinks.md",
+    "chars": 7068
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.10",
+    "title": "Using Chrome DevTools",
+    "file": "03-css-fundamentals/10-using-chrome-devtools.md",
+    "chars": 6113
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.11",
+    "title": "CSS Theory #1: Conflicts Between Selectors",
+    "file": "03-css-fundamentals/11-css-theory-1-conflicts-between-selectors.md",
+    "chars": 12983
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.12",
+    "title": "CSS Theory #2: Inheritance and the Universal Selector",
+    "file": "03-css-fundamentals/12-css-theory-2-inheritance-and-the-universal-selector.md",
+    "chars": 10907
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.13",
+    "title": "CHALLENGE #1",
+    "file": "03-css-fundamentals/13-challenge-1.md",
+    "chars": 11839
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.14",
+    "title": "CSS Theory #3: The CSS Box Model",
+    "file": "03-css-fundamentals/14-css-theory-3-the-css-box-model.md",
+    "chars": 6156
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.15",
+    "title": "Using Margins and Paddings",
+    "file": "03-css-fundamentals/15-using-margins-and-paddings.md",
+    "chars": 15785
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.16",
+    "title": "Adding Dimensions",
+    "file": "03-css-fundamentals/16-adding-dimensions.md",
+    "chars": 5600
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.17",
+    "title": "Centering our Page",
+    "file": "03-css-fundamentals/17-centering-our-page.md",
+    "chars": 5576
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.18",
+    "title": "CHALLENGE #2",
+    "file": "03-css-fundamentals/18-challenge-2.md",
+    "chars": 7928
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.19",
+    "title": "CSS Theory #4: Types of Boxes",
+    "file": "03-css-fundamentals/19-css-theory-4-types-of-boxes.md",
+    "chars": 16478
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.20",
+    "title": "CSS Theory #5: Absolute Positioning",
+    "file": "03-css-fundamentals/20-css-theory-5-absolute-positioning.md",
+    "chars": 12304
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.21",
+    "title": "Pseudo-elements",
+    "file": "03-css-fundamentals/21-pseudo-elements.md",
+    "chars": 11946
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.22",
+    "title": "Developer Skill #1: Googling and Reading Documentation",
+    "file": "03-css-fundamentals/22-developer-skill-1-googling-and-reading-documentation.md",
+    "chars": 9154
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.23",
+    "title": "Developer Skill #2: Debugging and Asking Questions",
+    "file": "03-css-fundamentals/23-developer-skill-2-debugging-and-asking-questions.md",
+    "chars": 16524
+  },
+  {
+    "section": 3,
+    "sectionTitle": "CSS Fundamentals",
+    "lecture": "3.24",
+    "title": "CHALLENGE #3",
+    "file": "03-css-fundamentals/24-challenge-3.md",
+    "chars": 12959
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.1",
+    "title": "Section Intro",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/01-section-intro.md",
+    "chars": 924
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.2",
+    "title": "The 3 Ways of Building Layouts",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/02-the-3-ways-of-building-layouts.md",
+    "chars": 4298
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.3",
+    "title": "Using Floats",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/03-using-floats.md",
+    "chars": 12767
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.4",
+    "title": "Clearing Floats",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/04-clearing-floats.md",
+    "chars": 5645
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.5",
+    "title": "Building a Simple Float Layout",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/05-building-a-simple-float-layout.md",
+    "chars": 6433
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.6",
+    "title": "box-sizing: border-box",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/06-box-sizing-border-box.md",
+    "chars": 8350
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.7",
+    "title": "CHALLENGE #1",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/07-challenge-1.md",
+    "chars": 12986
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.8",
+    "title": "Introduction to Flexbox",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/08-introduction-to-flexbox.md",
+    "chars": 7294
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.9",
+    "title": "A Flexbox Overview",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/09-a-flexbox-overview.md",
+    "chars": 6202
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.10",
+    "title": "Spacing and Aligning Flex Items",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/10-spacing-and-aligning-flex-items.md",
+    "chars": 8128
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.11",
+    "title": "The flex Property",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/11-the-flex-property.md",
+    "chars": 8343
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.12",
+    "title": "Adding Flexbox to Our Project",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/12-adding-flexbox-to-our-project.md",
+    "chars": 13332
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.13",
+    "title": "Building a Simple Flexbox Layout",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/13-building-a-simple-flexbox-layout.md",
+    "chars": 8582
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.14",
+    "title": "CHALLENGE #2",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/14-challenge-2.md",
+    "chars": 9880
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.15",
+    "title": "Introduction to CSS Grid",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/15-introduction-to-css-grid.md",
+    "chars": 7584
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.16",
+    "title": "A CSS Grid Overview",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/16-a-css-grid-overview.md",
+    "chars": 7493
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.17",
+    "title": "Sizing Grid Columns and Rows",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/17-sizing-grid-columns-and-rows.md",
+    "chars": 9970
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.18",
+    "title": "Placing and Spanning Grid Items",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/18-placing-and-spanning-grid-items.md",
+    "chars": 9041
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.19",
+    "title": "Aligning Grid Items and Tracks",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/19-aligning-grid-items-and-tracks.md",
+    "chars": 9601
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.20",
+    "title": "Building a Simple CSS Grid Layout",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/20-building-a-simple-css-grid-layout.md",
+    "chars": 10783
+  },
+  {
+    "section": 4,
+    "sectionTitle": "Layouts: Floats, Flexbox, and CSS Grid Fundamentals",
+    "lecture": "4.21",
+    "title": "CHALLENGE #3",
+    "file": "04-layouts-floats-flexbox-and-css-grid-fundamentals/21-challenge-3.md",
+    "chars": 5660
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.1",
+    "title": "Section Intro",
+    "file": "05-web-design-rules-and-framework/01-section-intro.md",
+    "chars": 1745
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.2",
+    "title": "Project Overview",
+    "file": "05-web-design-rules-and-framework/02-project-overview.md",
+    "chars": 4899
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.3",
+    "title": "Overview of Web Design and Website Personalities",
+    "file": "05-web-design-rules-and-framework/03-overview-of-web-design-and-website-personalities.md",
+    "chars": 10201
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.4",
+    "title": "Web Design Rules #1: Typography",
+    "file": "05-web-design-rules-and-framework/04-web-design-rules-1-typography.md",
+    "chars": 13269
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.5",
+    "title": "Implementing Typography",
+    "file": "05-web-design-rules-and-framework/05-implementing-typography.md",
+    "chars": 16432
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.6",
+    "title": "Web Design Rules #2: Colors",
+    "file": "05-web-design-rules-and-framework/06-web-design-rules-2-colors.md",
+    "chars": 11384
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.7",
+    "title": "Implementing Colors",
+    "file": "05-web-design-rules-and-framework/07-implementing-colors.md",
+    "chars": 12697
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.8",
+    "title": "Web Design Rules #3: Images and Illustrations",
+    "file": "05-web-design-rules-and-framework/08-web-design-rules-3-images-and-illustrations.md",
+    "chars": 12103
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.9",
+    "title": "Web Design Rules #4: Icons",
+    "file": "05-web-design-rules-and-framework/09-web-design-rules-4-icons.md",
+    "chars": 10743
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.10",
+    "title": "Implementing Icons",
+    "file": "05-web-design-rules-and-framework/10-implementing-icons.md",
+    "chars": 14888
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.11",
+    "title": "Web Design Rules #5: Shadows",
+    "file": "05-web-design-rules-and-framework/11-web-design-rules-5-shadows.md",
+    "chars": 10927
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.12",
+    "title": "Implementing Shadows",
+    "file": "05-web-design-rules-and-framework/12-implementing-shadows.md",
+    "chars": 9443
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.13",
+    "title": "Web Design Rules #6: Border-radius",
+    "file": "05-web-design-rules-and-framework/13-web-design-rules-6-border-radius.md",
+    "chars": 4158
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.14",
+    "title": "Implementing Border-radius",
+    "file": "05-web-design-rules-and-framework/14-implementing-border-radius.md",
+    "chars": 5027
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.15",
+    "title": "Web Design Rules #7: Whitespace",
+    "file": "05-web-design-rules-and-framework/15-web-design-rules-7-whitespace.md",
+    "chars": 11261
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.16",
+    "title": "Web Design Rules #8: Visual Hierarchy",
+    "file": "05-web-design-rules-and-framework/16-web-design-rules-8-visual-hierarchy.md",
+    "chars": 19198
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.17",
+    "title": "Implementing Whitespace and Visual Hierarchy",
+    "file": "05-web-design-rules-and-framework/17-implementing-whitespace-and-visual-hierarchy.md",
+    "chars": 12338
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.18",
+    "title": "Web Design Rules #9: User Experience (UX)",
+    "file": "05-web-design-rules-and-framework/18-web-design-rules-9-user-experience-ux.md",
+    "chars": 16572
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.19",
+    "title": "The Website-Personalities-Framework",
+    "file": "05-web-design-rules-and-framework/19-the-website-personalities-framework.md",
+    "chars": 25267
+  },
+  {
+    "section": 5,
+    "sectionTitle": "Web Design Rules and Framework",
+    "lecture": "5.20",
+    "title": "The Missing Piece: Steal Like An Artist!",
+    "file": "05-web-design-rules-and-framework/20-the-missing-piece-steal-like-an-artist.md",
+    "chars": 8441
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.1",
+    "title": "Section Intro",
+    "file": "06-components-and-layout-patterns/01-section-intro.md",
+    "chars": 789
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.2",
+    "title": "Web Design Rules #10 - Part 1: Elements and Components",
+    "file": "06-components-and-layout-patterns/02-web-design-rules-10-part-1-elements-and-components.md",
+    "chars": 22933
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.3",
+    "title": "Building an Accordion Component - Part 1",
+    "file": "06-components-and-layout-patterns/03-building-an-accordion-component-part-1.md",
+    "chars": 17790
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.4",
+    "title": "Building an Accordion Component - Part 2",
+    "file": "06-components-and-layout-patterns/04-building-an-accordion-component-part-2.md",
+    "chars": 13454
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.5",
+    "title": "Building a Carousel Component - Part 1",
+    "file": "06-components-and-layout-patterns/05-building-a-carousel-component-part-1.md",
+    "chars": 14429
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.6",
+    "title": "Building a Carousel Component - Part 2",
+    "file": "06-components-and-layout-patterns/06-building-a-carousel-component-part-2.md",
+    "chars": 20777
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.7",
+    "title": "Building a Table Component - Part 1",
+    "file": "06-components-and-layout-patterns/07-building-a-table-component-part-1.md",
+    "chars": 7023
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.8",
+    "title": "Building a Table Component - Part 2",
+    "file": "06-components-and-layout-patterns/08-building-a-table-component-part-2.md",
+    "chars": 9035
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.9",
+    "title": "CHALLENGE #1: Building a Pagination Component",
+    "file": "06-components-and-layout-patterns/09-challenge-1-building-a-pagination-component.md",
+    "chars": 16207
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.10",
+    "title": "Web Design Rules #10 - Part 2: Layout Patterns",
+    "file": "06-components-and-layout-patterns/10-web-design-rules-10-part-2-layout-patterns.md",
+    "chars": 18185
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.11",
+    "title": "Building a Hero Section - Part 1",
+    "file": "06-components-and-layout-patterns/11-building-a-hero-section-part-1.md",
+    "chars": 14678
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.12",
+    "title": "Building a Hero Section - Part 2",
+    "file": "06-components-and-layout-patterns/12-building-a-hero-section-part-2.md",
+    "chars": 15269
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.13",
+    "title": "Building a Web Application Layout - Part 1",
+    "file": "06-components-and-layout-patterns/13-building-a-web-application-layout-part-1.md",
+    "chars": 10536
+  },
+  {
+    "section": 6,
+    "sectionTitle": "Components and Layout Patterns",
+    "lecture": "6.14",
+    "title": "Building a Web Application Layout - Part 2",
+    "file": "06-components-and-layout-patterns/14-building-a-web-application-layout-part-2.md",
+    "chars": 10103
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.1",
+    "title": "Section Intro",
+    "file": "07-omnifood-project-setup-and-desktop-version/01-section-intro.md",
+    "chars": 764
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.2",
+    "title": "The 7 Steps to a Great Website",
+    "file": "07-omnifood-project-setup-and-desktop-version/02-the-7-steps-to-a-great-website.md",
+    "chars": 16977
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.3",
+    "title": "Defining and Planning the Project (Steps 1 and 2)",
+    "file": "07-omnifood-project-setup-and-desktop-version/03-defining-and-planning-the-project-steps-1-and-2.md",
+    "chars": 19678
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.4",
+    "title": "Sketching Initial Layout Ideas (Step 3)",
+    "file": "07-omnifood-project-setup-and-desktop-version/04-sketching-initial-layout-ideas-step-3.md",
+    "chars": 6516
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.5",
+    "title": "First Design and Development Steps (Step 4)",
+    "file": "07-omnifood-project-setup-and-desktop-version/05-first-design-and-development-steps-step-4.md",
+    "chars": 10678
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.6",
+    "title": "Responsive Design Principles",
+    "file": "07-omnifood-project-setup-and-desktop-version/06-responsive-design-principles.md",
+    "chars": 6997
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.7",
+    "title": "How rem and max-width Work",
+    "file": "07-omnifood-project-setup-and-desktop-version/07-how-rem-and-max-width-work.md",
+    "chars": 11626
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.8",
+    "title": "Building the Hero - Part 1",
+    "file": "07-omnifood-project-setup-and-desktop-version/08-building-the-hero-part-1.md",
+    "chars": 11441
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.9",
+    "title": "Building the Hero - Part 2",
+    "file": "07-omnifood-project-setup-and-desktop-version/09-building-the-hero-part-2.md",
+    "chars": 20449
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.10",
+    "title": "Building the Hero - Part 3",
+    "file": "07-omnifood-project-setup-and-desktop-version/10-building-the-hero-part-3.md",
+    "chars": 16240
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.11",
+    "title": "Building the Header",
+    "file": "07-omnifood-project-setup-and-desktop-version/11-building-the-header.md",
+    "chars": 10469
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.12",
+    "title": "Building the Navigation",
+    "file": "07-omnifood-project-setup-and-desktop-version/12-building-the-navigation.md",
+    "chars": 10360
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.13",
+    "title": "Setting Up a Reusable Grid",
+    "file": "07-omnifood-project-setup-and-desktop-version/13-setting-up-a-reusable-grid.md",
+    "chars": 15023
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.14",
+    "title": "Building the How-It-Works Section - Part 1",
+    "file": "07-omnifood-project-setup-and-desktop-version/14-building-the-how-it-works-section-part-1.md",
+    "chars": 20383
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.15",
+    "title": "Building the How-It-Works Section - Part 2",
+    "file": "07-omnifood-project-setup-and-desktop-version/15-building-the-how-it-works-section-part-2.md",
+    "chars": 23847
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.16",
+    "title": "Building the Featured-In Section",
+    "file": "07-omnifood-project-setup-and-desktop-version/16-building-the-featured-in-section.md",
+    "chars": 13109
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.17",
+    "title": "Building the Meals Section - Part 1",
+    "file": "07-omnifood-project-setup-and-desktop-version/17-building-the-meals-section-part-1.md",
+    "chars": 17681
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.18",
+    "title": "Building the Meals Section - Part 2",
+    "file": "07-omnifood-project-setup-and-desktop-version/18-building-the-meals-section-part-2.md",
+    "chars": 13391
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.19",
+    "title": "Building the Meals Section - Part 3",
+    "file": "07-omnifood-project-setup-and-desktop-version/19-building-the-meals-section-part-3.md",
+    "chars": 19812
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.20",
+    "title": "Building the Testimonials Section - Part 1",
+    "file": "07-omnifood-project-setup-and-desktop-version/20-building-the-testimonials-section-part-1.md",
+    "chars": 10890
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.21",
+    "title": "Building the Testimonials Section - Part 2",
+    "file": "07-omnifood-project-setup-and-desktop-version/21-building-the-testimonials-section-part-2.md",
+    "chars": 16665
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.22",
+    "title": "Building the Pricing Section - Part 1",
+    "file": "07-omnifood-project-setup-and-desktop-version/22-building-the-pricing-section-part-1.md",
+    "chars": 15117
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.23",
+    "title": "Building the Pricing Section - Part 2",
+    "file": "07-omnifood-project-setup-and-desktop-version/23-building-the-pricing-section-part-2.md",
+    "chars": 17322
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.24",
+    "title": "Building the Features Part",
+    "file": "07-omnifood-project-setup-and-desktop-version/24-building-the-features-part.md",
+    "chars": 12679
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.25",
+    "title": "Building the Call-To-Action Section - Part 1",
+    "file": "07-omnifood-project-setup-and-desktop-version/25-building-the-call-to-action-section-part-1.md",
+    "chars": 18173
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.26",
+    "title": "Building the Call-To-Action Section - Part 2",
+    "file": "07-omnifood-project-setup-and-desktop-version/26-building-the-call-to-action-section-part-2.md",
+    "chars": 16309
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.27",
+    "title": "Building the Call-To-Action Section - Part 3",
+    "file": "07-omnifood-project-setup-and-desktop-version/27-building-the-call-to-action-section-part-3.md",
+    "chars": 20370
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.28",
+    "title": "Building the Footer - Part 1",
+    "file": "07-omnifood-project-setup-and-desktop-version/28-building-the-footer-part-1.md",
+    "chars": 12327
+  },
+  {
+    "section": 7,
+    "sectionTitle": "Omnifood Project \u2013 Setup and Desktop Version",
+    "lecture": "7.29",
+    "title": "Building the Footer - Part 2",
+    "file": "07-omnifood-project-setup-and-desktop-version/29-building-the-footer-part-2.md",
+    "chars": 18693
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.1",
+    "title": "Section Intro",
+    "file": "08-omnifood-project-responsive-web-design/01-section-intro.md",
+    "chars": 626
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.2",
+    "title": "How Media Queries Work",
+    "file": "08-omnifood-project-responsive-web-design/02-how-media-queries-work.md",
+    "chars": 10087
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.3",
+    "title": "How to Select Breakpoints",
+    "file": "08-omnifood-project-responsive-web-design/03-how-to-select-breakpoints.md",
+    "chars": 3818
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.4",
+    "title": "Responding to Small Laptops",
+    "file": "08-omnifood-project-responsive-web-design/04-responding-to-small-laptops.md",
+    "chars": 11085
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.5",
+    "title": "Responding to Landscape Tablets",
+    "file": "08-omnifood-project-responsive-web-design/05-responding-to-landscape-tablets.md",
+    "chars": 12611
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.6",
+    "title": "Responding to Tablets",
+    "file": "08-omnifood-project-responsive-web-design/06-responding-to-tablets.md",
+    "chars": 15869
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.7",
+    "title": "Building the Mobile Navigation",
+    "file": "08-omnifood-project-responsive-web-design/07-building-the-mobile-navigation.md",
+    "chars": 25668
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.8",
+    "title": "Responding to Smaller Tablets",
+    "file": "08-omnifood-project-responsive-web-design/08-responding-to-smaller-tablets.md",
+    "chars": 12439
+  },
+  {
+    "section": 8,
+    "sectionTitle": "Omnifood Project \u2013 Responsive Web Design",
+    "lecture": "8.9",
+    "title": "Responding to Phones",
+    "file": "08-omnifood-project-responsive-web-design/09-responding-to-phones.md",
+    "chars": 17355
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.1",
+    "title": "Section Intro",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/01-section-intro.md",
+    "chars": 693
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.2",
+    "title": "A Short Introduction to JavaScript",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/02-a-short-introduction-to-javascript.md",
+    "chars": 13243
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.3",
+    "title": "Making the Mobile Navigation Work",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/03-making-the-mobile-navigation-work.md",
+    "chars": 5931
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.4",
+    "title": "Implementing Smooth Scrolling",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/04-implementing-smooth-scrolling.md",
+    "chars": 19438
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.5",
+    "title": "Implementing a Sticky Navigation Bar",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/05-implementing-a-sticky-navigation-bar.md",
+    "chars": 18920
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.6",
+    "title": "Browser Support and Fixing Flexbox Gap in Safari",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/06-browser-support-and-fixing-flexbox-gap-in-safari.md",
+    "chars": 13771
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.7",
+    "title": "Testing Performance With Lighthouse",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/07-testing-performance-with-lighthouse.md",
+    "chars": 6534
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.8",
+    "title": "Adding Favicon and Meta Description",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/08-adding-favicon-and-meta-description.md",
+    "chars": 8052
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.9",
+    "title": "Image Optimizations",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/09-image-optimizations.md",
+    "chars": 12404
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.10",
+    "title": "Deployment to Netlify",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/10-deployment-to-netlify.md",
+    "chars": 6444
+  },
+  {
+    "section": 9,
+    "sectionTitle": "Omnifood Project \u2013 Effects, Optimizations and Deployment",
+    "lecture": "9.11",
+    "title": "Making the Form Work With Netlify Forms",
+    "file": "09-omnifood-project-effects-optimizations-and-deployment/11-making-the-form-work-with-netlify-forms.md",
+    "chars": 5580
+  },
+  {
+    "section": 10,
+    "sectionTitle": "The End!",
+    "lecture": "10.1",
+    "title": "Where to Go from Here",
+    "file": "10-the-end/01-where-to-go-from-here.md",
+    "chars": 3318
+  },
+  {
+    "section": 10,
+    "sectionTitle": "The End!",
+    "lecture": "10.2",
+    "title": "My Other Courses + Updates",
+    "file": "10-the-end/02-my-other-courses-updates.md",
+    "chars": 102
+  }
+]

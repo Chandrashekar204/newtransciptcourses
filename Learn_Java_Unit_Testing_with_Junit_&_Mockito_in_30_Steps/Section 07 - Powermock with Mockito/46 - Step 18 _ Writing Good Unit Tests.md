@@ -1,0 +1,35 @@
+# Step 18 : Writing Good Unit Tests
+
+*Section: Powermock with Mockito*
+
+Instructor: What are good unit tests and what are the things that you should care about when you write a unit test? Those are the things that we will discuss during this step. As far as I am concerned there are two important things related to writing a unit test. The first one is readability. Your unit test should be very readable. When I look at the test I should be able to understand what it's testing.
+
+That's the most important thing for me. The second important for me second important thing for me is test should fail only where there are real logic failures. I mean the test should fail only when there is a problem with code. A unit test should not fail when something else changes. So that's the two important things for me. A readability, B a test fails only when there are real logic failures. Let's look at a few examples.
+
+During this course, we created a number of tests for which we gave really bad names. So walking test, constructed test, I call it test bad names. That's very bad name, really. Invoking private method test. So what did we call it? I said test retrieve to produce. Oh my gah. Okay and static method. What was the name of that particular thing that we use? Same thing. So this, this was really lazy of me to be naming this method so casually but actually really speaking you should give better names to the methods.
+
+So how do you name your test methods? The best practice for me that I typically follow is which method, what is the scenario and what is the result? So I kind of use this kind of a convention save change products product is in screen and not in database. Product is inserted, save change, products product in screen and database. Then it's in both screen and database. So it's updated. Sometimes the result is obvious in that kind of scenario.
+
+Then you might not need to put the result at the end but at least the method and the name of the scenario that you're trying to do. So that's kind of the basic thing that I would really stress on, so that's number one. So you need to name your method properly. It should really reflect the test that you're doing. The second thing I would really focus on as far as readability of a test is concerned is have your distinguishing between the values that are important to the test and not important to the test.
+
+If you look at this particular test we are creating a product with amount 5.0 and 6.0 and we are checking whether the output has 11.0. So if you look at the product itself there are a lot of values inside the product. So it's a bank guarantee, there's a ID to it. So there are a lot of things that you need to create the product. But as far as this test is concerned the only thing that I'm really using from that particular product is the amount.
+
+So my test I'm only like my test should reflect the values which are really important to that test. So the important values for this test are 5.0, 6.0, and 11.0 five, six, 11.0. And if you look at currencies dot euro it's the euro that like default is euro. So that's part of what we are testing. So it's useful to put that in your test. And also here there's an ID, I am using dummy client ID so I don't care what that ID is.
+
+So I mean it's not really important to the test. Then in those kind of scenarios I create this dummy kind of a thing. So if you look at this test, then you can say I'm creating two products with sums 5.6 and I'm calling the client product sum and I'm checking whether the sum of them is 11 euros. When you look at this test it's so obvious, it's so clear, so readable. But this is how readable your test should also be.
+
+So if there's any failure in this test, it's very clear what's going wrong. The other thing I would recommend you to do to be creating readable tests is kind of split your test into a given when then format. This is kind of the BDD format. So you have given when and then, so then you're actually supporting I mean you're supporting your tests into specific parts. So you have a part where there is a given and then you have when, where you're really calling the thing that you would want to call and then you're checking the assertions.
+
+So given when then style is also useful in writing readable tests. So those are the important things as far as readability of a test goes for me. So make sure that the values that are important to the test are highlighted and you kind of follow the BDD style. The other important thing that we were talking about is the test should fail only when there are real logic failures. That's the second thing.
+
+So the first thing was readability. The second thing is test should fail only when there are real logic failures. So if I'm testing a clientBO get product get client products sum. Let's say this particular method is talking to a database and getting me the values and let's say I'm writing a test, which depends on the values which are present in the database. What would happen if the values in the database change?
+
+The test would start failing, then somebody has to go and put the right values in the database. So that's one example of a test failing because of something external. So all the unit tests should depend only on the things which are part of which are in your control. So which are directly inside your control. So things like databases, external interfaces, your unit test should not ideally depend on them.
+
+When a test fails, the only reason why that test is failing should be because there is some problem with your logic. It should not fail because of any other reasons and all such kind of dependencies. You have to use mocks and mock them out. As far as I'm concerned, those are the two important things. Readability of a test. Test should fail only when there are real problems with your code. There are a lot of references around the internet on how real good tests should look like.
+
+I would recommend you do all the things which are in here. There's a first principle F I R S T acronym STAT or something. So you can see a list of articles in here. There are few X unit patterns and also how to write good unit tests on the Mockito blog itself. So you can look at these resources and try and understand how to write really good unit tests. But while you follow all this stuff remember the most important things are readability of a test.
+
+When I look at it, it should be easily readable. The second important thing is that it should only fail when there are real logic failures. As long as you are adhering to those two principles you're doing well and all the things which you discuss in the exercises and references would be add on adding on on top of them. The idea behind this course was to give you an overview of Mockito framework, kind of give you what are the different things that you can do with Mockito how to write good unit tests, and also integrate power mark with Mockito and see a few examples.
+
+I hope you had a good time doing this course. Until the next step, bye bye.

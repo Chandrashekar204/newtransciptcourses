@@ -1,0 +1,31 @@
+# How n8n Works with Data
+
+*Section: (Optional) Beginner Theory and Foundations - Fundamental Concepts*
+
+Welcome back. In this lesson, we are breaking down how Nathan handles data so you can build cleaner, more efficient workflows. By the end of this video, you will understand how Nathan structures data with JSON and lists how nodes process and parse data, and how to use expressions to modify and work with that data. So let's get straight into it. All right. So let's start with the basics. Nathan processes everything in JSON, which is just a fancy way of saying data is stored in key value pairs.
+
+So for example a JSON object might look like this. You have a key and value key and corresponding value. Easy enough right. So now what if you have multiple records. That's where lists come in. Because a list is just a collection of multiple JSON objects. So this is one list of two JSON objects. So think of it like rows in a spreadsheet. Each JSON object is a row of data. This is how an A-10 handles multiple items at once.
+
+So how do nodes actually handle this data? Each JSON object is called an item, and nodes process one item at a time. So let's say we have three dates to format a date and time. Node will process each item separately so it runs three times once per item. So if an if node checks for customer with a Gmail email, it will process each email individually and only pass through the ones that match. And the best practice is to always keep in mind how many items your note is processing.
+
+So this is super important when building workflows. Now fix fields versus expression fields. So when filling out fields in return you might notice some fields behave differently because there are fixed fields which always stay the same. And expression fields which dynamically change based on input data. So let's say you are sending an email and you could set the subject to welcome to our service. So this is this will always be the same while expression subject welcome and then JSON object.
+
+This adapts based on user data. So if a field allows expressions you will see the little f button. And you need to click to switch between fixed and dynamic values. Best practice is always to use expressions if the data is different for each item. So you can dynamically input data so you don't need to hard code your data like provide the actual name of the user. You can just use JSON object and the correct name will be passed into field.
+
+We will explore this topic on practical examples in N810, so don't worry. Now let's talk about expressions. So we use expressions to access and modify data. This is how you access, modify and format data dynamically. So for example you want to grab a customer's email. You need to use this expression. But if you need to combine a first and last name, you can easily do it using expression. Now the best practice is to use expressions to reference and format data dynamically.
+
+So instead of hard coding values, your workflow always works with real time data. Now next we have data transformation with set function and code nodes. Now what if you need to modify data before passing it to another node? In N810 you have three main tools. Head node which is great for renaming, removing or adding simple fields. Function node lets you write small JavaScript snippets and code. Node when you need to.
+
+When you need more advanced transformations to handle complex logic, which is not possible in expressions. For example, you want to convert a name to uppercase. So you use expression the function node alternative. Looks like that which is written in JavaScript language. And the best practice is always use the simplest method first and only use code when it's necessary. And there is no many use cases where you have to use code to build powerful automations and agents.
+
+All right. So now let's talk about nested JSON data. This comes up a lot when working with APIs and databases. So sometimes instead of simple key value pairs you will get objects inside objects. As you can see we have object name inside user object which you can notice thanks to indentation. If you try JSON email, it won't work because the email is inside user contact object. So instead you need to reference it properly.
+
+So JSON dot user dot contact dot email. Best practice is if you are dealing with deeply nested data. Use a set node to restructure it first. So how does this all work together in real workflow? Pulling the trigger like a webhook or manual trigger to start the workflow. Then data retrieval. So to fetch the data you need, you need data retrieval node like Google Sheets. Then processing. So the data gets modified, filtered or formatted and finally output.
+
+So the processed data gets sent to another tool or system like slack. Let's say you pull data from Google Sheets and if it returns three rows and if not, filter out one row, leaving only two rows for the next step. To pass this data to pass these two rows to slack. So this is why understanding how naa10 processes items is is key, because each step transforms the data before it moves, before it moves to the next node.
+
+Now understanding input and output of nodes. So if a node is not working the way you expect, the issue is usually the input format. So every node expects data in a specific structure. So if it doesn't match you might get errors or unexpected results. So for example you call an API and it returns this JSON. But your next node is looking for JSON email which doesn't exist at this level because your email.
+
+is in data JSON object. So to fix it you need to add the reference. So body dot data dot email. The best practice is if something is not working. Always check the execution data of the previous node. So that will show you exactly what's being passed. Now why this matters. So understanding how attend processes data helps you avoid workflow errors when handling multiple items. It makes your automations faster and more efficient.
+
+And once you get comfortable with expressions and data handling, you can build way more powerful workflows. So if you ever get stuck with inputs, outputs, or expressions, come back to this lesson. I hope this was helpful and see you in the next one.

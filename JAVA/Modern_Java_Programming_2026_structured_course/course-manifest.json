@@ -1,0 +1,188 @@
+[
+  {
+    "section": 1,
+    "title": "Let's Say Hello to Java",
+    "folder": "01-let-s-say-hello-to-java",
+    "lectures": 10
+  },
+  {
+    "section": 2,
+    "title": "Primitive data types in Java",
+    "folder": "02-primitive-data-types-in-java",
+    "lectures": 28
+  },
+  {
+    "section": 3,
+    "title": "What happens behind the scenes when a Java program executes",
+    "folder": "03-what-happens-behind-the-scenes-when-a-java-program-executes",
+    "lectures": 13
+  },
+  {
+    "section": 4,
+    "title": "Deep dive on Java classes, methods, fields, constructors",
+    "folder": "04-deep-dive-on-java-classes-methods-fields-constructors",
+    "lectures": 41
+  },
+  {
+    "section": 5,
+    "title": "Comments in Java",
+    "folder": "05-comments-in-java",
+    "lectures": 10
+  },
+  {
+    "section": 6,
+    "title": "Deep dive on String in Java",
+    "folder": "06-deep-dive-on-string-in-java",
+    "lectures": 28
+  },
+  {
+    "section": 7,
+    "title": "Operators in Java",
+    "folder": "07-operators-in-java",
+    "lectures": 41
+  },
+  {
+    "section": 8,
+    "title": "Control flow statements in Java",
+    "folder": "08-control-flow-statements-in-java",
+    "lectures": 24
+  },
+  {
+    "section": 9,
+    "title": "packages in Java",
+    "folder": "09-packages-in-java",
+    "lectures": 16
+  },
+  {
+    "section": 10,
+    "title": "Inheritance in Java",
+    "folder": "10-inheritance-in-java",
+    "lectures": 35
+  },
+  {
+    "section": 11,
+    "title": "Interfaces in Java",
+    "folder": "11-interfaces-in-java",
+    "lectures": 16
+  },
+  {
+    "section": 12,
+    "title": "Arrays in Java",
+    "folder": "12-arrays-in-java",
+    "lectures": 21
+  },
+  {
+    "section": 13,
+    "title": "Accept input using BufferedReader and Scanner",
+    "folder": "13-accept-input-using-bufferedreader-and-scanner",
+    "lectures": 16
+  },
+  {
+    "section": 14,
+    "title": "Exception handling using try, catch and finally",
+    "folder": "14-exception-handling-using-try-catch-and-finally",
+    "lectures": 23
+  },
+  {
+    "section": 15,
+    "title": "Unmasking Java's Superclass(java.lang.Object) Secrets",
+    "folder": "15-unmasking-java-s-superclass-java-lang-object-secrets",
+    "lectures": 20
+  },
+  {
+    "section": 16,
+    "title": "Introduction to Collections & Wrapper Classes",
+    "folder": "16-introduction-to-collections-and-wrapper-classes",
+    "lectures": 10
+  },
+  {
+    "section": 17,
+    "title": "Lists and ArrayLists Unleashed \u2013 A Hilarious Journey through Data Structures",
+    "folder": "17-lists-and-arraylists-unleashed-a-hilarious-journey-through-data-structures",
+    "lectures": 16
+  },
+  {
+    "section": 18,
+    "title": "LinkedLists - Java's Dance of Nodes",
+    "folder": "18-linkedlists-java-s-dance-of-nodes",
+    "lectures": 9
+  },
+  {
+    "section": 19,
+    "title": "Generics in Java",
+    "folder": "19-generics-in-java",
+    "lectures": 10
+  },
+  {
+    "section": 20,
+    "title": "Deep dive on Map, HashMap, TreeMap, LinkedHashMap",
+    "folder": "20-deep-dive-on-map-hashmap-treemap-linkedhashmap",
+    "lectures": 12
+  },
+  {
+    "section": 21,
+    "title": "Set, HashSet, TreeSet, LinkedHashSet",
+    "folder": "21-set-hashset-treeset-linkedhashset",
+    "lectures": 10
+  },
+  {
+    "section": 22,
+    "title": "Enums in Java",
+    "folder": "22-enums-in-java",
+    "lectures": 9
+  },
+  {
+    "section": 23,
+    "title": "Date and Time in Java",
+    "folder": "23-date-and-time-in-java",
+    "lectures": 28
+  },
+  {
+    "section": 24,
+    "title": "[JAVA 8] Functional Programming using lambda expressions",
+    "folder": "24-java-8-functional-programming-using-lambda-expressions",
+    "lectures": 23
+  },
+  {
+    "section": 25,
+    "title": "[JAVA 8] Building Lambda expressions using Method References",
+    "folder": "25-java-8-building-lambda-expressions-using-method-references",
+    "lectures": 6
+  },
+  {
+    "section": 26,
+    "title": "[JAVA 8] Streams API",
+    "folder": "26-java-8-streams-api",
+    "lectures": 22
+  },
+  {
+    "section": 27,
+    "title": "[JAVA 8] Optional to deal with nulls in Java",
+    "folder": "27-java-8-optional-to-deal-with-nulls-in-java",
+    "lectures": 7
+  },
+  {
+    "section": 28,
+    "title": "MultiThreading in Java",
+    "folder": "28-multithreading-in-java",
+    "lectures": 22
+  },
+  {
+    "section": 29,
+    "title": "New features from Java 22, Java 23 and Java 24",
+    "folder": "29-new-features-from-java-22-java-23-and-java-24",
+    "lectures": 16
+  },
+  {
+    "section": 30,
+    "title": "New features from Java 25",
+    "folder": "30-new-features-from-java-25",
+    "lectures": 11
+  },
+  {
+    "section": 31,
+    "title": "Thank You & Congratulations",
+    "folder": "31-thank-you-and-congratulations",
+    "lectures": 1
+  }
+]

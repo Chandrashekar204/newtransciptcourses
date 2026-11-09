@@ -1,0 +1,28 @@
+# 14.6 — Demo of OAUTH2 using social logins - Part 5
+
+> Section 14: Implementing OAUTH2 using spring security & social logins
+
+Instructor: As of now, inside our Spring Boot web application, we tried to configure the OAUTH2 related configurations by creating the ClientRegistrationRepository. And to this being, we are trying to provide the configurations of GitHub Auth Server and Facebook Auth Server. So this is one style of configuration. There is also another easy configuration that you can follow. Let me show you that very quickly. Before that, let me comment this entire code.
+
+As a next step, I will go to the file application.properties. Here, I need to create couple of properties. Let me paste these properties. The properties are spring.security.oauth2.client.registration.github.client-id and similarly client_secret. So when I use this github inside my property after the registration, my Spring Security framework, it is going to assume that I'm trying to use the GitHub Auth Server. And with that, it is going to leverage all the configurations around the GitHub by looking into the CommonOAuth2Provider class.
+
+Here, we have all these GitHub related configurations. By using these configurations, behind the scenes, the Spring Security framework, it is going to create a ClientRegistration object. And the same it is going to register with the InMemoryClientRegistrationRepository object. I hope you're clear. Let me go to the application.properties and let me mention the character clientId and clientSecret for my GitHub. I can go to the ProjectSecurityConfig, and here I can try to get this GitHub clientId and mention inside my application.properties.
+
+Similarly, I'll try to get the secret as well and mention inside my application.properties. So here, I'm trying to hardcode the values, but if needed, you can provide these values using environment variables by creating an environment variable with so and so names. Similarly, if I want to use Facebook, I just have to repeat these properties one more time with the client registration name as facebook. The same I'm going to mention here as well. Now let me copy the Facebook related clientId and paste it here.
+
+I'll try to get the client secret as well and paste it here. So these are the only properties that you need to create inside the application.properties or inside your application.yaml. And with that, all this background work of creating these beings is going to be taken care by the Spring Security framework. Let me do the build. Once the build is completed, I will try to stop my application and restart again in the debug mode. Once my application started successfully, inside my browser, I can try to access the path, which is localhost:8080/secure.
+
+So here, you can see we are still having these options, GitHub and Facebook. So if I click on this GitHub, I'll be taken to the GitHub page. Let me try to log in with my GitHub credentials. Once the login is successful, I'm going to see my secure page response on the browser. I hope you're clear. I'm assuming this is the easier approach for the developers, but I'm trying to share both approaches for you. You can use any of these approaches based upon your comfort level.
+
+With this, we have completed all the demos and implementations of OAUTH2 flow with the help of social logins. But in real enterprise applications, they're never going to use the social logins because they have a very serious drawback. The drawback is these social logins, they will only help you during the authentication. They will not be of any use for implementing the authorization. For example, if you want to implement authorization with the role names like admin, user, manager, supervisor, so all such authorities are roles information, we can't create and maintain by logging into the social login auth servers.
+
+I can't approach Facebook or GitHub saying that for so and so end users, I want to maintain so and so authorities or roles. It's not going to work that way because whenever we are using these social logins, the client application, they have to use whatever information is being sent by the social login auth servers. That's why this approach may work for smaller applications like blog websites or single-page simple applications. For the serious enterprise applications, we need to create our own auth server where we have complete control on user creation, assigning the roles to the users.
+
+That's what we are going to focus from the next section, we are going to create our own auth server, which can be used inside our Eazybank application to implement the OAUTH2 style of authentication. I hope you're clear. Before I try to close this lecture, let me delete the OAUTH2 apps that I have created inside the GitHub and Facebook. So here under the developer settings, I can click on this OAuth Apps. And as of now, you can see I have an app with the name eazybytes.
+
+Let me click on the same. And inside this page, I'm going to click on this advanced option. And here I have an option of deleting the application. So let me click on this button and confirm. And with that, my OAUTH2 app is going to be deleted. The same, you can confirm here. In the similar lines, we need to go to the website, which is developers.facebook.com. So here, you can click on this. My apps as of now, there is one app. I'm going to click on these dots and select the option Remove App.
+
+You can see as of now, there are no apps yet. If you also followed me and created these apps, I will request you to delete them if you're not using. Thank you and I'll catch you in the next lecture, bye.
+
+
+########################################

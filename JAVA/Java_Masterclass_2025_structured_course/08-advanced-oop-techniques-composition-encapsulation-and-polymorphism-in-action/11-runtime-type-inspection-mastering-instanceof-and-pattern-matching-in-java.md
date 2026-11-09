@@ -1,0 +1,27 @@
+# 8.11 — Runtime Type Inspection: Mastering instanceof and Pattern Matching in Java
+
+> Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action
+
+Kind: captions Language: en In the last video, I discussed the differences between the runtime type and the compile time type. I've said that you can always assign an expression to a type without casting, if you're always assigning it to a parent class or a base class type. In this video, I'll demonstrate how to determine the runtime type of an object. How can we test the actual runtime type of a variable if its declared type is different? We can determine the runtime type of an object in several ways.
+
+First, we can use code to determine the class name of an object. Getting back to the main method on the next main class, I'll add another call to the movie dot get movie method. I'll assign that to an object reference called, unknown object. object, unknown object, equals, movie dot get movie, passing C, and Airplane. if, unknown object, dot get class, parentheses, dot get simple name, parentheses, is equal to comedy. comedy, C, equals, cast, comedy, unknown object. C, dot, watch comedy.
+
+Here, in this if statement, I'm using a method called get class. I've used this get class method before in the movie class's watch movie method. But in that case, I used it with the keyword this, whereas here, I'm calling it on the local variable reference, unknown object. This method is available to any instance because it's a method on object. And get simple name is a method that returns the class name of any instance. The test in the if statement is testing if the object coming back from that factory method has a class name called comedy.
+
+And if it does, I can cast the object to comedy and assign it to a comedy variable. Then I can call any method on comedy. The reason to cast to a comedy class is to be able to execute a method that's specific to comedy, in this case, the watch comedy method. Without casting to a comedy class, I couldn't execute that method. I didn't have to cast airplane to comedy class on line 15 to run the comedy classes version of the watch movie method. This is because of polymorphism, which works in this case, through the use of overridden methods.
+
+Without polymorphism, you'd be in this world of having to test at runtime what your object really is every time you wanted to execute code. This code shows you one way to test for the runtime type, but it's not the best way. Let's look at another way, testing if the object coming back might be an adventure type. I'll insert a couple of statements before that last closing bracket for the if statement: else if, unknown object, instance of, adventure.
+
+two left parentheses, adventure, right parentheses, unknown object, right parentheses, dot watch adventure. right curly brace. Ok, again, here is something new, and that is the instance of operator. The instanceof operator lets you test the type of an object or instance. The reference variable you are testing is the left operand. The type you are testing for is the right operand It's important to see that adventure is not in quotes, meaning, I'm not testing the type name but the actual type itself.
+
+This operator returns true if unknownObject is an instance of Adventure. In my code here, I'm testing if unknown object really is an adventure object, and if it is, I cast it to adventure and call watch adventure, a method that's only on the adventure class. This statement is different from anything I've shown you before but perfectly valid. This set of outer parentheses is the result of the cast to the adventure type, and I can chain a method directly on that, as I do here.
+
+In other words, I don't have to assign the result of the cast to a local variable. Lastly, let's look at one more way to do this: else if, parentheses, unknown object, instance of, science fiction, syfy. syfy dot watch science fiction. Here, you can see I'm using a slightly different version of the instance of operator that became part of Java in JDK 16. This is called pattern matching support for the instance of operator. If the JVM can identify that an object matches the type, it can extract data from the object without casting.
+
+For this operator, the object can be assigned to a variable which I've called syfy. From my example: The variable syfy (if the instanceof method returns true) is already typed as a ScienceFiction variable. You can see in my code, I don't have to create the variable in the block statement, and I don't have to cast it. Let's run this code through a couple of tests. First, I'll run this code as is. I'm interested in the last statement of the output.
+
+And you can see, with C as the type and airplane as the title, I get the output, "Watching a Comedy!". Next, I'll change that line there to be an adventure movie and jaws as the title: And that gives me the last output statement, "Watching an Adventure!". Now, let's test a science fiction movie, making the type an S and the title Star Wars. And that gives us the output, "Watching a Science Fiction Thriller!". Ok, those are a few ways to test the runtime type of an object in our code.
+
+You can see that this newest feature in Java makes the job a lot easier. There are a few additional nuances to this particular feature, which we'll have plenty of time to explore in the code ahead. Let's end this video here, and in the next video, I'm going to give you a polymorphism challenge.
+
+----------------------------------------

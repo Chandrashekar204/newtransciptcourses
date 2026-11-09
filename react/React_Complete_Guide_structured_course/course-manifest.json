@@ -1,0 +1,242 @@
+[
+  {
+    "section": 1,
+    "title": "Getting Started",
+    "folder": "01-getting-started",
+    "lectures": 10
+  },
+  {
+    "section": 2,
+    "title": "JavaScript Refresher",
+    "folder": "02-javascript-refresher",
+    "lectures": 23
+  },
+  {
+    "section": 3,
+    "title": "React Essentials - Components, JSX, Props, State & More",
+    "folder": "03-react-essentials-components-jsx-props-state-and-more",
+    "lectures": 26
+  },
+  {
+    "section": 4,
+    "title": "React Essentials - Deep Dive",
+    "folder": "04-react-essentials-deep-dive",
+    "lectures": 38
+  },
+  {
+    "section": 5,
+    "title": "React Essentials - Practice Project",
+    "folder": "05-react-essentials-practice-project",
+    "lectures": 8
+  },
+  {
+    "section": 6,
+    "title": "Styling React Components",
+    "folder": "06-styling-react-components",
+    "lectures": 20
+  },
+  {
+    "section": 7,
+    "title": "Debugging React Apps",
+    "folder": "07-debugging-react-apps",
+    "lectures": 6
+  },
+  {
+    "section": 8,
+    "title": "Working with Refs & Portals",
+    "folder": "08-working-with-refs-and-portals",
+    "lectures": 17
+  },
+  {
+    "section": 9,
+    "title": "Practice Project: Project Management App (with Components, State, Refs & More)",
+    "folder": "09-practice-project-project-management-app-with-components-state-refs-and-more",
+    "lectures": 16
+  },
+  {
+    "section": 10,
+    "title": "React's Context API & useReducer - Advanced State Management",
+    "folder": "10-react-s-context-api-and-usereducer-advanced-state-management",
+    "lectures": 13
+  },
+  {
+    "section": 11,
+    "title": "Handling Side Effects & Working with the useEffect() Hook",
+    "folder": "11-handling-side-effects-and-working-with-the-useeffect-hook",
+    "lectures": 16
+  },
+  {
+    "section": 12,
+    "title": "Practice Project: Building a Quiz App",
+    "folder": "12-practice-project-building-a-quiz-app",
+    "lectures": 12
+  },
+  {
+    "section": 13,
+    "title": "A Look Behind The Scenes Of React & Optimization Techniques",
+    "folder": "13-a-look-behind-the-scenes-of-react-and-optimization-techniques",
+    "lectures": 13
+  },
+  {
+    "section": 14,
+    "title": "An Alternative Way Of Building Components: Class-based Components",
+    "folder": "14-an-alternative-way-of-building-components-class-based-components",
+    "lectures": 10
+  },
+  {
+    "section": 15,
+    "title": "Sending Http Requests (e.g. Connecting to a Database)",
+    "folder": "15-sending-http-requests-e-g-connecting-to-a-database",
+    "lectures": 16
+  },
+  {
+    "section": 16,
+    "title": "Building Custom React Hooks",
+    "folder": "16-building-custom-react-hooks",
+    "lectures": 7
+  },
+  {
+    "section": 17,
+    "title": "Working with Forms & User Input",
+    "folder": "17-working-with-forms-and-user-input",
+    "lectures": 16
+  },
+  {
+    "section": 18,
+    "title": "Handling Forms via Form Actions",
+    "folder": "18-handling-forms-via-form-actions",
+    "lectures": 15
+  },
+  {
+    "section": 19,
+    "title": "Practice Project: Building a Food Order App",
+    "folder": "19-practice-project-building-a-food-order-app",
+    "lectures": 19
+  },
+  {
+    "section": 20,
+    "title": "Diving into Redux (An Alternative To The Context API)",
+    "folder": "20-diving-into-redux-an-alternative-to-the-context-api",
+    "lectures": 24
+  },
+  {
+    "section": 21,
+    "title": "Advanced Redux",
+    "folder": "21-advanced-redux",
+    "lectures": 16
+  },
+  {
+    "section": 22,
+    "title": "Building a Multi-Page SPA with React Router",
+    "folder": "22-building-a-multi-page-spa-with-react-router",
+    "lectures": 44
+  },
+  {
+    "section": 23,
+    "title": "Adding Authentication To React Apps",
+    "folder": "23-adding-authentication-to-react-apps",
+    "lectures": 15
+  },
+  {
+    "section": 24,
+    "title": "Deploying React Apps",
+    "folder": "24-deploying-react-apps",
+    "lectures": 7
+  },
+  {
+    "section": 25,
+    "title": "React Query / Tanstack Query: Handling HTTP Requests With Ease",
+    "folder": "25-react-query-tanstack-query-handling-http-requests-with-ease",
+    "lectures": 20
+  },
+  {
+    "section": 26,
+    "title": "A (Pretty Deep Dive) Introduction to Next.js",
+    "folder": "26-a-pretty-deep-dive-introduction-to-next-js",
+    "lectures": 79
+  },
+  {
+    "section": 27,
+    "title": "React Server Components (RSC) & Server Actions - A Closer Look",
+    "folder": "27-react-server-components-rsc-and-server-actions-a-closer-look",
+    "lectures": 11
+  },
+  {
+    "section": 28,
+    "title": "Animating React Apps",
+    "folder": "28-animating-react-apps",
+    "lectures": 21
+  },
+  {
+    "section": 29,
+    "title": "React Patterns & Best Practices",
+    "folder": "29-react-patterns-and-best-practices",
+    "lectures": 12
+  },
+  {
+    "section": 30,
+    "title": "Replacing Redux with React Hooks",
+    "folder": "30-replacing-redux-with-react-hooks",
+    "lectures": 15
+  },
+  {
+    "section": 31,
+    "title": "Testing React Apps (Unit Tests)",
+    "folder": "31-testing-react-apps-unit-tests",
+    "lectures": 13
+  },
+  {
+    "section": 32,
+    "title": "React + TypeScript",
+    "folder": "32-react-typescript",
+    "lectures": 25
+  },
+  {
+    "section": 33,
+    "title": "Optional: React Summary & Core Feature Walkthrough",
+    "folder": "33-optional-react-summary-and-core-feature-walkthrough",
+    "lectures": 37
+  },
+  {
+    "section": 34,
+    "title": "Course Roundup",
+    "folder": "34-course-roundup",
+    "lectures": 2
+  },
+  {
+    "section": 35,
+    "title": "Course Update & Old Course Content",
+    "folder": "35-course-update-and-old-course-content",
+    "lectures": 2
+  },
+  {
+    "section": 36,
+    "title": "[BONUS / OPTIONAL] React Basics & Working With Components",
+    "folder": "36-bonus-optional-react-basics-and-working-with-components",
+    "lectures": 23
+  },
+  {
+    "section": 37,
+    "title": "[BONUS / OPTIONAL] Time to Practice: Component Basics",
+    "folder": "37-bonus-optional-time-to-practice-component-basics",
+    "lectures": 8
+  },
+  {
+    "section": 38,
+    "title": "[BONUS / OPTIONAL] React State & Working with Events",
+    "folder": "38-bonus-optional-react-state-and-working-with-events",
+    "lectures": 19
+  },
+  {
+    "section": 39,
+    "title": "[BONUS / OPTIONAL] Rendering Lists & Conditional Content",
+    "folder": "39-bonus-optional-rendering-lists-and-conditional-content",
+    "lectures": 11
+  },
+  {
+    "section": 40,
+    "title": "[BONUS / OPTIONAL] Time to Practice: A Complete Practice Project",
+    "folder": "40-bonus-optional-time-to-practice-a-complete-practice-project",
+    "lectures": 22
+  }
+]

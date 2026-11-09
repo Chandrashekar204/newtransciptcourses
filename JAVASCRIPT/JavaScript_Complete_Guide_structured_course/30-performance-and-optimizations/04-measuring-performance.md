@@ -1,0 +1,17 @@
+# 30.4 — Measuring Performance
+
+> Section 30: Performance & Optimizations
+
+Now when you want to optimize your page, it's actually wrong to just go into the code and start changing anything, instead you want to measure and audit your page and find performance bottlenecks. Don't guess, it's that measure. You want to find out how many round trips you have, how big your script is which needs to be downloaded. You maybe want to set certain budgets so that you know okay, my script has to be below 100kb and if it is above it, I will do everything I can to shrink it.
+
+So that's of course one important thing and you want to find out how big it is and how long it takes before you start optimizing it. You also want to measure the runtime performance with the help of browser dev tools. There are a lot of useful features in modern browser dev tools which you can use to find out how long certain parts of your script take and then you can find out if that seems too long to you, you can try out an alternative and find out if that is actually better.
+
+You can also explore best practices and patterns and benchmarks you find on the Internet, you will find a lot of blog posts and discussions when you Google Javascript performance or even more specific performance questions and you can then have a look at how other people are solving certain problems or how they are approaching certain things, so this can also be a useful thing to find out what you could look into and also important because that is a common mistake, when you do measure performance, measure your production ready code.
+
+Don't do this in development mode because in development mode, your code is not optimal at all, build tools like webpack where you use the webpack dev server inject a lot of extra code into your code to enhance the debugging experience. Now that's great for finding ordinary issues and problems but it's not great for measuring performance because the performance during development will not be that great because it's simply not what matters during development but if you want to of course have great performance in production, so it's the production ready code you should test.
+
+Now when we talk about measuring performance, there are a couple of different ways of measuring it. Now I mentioned the browser dev tools, you also can add certain code snippets to your code, to be precise you can use performance now which is available in the browser to get a time snapshot and you can take that before and after your running operation you're not sure about and this allows you to find out how long an operation takes. Then of course outside of your code, you do have the browser dev tools as I mentioned, where you have many features that allow you to detect all kinds of different problems and bottlenecks you might have in your code and you also have certain web sites like jsperf.com which allow you to benchmark certain code alternatives against each other and find out which one is quicker.
+
+You also have webpagetest.com, which is a site you can use to test a hosted web site, so not your locally running one but a hosted web site and which then we'll give you a rich report on how that site performed and what you could look into there. Now these are just some tools and I can only recommend that you also Google web site performance, Javascript performance to find more approaches and more tools that might work well for you.
+
+----------------------------------------

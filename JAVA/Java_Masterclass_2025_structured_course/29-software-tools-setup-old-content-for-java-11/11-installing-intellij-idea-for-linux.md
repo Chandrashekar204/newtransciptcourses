@@ -1,0 +1,29 @@
+# 29.11 — Installing Intellij IDEA for Linux
+
+> Section 29: Software Tools Setup - Old content for Java 11
+
+In this video, we want to download and install IntelliJ IDEA for Linux platform. Specifically, we're gonna be using Ubuntu 18.04.01. The reason for that, that is the LTS, the long term support version of Ubuntu as of the time I'm recording this video. Now, what I wanna do is first show you the two versions that are available. So I've gone to jetbrains.com, you won't need to do that and that's because the commands I'm gonna be showing you are from the command line to do the installation.
+
+But I just wanna show you the two versions. I'm gonna go to tools here and click on IntelliJ IDEA. That's the integrated development environment, or editor, we will be using for this course. I'll just click on yes to accept that, close the cookies declaration, and I'm going to download, again, purely just to show you the various versions. We've got two versions there. We've got an Ultimate Edition, which is a paid tool, and a Community Edition, which is a free one.
+
+In this course, the Community Edition will do everything you need. So there's no need to pay for IntelliJ, unless you're doing some more professional things. And you can see over here to the left, we've got JavaScript, Java Enterprise Edition, Spring, and so on and so forth. So if you need that extra functionality in the future, you can come back and grab the Ultimate Edition. You will need to pay for that, though there is a free 30 day trial. In fact, I can extend that so you can send me a message if you need to extend the trial for the Ultimate Edition.
+
+But I think the Community Edition will do everything you need to do. So let's close that page down because I mentioned we're going to be using the command line for this. I'm gonna open a terminal window, clicking on activities, I'm just gonna type the first letter 't', brings this up, and click on terminal. Now there's two commands here if you want to install the Community Edition. I'll type in the command first, that's gonna be sudo, space, snap, space, install, space, intellij, dash, idea, would be the name of the IDE, dash, community.
+
+Now replace community with ultimate, if you want to instal the Ultimate Edition, the paid version of IntelliJ, remembering that you'll get a 30 day trial if you want to do that. But in my case, I'm going to instal the free and open source community edition. So I'm gonna leave the word community there. And then I got space, dash, dash, classic. Press enter there. I'm gonna type in my password. That's now going to download and then instal the latest version of IntelliJ IDEA directly down to our, into our Linux distro.
+
+So this version of Linux that we're running, which again was Ubuntu 18.04.1. Okay, you can see the download's completed. It's installing. And you can see in this case for me, it's installed the 2019.1.3 version, which is as of the time I'm recording this video, the latest version of the IntelliJ Community Edition. So we've actually now successfully downloaded and installed that. What we can do is start it. And to start it, you can come back to activities, and we can just type in 'in', noting that we've got an IntelliJ IDEA icon there.
+
+We can click on that and close up our command window, give that a moment to start. I'm gonna just go through some of the settings now just to show you what happens here. So firstly, you get when you first click on start IntelliJ IDEA for the first time. We've got an option to import settings from a previous installation, that would be the top option, config or installation folder. And that would be if you got an old version and you want to import the settings.
+
+Now perhaps you've configured it in a specific way, if you want to do that click on that and navigate to that folder. In my case, this is a brand new installation. I'm gonna check, or leave selected, do not import settings, and click OK. Next I'm going to agree to JetBrains privacy policy by checking the check box. I click on continue. We've got the option to send anonymous usage statistics to JetBrains, I'm going to click on don't send, but obviously you can choose the other option if you prefer.
+
+We've then got a choice of theme, do we wanna use a dark background with Darcula or Light. I'm gonna select Light because that's better for video purposes, but generally I recommend Darcula for developing, and that's what I would, from my normal development machine, I do certainly use dark background. Click on next for default plugins. I'm not gonna change anything there, you've got the options to disable or remove some options if you want. Those things are fine as is, I don't think we need to change anything there.
+
+Nothing that, you can always go back later and make these changes if you want to. I'm not going to do anything, I'm gonna click on next. And I've got the option to install these three things, we won't be using them in the course, so therefore I'm not going to change anything there either. I'm going to click on 'Start using IntelliJ IDEA'. And you can see that's fired up IntelliJ IDEA. All right so at this point, we've now successfully installed IntelliJ IDEA on our Linux platform.
+
+There is a little bit more configuration we need to do and there's a separate video in the course for configuring IntelliJ IDEA. And that video is for all version of IntelliJ, for Windows, Mac, and Linux. But the good news is that now that you've got to this stage and IntelliJ's booted, the interface is pretty much identical for all three platforms. So fast forward now to that video, or go to that video in the course, and do the remaining configuration, and we'll be ready to start programming in this course.
+
+I'll see you in that next video.
+
+----------------------------------------

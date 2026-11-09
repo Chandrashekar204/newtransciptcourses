@@ -1,0 +1,19 @@
+# 2.26 — Working with Code Comments
+
+> Section 2: Basics: Variables, Data Types, Operators & Functions
+
+Now we wrote some code already, a feature which you can also use in Javascript and many other programming languages are comments. You can add comments to your code to make it more understandable to fellow developers or to yourself if you were coming back to your code after a couple of months of break or something like that. Now a comment in Javascript can be added in two ways, you can add it here, like you add regular code by adding two forward slashes, this is a comment now. This means that this is there for people to read but it has no effect on your code.
+
+If you reload, you don't see an error or anything like that, it's not executed as code, instead this is just there to comment your code, to make it more understandable. If you have a longer a comment to write which should be split across multiple lines, you can of course add another line of comments here with two other forward slashes but you can also add a block comment by adding a forward slash and then a star and now you see everything is green down there because now everything after that is treated as a comment, so this is also a comment and this is and now you have to close the comment with a star and another forward slash, so the opposite combination we had here to open it.
+
+So now this allows you to write a longer comment across multiple lines without starting every line with two forward slashes. Now how will you use comments in your code? You shouldn't comment the obvious, so if you comment this is a function that extracts the user input from the input field, that's not the best comment because for one you don't want to write long text, you don't want to write essays here, instead you want to write short to-the-point comments that add some extra context or understanding that isn't obvious from looking at the code.
+
+So if I look at this code, it's pretty obvious at what it does, we could just add something like gets input from input field. Why is that useful? Because it adds this extra context that this is coming from an input field because it might not be obvious, by looking at the code, that user input refers to input field, so that could be something we could add to make understanding that code a bit easier and simply save the developer who's looking at the code to time to kind of find out what user input is referring to.
+
+Here we could add something like generates and writes calculation log, again this might not really be necessary because that's quite easy to see if you look at this but if you have a first quick look at this, it could look daunting and then this makes it clear that this is in the end just a helper function that outputs some information and generates that information as well. You can also add a comment inline, so after some code, like here, we could say from vendor file to make it clear that this function is not defined somewhere in this file but lives in the vendor file, otherwise this might not be obvious and again if someone wants to follow our code or understand it, this could help with understanding it.
+
+So adding such a short inline comment also sometimes can be useful. In general, you want to comment your code, especially if you share it with others but you don't want to overdo it, don't add redundant information, don't write too long comments because then people will not read them at all and they actually get less out of them than if there were no comments at all and you don't want to comment the obvious, instead provide some extra context, extra information that can help understand your code faster or briefly share your thoughts regarding the code you wrote here.
+
+That's something you could add with comments.
+
+----------------------------------------

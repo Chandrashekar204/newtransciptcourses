@@ -1,0 +1,23 @@
+# 15.2 — Introduction to KeyCloak Auth Server
+
+> Section 15: Securing EazyBank using OAUTH2 and KeyCloak
+
+Instructor: When we are talking about OAUTH 2 and OpenID framework for the very first time, I told you that OAUTH2 or OpenID, They are just standards or specifications. They're not actually a proper product, which can be leveraged by any organization. That's why they are simply guidelines of standards, or specifications. Based upon these OAUTH 2 standards or specifications or guidelines. Bigger organizations like Facebook, GitHub, LinkedIn, Google, Netflix, Amazon, they started building their own Auth server for their own internal purpose.
+
+Because all these bigger organizations, they have various applications which are built for websites, mobile applications, or for third party vendors. Since bigger organizations have a lot of applications built, they separated all the authentication and authorization logic into your separate Auth server, which is built based upon the OAUTH 2 and Open ID specifications. But this may not be a possible for all the organizations to build their own Auth server because it requests good amount of manpower, money, and expertise.
+
+Since building an Auth server from scratch requires lot of efforts, there is a new market or opportunity opened in the IT industry. Few organizations, what they have done is, they started building products based upon the OAUTH 2 and the Open ID specifications. So any organization who are not able to build their own Auth server, they can simply use these readily available products by paying only few thousands of dollars. We have tens of such products available inside the IT industry.
+
+But I'm going to quickly give you the introduction about the most famous products. The very first product I would recommend anyone to use is Keycloak, because this is an open source product which is built and maintained by the Cloud Native Computing Foundation. Similarly, we also have some commercial products like Okta. Okta is very famous commercial product. Any organization who are ready to pay few hundreds or few thousands of dollars, they can happily adopt these Okta.
+
+We also have other product with the name AuthO. This AuthO product is recently acquired by Okta itself. That's why you are able to see here AuthO by Okta, this is also one of the famous readily available Auth servers that organizations can leverage. At last, we also have Amazon Cognito from the AWS. If your organation is using AWS components to a great extent, then using these product will be a good decision, because it has a good integration with the AWS components.
+
+Even if someone is not using AWS, they can still use this product. But inside this course, I'm going to use Keycloak. The reason is very simple. It is an open source. I don't want to teach you something which is going to attract some build. With the help of this Keycloak, we should be able to set up the Auth server inside our local system. Inside an development system. Inside an production system. Regardless of the complexity of your application, you can happily use these Auth server though it is open source, it is fully tested and it is majorly being used by many enterprise organizations.
+
+So if you try to understand what is there inside this website, the very first highlighted information here is, it is an open source identity and access management product. It is going to support single sign-on, Identity Brokering and Social Login. User Federation. User Federation means we can store all the user credentials inside storage systems like relation database, LDAP, active directory, and we can point our Keycloak to these storage systems so that the Keycloak can perform the authentication and authorization based upon these configured storage systems.
+
+And similarly, this product is also going to provide you admin console where admins can set up some configurations related to the Auth servers. It is also going to provide you Account Management console for normal users. Next, here we have the most important information, which is it is going to support the standard protocols like Open ID Connect, OAuth 2. And it is also going to support various authorization services. With the help of these Keycloak Auth server, we should be able to set up a cluster to handle any kind of traffic.
+
+If needed, we can also customize the login page of the Auth server based upon our own organization look and feel requirements. We're going to explore a lot about this Keycloak server in the coming lectures. But to get started with these Keycloak server first, we need to set up these inside our local system. Let's try to set up this Keycloak server in the next lecture. Thank you, bye.
+
+----------------------------------------

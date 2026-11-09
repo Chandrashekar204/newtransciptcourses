@@ -1,0 +1,31 @@
+# Certificates API
+
+*Section: Security*
+
+1 In this lecture, 2 we look at how to manage certificates 3 and what the certificate API is in Kubernetes. 4 So what have we done so far? 5 I, as an administrator of the cluster, 6 in the process of setting up the whole cluster, 7 have set up a CA server and bunch of certificates 8 for various components. 9 We then started the services using the right certificates 10 and is all up and working. 11 I'm the only administrator and user of the cluster 12 and I have my own admin certificate and key.
+
+13 A new admin comes into my team. 14 She needs access to the cluster. 15 We need to get her a pair of certificate 16 and key pair for her to access the cluster. 17 She creates her own private key, 18 generates a certificate signing request and sends it to me. 19 Since I'm the only admin, 20 I then take the certificate signing request to my CA server, 21 gets it signed by the CA server 22 using the CA server's private key and route certificate, 23 thereby generating a certificate 24 and then sends the certificate back to her.
+
+25 She now has her own valid pair of certificate and key 26 that she can use to access the cluster. 27 The certificates have a validity period. 28 It ends after a period of time. 29 Every time it expires, we follow the same process 30 of generating a new CSR and getting it signed by the CA. 31 So we keep rotating the certificate files. 32 So we keep talking about the CA server. 33 What is the CA server 34 and where is it located in the Kubernetes setup?
+
+35 The CA is really just the pair of key 36 and certificate files we have generated. 37 Whoever gains access to these pair of files 38 can sign any certificate for the Kubernetes environment. 39 They can create as many users as they want 40 with whatever privileges they want. 41 So these files need to be protected 42 and stored in a safe environment. 43 Say we place them on a server that is fully secure, 44 now that server becomes your CA server.
+
+45 The certificate key file is safely stored in that server 46 and only on that server. 47 Every time you want to sign a certificate, 48 you can only do it by logging into that server. 49 As of now, we have the certificates placed 50 on the Kubernetes master node itself. 51 So the master node is also RCA server. 52 The Kubeadm tool does the same thing. 53 It creates a CA pair of files 54 and stores that on the master node itself.
+
+55 So far we have been signing requests manually, 56 but as in when the users increase and your team grows, 57 you need a better automated way 58 to manage the certificates signing requests, 59 as well as to rotate certificates when they expire. 60 Kubernetes has a built-in certificates API 61 that can do this for you. 62 With the certificates API, 63 you now send a certificate signing request 64 directly to Kubernetes through an API call.
+
+65 This time when the administrator receives 66 a certificate signing request, 67 instead of logging onto the master node 68 and signing the certificate by himself, 69 he creates a Kubernetes API object called 70 CertificateSigningRequest. 71 Once the object is created, 72 all CertificateSigningRequest 73 can be seen by administrators of the cluster. 74 The request can be reviewed and approved easily 75 using Kube control commands.
+
+76 This certificate can then be extracted 77 and shared with the user. 78 Let's see how it is done. 79 A user first creates a key, 80 then generates a certificate signing request 81 using the key with her name on it, 82 then sends the request to the administrator. 83 The administrator takes a key 84 and creates a CertificateSigningRequest object. 85 The CertificateSigningRequest object 86 is created like any other Kubernetes object 87 using a manifest file with the usual fields.
+
+88 The kind is CertificateSigningRequest 89 under the spec section. 90 In the spec section, usages defines 91 how the certificate will be used. 92 Expiration seconds controls certificate validity 93 signer name tells Kubernetes who is allowed 94 to sign the certificate signing request 95 and what kind of certificate is being requested. 96 The request field is where you specify 97 the certificate signing request sent by the user, 98 but you don't specify it as plain text.
+
+99 Instead, it must be encoded using the base 64 command. 100 Then move the encoded text into the request field 101 and then submit the request. 102 Once the object is created, 103 all CertificateSigningRequests can be seen 104 by administrators by running the Kube control, 105 get csr command. 106 Identify the new request and approve the request 107 by running the Kube control certificate approved command, 108 Kubernetes signs the certificate using the CA key pairs 109 and generates a certificate for the user.
+
+110 This certificate can then be extracted 111 and shared with the user. 112 View the certificate by viewing it in a YAML format. 113 The generated certificate is part of the output, 114 but as before, it is in a base 64 and coded format. 115 To decode it, take the text 116 and use the base 64 utilities decode option. 117 This gives the certificate in a plain text format. 118 This can then be shared with the end user.
+
+119 Now that we have seen how it works, 120 let's see who does all of this for us. 121 If you look at the Kubernetes control plane, 122 you see the kube-apiserver, the scheduler, 123 the controller manager, etcd server, et cetera. 124 Which of these components is actually responsible 125 for all the certificate related operations? 126 All the certificate related operations 127 are carried out by the controller manager.
+
+128 If you look closely at the controller manager, 129 you will see that it has controllers in it 130 called as CSR-Approving, CSR-Signing, et cetera, 131 that are responsible for carrying out these specific tasks. 132 We know that if anyone has to sign certificates, 133 they need the CA server's route certificate and private key. 134 The Controller Manager service configuration has two options 135 where you can specify these.
+
+136 Well, that's it for this lecture. 137 Head over to the practice test 138 and play around with the certificate's API 139 and we'll see you in the next lecture.

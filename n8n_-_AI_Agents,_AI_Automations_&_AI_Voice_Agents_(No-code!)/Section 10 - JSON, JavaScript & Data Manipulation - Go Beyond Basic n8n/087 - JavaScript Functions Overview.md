@@ -1,0 +1,49 @@
+# JavaScript Functions Overview
+
+*Section: JSON, JavaScript & Data Manipulation - Go Beyond Basic n8n*
+
+In this part of this section. It's the proper time to cover JavaScript functions. So we'll cover almost all of them. But before it, in this specific video, we'll answer the most common questions. So what are the JavaScript functions? Why are they so important. And then I will share a few key benefits. And also pretty important notes to remember about JavaScript functions. So with all that being said, let's dive in.
+
+And right away let me dive deep in what JavaScript functions are. So JavaScript functions are small, reusable blocks of code designed to perform a specific task. So simply we give them an input. So let's say maybe we've got some variable previously inside na den. So let's say JSON dot message. And then we just type the dot and we can use some specific function. So they perform some operations and they return an output.
+
+And I can say using JavaScript functions can save us a lot of time because let's say one of my favorite functions is to stringify the output. So we've got maybe some array or so and then we can stringify. So turn this array into a string without just I don't know, just setting the set node or so. Um, but about it later. So I will explain all of the functions in this specific section. Why are they useful in any denim.
+
+So an JavaScript functions allow you to go beyond what standard nodes can do transform incoming data, calculate custom values, filter results dynamically, and create new data from scratch. So overall, as you may know, Na then is low code platform. But when someone knows how to how to code, let's say even if you know JavaScript functions, you can really simplify a lot of things you do inside the application.
+
+So maybe let me let me move on and I will be showing you everything. So think of JavaScript function and Na then as your custom automation tool it works inside your workflow, takes the data flowing through it, processes it however you want, and sends the modified result to the next step, giving you full flexibility over your automation. And I wanted to just move on because here we've got the examples.
+
+So example use case check if string contains a word. So we'll be just covering it like really soon in the next video. But simply what we do we take the JSON string um and we use the function which is includes. So we check if the text includes AI. And I believe here we, we had the text which is uh, approximately eight agents I guess. And there as you can see we typed it and we've got the true value.
+
+So it returns the true. Um, so we've got what it does. Checks if a string contains the word AI. Trigger an automation only if a message mentions, uh, AI. Um, so, yeah, just set and says just true or false. Another function round number to two decimals. So JSON number two to fixed and we just specify two decimals. So we just specify amount of. The numbers after um yeah the actual number. So here we've got two zeros.
+
+And what it does runs a number to two decimal places. Format prices before adding them to an invoice for example. You know. And now just imagine without this function you would need to do other things like really set up, um, I don't know, maybe this variable like do some modifications, um, in that specific format, but with the function you can do it within, like within, um, the entire variable itself.
+
+So instead of just providing JSON number and getting the number which is 42, you just type dot to fixed and then you provide the two. So I mean functions really can help you to to just simplify your life. And that's why we are learning that in the course in the last example is join array into a string. So simply you type JSON array and join. And then simply you've got an array. However you can get it as a string.
+
+So previously we had the array. So the I the one which was the Zapier. The second item which is notion. The third and I then and ChatGPT. However, once again it turned it into just one string for our specific purpose. So I hope for now you've got some specific, um, actually thoughts about the JavaScript, um, JavaScript functions. I can say it's pretty useful even if you are not a coding person as me.
+
+Um, I mean, it's really worth to know them because maybe let's say you won't be using them a lot. However, think about it like you've got a situation. Maybe you'd like to perform some action, let's say from from the specific string. You want to extract only an email. And now you know what. We've got a function to do this. So extract um actually email extract URL extract I don't know domain name. And so so it's really valuable to know it.
+
+And you're just better at using Na then when you know the functions. But I've got for you the notes for using functions. So the first one is you won't use most of these functions daily. And now trust me, you will learn. Maybe. Let's say you watch all of the videos from start to finish. You will know actually how to use these functions. However, you won't be using them. Also me, I'm using maybe, I don't know, maybe 10 to 20 functions I guess.
+
+And others I really, really rarely I use. So just this is the notification actually the description. But it's valuable to know them in specific situations. The right function can save you time and simplify complex steps. And it's true. So let's say you you have your 1020 functions or even let's say ten that you use daily. So in long term it saves a lot of time for you. Um, I hope you know what I mean.
+
+Um, think of functions as tools and a toolbox. So you might not need them at the time, but when the situation calls for it, you will be glad you know they exist. And I can say it's totally true. Maybe you will be using only five. Let's say only five. It would be also great if you if you can remember five functions from this entire section and use them. However, let's say you use only five and then you've got some specific situation and you think and you and you realize that, okay, I learned something about it.
+
+Maybe there is a function. You go, you just use the function and you save time. We'll cover almost all functions, but we may skip a few since there are many available. If we skip some, that's completely normal and won't limit your ability to work in any denim. So in this section, in this part of the section, um, actually we'll go through all of them, all of them different functions. However, we may miss some like, you know, some single functions.
+
+So in this experiment, in a safe workflow, try these snippets and a test and then workflow so we can see what they return before using them in production. So it's great to actually experiment with it. Also, I encourage you in the meantime of watching um, like the following videos where we'll cover the functions like open your instance and just test them out as me. So then you can just better just learn them.
+
+And please do this. It's very important. Just instead of only watching the video, test them out, see how they work, what's the structure. So it's really helpful. I'm combined functions for powerful results. So often using 2 or 3 functions together can solve tasks that would otherwise need extra nodes. Uh, well covering that later. So we can use different functions, let's say two functions to do different things.
+
+Um, but yeah, it's really powerful. Check your data type first. Make sure you're applying a function to the right kind of data string, number, array, etc. otherwise you might get errors. Um, so we've got different, um, you know, different function types. We've got a string, we've got an array, we've got a number, a boolean. So just make sure you apply the right one okay. The key is knowing what's possible.
+
+You don't need to memorize every syntax. So every function. But remember that and then allows you to use JavaScript to transform data however you need. Um, it's another point. You don't need to remember all of the functions we cover in this specific section, because actually you can go ahead and you've got pretty nice documentation for using functions. So simply after triggering some specific variable.
+
+So let's say we've got a JSON array. So we've got edit fields so JSON array. And now we can just type the dot. We've got the entire like um here we've got the entire list of functions. And when we click the down um actually arrow on our keyboard we can move on and just see includes returns true. If the array contains the specified element, you can just click Learn More. And simply you've got the entire documentation for all the functions you can imagine.
+
+So this is the point. You don't need to remember everything about them. The point is to actually have. I would say the best approach is to have like from five maybe to 15 or even 20 functions you use constantly. But for others, you don't need to. Actually, the best point is for you to know that they exist, but it's not needed to know exactly what's the structure because once again, you can find everything inside any documentation.
+
+You can see how they work. You've got specified examples. So it's really helpful also. Me, I can say I really don't remember. Like I remember mostly the functions how to use them. However, for some I also need to read some documentation and see. All right, it works this way. Um, I mean in the specific form of how to use it. But yeah, this is the point. You don't need to remember all the functions.
+
+To summarize in this video, you knew what JavaScript functions are, why we use them inside. And then all of the most important information. And I can say in the next material we are moving forward to the first type of functions which is string functions. So I can't wait for that. Thank you for watching this video and I will see you in the next material.

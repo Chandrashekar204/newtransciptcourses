@@ -1,0 +1,31 @@
+# 1.8 — Quick introduction to Servlets & Filters
+
+> Section 1: Getting Started
+
+Presenter: One of the toughest questions that you can expect around the Spring security framework inside interviews is around the Spring security internal flow. The interviewer can ask you a simple question, which is, "Can you please explain me what is the internal architecture or internal flow of Spring security framework?" Throughout this course, we're going to put lot of efforts to understand how Spring security works internally, and you can see in this slide I have a high level Spring security internal flow.
+
+I'm going to teach you this internal flow inside the next lecture in a detailed manner. But before we try to understand the Spring security internal flow, first you need to understand what are servlets and filters inside Java ecosystem. There is a strong reason why I am trying to explain about servlets and filters, because inside the Spring security framework, also, lot of security related functionality is implemented with the help of filters and servlets.
+
+I hope you're convinced on why we're discussing these servlets and filters. First, let's try to understand what is a servlet, later on we can try to understand what is a filter. We all know the backend code that we write with the programming language like Java, it is going to be deployed into your server. Anyone who want to invoke the rest API or the MVC path that is hosted inside my server, they can easily invoke with the help of the browser, which is one of the client application.
+
+Whenever someone is trying to send a request with the help of browser, the request, it is going to come in a HTTP or HTTPS protocol. So whatever message we are trying to send with this HTTP protocol, it is not going to make any sense to the backend server or backend logic that we have returned. Inside Java programming language, anything that we want to process, it has to be converted into your Java object. So this is where the servlet container comes into picture.
+
+So what is a servlet container? It is a kind of web server or app server, We have many servlet containers like Tomcat, JBoss, so these are all the examples of servlet containers or app servers or web servers. So you can see, all my code is deployed inside a web or app server. So what is the responsibility of these apps server or web server? It is going to convert whatever HTTP request that we are going to receive into an ServletRequest object or HTTP ServletRequest object.
+
+Inside the ServletRequest or inside these HTTP ServletRequest object, the data that is sent by client application is going to be present. So once the servlet request object is prepared, the same is going to be forwarded to the corresponding servlet like you can see here. So these servlets is going to be leveraged by the frameworks like Spring boot or Spring security. From these servlets, only the actual business logic invocation is going to happen.
+
+Like whatever business logic we write inside the controller classes or inside the service classes, all that business logic is going to be invoked from these servlets only. As of now we discuss the story of the request, but once the request is processed on the backend server, the backend server or the backend code, it is going to respond to the client with the response. So the response is going to be sent in the form of ServletResponse object. Again, this ServletResponse object, it is not going to make any sense to the client application or to the browser.
+
+Here, also the Servlet Container come into picture, the servlet container, before it is trying to forward the response to the client application, it is going to convert the ServletResponse object into the HTTP or HTTPS protocol, before Spring boot framework or before Spring framework introduce somewhere in early 2000s, every developer they used to write all their business logic with the help of servlets only. Building a business logic or building a web application with the servlets is very complex, frameworks like Spring boot or Spring security, they are going to do a lot of heavy lifting for the developers.
+
+These days we are enjoying the benefits of these frameworks. We as a developers, we are just trying to make some configurations and once we do some minimum configurations, we are more focused on writing the business logic. We are nowhere worrying about how to build a servlet, how to build a filter, because everything is being taken care by the frameworks these days. I hope you're clear of the servlet, now let's try to understand what is a filter and what is the role of it?
+
+You can see in the picture, before my request reaching to the actual servlet, there are filters in between. With this, it should be pretty clear for you, filters inside Java web applications, they're going to be used to intercept each and every request and response that is traveling between client and actual servlets or actual business logic. Using these filters only frameworks like Spring security, they are implementing lot of security related logic.
+
+For example, what is the purpose of Spring security framework? The purpose of the Spring security framework is very simple. Whenever we are trying to access a REST API or a MVC path, it has to intercept the request and it has to identify if the user is authenticated or not, if not, it has to redirect the user to the login page. Since the Spring security has to intercept each and every request to enforce the security inside a web application, all the security logic of Spring security framework is implemented with the help of filters, only.
+
+When we start exploring internal architecture of Spring security, you'll be able see there are not many filters playing a role inside the Spring security framework. Using these filters only the framework is going to do lot of magic of enforcing the security. I hope you are clear with all these discussion around the servlets and filters, please note that always the filters, they are going to be executed first, followed by the servlets or the actual business logic is going to be executed.
+
+So this is a simple definition that you can remember for now. From the next lecture, let's try to explore the internal architecture of Spring security framework. Thank you, bye!
+
+----------------------------------------

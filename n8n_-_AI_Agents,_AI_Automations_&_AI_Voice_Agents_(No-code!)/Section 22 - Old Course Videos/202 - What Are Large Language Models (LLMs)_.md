@@ -1,0 +1,39 @@
+# What Are Large Language Models (LLMs)?
+
+*Section: Old Course Videos*
+
+Today we are going to talk about large language models. Before we start cooking and diving into all these exciting topics like powerful AI agents, automations that can transform your work and business, let's go back to the basics and briefly discuss large language models. Why? Because understanding how they work will help you create more advanced and powerful AI agents. Automation and AI systems. This knowledge is going to be crucial as we move into more advanced topics.
+
+Alright, so let's start with a simple question. What actually is a large language model? If you have used the ChatGPT Cloud Llama two or any other modern AI assistant. But let's take a step back. What do these models actually do? As decor, they They're just really, really good at predicting the next word in a sentence. Imagine you are texting someone and your phone suggests words to complete your sentence.
+
+Something like hey, how are you? You expect the word doing or today to appear? That's because your phone has seen common phrases and makes predictions based on what it has learned. Llms work the same way, but on a much larger scale. They've had to read massive amounts of text like books, articles, code, conversations, and use that knowledge to make incredibly accurate predictions. They don't think like humans.
+
+They don't understand like like we do. They just use probabilities to determine the most likely next word. And when you scale this up with billions of examples? You get something that feels intelligent. Now, if we strip away all the marketing buzz and hype, what's an LLM actually made of? Well, surprisingly, LLM is just two files. The first one is a parameters file which contains all the learned knowledge.
+
+And the second file is a code file which runs the model to generate text. Now let's compare it to a music player. So imagine you have a playlist of songs. And that playlist is like the parameters file because it stores all the information, the lyrics, the melodies. And now you need something to actually play the music. That's where the code file comes in, because it's the music player that reads the playlist and makes sound for lmms.
+
+The parameters file contains billions of numbers, each representing what the model has learned. So it's a compressed version of all the text it has processed. The code file is a relatively small program that takes in a prompt, applies mathematical functions, and then spits out the the next word based on probability. Now how does an LLM actually learn? How do you go from raw text to a working AI model?
+
+So the answer is a lot of data and a ridiculous amount of computing power. So first companies collect massive datasets. Think of like books, Wikipedia, news articles, scientific papers, Reddit discussions, even public code repositories. And the goal is to feed the model as much human knowledge as possible. Next comes training. So this is where the magic happens because the model starts with random numbers.
+
+Yes, actually at the start it knows nothing and we force it to predict the next word in billions of sentences. When it gets a word wrong, we update the parameters using a technique called gradient descent. And over time it gets better. So this process runs for weeks on thousands of GPUs, which are the super fast processors used for AI. Training is kind of like taking all the knowledge of the internet and squishing it down into a compressed format that fits in a single file.
+
+Okay, now let's go deeper into how these models actually generate text. So it all comes down to one simple idea. Predicting the next word. So let's take an example. The cat sat on a chair. And what word do you expect to come next. Most people would say mat. But why? Because you've seen the phrase before and it's very common. Neelam does the same thing. It looks at the words before the blank. And assigns probabilities to possible next words.
+
+So the floor is about 10% probability. So for 5% and 31%. So the model picks the most probable one and moves on to predict the next word and the next and the next. So this simple mechanism, repeated billions of times, leads to intelligent sounding conversations. Now we need to differentiate two types of models. Open source models and closed models. Because not all llms are the same. Some are open source and some are closed source.
+
+So open source models like Deepsea Llama two, Mistral Falcon are free to download and modify so you can run them on your own computer. Tweak them and fine tune them for specific tasks. On the other hand, closed source models like GPT four, Gemini Cloud are owned by companies like OpenAI and Google. You can use them, but don't get access to the architecture and how they work internally. So open source models give you more control.
+
+Now, raw llms are actually not that smart. They can generate text, but they don't naturally follow instructions well. So to turn them into useful assistants like ChatGPT, they go through a process called fine tuning. And fine tuning basically means taking a trained LLM and giving it specific examples of how it should respond to questions. Humans write sample conversations, and the model is adjusted so that it learns to mimic helpful, structured responses.
+
+So this is how ChatGPT knows. To answer questions, politely summarize articles, and explain concepts clearly because it was trained to do so after the initial training phase. Now, fine tuning takes a pre-trained LLM and specializes it for a specific task or use case. So this is done by providing the model with a curated data set, which is basically a collection of high quality human written examples that teach the model how to respond in a specific way.
+
+So fine tuned LLM that performs better in a targeted domain, whether that's answering customer service questions or writing code. Now, every few months, a new, more powerful LLM comes out because improving AI is as simple as adding more training data and more computing power so each generation of models gets bigger, faster and smarter. Just like upgrading a car engine, newer models perform better than the older ones, so the cycle will continue as AI technology evolves.
+
+So AI is no longer just a chatbot. It's evolving into an operating system for knowledge and automation. Right now, we are already seeing AI models that don't just generate text, but can search the web, run code, interact with APIs, and even control applications. So these functionalities mean AI is moving beyond passive response generation and becoming an active Kind of participant in workflows. And this is where things get really interesting, because if I can process text, images, audio and interact with external tools like systems and apps, what are we actually talking about?
+
+Are I agents? Are agents are the next step. These are intelligent systems that don't just generate responses but take actions on their own. They can schedule tasks, automate workflows, analyze real time data, and even make decisions based on context. So now let's shift gears and dive into this next evolution. Agent. So we'll go through how they work and how they are shaping the future of automation.
+
+Let's quickly recap what we have covered today. So we start with LMS, which predicts words based on vast amounts of training data. Then we explored how fine tuning transfers these raw models into useful AI systems. But AI is evolving beyond just text. Generation is becoming multi-modal and understanding not just words, but images, audio, and real world data. And this shift is turning AI into an operating system for automation, where models don't just answer questions but interact with apps, tools, and the internet.
+
+And now we are entering the era of agents for systems that don't just generate responses, but actually take actions on their own. Thanks for your attention and see you in the next lesson.

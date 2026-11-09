@@ -1,0 +1,37 @@
+# Introduction to JavaScript + Code Node Basics
+
+*Section: JSON, JavaScript & Data Manipulation - Go Beyond Basic n8n*
+
+Hi there. Welcome back. So far in this section we learned about JSON data and expressions. And these topics are really important if you want to become pro in Nuneaton. Today we are diving into JavaScript and code node. And don't worry I'm not gonna teach you programming, but I'm gonna show you that sometimes you can leverage JavaScript to supercharge your workflows. So let's get started. Now N810 is built on top of JavaScript, so that's running under the hood.
+
+And while you have been using expressions and working with JSON in the previous tutorials, you have actually been using JavaScript. And basically you can use JavaScript to do things that normal N810 nodes simply cannot handle, like complex data transformations, custom calculations, and some decision making logic. So first let's explain the difference between JSON and JavaScript because this is really important.
+
+So now again JSON is a way to organize and structure data. It stands for JavaScript Object Notation. And if you are watching this tutorial, you have learned a lot about JSON in this section. You know how to read it, how to work with different data types, and how to reference data between nodes. So JSON basically it's static. It holds your information in an organized format, but it doesn't do anything by itself.
+
+Now what is JavaScript? JavaScript is a programming language. It's what actually does things with your data. So JavaScript can read JSON data, manipulate it, transform it, and make decisions based on JSON, and also create new data. Now to use JavaScript code in any ten, most of the time we will use code node, which is a special node that lets you write or paste JavaScript code directly into your workflows.
+
+It's like a mini programming environment inside N810 2010, but you can transform your data in ways that standard nodes can handle. To visualize it better, I'm going to show you this. So JSON is like a recipe. It lists all the ingredients. So your data in a structured way. So you've got pizza temperature ingredients. JavaScript is like the chef. So it can read that recipe and actually do something with it.
+
+Like reads. The recipe hits oven to lights, temperature mixes ingredients in the right order, decides if needs more cooking time, and creates final dish. Description. And the code node is like the kitchen, so it's where the chef. So the JavaScript uses the recipe. So the JSON to create something new or to transform data. So JSON Some data JavaScript processes and transform it. And the code node is where it happens in atom.
+
+Now you don't need to be a programmer, but understanding this concept will make you more confident in atom, because many automation builders hit a wall when they when they need to do something that doesn't fit into standard nodes in any time to do something complex, like cleaning messy data from an API, or creating a custom logic that's too complicated for if nodes. You can use JavaScript code. You can use JavaScript to handle this type of tasks pretty easily.
+
+And with AI tools like ChatGPT, you can describe what you want to do with the data in plain English, and it will generate the code for you. So in this part of this section, I want to explain the fundamentals and teach you the basic concepts. How to communicate with AI to solve problems that would be difficult without basic JavaScript, basic coding, and some code node knowledge. After this, you'll be able to handle many data transformations.
+
+So when doing it the code node. So we can use any code node to transform data in ways that other nodes like if nodes a set node, for example a can handle any, then has a lot of built in nodes for common tasks. But sometimes you need to transform data that normal nodes can can handle. That's where we can use the code node. So the code node is perfect for complex data transformations. Custom calculations creating conditional logic instead of using if node a, cleaning messy data, or combining multiple data points into kind of custom formats.
+
+Now anytime has a dedicated code node and this node is powerful. So when you click on the plus button and type code. You can run custom JavaScript or Python code using this node. Here you can switch to Python, which is still in beta. And here you can see the parameters that are available. So you can use it like an editor where you can type or paste in code. And it has some built in functions. So there are two things you need to know about the code node.
+
+The first rule access data. So we are using dollar sign input call to get data from previous nodes. Your data from previous nodes come through this function. So this gives you access to everything that came into this node. Now if you start typing dollar sign input dot, you will actually see several methods you can access. So anytime shows you the autocomplete options. So this input object is how you grab all the data that's coming into your code node from whatever nodes came before this note.
+
+So this code note and the second rule is to always return object. Your code must return something wrapped in curly braces. So in other words it must be something that returns curly braces. And this is really important because even if you have nothing meaningful to return, you need to return an empty object that looks like just braces. So if you try to return anything that's not an object, including returning null or nothing at all, the code will fail and your workflow will break.
+
+So if you want to return just one variable, you need to put it in curly braces. Here we are returning all but it will look like that. So return. Then open curly braces. Variable name. Colon. And your value here. So your code node always needs to return something within curly brace. So when you first open a code node and then gives you this default code. So the default code that gives us assumes that we have an array of objects to iterate through.
+
+So each item is one object in the array. And this is the standard pattern you'll use most of the time. Now again you don't need to know how to code to take advantage of this node. Now why use the code node when an A-10 has an agent? Nodes that can also transform data. There are some good reasons why the code node is often the better choice. Let's quickly go through benefits of using code node. So first the code node is way more consistent.
+
+So when you set the code node once, it works the same way every single time. If you get something done programmatically in A-10, you want to do that because it's going to decrease your error rate and increase your success rate. Second, there is no guessing whether it will work. So once you set a code node to take in your data structure and transform it however you need, you are not going to have to to think if it's going to work.
+
+If you set it up once correctly, it will work. Third. So by using code node, you are not using tokens or API calls because it's just native to N810. And you can create the JavaScript code with AI to do the work for you. Fourth, the speed. So it's much faster than a agent node because code executes in milliseconds. Finally, it can accept way more data so it doesn't have a context window. So you can just throw data in and it does what it needs to do programmatically.
+
+So do all the transformations programmatically. In the next video I'm going to show you real examples of code in action. So see you there.

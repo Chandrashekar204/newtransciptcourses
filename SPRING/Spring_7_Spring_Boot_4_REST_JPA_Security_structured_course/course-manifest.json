@@ -1,0 +1,146 @@
+[
+  {
+    "section": 1,
+    "title": "Spring Core & Maven \u2014 The Fast-Track Foundation",
+    "folder": "01-spring-core-and-maven-the-fast-track-foundation",
+    "lectures": 11
+  },
+  {
+    "section": 2,
+    "title": "Spring Beans Deep Dive \u2014 AutoWiring, Scopes and More",
+    "folder": "02-spring-beans-deep-dive-autowiring-scopes-and-more",
+    "lectures": 19
+  },
+  {
+    "section": 3,
+    "title": "Mastering Spring Boot REST API Development - From Zero to Expert",
+    "folder": "03-mastering-spring-boot-rest-api-development-from-zero-to-expert",
+    "lectures": 23
+  },
+  {
+    "section": 4,
+    "title": "Spring Boot Essentials - Package structure, Dev Tools & H2 Database",
+    "folder": "04-spring-boot-essentials-package-structure-dev-tools-and-h2-database",
+    "lectures": 7
+  },
+  {
+    "section": 5,
+    "title": "Spring Data JPA - Databases interaction Without Pain",
+    "folder": "05-spring-data-jpa-databases-interaction-without-pain",
+    "lectures": 13
+  },
+  {
+    "section": 6,
+    "title": "Database Level-Up - Sailing from H2 to MySQL with Docker",
+    "folder": "06-database-level-up-sailing-from-h2-to-mysql-with-docker",
+    "lectures": 7
+  },
+  {
+    "section": 7,
+    "title": "Building the Contact Us Feature - Entities, APIs, and JPA Magic",
+    "folder": "07-building-the-contact-us-feature-entities-apis-and-jpa-magic",
+    "lectures": 6
+  },
+  {
+    "section": 8,
+    "title": "Essential Backend Skills - Exceptions, Validation, Auditing & Bean Scopes",
+    "folder": "08-essential-backend-skills-exceptions-validation-auditing-and-bean-scopes",
+    "lectures": 12
+  },
+  {
+    "section": 9,
+    "title": "Mastering JPA Relationships - From Basics to Real-World Mapping",
+    "folder": "09-mastering-jpa-relationships-from-basics-to-real-world-mapping",
+    "lectures": 8
+  },
+  {
+    "section": 10,
+    "title": "Spring Security Essentials - Behavior, Control & Inner Mechanics",
+    "folder": "10-spring-security-essentials-behavior-control-and-inner-mechanics",
+    "lectures": 11
+  },
+  {
+    "section": 11,
+    "title": "Spring Security Authentication - From Passwords to Tokens",
+    "folder": "11-spring-security-authentication-from-passwords-to-tokens",
+    "lectures": 12
+  },
+  {
+    "section": 12,
+    "title": "Database Authentication & CSRF Protection with Spring Security",
+    "folder": "12-database-authentication-and-csrf-protection-with-spring-security",
+    "lectures": 12
+  },
+  {
+    "section": 13,
+    "title": "Logging in Spring Boot \u2013 From Basics to Production-Ready Setup",
+    "folder": "13-logging-in-spring-boot-from-basics-to-production-ready-setup",
+    "lectures": 4
+  },
+  {
+    "section": 14,
+    "title": "Aspect-Oriented Programming in Spring - Concepts, Advices & Demos",
+    "folder": "14-aspect-oriented-programming-in-spring-concepts-advices-and-demos",
+    "lectures": 9
+  },
+  {
+    "section": 15,
+    "title": "Mastering Advanced Queries in Spring Data JPA",
+    "folder": "15-mastering-advanced-queries-in-spring-data-jpa",
+    "lectures": 8
+  },
+  {
+    "section": 16,
+    "title": "Mastering Authorization, Sorting & Pagination in Spring Boot",
+    "folder": "16-mastering-authorization-sorting-and-pagination-in-spring-boot",
+    "lectures": 11
+  },
+  {
+    "section": 17,
+    "title": "Mastering Transactions in Spring Data JPA \u2013 From Basics to Real Pro",
+    "folder": "17-mastering-transactions-in-spring-data-jpa-from-basics-to-real-pro",
+    "lectures": 12
+  },
+  {
+    "section": 18,
+    "title": "Making APIs Faster with Spring Cache \u2013 Concepts to Practice",
+    "folder": "18-making-apis-faster-with-spring-cache-concepts-to-practice",
+    "lectures": 7
+  },
+  {
+    "section": 19,
+    "title": "Building User Profiles & Job Actions with Spring Data JPA",
+    "folder": "19-building-user-profiles-and-job-actions-with-spring-data-jpa",
+    "lectures": 10
+  },
+  {
+    "section": 20,
+    "title": "Mastering Configuration & Profiles in Spring Boot",
+    "folder": "20-mastering-configuration-and-profiles-in-spring-boot",
+    "lectures": 11
+  },
+  {
+    "section": 21,
+    "title": "Production-Ready Spring Boot - Actuator & Observability",
+    "folder": "21-production-ready-spring-boot-actuator-and-observability",
+    "lectures": 11
+  },
+  {
+    "section": 22,
+    "title": "Calling External REST APIs \u2013 RestClient & HTTP Service Client",
+    "folder": "22-calling-external-rest-apis-restclient-and-http-service-client",
+    "lectures": 6
+  },
+  {
+    "section": 23,
+    "title": "From Code to Cloud \u2013 Deploying Spring Boot on AWS",
+    "folder": "23-from-code-to-cloud-deploying-spring-boot-on-aws",
+    "lectures": 5
+  },
+  {
+    "section": 24,
+    "title": "Thank You & Congratulations",
+    "folder": "24-thank-you-and-congratulations",
+    "lectures": 1
+  }
+]

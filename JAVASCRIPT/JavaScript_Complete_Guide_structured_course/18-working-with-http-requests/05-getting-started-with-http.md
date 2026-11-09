@@ -1,0 +1,17 @@
+# 18.5 — Getting Started with Http
+
+> Section 18: Working with Http Requests
+
+Now for this module, we again have a little starting project which you find attached, it's a HTML file with some content in there, some styling and an empty script file which is already getting imported here and that's of course the script file where we will add our logic. If you load the HTML file, you'll get this output on the screen, as you'll see this is a project which will allow us to send data and to also get data and now the tricky thing is we need a server, the browser side Javascript is not enough.
+
+Now we could write our own server with the help of Javascript and Node.js, Node.js is a Javascript runtime outside of the browser which basically enables you to execute Javascript anywhere and it's a popular solution for writing server side code. Actually later down in the course, I'll have a module where I introduce you to Node.js, so that might be interesting. For the moment, in order to focus just on the browser side, we'll use a dummy API, a dummy web service we can talk to and that's this page, jsonplaceholder.typeicode.com, you'll find a link to that attached.
+
+This basically is a page that gives us a dummy web service, a dummy API we can send different requests to, any data we send to it of course is not permanently stored there, it's just a dummy API which fakes to store the data but it's great for a getting started with all of that. Now you'll learn how to use it here on this page, you even get working Javascript code here though we'll not start with this code here and therefore, it is super simple and a great place to start practicing.
+
+Now if you scroll down a bit on the starting page, you'll see the supported routes or endpoints you could say and there, you see various HTTP method URL combinations are supported. Now these are just the paths but they're always appended to this domain, building a URL therefore and it's a get request to /posts which for example is supported or a post request to /posts or a delete request to /posts and then some specific post ID and we'll use this in this module, we'll see various different HTTP methods in action and this just shows you which kind of requests this fake API accepts.
+
+If you would try to send a different request, let's say a request with the method of post to a URL or a path which is not listed here, then you would get an error. So that's what supported, now let's see how we use it. Now we'll work with this /posts endpoint and that's the first important thing. If we click on that, you'll see this data, this is actually JSON data and I'll come back to that in a second. What we have here in the URL is the domain, so jsonplaceholder.typeicode.com and then /posts would be the path and what we sent here by just entering it like this in the browser is a get request because the browser, if you enter a URL sends a get request.
+
+Now of course, we don't want to fetch data like this, we want to fetch it from inside Javascript, so that's what we'll do, we now just found out that we can send the request to this URL in the end so that's a great starting point. And with that, back in app.js, let's get started and let's send our first HttpRequest, starting with the XMLHttpRequest object and later I'll come back to that and which alternatives you have and when you want to use which.
+
+----------------------------------------

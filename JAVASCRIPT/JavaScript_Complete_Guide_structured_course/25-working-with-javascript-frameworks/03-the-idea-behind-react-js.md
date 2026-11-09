@@ -1,0 +1,13 @@
+# 25.3 — The Idea Behind React.js
+
+> Section 25: Working with JavaScript Frameworks
+
+So what's React? It's a Javascript library for building user interfaces in the end. Now as I mentioned, library because technically it focuses on that user interface building part but enriched by everything else the ecosystem that it spawned offers, it's basically like a framework you could say. Now the user interface part is important though, React's all about building user interfaces that look good but more importantly than that, that update reactively, so that you for example can define if this button is pressed, this data should change and if that data changed, instead of outputting this text down there, I want to output that text.
+
+So you basically define different kind of scenarios and results you could say and React will then do the heavy lifting of reaching out to the DOM, adding elements, removing elements, adding CSS classes, removing CSS classes so that you don't have to manually write all these instructions, instead you just manage the state as it's called of your application and React will then update the UI based on what changed. This is called a declarative approach because you declare the goal, you declare what you want to see on the screen in different scenarios and React will then handle the way of getting there. The opposite of that would be an imperative approach and that's basically what we did thus far in the course where we manually had to say now add this button, add this element, add this event listener. Now doing that in bigger projects quickly can become cumbersome and difficult to manage and such a declarative approach definitely has certain advantages over this because it allows you to focus on the result and the state instead of the way of getting there and this is less error prone and gives you more power. In React and also in Angular and Vue, you do that by defining so-called components which are reusable UI elements, now not HTML elements,
+
+these are not elements the browser would understand, in the end these are just components, basically Javascript classes you could say which you define in your code which then at runtime when your code and React's code executes on the page are interpreted by React so that React then knows what to touch in the DOM and what to render where. So you don't render real HTML elements, in the end you just use something which React then understands and which then in the end tells React what it should render on the screen under which circumstances.
+
+So let's have a look at that, this should make it clearer.
+
+----------------------------------------

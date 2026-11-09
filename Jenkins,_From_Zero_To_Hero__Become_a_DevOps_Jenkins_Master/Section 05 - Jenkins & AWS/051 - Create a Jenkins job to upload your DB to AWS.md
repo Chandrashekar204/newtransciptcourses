@@ -1,0 +1,27 @@
+# Create a Jenkins job to upload your DB to AWS
+
+*Section: Jenkins & AWS*
+
+Instructor: Hello and welcome back. In this video, we're going to create our job to make this process only clicking the build button. So cool. Let's click on the new item and we're going to create a new project or a new job. So let's call it, for example, backup to AWS. Or call it as you want, it doesn't matter. So let's click on the freestyle project and now click on okay. So cool. Once you are here, we're going to add parameters.
+
+Remember that our script grid saves parameters. So let's say that this script is going to be parameterized. In the general section, this project is parameterized. So let's click on that and let's add a new parameter which is going to be a sample string parameter. So let's go to our terminal and let's go ahead to our remote host. And let's look for the script that we created. So if you see here the first parameter that we're going to net is the DB host.
+
+So I want just to give you a little bit noting here and it's that first we're going to configure the parameters that are not sensitive data, like the DB host, the DB name, and the bucket name. The DB password and the AWS secret, we're going to configure these later. So for now, let's only focus on this three parameters. So, okay, the first one is going to be the database host. So we're just going to give this a name for this parameter which is going to be, for example, my SQL host.
+
+So you can differentiate the parameters from Jenkins and the parameters from Bash. So my SQL host, right? And we're gonna give it a default value, which is the DB host. It means that this is going to prompt as a default value but the user or a people can just simply change it, right? So let's go ahead and add a second parameter which is going to be a string parameter. And let's use the DB name. Let's copy- no let's use something like data base name.
+
+And the default value is going to be the test DB database that we just created. Cool. Let's add a third parameter which is going to be the bucket name. So let's give like AWS S3 or AWS bucket name - better. And the default value is going to be the bucket that we created. I already forgot how we named this, so let's look for it. Oh, it is Jenkins my SQL backup. So copy and paste this as the default value.
+
+Cool. So right now we have the my SQL has parameter, the database parameter, and the bucket name. Cool. So we're only missing the DB password and the AWS secret, right? So now we're going to look for the build environment. And if you see here, we can actually click on this option which allows you to use secret text or files. So your sensitive information is secure. So let's click on add and we're going to add a secret text.
+
+If you see there is a list that contains the secrets that we created before. So cool. We can give this name. So let's call it- first we're going to create the DB password. So let's call it like my SQL password, pretty cool. And we're going to choose the my SQL password, of course. So now let's click on add again, secret text, and we're going to add the AWS secret key. So let's keep it like this. AWS secret key.
+
+You can name it as you want. I'm just using this to make it simple, right? So in this case, we already have the five parameters which are required to run our script. The DB host, DB password, DB name, AWS secret, and bucket name, right? So now we need to create the job that is going to execute the script that we created. So let's head to the build section. Let's click the add build step button and let's execute this shell script on remote host using ssh.
+
+Remember that from Jenkins we're going to log into the remote host. And from the remote host, we're going to execute the script that it's going to take the backup from the my SQL host and then it's going to upload that to S3, right? So here we only have one host, so let's keep it like this. And the command is going to be exactly this command. So we're going to execute this script that we created. Let's copy this and paste this, make sure you have no spaces, and then we're going to pass the parameters in the correct order.
+
+So for example, the first parameter is going to be the DB host. So the first parameter should be the my SQL host, right? So let's copy this and pass this value as a first parameter. Paste this in here. So cool. The second parameter is going to be the DB password. So let's look for the Jenkins DB password parameter which is, where is it? Okay, this is the my SQL password that we created. So let's pass this as the second parameter, right?
+
+So that third parameter is the database name. So let's look for the database name. Here it is. Let's copy and let's paste these in here. And pretty cool. Now we need the AWS secret parameter which is number 4. So let's look for it. This is the parameter that we want, so let's copy, let's pass this as the four parameter to our script. And now let's look for the final parameter which is the bucket name, right?
+
+So let's look for the bucket name, AWS bucket name. That's the name in Jenkins. Let's copy this. And remember, when you are passing parameters from Jenkins to anything, you should always use the dollar sign. So cool. Now our script is receiving the my SQL host, my SQL password, database name, AWS secret key, and AWS bucket name. So we already created our job. Let's hit safe and let's test it in the next lesson.

@@ -1,0 +1,33 @@
+# How to Connect Google Gmail Drive Docs Sheets in n8n
+
+*Section: How to Set Up Credentials in n8n: LLMs, APIs & Messaging Tools*
+
+Hi there! In this quick tutorial, I'm going to show you how to connect your account to Google Apps. If you want to use Google services like Gmail, Google Sheets, Google Calendar, Google Docs, and Google Drive and connect these services to your agents and automations in any ten, you will need to set up credentials. Right now, I'm in my cloud instance. If you are paying for the subscription and want to use Gmail, Google Sheets, and Google Calendar, you can simply sign in with your Google account.
+
+Let me show you how. You just click on Create Credentials and sign in with Google. But if you want to use if you want to connect Google Docs and Google Drive to your projects, even if you are using the cloud version and paying for the subscription, you still need to set up credentials manually. That means you need to find. The client ID and client secret to complete the connection. Now I'm in my self-hosted instance on my VPC with Hostinger, and if you are self-hosting on I-10, whether on a VPN or locally on your own machine, you will need to set up credentials manually for all of these services.
+
+Again, you will need the client ID and client secret. As you can see, even for Gmail and Google Sheets and Google Calendar. First of all, you can always go to the documentation, which is excellent by the way. You can just click here, Open Docs and follow all the steps to set up of authentication. But in this video I'm going to show you so it's easier for you. So in order to get the client ID and client secret, you will need a Google Cloud account.
+
+So the first step is go to cloud dot google.com. If you already have a console account, click console. If not, just start free and create your account. It's free to use, don't worry. In the console, click the project dropdown in the top left corner and choose New Project. Give your project a name, for example. Nathan. Demo. And click create. After a few seconds, the project will be available in the selector.
+
+Select the project you just created and from now you will be able to select the project from the selector. The next step is to enable APIs for the services you want to use. So open the menu in the top left corner. Go to APIs and services right here. Let's enable Google Sheets API first. So simply type sheets Google sheets API. Click enable. And let's do it for all Google services. So now let's search for calendar Google calendar API.
+
+Click enable. Let's wait a moment. Now. Gmail. Gmail API. Enable. Now. Google drive. Google drive API. Enable. And lastly Google Docs. Google docs API. And click enable. And thanks to that, we'll be able to use the same client ID and client secret for all these Google services. Now from the APIs and services page click off consent screen. Click Get Started. Give it up a name for example and then. Select your account.
+
+Click next if you are using a Google Workspace account, you can choose internal. If not, I'm using Gmail account. Let's choose external. Click next. Add a support email. Click next. Accept the terms and click continue. And hit create. Let's wait a moment. And now let's create our client. So click on the Create of Client button. Choose a web application type. Give it a name. And now we need to add a redirect URL in N810.
+
+We can choose any of these apps. So let's create some credential. Create Creating credential. Lets copy of redirect URL. Lets go back to Google Cloud Console. Lets add authorized redirect URL. No this one. No JavaScript origins. Lets paste it here. All right. Perfect. Lets hit create. Now you can copy the client ID. And paste it here. And now in order to get the client secret lets hit okay. Open client ID.
+
+Here you can find the client secret for this app. So lets copy the client secret right here. Let's go back to Nathan and paste our client secret into this field. How would I save now after setting this up? You should get sign in with Google button. Let's sign in. You may see an application blocked error and this happens because the app is still in a test mode. So to fix it, go back to the Google Cloud Console, open the Google OAuth platform and add the Google of platform.
+
+You should see the tab audience. So let's click on that. And here click on publish app. Confirm. So publishing removes the blocked error and also prevents prevents you from having to re-authenticate every seven days. Now back in N810. Sign in again. Remember to sign in with the account you added as a test user. So even if app is not verified yet, you can continue. So click on advanced and continue.
+
+Again. Even if the app is not verified yet, you can continue. So select all the requested permissions and click continue. As you can see, now I'm connected. Perfect. Now we successfully connected our account to our instance. Now what I recommend is to rename the connection. So let's do it. Let's call it Google. Off. Hit enter. Save. Perfect. Now let's set up a connection for all these apps. And because we enabled APIs for all these services area, the only thing we need to do is to copy and paste client ID and client secret.
+
+Let's go back to Google Cloud Console. We can click on clients. Here we can copy our client ID. Let's open it. Let's copy client secret. And paste it to this field. Let's save. All right. Perfect. Now we can sign in the same process. Select all. Continue. Connection. Successful. Perfect. We have to repeat the same process for Google Calendar, Google Docs, and Google Drive. Let's do it quickly. Create credential.
+
+We've got client ID right here. And client secret. Let's save it. Let's end with Google. Let's give all the permissions. Connection successful. Let's move on. Now Google docs creating credential. Client ID. Pass it into this field. Now. Client secret. Save. Select all. Continue. And the last one is Google Drive. Creating credential. Save. Sign in. Let's give all the permissions. Select all. Continue.
+
+And that's it. Now you can manage all your credentials from overview. Let's save it. And here we've got access to our credentials. So in this tab as you can see we've got access to all these connections we just set up. Of course you can change the names. You can update the client ID and client secret. And now when I open my project. And click on any of these nodes. As you can see my connection is available here.
+
+Your connections will be saved. So you don't need to do it over and over again. You can reuse it for other projects. That's it for this tutorial. I hope this was helpful. See you in the next one!

@@ -1,0 +1,7 @@
+# 6.10 — Avoiding an Error
+
+> Section 6: Working with Dynamic Content & Adding Templating Engines
+
+(No captions available for this lecture)
+
+----------------------------------------

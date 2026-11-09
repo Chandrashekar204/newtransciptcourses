@@ -1,0 +1,13 @@
+# 35.29 — Cleaning Up the Overall Styling
+
+> Section 35: Bonus: Web Components
+
+So now that we talk a lot about styling, let me make the styling we have in place here a bit more pretty now. Now for that I'll first of all go into my light DOM, add a star selector and set the global box sizing for all my elements to border box and now I'm just really working on the visuals, this is nothing else. I'll set a font family of sans-serif so that all my fonts have this sans-serif look, looks a bit nicer already in my opinion, I will also in my light DOM get rid of this ugly blue border around my tooltip, it was just there for demonstration purposes, also get rid of the highlight class which we are not setting anything.
+
+Let me also get rid of that div with the orange border and get rid of that orange border style up there, I really just want to make this a bit more pretty before we continue, now this looks much better already and now let me dive into my web component styles and there for example, for this overlay when I hover over this, I want to add some padding here and make this look a bit nicer, maybe a little drop shadow. So for this hovering content which of course is this div here and we could of course also use a CSS class or ID here if we wanted to, there I'll give it as a padding of 0.15rem, border radius maybe of three pixels and a box shadow of 1 pixel 1 pixel 6 pixels and then this styling which is transparent gray-ish look and if I now reload and I hover over this, box shadow is missing, yes because I forgot my colon here so let's fix this, yes and this looks much nicer.
+
+Let me also tweak the positioning, it has position absolute but I want to move it down a little bit by setting top to let's say 1rem and left also to 0.75rem maybe, let's see how that looks like, let's move it down by 2rem, yes maybe 1.5, right. I like this way more, looks better in my opinion. Now I also don't want this text in there to be bold just because the overall component text is bold because of host context, so I will give my div here a font weight of normal, so I don't use that bold font weight I set for my other text, so now I don't have that bold styling in there anymore.
+
+And now last but not least, there's one other thing, when I set this background color if I have the important tag, then I also want to add a little bit of padding around my component let's say so that the color does not sit directly on the edges and now this looks okay. This is how I want it to be, this is a style I can live with. Now with that, let's move on and let's see which other cool functionalities we can add to our custom web components.
+
+----------------------------------------

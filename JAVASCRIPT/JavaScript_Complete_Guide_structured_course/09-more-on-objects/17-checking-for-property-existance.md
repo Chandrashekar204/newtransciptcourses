@@ -1,0 +1,13 @@
+# 9.17 — Checking for Property Existance
+
+> Section 9: More on Objects
+
+Often when you write code, you can of course be sure about the existence of certain properties in your objects, for example here, I know I will have an info property in every movie because I myself wrote the code that adds it. Now depending on how dynamic your program is and how much of the data that you're working with has been entered by the end users where you can't predict at the point of time you're writing your code what will be inside your objects, you might want to validate whether something is present or maybe you have some part in your code where this info property would be deleted and you're not sure whether that ran already or not.
+
+So sometimes you want to check if a property is part of an object and you can do this in Javascript as well, for example here in an if check, you can use a special keyword that helps you find out if something is part of an object, you can use the in keyword. It works such that you check if, then the property name you want to check as a string, info, then the in keyword and then your object. So we can check if info is in movie, if this yields true, we know movie has an info property and now we could write code that should only run if we have that info property.
+
+if we want to check the opposite, we can wrap this into an extra pair of parentheses and add the exclamation mark operator here to check if that returns a false value basically. So that's the in operator, of course here we could have also checked if info has a truthy value after setting it here because that will hold undefined if there is no info key, so that would have been a perfectly viable alternative but if you have some other code where you don't plan on using object destructuring and still it matters to you to know whether a property is part or not, you can use the in operator. Another way of checking this is to just use movie.info and compare if that is equal to undefined.
+
+You know that a property has a value of undefined if it's not there, if it was deleted or if you manually set it to undefined or if it never was defined in the first place. So if this is equal to undefined, then you know this property does not exist, so if this is equal to undefined, we have no info property, that's another way of determining whether you have that property or not. Now here, I don't need that check but this is how you could check for the existence of a property in case you need it in your code to avoid errors where you try to work with a property that's not there or where you maybe want to assign some dummy default value to a property if it doesn't exist yet.
+
+----------------------------------------

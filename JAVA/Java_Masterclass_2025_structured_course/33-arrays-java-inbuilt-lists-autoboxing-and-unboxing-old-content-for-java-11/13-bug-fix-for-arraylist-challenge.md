@@ -1,0 +1,27 @@
+# 33.13 — Bug Fix for ArrayList Challenge
+
+> Section 33: Arrays, Java inbuilt Lists, Autoboxing and Unboxing - Old content for Java 11
+
+In this video, we're going to fix a small bug that occurred in the challenge solution. So after testing the code, perhaps you've noticed that we can update the contact with a name that already exists in the list. So what I'm going to do is first demonstrate this bug. And after demonstrating it, we're going to continue on and fix the issue. So let's run the application. So I'm going to run our main method. All right. So what we want to do is we want to have at least 2 contacts.
+
+So I'm going to start by entering a new contact, so we can add a new contact rather, John telephone number 123456789. And we'll add another one, Jim this time. Contact number 987654321, enter. And do a 1 to print out the contacts to confirm we've got 2 there. So you can see that the moment we've got John and Jim both listed. Now the main idea is to update one of the contacts with the same name that already exists to demonstrate that bug. So what I'm going to do is choose Jim for this.
+
+So we need to select 3 to update an existing contact, contact name. This is the existing contact name. So I'm going to enter Jim. Enter the new contact name. We're going to enter John. And the new contact phone number and press enter. Successfully updated the record, as you can see there. And now if we list the contents, we'll print them out. You can see now we've got 2 John entries there. Basically 2 contacts with the same name and phone number.
+
+Now we don't want to allow contacts with the same name, but do keep in mind that real phone numbers do allow duplicated contacts. Now the problem is obviously in the update contact method because of course that's what we're calling to update. So let's open the mobile phone class and come down to update contact. I'll just close down the run window so we can see it a bit better. This is the code here you can see on screen there, starting on line 29.
+
+Now this method first finds the position of the existing contact in case it exists. And in the case where it does exist, the contact is updated. But before the contact, what we want to do is before updating the contact, we want to check if the contact or a contact with the same name already exists. So all we really have to do is add an else statement to the if to check if the contact with that particular name is already in existence. So come down here to if found position is less than 0.
+
+Then we need to add an else if parentheses find contact parentheses again, and it's going to be newContact.getName, you can see opening a closing parenthesis there that's not equal to -1, closing parentheses. And there should have been 2, another parenthesis there after the dot get name function call. So that closes that off. So if the fine contact where we're passing a new contact name returns or is not equal to negative 1. So it's a number other than negative 1, that means we've already got a contact with that name.
+
+So what we're going to do is print out contact with name plus new contact.getName. Let's expand this onto the next line, plus double quotes already exists. Update was not successful, full stop. Then we'll close that line off. The other thing we want to do at that point is return false because of course the update wasn't successful. Then we don't need to change any other code. Because of course if the code falls through down to here, it means the name wasn't found and were able to go through and actually do the update.
+
+All right. So let's go back now to our main.java. And what we might do is also while I'm here have a look at the menu.They had a typo there in the menu. So we come down here to the menu to update existing and existing contact. Let's just fix that to update an existing contact. All right. So now that we've put that change in let's test this out. So let's run it. Okay. So we're going to start again. We're going to do exactly the same as we did last time.
+
+We do a number 2 first, add john, telephone number 123456789 and 2 again Jim 987654321, 1 to print out our contacts. You can see we've got 2 contacts showing there now. So we now need to perform an update. And of course that's number 3 in the menu. We're going to update Jim. So we type in Jim, enter your contact name. Let's try typing John and went to the contact number 123456789. And you can see now we've got some different output. Contact with name John already exists. Update was not successful, error updating record.
+
+So basically the console was displaying a message that there was an error updating the contact because John already exists, which is what we want. So that's good. But let's just do one other thing just to make sure that it is working where we're choosing a different name. So we'll go through and do the update again. Existing contact name is Jim. Then we want to change Jim to another name. This time we'll go for the new contact name Percy, 135791234.
+
+This time Jim was replaced with Percy, which is what we would expect because the names are different. And we can do option 1 to print out a list. And we've now got John and Percy. Because of course, we've changed or updated Jim to have a new name of a new phone number of Percy 135791234. So we've now fixed that bug that allowed a duplicate to entry to be basically updated to the same name, and we're done. So I'll see you in the next video.
+
+----------------------------------------

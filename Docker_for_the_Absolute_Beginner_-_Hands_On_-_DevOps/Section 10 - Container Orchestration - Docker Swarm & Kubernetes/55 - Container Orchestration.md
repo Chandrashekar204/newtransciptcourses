@@ -1,0 +1,19 @@
+# Container Orchestration
+
+*Section: Container Orchestration - Docker Swarm & Kubernetes*
+
+1 We will now try to understand what container orchestration is. 2 So far in this course, we have seen that with Docker, 3 you can run a single instance of the application with a simple Docker run 4 command. In this case, to run a node based application, 5 you run the Docker run with the node image command, 6 but that's just one instance of your application on one Docker host. 7 What happens when the number of users increases and that instance is no longer 8 able to handle the load, 9 you deploy additional instances of your application by running the Docker run 10 command multiple times. So that's something you have to do yourself.
+
+11 You have to keep a close watch on the load and performance of your application 12 and deploy additional instances yourself. And not just that, 13 you have to keep a close watch on the health of these applications. 14 And if a container were to fail, 15 you should be able to detect that and run the Docker run command again, 16 to deploy another instance of that application. 17 What about the health of the Docker host itself?
+
+18 What if the host crashes and is inaccessible? 19 The containers hosted on that host become inaccessible too. 20 So what do you do in order to solve these issues? 21 You will need a dedicated engineer who can sit and monitor the state performance 22 and health of the containers and take necessary actions to remediate the situation. 23 But when you have large applications deployed with tens of thousands of 24 containers, that's not a practical approach.
+
+25 You can build your own scripts and that will help you tackle these issues to 26 some extent, but it will only get you so far. 27 Container orchestration is the solution for that. 28 It is a solution that consists of a set of tools and scripts that can help host 29 containers in a production environment. 30 Typically a container orchestration solution consists of multiple Docker hosts 31 that can host containers. That way, even if one fails, 32 the application is still accessible through the others.
+
+33 A container orchestration solution easily allows you to deploy hundreds or 34 thousands of instances of your application with a single command. 35 This is a command used for a Docker swarm. 36 We'll look at the command itself in a bit. 37 Some orchestration solutions can help you automatically scale up the number of 38 instances when users increase and scale down the number of instances when the 39 demand decreases.
+
+40 Some solutions can even help you in automatically adding additional hosts to 41 support the user load and not just clustering and scaling. 42 The container orchestration solutions also provide support for advanced 43 networking between these containers across different hosts, 44 as well as load balancing user requests across different hosts. 45 They also provide support for sharing storage between the hosts, 46 as well as support for configuration management and security within the cluster.
+
+47 There are two main container orchestration solutions in use today. 48 Docker has Docker swarm and there is Kubernetes from Google. 49 Well, Docker swarm is really easy to set up and get started. 50 It lacks some of the advanced auto scaling features required for complex 51 production grade applications. Kubernetes, 52 arguably the more popular of the two is a bit difficult to set up and get started, 53 but provides a lot of options to customize deployments and has support for many 54 different vendors.
+
+55 Kubernetes is now supported on all public cloud service providers like GCP, Azure, and AWS. 56 And the Kubernetes project is one of the top ranked projects on GitHub. 57 In the upcoming lectures, 58 we will take a quick look at Docker swarm and Kubernetes.

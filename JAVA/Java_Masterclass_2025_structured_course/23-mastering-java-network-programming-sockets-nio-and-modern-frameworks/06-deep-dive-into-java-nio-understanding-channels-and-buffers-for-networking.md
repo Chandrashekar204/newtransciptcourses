@@ -1,0 +1,25 @@
+# 23.6 — Deep Dive into Java NIO: Understanding Channels and Buffers for Networking
+
+> Section 23: Mastering Java Network Programming: Sockets, NIO, and Modern Frameworks
+
+Kind: captions Language: en A channel is an interface that's part of the java dot N I O dot channels package. It represents an open connection to an entity that's capable of input and output operations. This can be a file, a hardware device, a network socket or another program component. Some implementations of channel are the socket channel and server socket channel, as you've just seen. But there are others such as datagram channel, File Channel, and others.
+
+You can think of this type as your data pathway. A channel is constructed when you call the static method, open, on a specific Channel implementation. Under the covers, for socket channels, an internally managed socket is also opened. You can access this socket using the accessor method, socket open. Data is transferred through channels using buffers which offer control over data segmentation and optimization of IO operations. The Buffer type is an abstract class that's part of the java dot N IO package.
+
+It's a data container for temporary storage that we can push onto the data pathway, or the channel. The buffer is designed to provide a more general way to handle data whether it's bytes, characters or other primitive types. It provides methods for accessing, manipulating and tracking buffer state. A buffer's states are ready to read, and ready to write, as well as empty and full. A buffer can be configured to be more memory-efficient and offers more flexibility than a simple array. There is a buffer subtype for each primitive type except boolean.
+
+The smallest buffer unit is 8 bits or a byte, so it doesn't make sense to use buffers for boolean values, which are just one bit. Channels interact with buffers for data transfer. The Channel's readMethod takes a buffer as input and fills the buffer with data from the connected entity. Data can be consumed from the buffer using its get methods, or by iterating through it as we did in our server code. Data is added to the buffer using its put methods. The channel's write method takes a buffer as input and transfers the buffer data to the connected entity.
+
+You might remember we talked about buffers when we looked at Input and output streams, specifically the buffered input stream and buffered output stream types. One noticeable difference is that these buffers were used either for reading from the input stream or writing to the output stream. A java dot N IO dot buffer can be both readable and writeable. You can change it's state using the flip method. This slide shows other significant differences.
+
+The java dot N IO dot buffer is faster for bulk transfers because it minimizes operating system calls. The buffers used by IO streams only give you limited control and flexibility. With the java dot N IO dot buffer you get fine-grained control which gives you more options for handling low-level IO and working with channels. Aside from its content the essential properties of a buffer are its capacity, limit, and position: The Buffer's Capacity represents the fixed unchangeable size of the buffer's underlying memory allocation. It's the upper limit on how many elements the buffer can ever hold.
+
+It's set when the buffer is created and cannot be modified later. The Limit marks the end of the valid data within the buffer. It's used to control how much data is available for reading, or how much space is available for writing. It can be adjusted to control the buffer's effective size, but it can't exceed the capacity. The Buffer Position tracks the current offset within the buffer, where the next read or write operation will occur. It starts at 0, and increments as elements are written, or decrements as elements are read.
+
+It indicates how much of the buffer's capacity is currently in use. In my socket channel server example I'm using a byte buffer. Typically a byte buffer is the best choice for socket channels. Socket channels operate at the byte level transmitting raw data without inherent character encoding. Byte buffer directly aligns with this model, making it a natural fit for efficient data transfer. Char buffer, while useful for character-based operations, introduces an extra layer of encoding and decoding, potentially impacting performance.
+
+Although my simple server code just exchanges text based requests and responses at the moment, you can imagine the server responding to requests for some combination of binary data in the form of images, audio, video and so on. If you've got a text based application there may be an argument for using a char buffer, but in general a byte buffer is more efficient and scalable. The best way to learn about these types is to explore them in code so let's specifically examine the byte buffer and what we can do with it.
+
+I'll do this in the next video so I'll see you there.
+
+----------------------------------------

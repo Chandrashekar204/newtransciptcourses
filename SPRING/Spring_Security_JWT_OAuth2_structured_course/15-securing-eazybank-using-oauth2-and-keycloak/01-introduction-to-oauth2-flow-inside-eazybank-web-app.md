@@ -1,0 +1,29 @@
+# 15.1 — Introduction to OAUTH2 flow inside EazyBank web App
+
+> Section 15: Securing EazyBank using OAUTH2 and KeyCloak
+
+Instructor: In the previous section, we have created a simple Spring Boot application and try to secure it with the help of social logins like GitHub and Facebook. But I can't use the same approach of social logins to secure my EazyBankSpringBoot web application. The reason is very simple. Whatever auth servers that are available with the help of social logins like GitHub, Facebook, LinkedIn, Twitter, so all these auth servers, they have a very serious drawback or limitation due to which these auth servers, they can't be used inside an enterprise organization.
+
+The limitation is we will not have any control on the social login auth servers. We can't create an role or we can't create an authority based upon our business requirements inside these auth servers. Whatever user related information that we are getting from the social logins, we just have to accept them and build our business logic using them. But in real applications, we can't live with these kind of restrictions. We may want to register thousands of end users and each of the end user may have their own authorities and roles defined inside the auth server.
+
+That's why the enterprise applications are bigger organizations, they are going to build their own auth server where they have complete control. As a next step, we are going to enhance our EazyBankSpringBoot web application with the OAuth 2 and by building our own auth server. So if you look at the setup that I have on this slide, first, we are going to convert our Spring Boot application into a Resource Server. So whatever Spring Boot application that we have right now, it has all the end user resources like accounts, loans, cards.
+
+Since we want to secure all these end user resources, so the Spring Boot application server, it is going to act as a Resource Server. And coming to the client application, I'm going to consider two types of client applications. The very first one you already know, which is Angular application. We already have an UI application. We are going to consider this UI application as a client application inside the OAuth 2 flow. In the interest of the students who don't want to explore about the Angular application, for them, I'm going to consider the Postman as an client application.
+
+So I'm going to mimic a client application with the help of Postman, where I'm going to invoke the APIs available inside the Resource Server. So if you're not interested around the Angular application, I would request to follow all the Postman related discussions. Now, coming to the auth server, we are not going to have any social login auth servers because they have so many restrictions. So throughout this section, we are going to build an auth server with the help of KeyCloak.
+
+I'm going to give a good introduction about KeyCloak and we are going to set up a proper auth server with the help of KeyCloak. In the coming sections, we're also going to build our own auth server with the help of Spring Auth Server Library. I hope you're clear with the components that I have explained so far in this slide. If you try to understand the flow, in the very first step, the client applications, they will reach out to the KeyCloak auth server to get an access token.
+
+When they're trying to get the access token from the auth server, they can involve end user as well if they're trying to follow the AuthorizationCode AuthorizationCodeGrantType flow or PKSE flow. Otherwise, if they're simply following the ClientCredentialsGrantType flow, they don't have to involve any end user. So once the access token is received from the auth server, these client applications, they're going to send the access token to the Resource Server as part of the request too.
+
+Once the access token is received by my Resource Server, the Resource Server, it is going to validate if the access token is valid or not in the step three. So this validation, it is going to perform by connecting with the auth server, which is KeyCloak in our scenario. If the provided access token is valid, at last, my Resource Server is going to respond with the secured resources as part of the step four. So as part of the step four, the client applications, they're going to receive the response from the Resource Server.
+
+The explanation around all these four steps, I also highlighted here for your reference. Before I try to close this lecture, I want to explain you about one important topic. So whenever an organization is looking to build an auth server, they will have two options. The very first option is so to build from scratch. The other option is they can leverage the products that are supporting the OAuth 2 and Open ID standards. So these products are like KeyCloak, which is an open source product, and similarly we have Okta.
+
+All the cloud providers like AWS, Azure, GCP, they also have products around the OAuth 2 and OpenID Connect. But inside this course I'm going to use KeyCloak, which is the open source product. Here you may have a question, which is "How organizations are going to choose one of these option?" It all depends upon the organization requirements. If an organization has huge manpower and budget and time, then they can build their own auth server from scratch by using libraries like Spring Auth Server.
+
+Otherwise, they're going to adopt the readily available products like KeyCloak and Okta. We're going to explore both of these two options inside this course. First, with the help of KeyCloak, I'm going to show you the OAuth 2 flow inside the EazyBank application. In the coming sections, I'm also going to show you how to build our own auth server with the help of the Spring Auth Server Library. I hope you you're clear about the agenda of this section.
+
+Thank you, and I'll catch you in the next lecture, bye.
+
+----------------------------------------

@@ -1,0 +1,35 @@
+# 4.4 — LL: Constructor
+
+> Section 4: Linked Lists
+
+So now we're going to start writing code for our linked list. And the first thing we're going to write is the constructor. So our linked list class starts out like this. But before we write the constructor and it's going to start out looking like this. The constructor has something in common with three other methods, and we need to talk about that first. And those three methods are append, prepend and insert. So two things they have in common. First they all get passed a value.
+
+But it is the reason that these get passed to value that is important. So let's look at what each of these do at a high level starting with the constructor. So in addition to creating a new linked list at the time you create it, this will create a new node. The append method will create a new node and then add the node to the end. Prepend creates a new node and adds a node to the beginning. Insert is going to create a new node and then insert the node at a particular index.
+
+So the other thing all four of these methods do is they create a new node. So we don't want to write this code four different times. So we're going to create a new class that does nothing but create nodes. And that class is going to be called node. So whenever any of these four methods needs to create a node. It will call this class to create it. So let's look at what we're creating when we create a node. So remember a node looks like this which we can also think of as this.
+
+So we're going to have a couple of variables. One called value. One called next value will be an integer. But next. Next will be of type node. Now what does that mean? If it is of type node, it means that this variable called next can point to a node. So this is similar to what we saw in the pointers video where we had a variable that was of type HashMap. And that meant that it pointed to a HashMap. So here when we have a variable that is of type node, that means it is a pointer to a node.
+
+So these will be the only two class variables for this. And then we will have a constructor. And the only thing the constructor is going to do is this. Now let's walk through what this line of code means because this can be confusing if you've never seen this before. So you can see that we're passing the node a value. That's what this is here. But this dot value is something different. When we set this dot value to be equal to value, this dot value is this value up here.
+
+This is how all of this flows. So these two values here are one and the same. And then these two values here are one and the same. And then here we are setting them equal. And we have to use the keyword this. So it clarifies that we're talking about the variable up here. So now that we have our class for creating a node, now we can build our linked list. So we'll say public class linked list. And we're going to have three class variables. They will be head and tail both of type node which means they can point to a node.
+
+And then we'll keep track of the length. This will be an int. Notice these are all private. It is a best practice to make class variables private if you can. I didn't do that in the node class. And we'll show why when we get over to IntelliJ. But now that we have these we can build our constructor. And let's just focus in on this. So the first thing we're going to do is create a node. We'll do that with this line of code here. We'll pass this a value.
+
+And this creates a node. So let's talk a little more about this line of code here. If you've never seen this before, this can be confusing. It looks like everything is completely redundant on each side of the equal sign, because we're creating a node here, and then we create a node here. But this is actually not redundant. On this side of the equal sign, we have the new keyword which runs the constructor for the node class and actually creates this node down here on this side of the equal sign, we have a variable called new node that is of type node, which means it can point.
+
+To a node, and by setting these equal, we are pointing that variable new node at the node that we just created. So the next thing we'll do is we'll say that head equals new node. So I'm going to bring back the rest of this code here. And head being of type node it means that it can point to a node new node same thing. It is a pointer to a node. So when we come down here and say head equals new node, that means we're going to have head point at the same thing that new node is pointing at.
+
+So now let's bring this back. And if we say head equals new node. It's going to look like this. So the new node variable in the diagram I'm going to drop this out. This will be the last time that I actually put this in here. And what I'll do moving forward is something like this. When I say tail equals new node, we understand that that node sitting there is the new node. And we'll just have tail point to the new node. But I want it to walk through the mechanics of why that works.
+
+The other thing we're going to keep track of is the length. And because we started this with one item, the length will be one. And now let's look at this with the rest of our code. That is all of our linked list class so far with our class variables head, tail and length and our constructor. So if we focus back in on the constructor here, we would create a new linked list by doing something like this. We have a variable, my linked list that is of type linked list, which means it can point to a linked list.
+
+On this side is where we actually create the linked list. The new keyword runs this constructor up here. So when we run this line of code we get all of this. We get a new linked list with a node with the value of for head and tail point to that node, and it has a length of one. So now let's flip over and take a look at this in IntelliJ. So there is our linked list class there. But notice our node class is inside of the linked list class. So this is called an inner class.
+
+You'll also hear the phrase nested class. So the reason I don't have anything in the node class here marked as public or private, is because if I later want to put this in its own class file inside of the linked list package, this is exactly how this would need to be written from a permissions standpoint, for it to be broken out into its own file. So this is what I'm going to do moving forward in the course for any of our data structures that have a node, the node class will be an inner class inside of the class for whatever data structure that we're building.
+
+And then up here we have this main class I'm going to double click on this. And this is where we will actually run our code inside of a main method. And this is that line of code that we just saw that will create a linked list with a new node with the value of four. So I'm not going to run this here because we're going to write a couple of methods in the next video to be able to print out our linked list and be able to see more of what is going on.
+
+But for now, that is our linked list constructor.
+
+----------------------------------------

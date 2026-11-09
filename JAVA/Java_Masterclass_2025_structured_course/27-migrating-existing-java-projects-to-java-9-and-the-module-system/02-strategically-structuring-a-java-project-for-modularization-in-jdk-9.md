@@ -1,0 +1,21 @@
+# 27.2 — Strategically Structuring a Java Project for Modularization in JDK 9
+
+> Section 27: Migrating Existing Java Projects to Java 9 and the Module System
+
+All right. So we're at the stage now structuring this project for jdk9. Let's start out with a mini challenge, and then we're going to discuss the project structure with modules. And finally, we'll decide how we're going to split the project into multiple modules. So the challenge here is to think about how you split this project that was created in previous videos in this course into multiple modules. So let's say three distinct modules. So you just need to think about the separation, you don't have to write any code at this stage.
+
+But can you break down this project into three distinct areas. So you should be able to do that. You can then write these areas which will effectively be module names on paper. Now take a good look at the code, run the program again etc. and think about classes that are there and what they're used for and how they can be broken down into modules. So that's your challenge. Pause the video. Go away and write down three distinct areas and come back and we'll talk about it. Pause the video now.
+
+Okay. So I hope you managed to figure out and come up with three distinct names. And it was more project so hopefully there wasn't too much of a problem for you figuring that out. So here's what I came up with in any event. So you can see that I've split things up into three modules there. We've got common for some common code. We've got the UI for the user interface. We've got the DB for the database. So you can see that they're the three modules.
+
+And I've just prefixed those with academy.learn programming to make a unique module name for each. So for me that was the breakdown. We've got the user interface that was a distinct module the database code was another module and then finally a common area which was sort of anything else that didn't fit in those other two areas. Now there are other solutions you can actually in fact if it's easily separated these into more modules. But since the project is pretty simple, we've only got five classes I think the three modules is okay at this stage.
+
+And we don't have any internal packages for any of the modules. So what we're going to do is in the next video, we'll start by creating these modules. So firstly, we'll do the academy.learnprogramming.com module. And I'm calling that common because it's containing, or it does contain or will contain common classes for the other two modules. So another good name instead of common might be core the classes that will be in the common module will be the album and the artist. So use those classes if you recall to read data from the database and display it on the user interface.
+
+So the next module that I identified was the DB module, academy.learnprogramming.db. Now DB of course is database. So this module will have one class the data source that we use to get data from the database. Now as you can see the common module doesn't know anything about the database module. So in other words, it doesn't care how the artist or the album will be saved, will it be a database, will be xml or something else. But the database module requires the common module to be able to convert the result from the database to an artist or an album.
+
+So it goes one way but not the other. All right. So lastly, the third module that I come up with was the UI module for user interface. So that's academy .learnprogramming.ui. Now this module requires the database module, the DB module. And that's because the results from the database are displayed on the user interface. Now the module UI will contain cart the classes main and controller as well as our java fx fxml file. Now keep in mind and remember that modules can contain source code, but also resources like images and in our case an fxml file.
+
+All right. So that's what I came up for the challenge. But if you've come up with something similar, that's congratulations. And even if you've got something that wasn't quite right, that's fine. Because in the next video, we'll start creating our first module. So I'll see you in the next video.
+
+----------------------------------------

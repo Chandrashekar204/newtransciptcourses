@@ -1,0 +1,11 @@
+# 3.7 — Tweaking Editor Settings
+
+> Section 3: Efficient Development & Debugging
+
+Now as I mentioned, extensions can be installed and also can be configured and in general dive into your settings, here in Visual Studio Code, you do this with code preferences settings. There is a lot you can configure, for example if I search for a tab width here, I can configure how much whitespace is entered when I hit the tab key. Here you see what prettier, the extension I installed, will use for indentation and that are two blanks which I want to use in this course but you see that for example my editor by default would use four, so I'll change this to two here as well and if you do that you can always choose whether you want to save this for your user which means that will be the setting in all projects you opened with Visual Studio Code or in your workspace, which would only be this project. If you choose workspace, so if I change this here and you save that, that will actually be written to this settings.json file which you find in the .vscode folder which is then automatically created.
+
+There you find your project exclusive settings whereas your general settings which you set up for the entire user are not stored in this project but unsurprisingly, are stored in a global place on your machine so that Visual Studio Code uses them no matter which project you're working in. Now here, you also got a bunch of settings, there are so many settings you could scroll through to configure the text editor exactly to your requirements, to change the font you use there, the font size, the way it looks, the way it behaves, there is so much you can do here. Now attached you find some resources that help you dive deeper into Visual Studio Code if you're using that and in general, feel free to just browse through that. Normally the default should be pretty good but if there is something you want to change, something you detect what you would like to behave or look differently, then there's a good chance that you can change it here in the settings. Under extensions, you also can change the settings of the extensions you installed, for example of prettier.
+
+So if you've got an extension and it doesn't behave the way you want it to behave, maybe you can adjust that in the settings here as well, so also explore that.
+
+----------------------------------------

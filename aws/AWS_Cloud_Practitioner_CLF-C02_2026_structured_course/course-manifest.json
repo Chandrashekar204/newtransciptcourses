@@ -1,0 +1,140 @@
+[
+  {
+    "section": 1,
+    "title": "Introduction",
+    "folder": "01-introduction",
+    "lectures": 5
+  },
+  {
+    "section": 2,
+    "title": "Code & Slides Download",
+    "folder": "02-code-and-slides-download",
+    "lectures": 1
+  },
+  {
+    "section": 3,
+    "title": "What is Cloud Computing?",
+    "folder": "03-what-is-cloud-computing",
+    "lectures": 7
+  },
+  {
+    "section": 4,
+    "title": "IAM - Identity and Access Management",
+    "folder": "04-iam-identity-and-access-management",
+    "lectures": 20
+  },
+  {
+    "section": 5,
+    "title": "EC2 - Elastic Compute Cloud",
+    "folder": "05-ec2-elastic-compute-cloud",
+    "lectures": 16
+  },
+  {
+    "section": 6,
+    "title": "EC2 Instance Storage",
+    "folder": "06-ec2-instance-storage",
+    "lectures": 14
+  },
+  {
+    "section": 7,
+    "title": "ELB & ASG - Elastic Load Balancing & Auto Scaling Groups",
+    "folder": "07-elb-and-asg-elastic-load-balancing-and-auto-scaling-groups",
+    "lectures": 8
+  },
+  {
+    "section": 8,
+    "title": "Amazon S3",
+    "folder": "08-amazon-s3",
+    "lectures": 18
+  },
+  {
+    "section": 9,
+    "title": "Databases & Analytics",
+    "folder": "09-databases-and-analytics",
+    "lectures": 19
+  },
+  {
+    "section": 10,
+    "title": "Other Compute Services: ECS, Lambda, Batch, Lightsail",
+    "folder": "10-other-compute-services-ecs-lambda-batch-lightsail",
+    "lectures": 11
+  },
+  {
+    "section": 11,
+    "title": "Deployments & Managing Infrastructure at Scale",
+    "folder": "11-deployments-and-managing-infrastructure-at-scale",
+    "lectures": 14
+  },
+  {
+    "section": 12,
+    "title": "Leveraging the AWS Global Infrastructure",
+    "folder": "12-leveraging-the-aws-global-infrastructure",
+    "lectures": 12
+  },
+  {
+    "section": 13,
+    "title": "Cloud Integrations",
+    "folder": "13-cloud-integrations",
+    "lectures": 8
+  },
+  {
+    "section": 14,
+    "title": "Cloud Monitoring",
+    "folder": "14-cloud-monitoring",
+    "lectures": 12
+  },
+  {
+    "section": 15,
+    "title": "VPC & Networking",
+    "folder": "15-vpc-and-networking",
+    "lectures": 12
+  },
+  {
+    "section": 16,
+    "title": "Security & Compliance",
+    "folder": "16-security-and-compliance",
+    "lectures": 20
+  },
+  {
+    "section": 17,
+    "title": "Machine Learning",
+    "folder": "17-machine-learning",
+    "lectures": 11
+  },
+  {
+    "section": 18,
+    "title": "Account Management, Billing & Support",
+    "folder": "18-account-management-billing-and-support",
+    "lectures": 20
+  },
+  {
+    "section": 19,
+    "title": "Advanced Identity",
+    "folder": "19-advanced-identity",
+    "lectures": 5
+  },
+  {
+    "section": 20,
+    "title": "Other Services",
+    "folder": "20-other-services",
+    "lectures": 19
+  },
+  {
+    "section": 21,
+    "title": "AWS Architecting & Ecosystem",
+    "folder": "21-aws-architecting-and-ecosystem",
+    "lectures": 15
+  },
+  {
+    "section": 22,
+    "title": "Preparing for the Exam + Practice Exam - AWS Certified Cloud Practitioner",
+    "folder": "22-preparing-for-the-exam-practice-exam-aws-certified-cloud-practitioner",
+    "lectures": 7
+  },
+  {
+    "section": 23,
+    "title": "Congratulations - AWS Certified Cloud Practitioner",
+    "folder": "23-congratulations-aws-certified-cloud-practitioner",
+    "lectures": 3
+  }
+]

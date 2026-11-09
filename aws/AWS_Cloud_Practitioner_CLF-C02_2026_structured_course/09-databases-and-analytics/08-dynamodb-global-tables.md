@@ -1,0 +1,11 @@
+# 9.8 — DynamoDB Global Tables
+
+> Section 9: Databases & Analytics
+
+Okay, so now let's talk about DynamoDB global tables. So this is a one feature need to know about for DynamoDB. It's a way for you to make DynamoDB table accessible with low latency and this is the key in multiple regions. So let's take an example. We have our DynamoDB table in us-east-one, and we'll set up as a global table. So the basics, of course, our users can do read and write to this DynamoDB table in Northern Virginia us-east-one. But it is possible for us to set up some replication for this global table.
+
+So we can create a global table in Paris eu-west-three and we'll say they're the same, so there's two way replication between these tables. That means that the same data is in us-east-one and in eu-west-three, but users, you know, there are close to the Paris region, can access this global table with low latency in Paris. So this is true for one to 10 regions, if you want it to. Okay. A global table is truly global and users can read and write to the table in any specific region, there will just be replication between these two.
+
+So the fact that there is read/write access to any region of AWS on this global table, makes it an active-active replication because you can actively write to any region and it will actively be replicated into other regions. Okay. So that's it, all you need to know for the exam. I will see you in the next session.
+
+----------------------------------------

@@ -1,0 +1,15 @@
+# 30.15 — Wrap Up
+
+> Section 30: Performance & Optimizations
+
+And with that we're done, now let me briefly sum up what we learned We had a look at runtime performance and potential improvements we can implement there. You should avoid unnecessary code executions, batch operations together and avoid unnecessary DOM access as you learned. You should of course also find and fix memory leaks, even small ones because they can add up and make your page slower or make it crash. For high frequency operations, you can compare different approaches, like the two for loop alternatives we had a look at and use the faster one and in general you might consider micro optimizations but you should also be careful about them because performance isn't a fixed thing, it can change in the future and you might be optimizing for something which really doesn't matter. When we have a look at startup performance, then we want to eliminate unnecessary or unused code, to download as small of a code package initially as possible.
+
+You also want to avoid using too many third-party libraries for that reason because every third-party library you add is extra code which needs to be downloaded and parsed, so the more third-party libraries you load, the more code you have to download. If you use third-party libraries, you also want to consider importing them into your script files and then using webpack for bundling and code splitting instead of using CDN links because if you use CDN links, you can't use code splitting.
+
+So bundling code and using lazy loading here really is a great idea for ensuring that your code starts fast and is able to execute as early as possible. Of course you should also minify code and webpack does this automatically to ensure that you ship as little code as possible to your end users and this is really it. You saw a lot of examples throughout this module, i hopefully could introduce you to how you should think about performance optimizations.
+
+You also got some useful external resources where you can dive deeper and in general, performance optimization is a topic which you can't really master, it's an ongoing journey, there are always new things to explore and it's also very specific to your exact use case. It's always very specific to that regarding what you want to look into and what you might want to consider optimizing. You can also google for Javascript performance optimizations and you will find many examples, some which you already saw here, some which you didn't.
+
+This can also be interesting to learn more about this topic but always also keep in mind that you shouldn't overdo it, you want to improve your application, you want to fix bugs and leaks but you don't want optimize every tiny bit because you could end up with code which is actually longer than before and therefore adds to the bundle size or you implemented an optimization which isn't optimal anymore in the future. Still, this hopefully got you started and i showed you some of the most important and critical aspects when it comes to performance optimizations and what you should keep in mind there.
+
+----------------------------------------

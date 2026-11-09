@@ -1,0 +1,27 @@
+# 5.4 — Demo of Encryption, Decryption
+
+> Section 5: Password Management with PasswordEncoders
+
+Instructor: Let's see the demo of encryption and decryption inside this lecture. I have the plain text password inside a file with the name plain.txt. The plain text password is EazyBytes@12345. I want to encrypt this plain text password with the help of an encryption algorithm and a secret key. Later on I'm also going to show you how to reverse the encrypted password to your plain text value with the help of decryption process. So the command that we need to run to perform the encryption is openssl enc means encryption - aes - 256 - cbc.
+
+So this is the encryption algorithm. There are many encryption algorithms available inside the industry. I'm trying to use a aes 256 related algorithm. And next I'm trying to mention - pass. After the pass, I'm trying to mention pass:12345. So with this, what I'm trying to tell is 12345 is going to be my secret key for the encryption process. Anyone who want to perform the decryption, they should know this secret key, which is 12345. Here to keep things simple, I'm trying to use a simple secret key, but in real applications, organizations will use complex keys, which are very tough to guess.
+
+After the secret key, I'm trying to mention -pbkdf2. The purpose of this pbkdf2 is it is going to make your encryption more stronger. So instead of directly using this 12345 as a secret key, behind the scenes, what it is going to do is based upon the password that we have provided, it is going to add a random (indistinct) to derive another internal secret key. I'm going to discuss what is a (indistinct) in the upcoming lectures. Since the secret key is going to be derived based upon the password that we're trying to provide, this process, they call it as pbkdf2.
+
+Pb means password based, k means key, d means derived, and F2 means function two. Later on, I'm trying to tell that my plain data is present inside an input file with the name plain.txt, and I want the encrypted data to be saved into an output file with the name encrypted.txt. At last, I tried to mention -base64. With this, what I'm trying to convey is once the encryption is going to be completed, please encode that encrypted data with the help of base64.
+
+If you don't provide these base64, the encrypted data is not going to be in a readable format. I can also show you very quickly. Let me execute this command. Now I will go to the encrypt.txt. So here, let me try to open the encrypt.txt, you can see this is not at all readable because right now the data might be in the binary format. To make it readable, we should try to further encode it with the help of base64. Lot many developers, they don't have a clue why people try to again perform the base64 encoding on top of the encryption.
+
+The reason is very simple. The output from the encryption is not going to be in a readable format. To make it readable, we need to perform encoding on top of the encryption. So let me close this file. This time I'll try to execute the same command but with the base64 option. So let me execute. Now I'll try to open the encrypt.txt. Here, I'm trying to open the encrypt.txt and this time you can see the data, at least it is in an readable format. So if you want to send to someone, we can send it happily because it does not have any unreadable characters.
+
+Now using the content available inside these encrypt.txt file, let's try to perform the decrypt operation to derive the plain text value. The command for decryption is openssl enc and what is the encryption algorithm that we have used. I'm trying to mention the same here. And I'm also telling that encrypted data is in the base64 format. And after mentioning these, we should also provide what is the secret key that we have used during the encryption process.
+
+So that's what I'm trying to mention, 12345. After the secret key, I'm trying to mention - d. Hyphen d indicates decryption operation. Since we want to perform the decrypt operation, we need to mention this -d. And the purpose of this pbkdf2, you already know since we have used this extra algorithm to secure the secret key during the encryption process, the same we have to use during the decryption process as well. So the encrypted data is present inside an input file with the name encrypt.txt.
+
+Once the decryption is completed, I want to save the data inside the decrypt.txt file. So if I try to execute and open the decrypt.txt, you'll be able to see the plain text value. Let's validate the same. So here I'll try to open the decrypt.txt and you can see we are seeing the original value, which is EazyBytes@12345. This time I'll try to give a different password and see what is going to happen. Instead of 12345, I'll try to give 12346. And if I try to decrypt the password, you can see I'm getting an error.
+
+With this, I'm assuming you got some clarity. Though encryption is providing the confidentiality, it is not going to be enough because if we lose the secret key, anyone can decrypt the data. With that, we're left with only one option for the password management, which is hashing. Hashing is one other beautiful concept in the software industry. Let's try to spend some good amount of time from the next lecture to understand the hashing and how to make our passwords strong with the help of hashing process.
+
+Thank you and I'll catch you in the next lecture. Bye.
+
+----------------------------------------

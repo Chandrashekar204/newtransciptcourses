@@ -1,0 +1,15 @@
+# 14.2 — Graph: Adjacency Matrix
+
+> Section 14: Graphs
+
+So there are two ways we're going to look at being able to represent a graph. The first one is going to be an adjacency matrix. The other one will be an adjacency list. So let's bring up a graph. And we're going to represent this in an adjacency matrix. So we'll start by looking at this a vertex. It has two edges with e and b. So we'll say a has edges with b and e and we'll just put ones in those boxes there. And of course a cannot have an edge with itself.
+
+So we'll put a zero in that one. And then it does not have an edge with C and D. So we'll put zeros in there. Now let's look at B. It has edges with a and C. So b. Has edges with A and C, and the rest will be zeros. I'll just finish building this out like this to complete our matrix. So this axis represents the actual vertex. This axis is the items it has an edge with. So now one of the things that's interesting about an adjacency matrix, we had mentioned that A can't point to a well, also B can't point to B and so on.
+
+You're always going to have this 45 degree line of zeros. And if you have a bidirectional matrix like we have here, you will always have a mirror image on each side of this 45 degree line that looks like that. But this is only if these are bidirectional. So let's change one of these two directional and take a look at that. We have a connection between A and B, so when the matrix that is A connects to B, that's one B connects back to A that has a one.
+
+But if we remove the edge that points from B to A and we change this to a zero. Now we have lost our symmetry across that 45 degree line. So let's change the edge on the graph back to being bidirectional. And then we'll change it in the matrix. And now it is symmetrical. So another thing that you can have with your edges is that they can be weighted. So if they're weighted in an adjacency matrix we will just store these weights in the matrix like this instead of having once.
+
+Okay, let's put that back. And that is our quick overview of an adjacency matrix.
+
+----------------------------------------

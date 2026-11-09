@@ -1,0 +1,28 @@
+# 4.21 — CHALLENGE #3
+
+> Section 4: Layouts: Floats, Flexbox, and CSS Grid Fundamentals
+
+-: So to wrap up this section here is coding challenge number three. And I hope you are not yet tired of this example because we will work with it one more time here. So, in the last challenge you built this layout here using Flex Box. And so as you might have guessed now it's time to build the exact same layout using CSS grid. Okay? Now, when we built this with Flex Box we wrapped these three columns here. So these three elements into one container element and we then used Flex Box only on that.
+
+So a little bit like we also did in our blog post project Right? But now I actually want you to go ahead and remove that container div and basically use all of this. So the entire element here as the flex container. Okay? Now, another important hint that I need to give you as you start designing your grid is that this here is going to be the first column. So this image, right? And so remember that this one here has a fixed width of 250 pixels. And so probably you should adjust your column to that Okay?
+
+So just keep that in mind. And yeah, that's actually all you need to do for this challenge. So the minor stuff that we did before with Flex Box and what I mean is this here and the colors so that I want you to leave intact. So keep using Flex Box for that and use CSS Grid only for the overall layout here which is actually two dimensional. And so CSS Grid is a good fit for that. So as always, take all the time that you need and then meet me back here once you are done.
+
+(Pause) All right? And I am 100% sure that was fun for you. So as I said, let's start by removing this container here together with its closing tag. Of course. Then let's go up here and remove all the traces of a flex box in this layout. And actually let's also get rid of this stupid clear fix class. So here we have our container which right now is set to display flex. So let's change that to display grid like this. And then we also need to specify of course or columns, so grid, template, columns.
+
+And then remember what I said about our first column. So the first column We want this image here to be, which has a width of 250. So it's basically a fixed width that we want to maintain. And so let's make our first column also exactly 250 pixels and then the other two columns we want them both to occupy the exact same space and they should also fill up all the remaining space. And so therefore we give both of them the width of "1" "fr". And so with this, let's wait for it.
+
+Well, that didn't really do anything. Oh, and of course because we just removed the container class. And so this coat should actually be on the product itself. So where is that? Ah, yeah, right here. So let's see. Ah, beautiful. That looks a lot better. Well, it's far from being perfect, but it's something Right? So let's get rid of this container code which made us do this small mistake. And now let's think about this title here and also about the button which are not one of these three columns Right?
+
+So what we want to happen to them is that they should stretch all the way from the start to the end Right? So that title is exactly this one. So product title. And so here we say "grid" "column" "one to minus one". So that's a trick that hopefully you know by now. And so let's actually copy it and use the same thing on the button. So this one should do the exact same thing Right? So button, let's add that there. And beautiful. Now here, we still have some gaps that we do not want and that's because we simply maintained the gap property that we had before from Flex Box but instead it is now column gap.
+
+And actually we're already done. So that was a bit too easy maybe. So basically the main trick here in order to remain this width was simply to give this column the exact same size as the image. So as we already had done before here and then everything else simply happened automatically. So this row here basically also has the height of 250 pixels because that is the height of the biggest content here. So this image Right? And just to quickly inspect that.
+
+So always like to use this grid overlay because it makes it so clear what exactly is happening. And so again, we can see here that this entire row so all the elements here do have a width of or actually a height of 250, and this one does not. But that's simply because there is not enough content in there. But anyway, with this, we actually now finished the topic of CSS grid and also this entire big section on building layouts with CSS. So this was quite a fundamental and important section that sets the stage for the rest of the course.
+
+And so I should warn you once again that in order to advance to the rest of the course, now you should make sure that you really understand this material quite well. So it doesn't need to be perfect. You don't need to know all the properties by heart again but you should at least understand how these technologies that we learned work and a little bit about how you can use them. So take all the time that you need in order to practice as much as you can.
+
+And only then let's move on together to our next section which is actually one of the most exciting one, I think at least in this entire course. So we're gonna talk about web design and learn a lot of different rules and guidelines and we will actually also apply them immediately to a new project. So it's time to say goodbye to our blog post project here because in the next section we will start a new one. But anyway, enough talk and I see you soon in that next section.
+
+
+########################################

@@ -1,0 +1,218 @@
+[
+  {
+    "section": 1,
+    "title": "Introduction",
+    "folder": "01-introduction",
+    "lectures": 14
+  },
+  {
+    "section": 2,
+    "title": "Basics: Variables, Data Types, Operators & Functions",
+    "folder": "02-basics-variables-data-types-operators-and-functions",
+    "lectures": 39
+  },
+  {
+    "section": 3,
+    "title": "Efficient Development & Debugging",
+    "folder": "03-efficient-development-and-debugging",
+    "lectures": 19
+  },
+  {
+    "section": 4,
+    "title": "Working with Control Structures (if Statements, Loops, Error Handling)",
+    "folder": "04-working-with-control-structures-if-statements-loops-error-handling",
+    "lectures": 38
+  },
+  {
+    "section": 5,
+    "title": "Behind the Scenes & The (Weird) Past (ES3, ES5) & Present (ES6+) of JavaScript",
+    "folder": "05-behind-the-scenes-and-the-weird-past-es3-es5-and-present-es6-of-javascript",
+    "lectures": 12
+  },
+  {
+    "section": 6,
+    "title": "More on Functions",
+    "folder": "06-more-on-functions",
+    "lectures": 22
+  },
+  {
+    "section": 7,
+    "title": "Working with the DOM (Browser HTML Code) in JavaScript",
+    "folder": "07-working-with-the-dom-browser-html-code-in-javascript",
+    "lectures": 38
+  },
+  {
+    "section": 8,
+    "title": "More on Arrays & Iterables",
+    "folder": "08-more-on-arrays-and-iterables",
+    "lectures": 29
+  },
+  {
+    "section": 9,
+    "title": "More on Objects",
+    "folder": "09-more-on-objects",
+    "lectures": 27
+  },
+  {
+    "section": 10,
+    "title": "Classes & Object-oriented Programming (OOP)",
+    "folder": "10-classes-and-object-oriented-programming-oop",
+    "lectures": 26
+  },
+  {
+    "section": 11,
+    "title": "Deep Dive: Constructor Functions & Prototypes",
+    "folder": "11-deep-dive-constructor-functions-and-prototypes",
+    "lectures": 13
+  },
+  {
+    "section": 12,
+    "title": "Practice: OOP & Classes",
+    "folder": "12-practice-oop-and-classes",
+    "lectures": 10
+  },
+  {
+    "section": 13,
+    "title": "Back to the DOM & More Browser APIs",
+    "folder": "13-back-to-the-dom-and-more-browser-apis",
+    "lectures": 16
+  },
+  {
+    "section": 14,
+    "title": "Working with Events",
+    "folder": "14-working-with-events",
+    "lectures": 20
+  },
+  {
+    "section": 15,
+    "title": "Advanced Function Concepts",
+    "folder": "15-advanced-function-concepts",
+    "lectures": 12
+  },
+  {
+    "section": 16,
+    "title": "More on Numbers & Strings",
+    "folder": "16-more-on-numbers-and-strings",
+    "lectures": 12
+  },
+  {
+    "section": 17,
+    "title": "Async JavaScript: Promises & Callbacks",
+    "folder": "17-async-javascript-promises-and-callbacks",
+    "lectures": 16
+  },
+  {
+    "section": 18,
+    "title": "Working with Http Requests",
+    "folder": "18-working-with-http-requests",
+    "lectures": 22
+  },
+  {
+    "section": 19,
+    "title": "Working with JavaScript Libraries",
+    "folder": "19-working-with-javascript-libraries",
+    "lectures": 9
+  },
+  {
+    "section": 20,
+    "title": "Modular JavaScript (Working with Modules)",
+    "folder": "20-modular-javascript-working-with-modules",
+    "lectures": 13
+  },
+  {
+    "section": 21,
+    "title": "JavaScript Tooling & Workflows",
+    "folder": "21-javascript-tooling-and-workflows",
+    "lectures": 18
+  },
+  {
+    "section": 22,
+    "title": "Utilizing Browser Storage",
+    "folder": "22-utilizing-browser-storage",
+    "lectures": 9
+  },
+  {
+    "section": 23,
+    "title": "JavaScript & Browser Support",
+    "folder": "23-javascript-and-browser-support",
+    "lectures": 12
+  },
+  {
+    "section": 24,
+    "title": "Time to Practice: Share My Place App",
+    "folder": "24-time-to-practice-share-my-place-app",
+    "lectures": 15
+  },
+  {
+    "section": 25,
+    "title": "Working with JavaScript Frameworks",
+    "folder": "25-working-with-javascript-frameworks",
+    "lectures": 6
+  },
+  {
+    "section": 26,
+    "title": "Meta-Programming: Symbols, Iterators, Generators, Reflect API & Proxy API",
+    "folder": "26-meta-programming-symbols-iterators-generators-reflect-api-and-proxy-api",
+    "lectures": 11
+  },
+  {
+    "section": 27,
+    "title": "Node.js: An Introduction",
+    "folder": "27-node-js-an-introduction",
+    "lectures": 20
+  },
+  {
+    "section": 28,
+    "title": "Security",
+    "folder": "28-security",
+    "lectures": 8
+  },
+  {
+    "section": 29,
+    "title": "Deploying JavaScript Code",
+    "folder": "29-deploying-javascript-code",
+    "lectures": 7
+  },
+  {
+    "section": 30,
+    "title": "Performance & Optimizations",
+    "folder": "30-performance-and-optimizations",
+    "lectures": 16
+  },
+  {
+    "section": 31,
+    "title": "Introduction to Testing",
+    "folder": "31-introduction-to-testing",
+    "lectures": 9
+  },
+  {
+    "section": 32,
+    "title": "Bonus: Programming Paradigms (Procedural vs Object Oriented vs Functional)",
+    "folder": "32-bonus-programming-paradigms-procedural-vs-object-oriented-vs-functional",
+    "lectures": 7
+  },
+  {
+    "section": 33,
+    "title": "Bonus: Data Structures & Algorithms Introduction",
+    "folder": "33-bonus-data-structures-and-algorithms-introduction",
+    "lectures": 11
+  },
+  {
+    "section": 34,
+    "title": "Bonus: TypeScript Introduction",
+    "folder": "34-bonus-typescript-introduction",
+    "lectures": 10
+  },
+  {
+    "section": 35,
+    "title": "Bonus: Web Components",
+    "folder": "35-bonus-web-components",
+    "lectures": 48
+  },
+  {
+    "section": 36,
+    "title": "Roundup & Next Steps",
+    "folder": "36-roundup-and-next-steps",
+    "lectures": 2
+  }
+]

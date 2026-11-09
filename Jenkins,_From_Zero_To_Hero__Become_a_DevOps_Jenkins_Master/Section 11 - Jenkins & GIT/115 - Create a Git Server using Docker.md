@@ -1,0 +1,39 @@
+# Create a Git Server using Docker
+
+*Section: Jenkins & GIT*
+
+Instructor: Hello and welcome back. In this video, we're going to learn how to create a Docker GitLab server. So we're gonna create a service in our virtual machine to host a GitLab server. So the first thing that we're going to do is look for GitLab Docker requirements and we're going to look in the first result. And here is an important point. The thing is that in CPU, we should have two cores at least.
+
+And in the memory, we could have like four gigs in RAM. And it says that it's going to be super slow because you actually need to swap. And that recommended size for this is going to be like eight gigabytes in RAM. So this is that recommended size. So for this video, I actually have like 16 gigs on my PC on my laptop, so I'm gonna use this if you can't use it, try using four gigs and then just try and tell me how it goes.
+
+So for that, I'm just gonna go to my virtual machine and I will be turning this off. I'm just gonna go here, power of the virtual machine, and I'm going to go here, Settings in VirtualBox, we're going to go to the memory section or System. And base memory for now is two gigs. And as you can see, I have 16, so I'm just gonna go to 10 gigs probably. So let's go ahead, I'm just gonna assign this 10 gigs, so we can look in the processors.
+
+And I don't know if I should give two. I'm just gonna give it one more and that's pretty cool. So I'm just gonna hit an OK and I will start again, my virtual machine. Okay, so our machine already started, as you can see here. The thing is that if we go to cat /proc/cpuinfo and we grep for cores, sorry, cores, we hit Enter and you're gonna see that now we have two cores and if we type free -h, we're going to find out that we have 10 gigs in RAM.
+
+So hopefully our GitLab server is going to run with this new hardware resources. So let's go to our Jenkins data folder at the level of our docker-compose file. And now we're gonna go to Google and we're going to look for Docker GitLab, and let's search for that. And we're gonna find out the first result in here we have how to run this image. So we're going to use the Docker Compose file, let's look for it.
+
+This should be there. Let's scroll down a little bit. And here we are. So we're actually gonna copy this all. So let's copy this, and we're gonna open up our Docker Compose file, and we're going to paste that in here. Okay, so the first thing that I'm gonna do is that I will format the text in Sublime, and then I will copy the text to my Vim editor. So let's go to Sublime. If you don't have Sublime, don't worry, you can just do that here.
+
+And once we open up Sublime, we can just copy that in here, and we're going to start modifying things. We're gonna call this like git, we want this service to be called git, and the image is going to be this image. We're going to remove this restart from here. We're going to remove these environment variables. Let's remove these ports. We're gonna change the port to, I don't know, maybe, 8090 for example, just to use a different port.
+
+And these are the volumes where the data is going to be stored. So we're gonna copy this. Let's go to our Vim editor. And in here we're going to create this service under the web service. So here we have our web one. So we're gonna enter in here, and we're gonna paste that new service that we actually copied to here, and now we're gonna indent this, and as you can see, we still need one level. So let's hit Space, Space in all of this.
+
+And that's pretty cool. Now we need to add the networks in this place. So we're gonna do like networks, and we're gonna bind this container to the network net. And just for simplicity, we're going to add a container name in here. And this is going to be like git-server or whatever you want. So this is pretty cool. Let's remove this space in here and we're gonna save this bin file. And now remember that in order to create our Git server, we need to do a docker compose up -d, and it's going to pull the Git image, the GitLab image from Docker up.
+
+So as you can see, the process actually may take a while, depending on your internet connection, I think that the image is actually like 500 megabytes or something like that. It's actually a little bit heavy, but don't worry, the only thing that you need to do is to wait until the download finishes. Okay, this actually took a while like 10 minutes or even more. But as you can see, the download already finished and our service is already created automatically by the docker compose -up, the instruction that we provided to Docker.
+
+So okay, let me clean the screen. And if we do a docker ps, we're going to find our new server in here. So if we want to see what's happening with this server, we're gonna copy the name, and we're going to do docker logs -f, and then we pass the name of the container. So if we hit Enter, as you can see, this is actually starting up and this startup may take a while. So the only one thing that you need to do is to wait.
+
+Don't worry, it may take a while. I will show you the message that informs you that the service is already up and running. So I will pause the video again. As you can see, this is actually doing a lot of things and may take like five minutes more. So let me pause this and whenever it finishes, I will come back. Okay, the process already finished, as you can see here. And whenever you see this message, Chef Client finished and you see the time that it actually took,, it means that your service is ready to go.
+
+And as you can see, it says GitLab Reconfigured. So that's pretty nice. Now we need to create a DNS so we can access this server. So remember that if we take a look to our Docker Compose file, we're going to see this host name here. And this is the name that was defined by default in the GitLab installation. So we're gonna copy this name and we're going to create a local VNS to reach this from our browser.
+
+Let's go and open up our Notepad and in here, okay, let me open up with administrator permissions. We're going to look for the hosts file in Windows, which is Windows System32, drivers, etc, and we're going to show all the files. So in here, we're gonna open up this file and we are going to create a new VNS using exactly this IP address, which just stands for our virtual machine IP address. So we're gonna copy this, paste that, and we're gonna say git, okay, let me copy the name.
+
+And we're gonna paste that in here. And now we're going to access this GitLab server using these DNS, which actually is pointing to the IP of our virtual machine. So let's go ahead and click on File and Save. And now we're gonna close this file and let's go to our browser. Let's open a new tab and type like gitlab.example.com. And we're gonna use the port 8090 because remember that if we go to our Docker Compose file, this means the external port, which means the port that we're going to hit using the browser, and this is actually the port, the internal port that the container is using.
+
+So we're gonna access through this port, which is 8090. So we're gonna copy that and we're gonna paste that in here, and we're gonna hit Enter. And once you do this, you should have a screen like this. And now it's time to change the password. So the password should be like at least eight characters in length. So let's try like 12345678, 12345678, and let's try to change the password. And as you can see, it was good.
+
+So now we need to log in or sign in using the root user and the password that we created, which is 12345678. Let's click on Remember me, click on Sign in. And this is super cool as you can see, you have now your own gig server created using Docker. The only one thing here is that you're going to need a little bit of RAM, you know, to run this like at least four gigs in RAM. So this is it for this video.
+
+I'll see you in the next lesson.

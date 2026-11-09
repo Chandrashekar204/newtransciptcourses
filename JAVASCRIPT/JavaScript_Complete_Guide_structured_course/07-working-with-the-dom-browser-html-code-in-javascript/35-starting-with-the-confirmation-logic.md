@@ -1,0 +1,19 @@
+# 7.35 — Starting with the Confirmation Logic
+
+> Section 7: Working with the DOM (Browser HTML Code) in JavaScript
+
+So inside of the delete movie handler function here, I want to make sure that we also work with the buttons that we show in that modal, that would be that no and that yes button. Now again, we can use button passive and button danger, these CSS classes inside of the delete modal div here to select these buttons. So if I go to app.js, in here I want to add handlers to these buttons, so deletemoviemodal and then query selector CSS class button--passive, that's my cancel button and here that's the danger button, that's the yes button.
+
+Now we just need to add event listeners here and of course you could store where the selected buttons in constants here, you can use global constants, I'll go with local ones because I really only need it in this function here. So I'll name this cancel deletion button because that's what this button will do and here add another constant which we could name confirm deletion button. Now we can add event listeners, cancel deletion button, there I will add an event listener for click event and add an anonymous function.
+
+You could of course also go for a named function if you prefer to but here, an anonymous function where I call close movie deletion modal like that, therefore we can actually also just point at this movie deletion modal function like this because we don't need to do anything else with it and nothing else needs to be done when this button is clicked, so if we now save that and we go back here, reload and add a new movie, like that, click on it here and click no, this closes this just as if we click on the backdrop.
+
+So this works, now if I click yes, then I really want to delete it so then I want to execute delete movie. So we also need to add a listener here, confirm deletion button and there, I'll add an event listener where upon a click, I want to execute delete movie in the end and here we need to bind null and then the movie ID so that we forward that movie ID in the end, so that the right movie gets deleted eventually and i can get rid of this comment. Now as mentioned before, you could rename these functions which are triggering here to handler functions because they're now only executed upon handlers. For deleting I will definitely do that, delete movie handler.
+
+For closing the movie deletion modal, I'll not do it because we actually can trigger this from other places as well, like here in the backdrop click handler function. So with that, let's give it another try, let's save that and do a full reload here and I'll get an error in line 44, identifier delete movie handler has already been declared. So look line 44 complains about delete movie handler. Oh yes, of course I'm duplicating the name now. So this here makes sense to be called delete movie handler because this really will do the deletion, this will just confirm or check whether you want to continue, so I'll name this start delete movie handler because in the end here, we start that deletion process and now we just need to go down to render a new movie element and there, connect us to the start delete movie handler, this click listener here.
+
+So now we get rid of that duplication, if we now reload, there are no errors and now let's give it a try. Let's add Javascript, The Complete Guide here like this, add it, then also add something else, clearing the input when I cancel, when I click the backdrop by the way doesn't work as I see, clicking cancel here also doesn't get rid of the backdrops there. So there still are some errors which we should get rid of, we'll do so soon but now here I cancel, now I confirm and now everything's gone.
+
+So that didn't really work, we still have a couple of bugs which we need to fix. Let's make sure we do fix them now.
+
+----------------------------------------

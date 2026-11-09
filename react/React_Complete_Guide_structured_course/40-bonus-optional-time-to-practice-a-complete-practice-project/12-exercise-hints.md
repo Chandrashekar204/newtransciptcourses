@@ -1,0 +1,7 @@
+# 40.12 — Exercise Hints
+
+> Section 40: [BONUS / OPTIONAL] Time to Practice: A Complete Practice Project
+
+(No captions available for this lecture)
+
+----------------------------------------

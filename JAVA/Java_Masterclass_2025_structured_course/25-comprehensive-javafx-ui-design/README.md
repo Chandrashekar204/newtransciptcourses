@@ -1,0 +1,57 @@
+# Section 25: Comprehensive JavaFX UI Design
+
+**Lectures:** 47
+
+## Lessons
+
+- [25.1 — Configuring JavaFX with JDK 11+: Setting Up Global Libraries](01-configuring-javafx-with-jdk-11-setting-up-global-libraries.md)
+- [25.2 — Step-by-Step Guide to Creating Your First JavaFX Application](02-step-by-step-guide-to-creating-your-first-javafx-application.md)
+- [25.3 — JavaFX Fundamentals: MVC, Application Lifecycle, and Stages](03-javafx-fundamentals-mvc-application-lifecycle-and-stages.md)
+- [25.4 — Building a JavaFX "Hello World" Program: FXML vs. Code](04-building-a-javafx-hello-world-program-fxml-vs-code.md)
+- [25.5 — IMPORTANT NOTE: module-info.java file](05-important-note-module-info-java-file.md)
+- [25.6 — Mastering JavaFX GridPane Layout: Positioning and Sizing Controls](06-mastering-javafx-gridpane-layout-positioning-and-sizing-controls.md)
+- [25.7 — Maximising space with the JavaFX Hbox layout](07-maximising-space-with-the-javafx-hbox-layout.md)
+- [25.8 — Mastering the JavaFX BorderPane Layout for Application Design](08-mastering-the-javafx-borderpane-layout-for-application-design.md)
+- [25.9 — Exploring JavaFX Layouts: FlowPane, TilePane, and StackPane](09-exploring-javafx-layouts-flowpane-tilepane-and-stackpane.md)
+- [25.10 — Exploring JavaFX Controls: Buttons, Labels, and User Interaction](10-exploring-javafx-controls-buttons-labels-and-user-interaction.md)
+- [25.11 — Implementing Radio Buttons & Checkboxes in JavaFX Applications](11-implementing-radio-buttons-and-checkboxes-in-javafx-applications.md)
+- [25.12 — JavaFX User Input: Combo Box and Choice Box Controls Deep Dive](12-javafx-user-input-combo-box-and-choice-box-controls-deep-dive.md)
+- [25.13 — JavaFX Interactive Controls: Slider, Spinner, ColorPicker, DatePicker](13-javafx-interactive-controls-slider-spinner-colorpicker-datepicker.md)
+- [25.14 — JavaFX TitledPane and Accordion: Organizing UI Elements](14-javafx-titledpane-and-accordion-organizing-ui-elements.md)
+- [25.15 — Mastering JavaFX Event Handling: Responding to User Actions](15-mastering-javafx-event-handling-responding-to-user-actions.md)
+- [25.16 — Advanced JavaFX Event Handling: Parameters and Best Practices](16-advanced-javafx-event-handling-parameters-and-best-practices.md)
+- [25.17 — Optimizing JavaFX Applications: Mastering the UI Thread and Event Handling](17-optimizing-javafx-applications-mastering-the-ui-thread-and-event-handling.md)
+- [25.18 — Concurrency in JavaFX: Implementing Background Tasks with Threads & Runnable](18-concurrency-in-javafx-implementing-background-tasks-with-threads-and-runnable.md)
+- [25.19 — JavaFX Project: Creating a To-Do List Application & Data Model Setup](19-javafx-project-creating-a-to-do-list-application-and-data-model-setup.md)
+- [25.20 — JavaFX ListView: Populating, Single Selection Mode & Event Handling Basics](20-javafx-listview-populating-single-selection-mode-and-event-handling-basics.md)
+- [25.21 — JavaFX Event Handling: Adding a Change Listener for Dynamic UI Updates](21-javafx-event-handling-adding-a-change-listener-for-dynamic-ui-updates.md)
+- [25.22 — JavaFX Date Formatting: Enhancing the User Interface with Date Formatting](22-javafx-date-formatting-enhancing-the-user-interface-with-date-formatting.md)
+- [25.23 — Implementing Singletons: Best Practices for Java Application Development](23-implementing-singletons-best-practices-for-java-application-development.md)
+- [25.24 — JavaFX Disk Operations: Loading and Saving Data using the File System](24-javafx-disk-operations-loading-and-saving-data-using-the-file-system.md)
+- [25.25 — JavaFX Dialogs: Building User Input Forms with DialogPane and GridPane](25-javafx-dialogs-building-user-input-forms-with-dialogpane-and-gridpane.md)
+- [25.26 — JavaFX Dialogs, Handling User Input and Displaying Program Output](26-javafx-dialogs-handling-user-input-and-displaying-program-output.md)
+- [25.27 — Bug Fixing, Data Binding, and UI Updates in JavaFX ToDo List App](27-bug-fixing-data-binding-and-ui-updates-in-javafx-todo-list-app.md)
+- [25.28 — Data Binding Mastery: Implementing Observable Lists for Dynamic UI in JavaFX](28-data-binding-mastery-implementing-observable-lists-for-dynamic-ui-in-javafx.md)
+- [25.29 — JavaFX Cell Factories: Customizing ListView Display and Highlighting Items](29-javafx-cell-factories-customizing-listview-display-and-highlighting-items.md)
+- [25.30 — JavaFX Context Menus: Implementing Right-Click Functionality for ListViews](30-javafx-context-menus-implementing-right-click-functionality-for-listviews.md)
+- [25.31 — Implementing Key Events and Toolbars for Enhanced Functionality](31-implementing-key-events-and-toolbars-for-enhanced-functionality.md)
+- [25.32 — Enhancing JavaFX Applications Implementing Sorted Lists for Dynamic Data Display](32-enhancing-javafx-applications-implementing-sorted-lists-for-dynamic-data-display.md)
+- [25.33 — Filtering Data in JavaFX: Utilizing FilteredList for Dynamic Content Management](33-filtering-data-in-javafx-utilizing-filteredlist-for-dynamic-content-management.md)
+- [25.34 — Elevating Visuals: Enhancing Appearance with CSS Styling](34-elevating-visuals-enhancing-appearance-with-css-styling.md)
+- [25.35 — JavaFX Transformations: Mastering Node Rotation, Scaling, and Visual Effects](35-javafx-transformations-mastering-node-rotation-scaling-and-visual-effects.md)
+- [25.36 — Implementing File and Directory Choosers in JavaFX for Enhanced File Access](36-implementing-file-and-directory-choosers-in-javafx-for-enhanced-file-access.md)
+- [25.37 — Leveraging SceneBuilder: A Visual Approach to JavaFX UI Design within IntelliJ](37-leveraging-scenebuilder-a-visual-approach-to-javafx-ui-design-within-intellij.md)
+- [25.38 — Installing and Setting up Scenebuilder on Windows](38-installing-and-setting-up-scenebuilder-on-windows.md)
+- [25.39 — Installing SceneBuilder for macOS: Step-by-Step Setup and IntelliJ Integration](39-installing-scenebuilder-for-macos-step-by-step-setup-and-intellij-integration.md)
+- [25.40 — SceneBuilder Deep Dive: Exploring the Interface, Layouts, and Control Properties](40-scenebuilder-deep-dive-exploring-the-interface-layouts-and-control-properties.md)
+- [25.41 — Constructing a Basic UI Layout, using SceneBuilder for JavaFX Development](41-constructing-a-basic-ui-layout-using-scenebuilder-for-javafx-development.md)
+- [25.42 — Deep Dive Into SceneBuilder's Code Section and CSS](42-deep-dive-into-scenebuilder-s-code-section-and-css.md)
+- [25.43 — Contacts Manager Project, Part One, Setting up Project](43-contacts-manager-project-part-one-setting-up-project.md)
+- [25.44 — Contacts Manager Project, Part Two, Design and Layout](44-contacts-manager-project-part-two-design-and-layout.md)
+- [25.45 — Contacts Manager Project, Part Three, Show Dialog, Button Press and Contact](45-contacts-manager-project-part-three-show-dialog-button-press-and-contact.md)
+- [25.46 — Contacts Application: Enhancing Functionality with Edit and Delete Features](46-contacts-application-enhancing-functionality-with-edit-and-delete-features.md)
+- [25.47 — JavaFX Contact Deletion, Confirmation, and Table Resizing Implementation](47-javafx-contact-deletion-confirmation-and-table-resizing-implementation.md)
+
+## Source
+
+Content was split from the original course transcript.

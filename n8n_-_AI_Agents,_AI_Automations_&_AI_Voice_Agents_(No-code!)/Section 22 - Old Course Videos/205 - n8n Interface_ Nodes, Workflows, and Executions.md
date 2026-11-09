@@ -1,0 +1,43 @@
+# n8n Interface: Nodes, Workflows, and Executions
+
+*Section: Old Course Videos*
+
+Welcome back guys. In the last episode, we explored N810. What it is, how it works, and why it's such a game changer for automation. Today we are going one level deeper into the most important building blocks of any automation in N810. Notes. So what are notes? Simply put, notes are the core components of every automation workflow in N810. Think of them as building blocks. Each node performs a specific task, and when you connect multiple nodes together, you create a workflow.
+
+Now, before jumping into N810, let's understand the difference between nodes, workflow and executions. Now that you understand the difference between workflows, nodes, and executions, Let's actually jump into an A-10 and take a look around. So this is where everything will start to click. You will see exactly how to build automations using a drag and drop interface. So we'll also explore how to access community resources, templates, and helpful tools that make automation even easier.
+
+If you are new to automation tools at all, don't worry. Enlightened is designed to be intuitive and easy to use. Even if you have never used never used uh, and built workflow before. So if you don't have an A-10 account, use the link from the resource section, which is an A-10 dot partner. links.io/adaptive AI. You will get a 15 day free to use and A-10. These links give me a small kickback. So thank you for your support.
+
+fourth. Sign up by clicking on Get Started. Fill in your full name, email, password and a unique username. Then click on try for free. Now answer these questions. Skip this step and start automating. Now this is our dashboard. So click on start from scratch. Now, if you prefer dark mode, go to settings. In the left menu. Click on these three dots. Click on settings. Scroll down. Switch to the dark theme and hit save.
+
+Great. Now let's go back to our main dashboard. Next, I strongly recommend changing your time zone so the times are correct for all tasks. First you need to save your workflow. Then click on this three dots. Settings and choose your time zone. Hit save. So this is your N810 canvas. Let's go on the N810 home page. So here you will see all your workflows and projects. And if you have already created workflows, they will appear here.
+
+If not, this page will be empty for now. On the left hand side you will notice a navigation menu with several key sections. So you will see workflows projects. So under each project you should see a workflow. When I add here a new project I name it demo and hit save. Now I can create separate workflows within this project. So start from scratch. Save. And now I have two separate projects. Now here you can see executions.
+
+So you can track the history of past workflow runs. So you can check for any errors and see how your automations are performing. Here you can see templates. So Naa10 provides a collection of pre-built workflows that you can use as a starting point. So these are great if you are looking for inspiration or need a quick solution. Now let's go back to our dashboard and. Admin panel settings. This is where you can adjust preferences like manage team access and configure other settings.
+
+On the help you can see a documentation. So if you ever get stuck, this is your go to section for troubleshooting, official guides, and community support. In general. N810 documentation is brilliant, so I recommend you to check it out. Now let's start by creating your first workflow. So to create a new workflow click on Create Workflow. So you can see how the drag and drop system works in action. Now we set up a blank canvas which is where you will build and design your automation workflows.
+
+Right away, N810 prompts you to add a trigger. So this is the starting point of every automation. So triggers determine when a workflow should run. You will see different types of triggers, including manual trigger. So you start the automation manually by clicking a button on app event. So app specific triggers. This fire when a certain event happens inside an app, for example, receiving an email and you add it to a Google sheet a message sent on slack.
+
+Schedule trigger. So the workflow runs when it receives data from another app or service. Trigger. So the workflow runs at specific time intervals like every day, every minute, etc. and webhook trigger. So the workflow runs when it receives data from another app or service. So for now, let's select the manual trigger just so you can see how the workflow runs step by step. Now we have a trigger. Let's add more nodes to perform actions.
+
+So there are two ways to add nodes in N810. You can click the plus button on the canvas and choose a node. Or you can click the nodes panel at the top right corner and search for the app or function you need. For example, let's say we want to send an email whenever our workflow runs so we can click on this plus button and search for Gmail. As you can see here, there is a long list of apps you can use already integrated in a N810.
+
+So click on Gmail. And now we have to select an action. So we want to send an email. So send a message. Each note represents a specific task. And connecting notes together determines how the workflow flows from start to finish. Now you can open any of the notes by double click. So you can set up a specific operation like send an email, delete email, get many emails. You can also specify the subject the message body.
+
+Now, this is a very important step for every app or service you want to connect to. You have to provide credentials. So you need to provide API keys to connect to the app. So by clicking on this dropdown you can create new credentials. If you are using a cloud service for this particular app. So Google apps like Gmail you can just simply sign in and you are connected. But if you are self-hosted n810, you need to get API key from your Google account and paste it here to make a connection.
+
+This is self-hosted version of N810. And the dashboard looks slightly different. So when I click on this Gmail node to send an email Later as an action. You can see I have to provide credentials to connect to my Gmail account. And when I click on this drop down, I want to create a new credential. I have to provide client ID and client secret. So the cloud version of N810 makes it really simple to connect to many apps.
+
+Let's close it for now. So in every action node you can define input and output data. A really cool feature of N810 is that you can test each node individually. So instead of running the entire workflow and hoping it works, you can execute nodes one by one to see if they are doing what you expect. So to do this, you just need to click on a node and hit Test step. So you will see real time data coming in and out of that step.
+
+So this makes it super easy to debug and troubleshoot your automations. So if a node is not connected properly. And I will show you an error message like write me up or your Gmail account is not connected. Reminding you that the node needs input data from another step. As I said, since N810 connects with hundreds of apps, you will need to set up credentials to authenticate services like Gmail, slack, Google Sheets, WhatsApp, telegram, etc..
+
+So just for a quick demonstration, let's add WhatsApp node. As you can see, both of them require you to provide some kind of credentials like API keys or for two authentication login details. So you can connect to your accounts of these apps. Now in the cloud version, when you go to overview. And click on credentials, you can easily manage access to different services. So you can reuse credentials across multiple workflows without setting them up repeatedly.
+
+So once a credential is saved, you can quickly attach it to any node that requires authentication. If you ever get stuck, N810 has fantastic documentation and an active support community. So just simply click on help and you will find the step by step guides for every feature. Like a lot of different resources such as code snippets and examples for more advanced use cases. There is also an official N810 forum where you can ask questions, see how others are building workflows, and find solutions to common issues.
+
+Today, we have covered how to navigate the N810 interface, how to create a new workflow and add a trigger, how to connect nodes and set up credentials, and where to find community templates and resources. In the next session, we will take a deep dive into different types of nodes so you can understand how they work and how to use them effectively in your automations. Thanks for watching and I will see you in the next episode.
+
+Bye bye.

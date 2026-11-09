@@ -1,0 +1,104 @@
+[
+  {
+    "section": 1,
+    "title": "Getting Started",
+    "folder": "01-getting-started",
+    "lectures": 13
+  },
+  {
+    "section": 2,
+    "title": "Changing the default security configurations",
+    "folder": "02-changing-the-default-security-configurations",
+    "lectures": 6
+  },
+  {
+    "section": 3,
+    "title": "Defining & Managing Users using InMemoryUserDetailsManager",
+    "folder": "03-defining-and-managing-users-using-inmemoryuserdetailsmanager",
+    "lectures": 5
+  },
+  {
+    "section": 4,
+    "title": "Defining & Managing Users using a database",
+    "folder": "04-defining-and-managing-users-using-a-database",
+    "lectures": 8
+  },
+  {
+    "section": 5,
+    "title": "Password Management with PasswordEncoders",
+    "folder": "05-password-management-with-passwordencoders",
+    "lectures": 10
+  },
+  {
+    "section": 6,
+    "title": "Understanding Authentication Provider and Implementing it",
+    "folder": "06-understanding-authentication-provider-and-implementing-it",
+    "lectures": 6
+  },
+  {
+    "section": 7,
+    "title": "Spring Security customizations for most common use cases",
+    "folder": "07-spring-security-customizations-for-most-common-use-cases",
+    "lectures": 18
+  },
+  {
+    "section": 8,
+    "title": "Understanding CORs & CSRF",
+    "folder": "08-understanding-cors-and-csrf",
+    "lectures": 17
+  },
+  {
+    "section": 9,
+    "title": "Implementing Authorization using Authorities,Roles",
+    "folder": "09-implementing-authorization-using-authorities-roles",
+    "lectures": 8
+  },
+  {
+    "section": 10,
+    "title": "Custom Filters in Spring Security",
+    "folder": "10-custom-filters-in-spring-security",
+    "lectures": 5
+  },
+  {
+    "section": 11,
+    "title": "Token based Authentication using JSON Web Token (JWT)",
+    "folder": "11-token-based-authentication-using-json-web-token-jwt",
+    "lectures": 11
+  },
+  {
+    "section": 12,
+    "title": "Method Level Security",
+    "folder": "12-method-level-security",
+    "lectures": 6
+  },
+  {
+    "section": 13,
+    "title": "Deep dive of OAUTH2 & OpenID Connect",
+    "folder": "13-deep-dive-of-oauth2-and-openid-connect",
+    "lectures": 13
+  },
+  {
+    "section": 14,
+    "title": "Implementing OAUTH2 using spring security & social logins",
+    "folder": "14-implementing-oauth2-using-spring-security-and-social-logins",
+    "lectures": 6
+  },
+  {
+    "section": 15,
+    "title": "Securing EazyBank using OAUTH2 and KeyCloak",
+    "folder": "15-securing-eazybank-using-oauth2-and-keycloak",
+    "lectures": 17
+  },
+  {
+    "section": 16,
+    "title": "OAUTH2 Auth Server using Spring Authorization Server",
+    "folder": "16-oauth2-auth-server-using-spring-authorization-server",
+    "lectures": 10
+  },
+  {
+    "section": 17,
+    "title": "Thank You and Congratulations",
+    "folder": "17-thank-you-and-congratulations",
+    "lectures": 1
+  }
+]

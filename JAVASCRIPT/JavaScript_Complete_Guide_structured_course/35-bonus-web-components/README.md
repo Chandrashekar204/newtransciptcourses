@@ -1,0 +1,58 @@
+# Section 35: Bonus: Web Components
+
+**Lectures:** 48
+
+## Lessons
+
+- [35.1 — Module Introduction](01-module-introduction.md)
+- [35.2 — Web Components in Action](02-web-components-in-action.md)
+- [35.3 — What are Web Components?](03-what-are-web-components.md)
+- [35.4 — Why Web Components?](04-why-web-components.md)
+- [35.5 — Getting Started!](05-getting-started.md)
+- [35.6 — Web Component Browser Support](06-web-component-browser-support.md)
+- [35.7 — Our Development Setup](07-our-development-setup.md)
+- [35.8 — A First Custom Element](08-a-first-custom-element.md)
+- [35.9 — Interacting with the Surrounding DOM](09-interacting-with-the-surrounding-dom.md)
+- [35.10 — Understanding the Custom Element Lifecycle](10-understanding-the-custom-element-lifecycle.md)
+- [35.11 — Using "connectedCallback" for DOM Access](11-using-connectedcallback-for-dom-access.md)
+- [35.12 — Listening to Events Inside the Component](12-listening-to-events-inside-the-component.md)
+- [35.13 — Using Attributes on Custom Elements](13-using-attributes-on-custom-elements.md)
+- [35.14 — Styling our Elements](14-styling-our-elements.md)
+- [35.15 — Working with the "Shadow DOM"](15-working-with-the-shadow-dom.md)
+- [35.16 — Adding an HTML Template](16-adding-an-html-template.md)
+- [35.17 — Using Slots](17-using-slots.md)
+- [35.18 — Defining the Template in JavaScript](18-defining-the-template-in-javascript.md)
+- [35.19 — Using Style Tags in the Shadow DOM](19-using-style-tags-in-the-shadow-dom.md)
+- [35.20 — Extending Built-in Elements](20-extending-built-in-elements.md)
+- [35.21 — The Next Steps](21-the-next-steps.md)
+- [35.22 — Understanding Shadow DOM Projection](22-understanding-shadow-dom-projection.md)
+- [35.23 — Styling "slot" Content Outside of the Shadow DOM](23-styling-slot-content-outside-of-the-shadow-dom.md)
+- [35.24 — Styling "slot" Content Inside of the Shadow DOM](24-styling-slot-content-inside-of-the-shadow-dom.md)
+- [35.25 — Styling the Host Component](25-styling-the-host-component.md)
+- [35.26 — Conditional Host Styling](26-conditional-host-styling.md)
+- [35.27 — Styling with the Host Content in Mind](27-styling-with-the-host-content-in-mind.md)
+- [35.28 — Smart Dynamic Styling with CSS Variables](28-smart-dynamic-styling-with-css-variables.md)
+- [35.29 — Cleaning Up the Overall Styling](29-cleaning-up-the-overall-styling.md)
+- [35.30 — Observing Attribute Changes](30-observing-attribute-changes.md)
+- [35.31 — Adjusting the Component Behavior Upon Attribute Changes](31-adjusting-the-component-behavior-upon-attribute-changes.md)
+- [35.32 — Using "disconnectedCallback"](32-using-disconnectedcallback.md)
+- [35.33 — Adding a render() Method](33-adding-a-render-method.md)
+- [35.34 — Final Adjustment](34-final-adjustment.md)
+- [35.35 — The Next Steps](35-the-next-steps.md)
+- [35.36 — Creating the Basic Modal Component](36-creating-the-basic-modal-component.md)
+- [35.37 — Adding the Modal Container](37-adding-the-modal-container.md)
+- [35.38 — Styling the Modal Elements](38-styling-the-modal-elements.md)
+- [35.39 — Adding Some General App Logic](39-adding-some-general-app-logic.md)
+- [35.40 — Opening the Modal via CSS](40-opening-the-modal-via-css.md)
+- [35.41 — Public Methods & Properties](41-public-methods-and-properties.md)
+- [35.42 — Understanding Named Slots](42-understanding-named-slots.md)
+- [35.43 — Listening to Slot Content Changes](43-listening-to-slot-content-changes.md)
+- [35.44 — Closing the Modal](44-closing-the-modal.md)
+- [35.45 — Dispatching Custom Events](45-dispatching-custom-events.md)
+- [35.46 — Configuring Custom Events](46-configuring-custom-events.md)
+- [35.47 — Finishing it up!](47-finishing-it-up.md)
+- [35.48 — Useful Resources & Links](48-useful-resources-and-links.md)
+
+## Source
+
+Content was split from the original course transcript.

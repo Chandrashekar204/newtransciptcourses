@@ -1,0 +1,38 @@
+# 1.2 — Code Editor
+
+> Section 1: Introduction
+
+In this video, we're going to talk about setting up our coding environment. And I'll walk through how to set up IntelliJ, which is what I use in the course. Now having said that, I recommend that you not install IntelliJ. And the reason for that is Udemy made a massive upgrade to their coding exercises. So you should try using the coding exercises that are in the course in the browser. So I'm going to flip over to the course. And this is the video for the linked list constructor.
+
+And that exists in this section here. Right below that you can see where it says linked list coding exercises. So I'm going to click on Linked List Coding Exercises and open this. And you can see the very first one is the linked list constructor coding exercise. I'm going to click on this. And that brings up this coding exercise. Now I'm going to come up here to the X. And I'm going to close this. And what I've done is created a box like this for every coding exercise.
+
+So you know exactly where you're supposed to write your code. I'm going to come over here to this window on the left. These are the instructions. Yet these detailed instructions for what exactly you're supposed to write. And then up here where it says solution, explanation. Notice that it's locked. I'm going to click on this and it says solution. Explanation will be available after your third failed attempt. Or and when you pass this exercise. So I'm going to dismiss this.
+
+And then I'm going to come over here to the lower right and click on this where it says full screen. So I'll click on this. And then I'm going to highlight this box. And I'm going to paste in the code I already have it on the clipboard. So this is the code for this exercise. I'm going to come down here and click on Run Test. And you can see that this has passed all of the tests. So first let's come over here to user logs. The user logs is like printing to the console.
+
+And then I'll come up here to the solution explanation. It is unlocked now. So I'll click on this and I'll make this window a little bit wider again. And this is the solution code. And then if I scroll up there's a detailed explanation of the code. And then I'll scroll up again. And at the bottom there is code with inline comments. So these are a lot of resources that you're not going to have available to you if you use IntelliJ. So I highly recommend that you at least try this out.
+
+Now if you want to know how to set up IntelliJ, that's what I'm going to do in the rest of the video. Once again, I would recommend that you skip the rest of the video and do the coding exercises in the course in the browser. So we'll start out by going to Google and just doing a search for download IntelliJ. And you can just select the top item here on the search. And that's going to take you to this page. So there are two different versions of IntelliJ.
+
+The ultimate version. This is for professional developers. And there's the community version which is free. And it's the version that I will be using in this course. So I'm going to click on download. And it'll save down here. And I'm on a mac. But it doesn't matter if you're on a mac or a PC, it's going to look similar to this, and this will probably be saved to your downloads folder unless you've changed that default. And then you can just click on that and install the software.
+
+And I'm not going to walk through all of the steps to install it, because I'm sure you know how to install software on your computer. What I'm going to do is I'm going to close this web browser. So I'm going to launch IntelliJ. And the first time you launch it, you'll get a window that looks like this. I'm going to click on New Project. So it is possible that IntelliJ might give you a different startup window where the new project button is at the top.
+
+You can also launch a new project by coming up to File New Project. So I'll click on this and you'll get a window that looks like this. You want to make sure that Java is selected here and you will need a project SDK. This is software development kit. And if this is the first time you're installing Java on your computer, this might show that it does not have an SDK installed. If that is the case, you can just come up to this dropdown and select download JDK.
+
+And if you click on this you'll get this box here. And there's a number of jdks that you can download and a very long list. I'm going to cancel out of this since I already have one. But if you don't have one, you can just select the default from that box. So I'm going to click next. And I'm going to click this box here that says Create Project from template. And I'll click next. And in this window I'm going to change this where it says untitled for the project name to be DSA.
+
+That's for data structures and algorithms. This is where we'll store all of our files for the course and your project location here. Changes to say, DSA as well. Then I'm also going to change this base package to say data structures. And I'll click finish. And this gives us a new class called main. And then we have our main method here. I'm going to come over here and show the path we have DSA. And then under our C file will be that data structures package that we created when we created this.
+
+And then it created this main class. And I'm going to delete this after this video, but I'm just going to replace this where it says write your code here. I'm going to say s out. And this is a shortcut in IntelliJ. If I press enter here it'll say system out. And I can print this out. And I'm going to put in here hello world. And I'll run this. And you can see down here that this prints out hello, world. So I'll show you a few of the changes that I made in my IntelliJ setup.
+
+If you want yours to look the same way as mine in the course. First of all, I'm going to move this output. To the right top. And the reason I'm going to do this is that when I zoom in on my code, I can have the output show up on the screen as well. So that's optional. But I'm going to show a few other things as well. I'm going to come up here to where it says IntelliJ Idea and come down to preferences. Now if you're in windows to get to the same thing, you go to File Settings.
+
+So this is where you get to it. On a mac, it's on File settings in Windows. I'll click on this. So either way you're going to get this window here. So I'm going to come down to where it says editor. And I'll expand this and the font. So I'm using Menlo. The default is JetBrains mono and that is a fine font, but I prefer Menlo, so I changed it to that. I increased the size here. It's at 22. But the other thing I did is I changed this color scheme.
+
+So you'll see that I have a Visual Studio Code Dark Plus theme. The other four that you see there are built into IntelliJ. Otherwise you can come over to this gear. And import a scheme. And so if you select this IntelliJ Idea color scheme, what I'll do is I'll attach a Jar file in case you want your color scheme to be identical to mine that I'm using in this course. A very popular one though. That you might want to check out is dark yellow. I'll show you what this looks like.
+
+The problem with this is this doesn't show up on video nearly as well as this theme does. For video. I need something with a darker background with brighter colors so there is more contrast. Once again, that's completely optional, but I will attach that dot jar file in case you want to use the same color scheme. So that's our setup of IntelliJ. Now let's get into the course.
+
+
+########################################

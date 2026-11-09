@@ -1,0 +1,21 @@
+# 8.21 — Understanding Array Destructuring
+
+> Section 8: More on Arrays & Iterables
+
+So that's the spread operator, another very nice syntax feature is the array destructuring syntax which you can use. Now for that, let's go back to my name fragments here with Max and Schwarz here. This is a perfect example for where array destructuring might be useful. You could be getting those from some other function let's say that reads some values from some inputs you have on your web page and now you get this as an array but you want to split it into two separate variables with which you continue working.
+
+So you have your name fragments and to make this easier to read, I'll comment out all of that here actually so that we have less output in the console and recreate my name data, name fragments, however what you want to call it. So it's Max and Schwarz and this clearly is my first and my last name. Now in the rest of your code, you might not want to work with this array but with the individual values, of course you can always access the individual values by their index but always writing name data zero, name data one just to access these values is a bit cumbersome.
+
+So of course you can store that data in new variables or new constants, first name could be name data zero and then the last name could be name data one and that is absolutely fine, it works, nothing wrong with that. Now there is a shortcut for that though and that's exactly what array destructuring is all about. You can write this a bit differently, you can add square brackets here after const, so on the left side of the equal sign which is something we haven't done before and point at your array and now what you put between these square brackets are variable names for these elements in the array on the right side.
+
+So this array has two elements, so here we can add any names of your choice, for example first name and last name like this and what Javascript will do is it will pull out the elements here and store the first element in a variable or in a constant in this case of this name and the second element in a constant of this name. So therefore now if you console log first name here and last name and you save that and reload, you see Max Schwarz is getting logged here but this is now really stemming from these two individual variables which are output.
+
+So that's a very powerful syntax for a splitting an array into variables with which you want to work. Now sometimes you also have more data in the array than you want to pull out, let's say we also have a Mr. identification element in name data and I'm only interested in first and last name, if I save this and I reload, this works so we can leave it like this and if you maybe also want to collect all other information which you have, let's say we also have the age here, well then you could add another variable here, other information or however you want to call it and add that good old rest operator here.
+
+Now here, I'm calling it rest operator because what it will do here is it will collect all remaining elements of that array which are not assigned to variables and store them in one brand new variable which will be a new array that is in the end created. So here, other information, if I output that as well and we reload, now we see other information indeed is an array with the two remaining pieces of information which we don't assign to separate variables.
+
+So you can also do that if you want to kind of collect the remaining data and store that in some array that holds all the remaining data. Now needless to say, this destructuring syntax is read and assigned from left to right, so first element here gets the first element in the array, second element gets the second element, third element the third or if you use the rest operator, any elements after this element, so all the remaining parts here, are merged into this array.
+
+So array destructuring is a really neat feature if you want to split up an array into variables or constants which you then can use throughout your code. It simply saves you the extra work of doing this manually and therefore can speed up your development process.
+
+----------------------------------------

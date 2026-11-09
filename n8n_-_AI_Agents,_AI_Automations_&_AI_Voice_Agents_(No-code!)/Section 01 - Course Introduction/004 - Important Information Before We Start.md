@@ -1,0 +1,25 @@
+# Important Information Before We Start
+
+*Section: Course Introduction*
+
+Before we dive deep into the entire course, we learn everything you need to know about Naarden. We built our automations, projects, agents, and so on. I've got for you very important information. And also I will show you how to move around on Udemy platform. So let's start with the first one. In general, in the course after you watch some materials in the right top corner, this option will appear.
+
+So leave a rating. And actually me and Damien really strongly encourage you to do this. By doing that, you let us know what you liked in the course or not, and you help us to create more content in the future in the class. And also, you help other students to decide if this course is worth to enroll to buy or not. So you help everyone. Everyone will be grateful for that if you leave an honest rating or even a review.
+
+So please take your time. Actually, you don't need to do this right now. However, again, we will be very grateful if you do this. We will really appreciate it. And by that again you give feedback to everyone. One. Also, sometimes this option may appear in the main course window after you watch some material. So also you will see this entire interface, an option to leave a rating or even review. And in general, if you would like to edit your rating throughout the course, you can do this by clicking in the right top corner on these three dots and clicking on Edit your Rating.
+
+Now let's go ahead to Udemy and let me show you how to move around on the platform in general. In the middle of the page you've got main course window. Here you can play your materials the entire agent. All right. And the left corner of this window you've got the play button there. You can rewind five seconds. You can change the playback rate. So for example, if we speak for you to slow or even to fast, you can change it to 125 or even 0.75 in general.
+
+There you can change the volume. So control that. You've got the entire transcript for the video. Next you can enable the captions so you can see if the captions are available in your language. You've got a setting. So here for example you can change the quality. You can enable autoplay or even change the keyboard shortcuts. Right there you can make the full screen. So the video and the full screen.
+
+And there even you can expand the view. So make it by this way. And like that. Watch the entire course at the right side of the page. We've got our main course content. So here we've got specific sections and inside we've got lessons for them. So for example in the introduction you've got the lesson about creating your account and exploring the interface inside here basic automations. You've got basic projects.
+
+You've got premium templates to check out and download right away. It's very, very valuable. Or even you've got the sections about creating voice agents or advanced projects inside Naden. And sometimes next to the specific lesson you can see the resources. So these are additional materials PDFs, cheat sheets, or even links to the specific resources from the specific video. So for example, here we create our account and inside an addon and you've got the link to an addon right there.
+
+You can download some specific template and a lot of more. Also at the top next to the course content, you've got a assistant that is knowledgeable about the entire course. So here you can ask your specific questions about something. So it's very very useful when you have some problems. Of course we recommend you actually to contact us for the Q&A section that you can find right here. Or you can type I'm sorry, you can type your specific questions.
+
+And there also you've got the overview. And so here general information about the course. As you can notice right there. Here you can leave the specific notes inside the class. So let's say you've got some specific video which is very important. And here at some specific time you can leave a note and come back to that later. We've got the announcements where we share actually our information from the course about the latest updates, new videos and so on.
+
+And we've got the reviews tab and learning tools also there in the right top corner you've got the option to leave a rating. So as we covered that in this video again we strongly encourage you to do this. By that you help us a lot. You've got your progress. You can share the materials right here. All right. So the course and you've got these three dots. So right there I'm actually you can gift this course to someone archive this course favorite or even we strongly encourage you to enable new announcements emails and promotional emails.
+
+By that I'm actually you know everything about this course. You get the latest updates from the materials and you don't miss anything. All right. So we strongly encourage you to check these two boxes. And for now that's pretty everything. Thank you for watching this video and I will see you in the next materials.

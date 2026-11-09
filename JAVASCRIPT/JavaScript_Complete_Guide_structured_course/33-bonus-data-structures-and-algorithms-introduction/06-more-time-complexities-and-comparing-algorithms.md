@@ -1,0 +1,15 @@
+# 33.6 — More Time Complexities & Comparing Algorithms
+
+> Section 33: Bonus: Data Structures & Algorithms Introduction
+
+So we derived how long this algorithm in the end takes in this Big O notation, where we basically only care about the dynamic parts in the algorithm and not about the constant parts, let's do the same thing for our second solution now. Now again here, we have a constant part, that's this if check, it only runs once and the same for the return statement. Now we learned that we therefore don't have to care about that, let's instead focus on the loop because that's the part that really depends on the array length.
+
+Now here we see we go through all items in numbers and then in there, we also go through all items in numbers in the end. Yes we start one item above the first one, so it's not the entire array we go through but again n-1 but as I explained before, for large arrays, this -1 won't make a difference. So in the end we could say inside the first for loop, so this line for example will execute n times, if we feed in an array with 1000 items, we'll execute this line 1000 times because we go through all the items and then and that's the thing, inside of this loop, for every item, so for every n time, we go through the array again.
+
+So this executes n times as well in the end, we again go through the entire array but we do this inside of the outer array. So what's our total time this algorithm will then take? What's the time complexity here? Well the time complexity here in the end is n*n*n because we go through the outer array and then for every item, so n times, we go through the array again, so we have n*n and therefore this would be Big O n squared. So this simply means for one item, we of course only take one operation, if we feed in an array with one item, we take one operation but if we feed in an array of 1000 items, we in the end have 1000 times 1000 of different operations we have to execute, so a million and that of course is a lot and that's not growing in a linear way where for 1000 items, it takes 1000 times as long but instead that's a quadratic time complexity here. For 1000 items, it does not take 1000 times as long but a million times as long.
+
+So therefore if we compare these two algorithms, these two solutions where we have a linear time complexity and a quadratic time complexity, of course the linear one is better, this will take way less time. This algorithm here grows in a linear time, so for a million items, we take a million times as long as for one item whereas this grows in a quadratic way, which means for a million items we'll take a million times a million times as long as we do for one item.
+
+So if we have these two alternatives and we don't need to sort for any other reason, we should definitely go with this first algorithm here because it takes less time, it has o(n) instead of o(n squared) and that's how we compare algorithms and why this Big O notation matters to us.
+
+----------------------------------------

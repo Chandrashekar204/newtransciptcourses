@@ -1,0 +1,25 @@
+# 2.9 — A Note on Semantic HTML
+
+> Section 2: HTML Fundamentals
+
+Instructor: So I mentioned the term semantic HTML a couple of times in this section and so let's now actually very quickly define what I actually mean by semantic HTML. So in HTML, when we talk about semantics, what we mean is that certain elements have actually a meaning or a purpose attached to them. So when we think about a certain HTML element, we should actually not think about what that element looks like as it's rendered on the page but instead, we should think about what that element actually means and what it stands for.
+
+So that is basically the definition of semantic HTML. Now, not all elements in HTML are semantic. And actually, I talked a little bit about that before here in this element. So the strong element, which makes our element look bold here on the page. So remember how previously I used the b element, which simply turns its content bold but doesn't attach it any meaning, right? So I explained that before and so now maybe it makes a bit more sense. So again, by using the strong element here, the text will still look bold here in the browser but what really matters here is that we now assign some meaning to this content here.
+
+We now say that it's a strong content, which means basically a very important piece of content. And the same here for this piece. So this fundamental word here. So again, we use em for emphasizing this. And so it still looks italic here on the webpage but what we really mean is that we emphasized this word here. So we gave it a special emphasis and yeah, that's what this element here right now means. Okay? And the same is actually true for all of these elements that we used in the last video.
+
+So for example here, this navigation element. All this does is to create a box, remember, which then contains these four anchor elements but visually, it doesn't really do anything. All this does is to represent as a meaning that this is a navigation. But instead of using nav, we could have also used a more generic element, which is the div element. So for example, div. Open and close it here. And again, visually, nothing will change. And so all this did was to create a new box but a box without any meaning.
+
+So that's what div stands for. So back in the day before HTML5, we always used divs for every single box that we needed like this on the page. But then HTML5 came around and introduced this concept of semantic HTML. And so now we should only use the div element when we don't want to attach a certain meaning to a certain container. So to a certain like box element on our page. So in this case, we really want this to mean that it's a navigation and so we use the navigation element for that.
+
+Okay? And the same is true for the article, the header, the footer that we have down here. And in fact, it is true even for the paragraph, for example, because all that this paragraph here and all the other paragraphs really are are essentially boxes filled with text. Now, the p, of course, does have a semantic meaning. It means that it is a paragraph. But we could again use a generic box without any meaning, so this div, and nothing would change visually.
+
+Okay? Actually something did change here. So we lost some of the white space that we do have around the p. All right? So let's put it back here anyway to the p because we want it to have some meaning. And of course, we also want the spacing that the browser gives us by default around the p elements. Okay? But the idea that I mentioned still holds because we could very easily recreate this space here using some CSS later. So if we wanted, we could, in fact, build the entire webpage only out of div elements if we wanted, and then use CSS to style them as we want.
+
+But, of course, we don't do that. We use semantic HTML to give our elements meaning. Now, you might ask why we actually do that and there are multiple reasons. And I think I mentioned them already actually. So one of them is search engine optimization, which basically means that search engines, such as Google will be able to understand the structure of your content, and therefore, they will be better able to analyze what your content and what your webpage is all about.
+
+Also, writing semantic HTML is extremely important for accessibility, and especially for people who rely on screen readers to consume our webpages. Okay? So I hope that this makes sense and we will also keep touching on the subject as we go through the rest of the course. But I still wanted to make it very clear from the very beginning that when we think about HTML, we should not only think about how it actually looks like in the browser but even more what these elements actually mean and what they stand for.
+
+And with that being said, we kind of finished all we had to learn in this section. And so in the next video, we will configure VS Code a little bit more and then we will move on to two final challenges in this section. So don't wait and let's move on to the next lecture here.
+
+----------------------------------------

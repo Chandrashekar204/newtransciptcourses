@@ -1,0 +1,272 @@
+[
+  {
+    "section": 1,
+    "title": "Getting Started with Java Programming",
+    "folder": "01-getting-started-with-java-programming",
+    "lectures": 8
+  },
+  {
+    "section": 2,
+    "title": "Java Development Environment Setup",
+    "folder": "02-java-development-environment-setup",
+    "lectures": 5
+  },
+  {
+    "section": 3,
+    "title": "First Steps in Java Programming",
+    "folder": "03-first-steps-in-java-programming",
+    "lectures": 13
+  },
+  {
+    "section": 4,
+    "title": "Transitioning from JShell to IntelliJ IDEA: A Comprehensive IDE Guide",
+    "folder": "04-transitioning-from-jshell-to-intellij-idea-a-comprehensive-ide-guide",
+    "lectures": 16
+  },
+  {
+    "section": 5,
+    "title": "Mastering Java Expressions, Statements, Code Blocks, And Method Overloading",
+    "folder": "05-mastering-java-expressions-statements-code-blocks-and-method-overloading",
+    "lectures": 15
+  },
+  {
+    "section": 6,
+    "title": "Mastering Conditional Logic, Loops, And Interactive Java Applications",
+    "folder": "06-mastering-conditional-logic-loops-and-interactive-java-applications",
+    "lectures": 20
+  },
+  {
+    "section": 7,
+    "title": "Mastering Java OOP: Classes & Inheritance",
+    "folder": "07-mastering-java-oop-classes-and-inheritance",
+    "lectures": 25
+  },
+  {
+    "section": 8,
+    "title": "Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action",
+    "folder": "08-advanced-oop-techniques-composition-encapsulation-and-polymorphism-in-action",
+    "lectures": 17
+  },
+  {
+    "section": 9,
+    "title": "Advanced Arrays in Java: Single & Multi-Dimensional Techniques",
+    "folder": "09-advanced-arrays-in-java-single-and-multi-dimensional-techniques",
+    "lectures": 13
+  },
+  {
+    "section": 10,
+    "title": "Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums",
+    "folder": "10-mastering-lists-iterators-and-autoboxing-arraylist-linkedlist-and-enums",
+    "lectures": 18
+  },
+  {
+    "section": 11,
+    "title": "Mastering Abstraction & Interfaces: Expand Polymorphism & Java Hierarchies",
+    "folder": "11-mastering-abstraction-and-interfaces-expand-polymorphism-and-java-hierarchies",
+    "lectures": 15
+  },
+  {
+    "section": 12,
+    "title": "Deep Dive into Java Generics: Bounds, Comparators & Advanced Techniques",
+    "folder": "12-deep-dive-into-java-generics-bounds-comparators-and-advanced-techniques",
+    "lectures": 12
+  },
+  {
+    "section": 13,
+    "title": "Exploring Nested Classes, Local Types & Anonymous Classes",
+    "folder": "13-exploring-nested-classes-local-types-and-anonymous-classes",
+    "lectures": 8
+  },
+  {
+    "section": 14,
+    "title": "Mastering Java Lambdas: Expressions, Interfaces, and Method References",
+    "folder": "14-mastering-java-lambdas-expressions-interfaces-and-method-references",
+    "lectures": 13
+  },
+  {
+    "section": 15,
+    "title": "Mastering Java Collections: Framework, Lists, Sets, and Maps",
+    "folder": "15-mastering-java-collections-framework-lists-sets-and-maps",
+    "lectures": 29
+  },
+  {
+    "section": 16,
+    "title": "Mastering Mutability, Immutability and Final Keyword in Java OOP",
+    "folder": "16-mastering-mutability-immutability-and-final-keyword-in-java-oop",
+    "lectures": 22
+  },
+  {
+    "section": 17,
+    "title": "Comprehensive Java Streams: Operations, Pipelines, and Sources",
+    "folder": "17-comprehensive-java-streams-operations-pipelines-and-sources",
+    "lectures": 20
+  },
+  {
+    "section": 18,
+    "title": "Java Core Fundamentals: Math, Randomization, BigDecimal, and Date/Time",
+    "folder": "18-java-core-fundamentals-math-randomization-bigdecimal-and-date-time",
+    "lectures": 18
+  },
+  {
+    "section": 19,
+    "title": "Regular Expressions in Java: Mastering Pattern Matching and Text Manipulation",
+    "folder": "19-regular-expressions-in-java-mastering-pattern-matching-and-text-manipulation",
+    "lectures": 10
+  },
+  {
+    "section": 20,
+    "title": "Comprehensive Java Input/Output (I/O) and File Operations",
+    "folder": "20-comprehensive-java-input-output-i-o-and-file-operations",
+    "lectures": 25
+  },
+  {
+    "section": 21,
+    "title": "Mastering Java Concurrency and Multithreading",
+    "folder": "21-mastering-java-concurrency-and-multithreading",
+    "lectures": 30
+  },
+  {
+    "section": 22,
+    "title": "Mastering Java Database Connectivity: Interactions, Queries, and Frameworks",
+    "folder": "22-mastering-java-database-connectivity-interactions-queries-and-frameworks",
+    "lectures": 30
+  },
+  {
+    "section": 23,
+    "title": "Mastering Java Network Programming: Sockets, NIO, and Modern Frameworks",
+    "folder": "23-mastering-java-network-programming-sockets-nio-and-modern-frameworks",
+    "lectures": 26
+  },
+  {
+    "section": 24,
+    "title": "Debugging and Testing in Java: A Comprehensive Guide",
+    "folder": "24-debugging-and-testing-in-java-a-comprehensive-guide",
+    "lectures": 11
+  },
+  {
+    "section": 25,
+    "title": "Comprehensive JavaFX UI Design",
+    "folder": "25-comprehensive-javafx-ui-design",
+    "lectures": 47
+  },
+  {
+    "section": 26,
+    "title": "Deep Dive into the Java 9 Module System: JPMS Fundamentals",
+    "folder": "26-deep-dive-into-the-java-9-module-system-jpms-fundamentals",
+    "lectures": 3
+  },
+  {
+    "section": 27,
+    "title": "Migrating Existing Java Projects to Java 9 and the Module System",
+    "folder": "27-migrating-existing-java-projects-to-java-9-and-the-module-system",
+    "lectures": 7
+  },
+  {
+    "section": 28,
+    "title": "Course Introduction - Old content for Java 11",
+    "folder": "28-course-introduction-old-content-for-java-11",
+    "lectures": 6
+  },
+  {
+    "section": 29,
+    "title": "Software Tools Setup - Old content for Java 11",
+    "folder": "29-software-tools-setup-old-content-for-java-11",
+    "lectures": 12
+  },
+  {
+    "section": 30,
+    "title": "First Steps - Old content for Java 11",
+    "folder": "30-first-steps-old-content-for-java-11",
+    "lectures": 24
+  },
+  {
+    "section": 31,
+    "title": "Java Tutorial: Expressions, Statements, and More - Old content for Java 11",
+    "folder": "31-java-tutorial-expressions-statements-and-more-old-content-for-java-11",
+    "lectures": 19
+  },
+  {
+    "section": 32,
+    "title": "Control Flow Statements - Old content for Java 11",
+    "folder": "32-control-flow-statements-old-content-for-java-11",
+    "lectures": 14
+  },
+  {
+    "section": 33,
+    "title": "Arrays, Java inbuilt Lists, Autoboxing and Unboxing -\u00a0Old content for Java 11",
+    "folder": "33-arrays-java-inbuilt-lists-autoboxing-and-unboxing-old-content-for-java-11",
+    "lectures": 24
+  },
+  {
+    "section": 34,
+    "title": "Inner and Abstract Classes & Interfaces -\u00a0Old content for Java 11",
+    "folder": "34-inner-and-abstract-classes-and-interfaces-old-content-for-java-11",
+    "lectures": 13
+  },
+  {
+    "section": 35,
+    "title": "Java Generics -\u00a0Old content for Java 11",
+    "folder": "35-java-generics-old-content-for-java-11",
+    "lectures": 5
+  },
+  {
+    "section": 36,
+    "title": "Lambda Expressions -\u00a0Old content for Java 11",
+    "folder": "36-lambda-expressions-old-content-for-java-11",
+    "lectures": 10
+  },
+  {
+    "section": 37,
+    "title": "Streams - Old content for Java 11",
+    "folder": "37-streams-old-content-for-java-11",
+    "lectures": 3
+  },
+  {
+    "section": 38,
+    "title": "Naming Conventions and Packages.  static and final -\u00a0Old content for Java 11",
+    "folder": "38-naming-conventions-and-packages-static-and-final-old-content-for-java-11",
+    "lectures": 12
+  },
+  {
+    "section": 39,
+    "title": "Java Collections - Old content for Java 11",
+    "folder": "39-java-collections-old-content-for-java-11",
+    "lectures": 27
+  },
+  {
+    "section": 40,
+    "title": "Basic Input & Output including java.util -\u00a0Old content for Java 11",
+    "folder": "40-basic-input-and-output-including-java-util-old-content-for-java-11",
+    "lectures": 38
+  },
+  {
+    "section": 41,
+    "title": "Regular Expressions -\u00a0Old content for Java 11",
+    "folder": "41-regular-expressions-old-content-for-java-11",
+    "lectures": 8
+  },
+  {
+    "section": 42,
+    "title": "Databases -\u00a0Old content for Java 11",
+    "folder": "42-databases-old-content-for-java-11",
+    "lectures": 35
+  },
+  {
+    "section": 43,
+    "title": "Java Networking Programming -\u00a0Old content for Java 11",
+    "folder": "43-java-networking-programming-old-content-for-java-11",
+    "lectures": 9
+  },
+  {
+    "section": 44,
+    "title": "Archived Videos",
+    "folder": "44-archived-videos",
+    "lectures": 2
+  },
+  {
+    "section": 45,
+    "title": "Extra Information - Source code, and other stuff",
+    "folder": "45-extra-information-source-code-and-other-stuff",
+    "lectures": 2
+  }
+]

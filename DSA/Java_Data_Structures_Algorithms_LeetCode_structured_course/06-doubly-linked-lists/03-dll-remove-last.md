@@ -1,0 +1,31 @@
+# 6.3 — DLL: Remove Last
+
+> Section 6: Doubly Linked Lists
+
+So now we're going to create our remove last method. And this one is very different than what we saw with a singly linked list. So with the singly linked list, in order to move tail back one, we had to start at the head and iterate through the entire linked list to get to this node, and then set tail equal to this node. And that made it o of n. And the reason is that all of the arrows point forward. So we had no way of going backwards. But with a doubly linked list, we do have arrows going the other way.
+
+So now let's look at how we do this with a doubly linked list. So since we will be returning that last node, we will need a variable that is pointing to it that will be temp. Then we can say that tail. Equals tail dot previous. And that moves that over. And tail dot next equals null. That breaks it off like that. And then temp dot previous equals null. And then we can say return temp. So we have a couple of edge cases here. One is when we only have one item in the linked list.
+
+We saw this with the remove last method with singly linked lists. It will be the same situation here. And then of course the other edge case is when we don't have any items in the linked list. So if you want to code this go ahead and pause it here. Otherwise I will get into the code. So we'll call it remove last. The return type is node. And we'll code for this situation where we have an empty linked list. First we'll say if the length is zero we'll just return null.
+
+Now we'll code for our situation when we have multiple items in the linked list. So the first thing we have to do is create that variable that points at the last node we'll say node temp equals tail and that does that. Then we'll move tail over. We'll do that by saying tail equals tail dot previous and that moves that over. Then we'll say tail dot next equals null. That is tail dot next equals null. And that breaks that connection. Then we'll say temp dot previous equals null.
+
+That is temp dot previous equals null. And that removes this from our linked list. So now we can decrement the length by one. So let's put this in with the rest of our code like this. And that brings us to our edge case with the situation where we have one item in the linked list. Now, I'm not going to walk through all of the details of how to do this, because we walked through this in detail in the singly linked list section. I'll just bring this code in here.
+
+If the length is equal to zero, then we know we need to set head and tail to be equal to null. And remember this if statement is after we have decremented the length. So we started with one item in the linked list. We decremented the length. And now after this line of code we have zero. Then the only thing left to do is to return temp. So I wrote this code in this order and the remove last method in the singly linked list section, because I specifically wanted to walk through why it is that when we have one item in the linked list that we need to set head and tail equal to null, and it's much easier to explain that concept if I write the code in this order.
+
+But what we're going to do now is we're going to rearrange these lines of code to make it easier to read. The thing that makes this hard to read is we have this if statement that says if length is equal to zero, then we have this line here that says if length is equal to zero and this does happen after we decrement the length. But this code may not be easy for someone to read later. So what we're going to do is take this if statement. And we're going to move it up.
+
+And in order to do this, I'm going to remove five lines of code and I'm going to bring all five back because we're just taking this code and rearranging it. So I'm going to remove these five lines. And we're going to move this if statement up. But when we do we're not going to say if length is equal to zero we're going to change this to if length equals. One. And then we're going to say else, and this is the only new code that we're going to have here is this else statement.
+
+Now we'll bring back our five lines of code. So we'll say else. And I'll bring back these three lines of code that apply when we have two or more items in the linked list. And then we'll decrement the length and then we'll return temp. So you can see that this is much easier to read. This is for when we have zero items, and this is for when we have one item, and this is for when we have two or more items in the linked list. So now let's take this code and put it back the way it was.
+
+So you can just see kind of how this all moved. This is the way it was before. And this is the way it is now. It's basically the same lines of code rearranged, but much easier to read. So we'll look at this code in a moment in IntelliJ. And when we do we're going to build this linked list with two items in it. And we'll run our remove last method to make sure it works for two or more items. Then we'll run it again to make sure it works for when we have one item.
+
+And then we'll run it one last time to make sure it works when we don't have any items. All right. So let's flip over to IntelliJ. So there is our remove last method there that's been added to our doubly linked list class. And I'll come up to our main tab here contains our main method. And this is where we create our linked list with values of one and two. And then with this line here I will just print out the linked list. And you can see that we have a linked list with items of one and two.
+
+So I'm going to come over here and replace our print list line here with these three lines of code. These are all just identical. We're running the remove last method three different times for when we have two items and one item and zero items. And I'll run this. And you can see up here this is returning the type node for the first two and then null for the third one. So I'm going to come over here and add dot value to these first two since they return nodes.
+
+And now I'll run it again to make sure it is returning the nodes that I'm expecting it to. And you can see that we've returned the two node, the one node, and then return null. All right. That is our method for remove last.
+
+----------------------------------------

@@ -1,0 +1,17 @@
+# 6.13 — Outputting Messages to the User
+
+> Section 6: More on Functions
+
+Let's work on our game a little bit more. We get the winner but we get no extra information about the winner, right? We know that the player won but we don't output any other information. So what I'll do instead is I'll add more code down there in my game is running logic because I want to control which message we output to the user. So we can add another if statement here and check if winner is equal to result draw, which means we have no winner, in that case I want to create a message and actually that message will be different for other cases, so I'll create it in front of the if statement because as you learned, if you would create it inside of the if statement, a variable here would only be available in this if block because let and const create blocks scoped variables.
+
+So in order to have a variable which we can access from any block of our if statement, so also from the else if branches, we need to create it ahead of time and I'll name it just message and then here I set message equal to a string created with back ticks, so that I can inject some dynamic values and there, we can say you picked and then inject the player choice, which will be rock, paper or scissors and computer picked and then input the computer choice here, therefore you in this case had a draw, right, because that's what's happening here.
+
+So that's my message here, we had a draw. Now let's move on, in the else if block here, we can check if winner is equal to result player wins which means we won. In this case, I also want to construct a message, so we can actually copy that and yes we could also write this in a more reusable way, you could also grab this message here, cut it and initialize the message up here with that string and only that last part where we have therefore you and then here we want to exchange this.
+
+So here, we end with just you whitespace and then here we set message equal to message plus had a draw in this case to add this and now here in this else if case, we say won right because the player won here and in the else case which is that the computer won, we set message equal to message plus lost and we'll only ever make it in one of these blocks. So these different parts will not be concatenated after each other but only be added to the space message here. So with that, we're building that message and I do so, that I can show this to user, by calling the built-in alert function here, passing message to it and this will show the user that the game is over and we had a draw, won or lost.
+
+Now since the game is over, I then also want to set game is running to false here which essentially means we can now click the button again to start a new game. So here we set it to true and we execute all these steps and then we set it to false again. So now with that, if we save that, let's go back, reload here, start a game, maybe pick rock and you picked rock, computer also picked rock therefore we had a draw. Okay, let's start game again which should work now.
+
+Now rock, computer picked paper, therefore we lost, makes sense. Let's start another game, maybe go with paper this time, computer also picked paper so we had a draw. So let's go with paper again, another draw, so let's give that another try and now we won because the computer picked rock. So this seems to work, all this logic works, the game is finished but we're not entirely finished with functions.
+
+----------------------------------------

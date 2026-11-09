@@ -1,0 +1,15 @@
+# 17.12 — Async/ await & Error Handling
+
+> Section 17: Async JavaScript: Promises & Callbacks
+
+So async await can be great to write shorter, more concise code but of course here, we lost error handling, we have no replacement for the catch block at the moment, how do we do that with async await? Well, await always moves on to the next line as long as the previous line resolved. Now what if we have an error? Well since this looks like normal synchronous code, where we execute line after line and in the end, we are doing that because of the invisible transformation, we can use the normal synchronous error handling we learned about way earlier in the course already, we can use try catch.
+
+So here we can try something, for example this line and then catch any error we might be getting and then handle that in the catch block, for example by printing it or by doing with it whatever you want to do and now everything inside of try, so all the steps you might have in here, for example two steps, will only execute if the first step succeeded, so if this step succeeded, we'll also execute this step, otherwise if this step failed or if this promise rejected, this step will not execute and then we'll just make it into the catch block here and of course, I wrote this incorrectly, this is the correct syntax. So we make it into this catch block if one of these two promises rejects, if the first promise rejects, this line here will not be executed, if the first promise does not reject but resolves, then this line is executed but then if this line would reject, which in this example is not possible because set timer never rejects but if it would reject, then we would make it into the catch block.
+
+This line thereafter will always run, this will always run after try catch, so this always executes no matter if you made it into try or into catch before this line and therefore here of course, we might want to work with two variables here instead of constants which we only have available inside of the try block because block scoping, now I have two variables available in the entire function, we assign new values in the try block and then we log that thereafter.
+
+So this is how you can handle errors correctly in an async await world, instead of catch with try catch and you can of course put whatever you want into try, you just should be aware of the fact that if one of the things failed, the other steps are skipped just as it was the case with catch in the end and on the other hand if both succeed, you of course don't make it into catch but we always execute the line thereafter. Hence now if I reload and we first of all see if it works in the success case by clicking allow in the prompt, we'll see that after a short while, we'll get the output we're used to.
+
+If I on the other hand reload and I click block, we got the error being printed here and thereafter we see undefined undefined because these two variables never received values. So this is how you can handle errors with async await.
+
+----------------------------------------

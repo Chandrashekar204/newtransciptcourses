@@ -1,0 +1,128 @@
+[
+  {
+    "section": 1,
+    "title": "Introduction to Microservices Architecture",
+    "folder": "01-introduction-to-microservices-architecture",
+    "lectures": 5
+  },
+  {
+    "section": 2,
+    "title": "Building microservices using Spring Boot",
+    "folder": "02-building-microservices-using-spring-boot",
+    "lectures": 28
+  },
+  {
+    "section": 3,
+    "title": "How to Right-Size Microservices & Identify Their Boundaries",
+    "folder": "03-how-to-right-size-microservices-and-identify-their-boundaries",
+    "lectures": 4
+  },
+  {
+    "section": 4,
+    "title": "Handle deployment, portability &  scalability of microservices using Docker",
+    "folder": "04-handle-deployment-portability-and-scalability-of-microservices-using-docker",
+    "lectures": 21
+  },
+  {
+    "section": 5,
+    "title": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+    "folder": "05-deep-dive-on-cloud-native-apps-and-15-factor-methodology",
+    "lectures": 7
+  },
+  {
+    "section": 6,
+    "title": "Configurations Management in Microservices",
+    "folder": "06-configurations-management-in-microservices",
+    "lectures": 30
+  },
+  {
+    "section": 7,
+    "title": "Using MySQL Database inside microservices",
+    "folder": "07-using-mysql-database-inside-microservices",
+    "lectures": 5
+  },
+  {
+    "section": 8,
+    "title": "Service Discovery & Service Registration in microservices",
+    "folder": "08-service-discovery-and-service-registration-in-microservices",
+    "lectures": 19
+  },
+  {
+    "section": 9,
+    "title": "Gateway, Routing & Cross cutting concerns in Microservices",
+    "folder": "09-gateway-routing-and-cross-cutting-concerns-in-microservices",
+    "lectures": 14
+  },
+  {
+    "section": 10,
+    "title": "Making Microservices Resilient",
+    "folder": "10-making-microservices-resilient",
+    "lectures": 20
+  },
+  {
+    "section": 11,
+    "title": "Observability and monitoring of microservices",
+    "folder": "11-observability-and-monitoring-of-microservices",
+    "lectures": 25
+  },
+  {
+    "section": 12,
+    "title": "Microservices Security",
+    "folder": "12-microservices-security",
+    "lectures": 21
+  },
+  {
+    "section": 13,
+    "title": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+    "folder": "13-event-driven-microservices-using-rabbitmq-spring-cloud-functions-and-stream",
+    "lectures": 14
+  },
+  {
+    "section": 14,
+    "title": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+    "folder": "14-event-driven-microservices-using-kafka-spring-cloud-functions-and-stream",
+    "lectures": 6
+  },
+  {
+    "section": 15,
+    "title": "Container Orchestration using Kubernetes",
+    "folder": "15-container-orchestration-using-kubernetes",
+    "lectures": 15
+  },
+  {
+    "section": 16,
+    "title": "Deep dive on Helm",
+    "folder": "16-deep-dive-on-helm",
+    "lectures": 20
+  },
+  {
+    "section": 17,
+    "title": "Server-side service discovery and load balancing using Kubernetes",
+    "folder": "17-server-side-service-discovery-and-load-balancing-using-kubernetes",
+    "lectures": 7
+  },
+  {
+    "section": 18,
+    "title": "Deploying microservices into cloud Kubernetes cluster",
+    "folder": "18-deploying-microservices-into-cloud-kubernetes-cluster",
+    "lectures": 7
+  },
+  {
+    "section": 19,
+    "title": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+    "folder": "19-introduction-to-kubernetes-ingress-service-mesh-istio-and-mtls",
+    "lectures": 7
+  },
+  {
+    "section": 20,
+    "title": "Tips for the microservices developers",
+    "folder": "20-tips-for-the-microservices-developers",
+    "lectures": 6
+  },
+  {
+    "section": 21,
+    "title": "Thank You & Congratulations",
+    "folder": "21-thank-you-and-congratulations",
+    "lectures": 1
+  }
+]

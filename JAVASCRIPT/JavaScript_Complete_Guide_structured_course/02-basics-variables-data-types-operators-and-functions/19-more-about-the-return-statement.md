@@ -1,0 +1,11 @@
+# 2.19 — More about the "return" Statement
+
+> Section 2: Basics: Variables, Data Types, Operators & Functions
+
+So the return statement is useful for getting data out of the function, there are a couple of important things to know about the return statement. For one, any code that you have thereafter, like this alert won't execute. You see my IDE even kind of grays it out a bit and indeed if I reload the screen, you'll see everything works but I never see that alert. In the developer tools, you'll also not see an error though because the app didn't crash, we don't have an error, the return statement just ends the function execution, which means code thereafter isn't executed.
+
+You by the way also can return nothing, you might wonder why you might want to do that, for this function it makes absolutely no sense but you will later encounter scenarios where a function does something, let's say it does some calculation and then sends that with a HTTP request to some server to store it there and then you want to quit function execution, maybe conditionally with something we'll dive into later, with an if statement which allows us to check for some condition and then exit the function if that condition is true and only continue if it is not true, so in such cases you could return from a function and you would return nothing just to cancel function execution. Here again, that doesn't make any sense because the function would be over after this line anyways but it's important to understand that return finishes the function execution, in case you had more code after this, which as mentioned only makes sense if you have some kind of conditional logic in your code.
+
+Right now we don't have that, so it makes no sense. You also must only have one return statement here or actually you could have a second one but because the function execution stops after the first one it finds, having a second one makes no sense. So it's not a technical error to have more than one but you can't return more than one thing here. If you need to return more than one piece of data actually, we'll find a solution for that later, for now we'll just use it like this but we'll dive into other data constructs which allow us to return or contain more than one piece of data later in this module.
+
+----------------------------------------

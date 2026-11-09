@@ -1,0 +1,28 @@
+# 41.8 — Regular Expressions Challenge Part 3
+
+> Section 41: Regular Expressions - Old content for Java 11
+
+All right, so let's move on to next challenge. Challenge number 12. So, the challenge here is to write a regular expression that will match a five digit us zip code. So, use 11111 as your test string. So, figure that one out, pause the video, and come back when you're ready to go through my solution. Pause the video now. All right, challenge 12. How do we actually do this, so we're going to put in our test string, which is going to be a string, challenge 12 11111 5 digit code.
+
+So, the challenge is actually quite simple. It's going to be challenge will be challenge 12 dot matches, we're going to start with our caret, backslash, backslash, D, five in curly braces, the door. So, we wanted to use a start and end boundary matches, because we want the entire string to match. And we use the backslash D character class, which will match any digit. And then they use a quantifier to specify that I wanted five digits. Let's check that actually works.
+
+And we've got a true there showing that it doesn't work. All right, next challenge. Challenge number 13. So, us zip codes can be followed by a dash and another four numbers. So, write a regular expression that will match those zip codes. So, use 11111 Dash 1111 as a test string. So, see if you can figure that one out. Pause the video now. And I'll see you when you get back. Okay, so challenge 13. So, I wanted to string firstly, string challenge 13 is equal to 11111 Dash 1111.
+
+And the solution will be challenge 13 dot matches. And a regular expression will be a character, backslash backslash D, five in curly braces, dash, backslash backslash D, for in curly braces, then the dollar sign to finish it off. So, this one's fairly straightforward. We're just adding a dash after the regular expression for challenge 12. And then we expect four digits. So, the final palate expression is essentially the same as the beginning, all we have to do is change the number in the quantifier.
+
+Now if we were trying to verify user input, we could check the length of the input. And from there decide which regular expression to use. But ideally, it would be nice to have one regular expression that would match both cases. But let's actually just check to see whether this actually works. Before we move on to the last challenge. We've got a true there. So, that one works. All right, final challenge. Challenge 14. So, write a regular expression that will match a five digit us zip code, and zip codes that contain the optional four digits preceded by a dash.
+
+So, in other words, matching both challenge 12 and challenge 13 in the one regular expression. See how you go with that one? Pause the video now. I'll see you when you get back. Ok, challenge 14. How we go about actually solving this one. Or what we can do is we're going to use the challenge 12 and challenge to attain strings that were defined in the previous challenges. So, print out firstly, challenge 12 dot matches, or put something in there surely, will also do the same for challenge than attained matches.
+
+All right, let's actually add our regular expression. So, we're going to do caret, backslash backslash D, with five as a quantifier and curly braces, they want a group. So, left parentheses, dash, backslash, backslash D. Left curly brace again, 4 black curly brace in the group with the right parentheses, then we're going to put the question mark and the dollar sign, we're going to do exactly same for the challenge 13 as well. So, basically, I've actually modified the expression by enclosing the optional part, the dash and four numbers within a group and following the group with the question mark modifier, which means that a quantifier, I should say, which means that there can be zero or one occurrences of the group that we wouldn't want to use the plus or star quantifiers in this case, because then we'd have that strings like 1111 Dash 1111 Dash 1111.
+
+So, if we run this now we should find a both postcodes near match this can see we've got true for both here. And whenever you would need to write a regular expression that matches a piece of data like a zip code, telephone number, email address, etc. We can usually find regular expressions that solve these problems on the web. But my suggestion here is to be careful. And that's because there's a lot of variations and in some cases, much debate about which one is correct.
+
+Also, the regular expressions can be wrong or incomplete. For example, if it is searched, you can actually find this regular expression for a Canadian postcode. I'm just gonna paste it in because we're not going to produce any code. So, let's the example there. This regular expression expects a letter followed by digit followed by letter, then they will optionally be a blank or a dash, and then a number, followed by a letter followed by a number, that this matches postcards, like M one a space one m one.
+
+But here the regular expression is wrong, because Canadian postcards can't contain certain letters. And they generally aren't written using a dash, although that's not strictly wrong. The point here is to remember that not everything you see on the internet is true, especially with regular expressions. All right so that concludes our regular expression challenge and actually this section of the course. Regular expressions can be challenging and to write into Cypher, but till you get the hang of it with practice, practice, practice.
+
+So, I hope you've enjoyed this section. Time to move on to the next one now.
+
+
+########################################

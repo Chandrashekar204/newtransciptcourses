@@ -1,0 +1,37 @@
+# TLS in Kubernetes
+
+*Section: Security*
+
+1 In this lecture, 2 we look at securing your Kubernetes cluster 3 with TLS certificates. 4 In the previous lecture, we saw what public 5 and private keys are, how a server uses public 6 and private keys to secure connectivity. 7 We will call them serving certificates. 8 We saw what a certificate authority is. 9 We learned that the CA has its own set of public 10 and private key pairs that it uses 11 to sign server certificates.
+
+12 We will call them route certificates. 13 We also saw how a server can request a client 14 to verify themselves using client certificates. 15 So three types of certificates; 16 server certificates configured on those servers, 17 route certificate configured on the CA servers, 18 and then client certificates configured on the clients. 19 And a quick note on naming convention before we go forward.
+
+20 You're going to see a lot of certificate files 21 in this lecture and it could be very confusing, 22 so use this technique to know which one is which. 23 Usually, certificates with public keys 24 are named crt or pem extension, 25 so that's server.crt or server.pem for server certificates 26 or client.crt or client.pem for client certificates. 27 And private keys are usually with extension .key 28 or with a -key in the file names, 29 for example, server.key or server-key.pem.
+
+30 So just remember, private keys have 31 the word key in them usually, either as an extension 32 or in the name of the certificate. 33 And one that doesn't have the word key in them 34 is usually a public key or certificate. 35 That's how I remember it. 36 We will now see how these concepts 37 relate to a Kubernetes cluster. 38 The Kubernetes cluster consists 39 of a set of master and worker nodes.
+
+40 Of course, all communication between these nodes 41 need to be secure and must be encrypted. 42 All interactions between all services 43 and their clients need to be secure. 44 For example, an administrator interacting 45 with the Kubernetes cluster through the kubectl utility 46 or while accessing the Kubernetes API directly 47 must establish secure TLS connection. 48 Communication between all the components 49 within the Kubernetes cluster also need to be secured.
+
+50 So the two primary requirements are to have 51 all the various services within the cluster 52 to use server certificates 53 and all clients to use client certificates 54 to verify they are who they say they are. 55 Let's look at the different components 56 within the Kubernetes cluster 57 and identify the various servers 58 and clients and who talks to who. 59 Let's start with a kube-apiserver.
+
+60 As we know already, the API server exposes an HTTPS service 61 that other components, as well as external users, 62 use to manage the Kubernetes cluster. 63 So it is a server and it requires certificates 64 to secure all communication with its clients. 65 So we generate a certificate and key pair. 66 We call it apiserver.crt and apiserver.key. 67 We will try to stick to this 68 naming convention going forward.
+
+69 Anything with a .crt extension is the certificate 70 and .key extension is the private key. 71 Also remember, these certificate names could be different 72 in different Kubernetes setups, depending on who 73 and how the cluster was set up, 74 so these names may be different in yours. 75 In this lecture, we will try to use names 76 that help us easily identify the certificate files. 77 Another server in the cluster is the etcd-server.
+
+78 The etcd-server stores all information about the cluster, 79 so it requires a pair of certificate and key for itself. 80 We will call it etcd-server.crt and etcd-server.key. 81 The other server component in the cluster 82 is on the worker nodes. 83 They are the kubelet-services. 84 They also expose an HTTPS API endpoint 85 that the kube-apiserver talks to, 86 to interact with the worker nodes. 87 Again, that requires a certificate and key pair.
+
+88 We call it kubelet.crt and kubelet.key. 89 Those are really the server components 90 in the Kubernetes cluster. 91 Let's now look at the client components. 92 Who are the clients who access these services? 93 The clients who access the kube-apiserver are us, 94 the administrators, through kubectl or REST API. 95 The admin user requires a certificate 96 and key pair to authenticate to the kube-apiserver.
+
+97 We will call it admin.crt and admin.key. 98 The scheduler talks to the kube-apiserver 99 to look for pods that require scheduling 100 and then get the API server 101 to schedule the pods on the right worker notes. 102 The scheduler is a client that accesses the kube-apiserver. 103 As far as the kube-apiserver is concerned, 104 the scheduler is just another client like the admin user. 105 so the scheduler needs to validate its identity 106 using a client TLS certificate, 107 so it needs its own pair of certificate and keys.
+
+108 We will call it scheduler.crt and scheduler.key. 109 The kube-controller-manager is another client 110 that accesses the kube-apiserver, 111 so it also requires a certificate 112 for authentication to the kube-apiserver, 113 so we create a certificate pair for it. 114 The last client component is the kube-proxy. 115 The kube-proxy requires a client certificate 116 to authenticate to the kube-apiserver, 117 and so it requires its own pair of certificate and keys.
+
+118 We will call them kube-proxy.crt and kube-proxy.key. 119 The servers communicate amongst them as well. 120 For example, the kube-apiserver 121 communicates with the etcd-server. 122 In fact, of all the components, 123 the kube-apiserver is the only server 124 that talks to the etcd-server. 125 So as far as the etcd-server is concerned, 126 the kube-apiserver is a client, 127 so it needs to authenticate.
+
+128 The kube-apiserver can use the same keys 129 that it used earlier for serving its own API service, 130 the apiserver.crt and the apiserver.key files. 131 Or you can generate a new pair of certificates specifically 132 for the kube-apiserver to authenticate to the etcd-server. 133 The kube-apiserver also talks to the kubelet server 134 on each of the individual nodes. 135 That's how it monitors the worker nodes.
+
+136 For this, again, it can use the original certificates 137 or generate new ones specifically for this purpose. 138 So that's too many certificates. Let's try and group them. 139 There are a set of client certificates 140 mostly used by clients to connect to the kube-apiserver, 141 and there are a set of server side certificates 142 used by the kube-apiserver, etcd-server, 143 and kubelet to authenticate their clients.
+
+144 We will now see how to generate these certificates. 145 As we know already, we need a certificate authority 146 to sign all of these certificates. 147 Kubernetes requires you to have 148 at least one certificate authority for your cluster. 149 In fact, you can have more than one, 150 one for all the components in the cluster 151 and another one specifically for etcd. 152 In that case, the etcd-server's certificates 153 and the etcd-server's client certificates, 154 which in this case is the apiserver client certificate, 155 will be all signed by the etcd-server CA.
+
+156 For now, we will stick to just one CA for our cluster. 157 The CA, as we know, has its own pair 158 of certificates and key. 159 We will call it ca.crt and ca.key. 160 That should sum up all the certificates used in the cluster.

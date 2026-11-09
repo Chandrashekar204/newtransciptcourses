@@ -1,0 +1,57 @@
+# Section 21: AWS Serverless: Lambda
+
+**Lectures:** 47
+
+## Lessons
+
+- [21.1 — AWS Lambda - Section Introduction](01-aws-lambda-section-introduction.md)
+- [21.2 — Serverless Introduction](02-serverless-introduction.md)
+- [21.3 — AWS Lambda Overview](03-aws-lambda-overview.md)
+- [21.4 — AWS Lambda - First Hands On](04-aws-lambda-first-hands-on.md)
+- [21.5 — Lambda Synchronous Invocations](05-lambda-synchronous-invocations.md)
+- [21.6 — Lambda Synchronous Invocations Hands On](06-lambda-synchronous-invocations-hands-on.md)
+- [21.7 — Lambda & Application Load Balancer](07-lambda-and-application-load-balancer.md)
+- [21.8 — Lambda & Application Load Balancer Hands On](08-lambda-and-application-load-balancer-hands-on.md)
+- [21.9 — Lambda Asynchronous Invocations & DLQ](09-lambda-asynchronous-invocations-and-dlq.md)
+- [21.10 — Lambda Asynchronous Invocations Hands On](10-lambda-asynchronous-invocations-hands-on.md)
+- [21.11 — Lambda & CloudWatch Events / EventBridge](11-lambda-and-cloudwatch-events-eventbridge.md)
+- [21.12 — Lambda & CloudWatch Events / EventBridge Hands On](12-lambda-and-cloudwatch-events-eventbridge-hands-on.md)
+- [21.13 — Lambda & S3 Event Notifications](13-lambda-and-s3-event-notifications.md)
+- [21.14 — Lambda & S3 Event Notifications - Hands On](14-lambda-and-s3-event-notifications-hands-on.md)
+- [21.15 — Lambda Event Source Mapping](15-lambda-event-source-mapping.md)
+- [21.16 — Lambda Event Source Mapping Hands On (SQS)](16-lambda-event-source-mapping-hands-on-sqs.md)
+- [21.17 — Lambda Event & Context Objects](17-lambda-event-and-context-objects.md)
+- [21.18 — Lambda Destinations](18-lambda-destinations.md)
+- [21.19 — Lambda Destinations Hands On](19-lambda-destinations-hands-on.md)
+- [21.20 — Lambda Permissions - IAM Roles & Resource Policies](20-lambda-permissions-iam-roles-and-resource-policies.md)
+- [21.21 — Lambda Permissions - IAM Roles & Resource Policies - Hands On](21-lambda-permissions-iam-roles-and-resource-policies-hands-on.md)
+- [21.22 — Lambda Environment Variables](22-lambda-environment-variables.md)
+- [21.23 — Lambda Environment Variables - Hands On](23-lambda-environment-variables-hands-on.md)
+- [21.24 — Lambda Monitoring & X-Ray Tracing](24-lambda-monitoring-and-x-ray-tracing.md)
+- [21.25 — Lambda Monitoring & X-Ray Tracing - Hands On](25-lambda-monitoring-and-x-ray-tracing-hands-on.md)
+- [21.26 — Lambda@Edge & CloudFront Functions](26-lambda-edge-and-cloudfront-functions.md)
+- [21.27 — Lambda in VPC](27-lambda-in-vpc.md)
+- [21.28 — Lambda in VPC - Hands On](28-lambda-in-vpc-hands-on.md)
+- [21.29 — Lambda Function Performance](29-lambda-function-performance.md)
+- [21.30 — Lambda Function Performance - Hands On](30-lambda-function-performance-hands-on.md)
+- [21.31 — Lambda Layers](31-lambda-layers.md)
+- [21.32 — Lambda Layers - Hands On](32-lambda-layers-hands-on.md)
+- [21.33 — Lambda File Systems Mounting](33-lambda-file-systems-mounting.md)
+- [21.34 — Lambda Concurrency](34-lambda-concurrency.md)
+- [21.35 — Lambda Concurrency Hands On](35-lambda-concurrency-hands-on.md)
+- [21.36 — Lambda External Dependencies](36-lambda-external-dependencies.md)
+- [21.37 — Lambda External Dependencies - Hands On](37-lambda-external-dependencies-hands-on.md)
+- [21.38 — Lambda and CloudFormation](38-lambda-and-cloudformation.md)
+- [21.39 — Lambda and CloudFormation - Hands On](39-lambda-and-cloudformation-hands-on.md)
+- [21.40 — Lambda Container Images](40-lambda-container-images.md)
+- [21.41 — Lambda Versions and Aliases](41-lambda-versions-and-aliases.md)
+- [21.42 — Lambda Versions and Aliases - Hands On](42-lambda-versions-and-aliases-hands-on.md)
+- [21.43 — Lambda and CodeDeploy](43-lambda-and-codedeploy.md)
+- [21.44 — Lambda Function URL](44-lambda-function-url.md)
+- [21.45 — Lambda Function URL - Hands On](45-lambda-function-url-hands-on.md)
+- [21.46 — Lambda Limits](46-lambda-limits.md)
+- [21.47 — Lambda Best Practices](47-lambda-best-practices.md)
+
+## Source
+
+Content was split from the original course transcript.

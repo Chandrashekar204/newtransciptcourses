@@ -1,0 +1,27 @@
+# Meet the Jenkins' cron: Learn how to execute Jobs automatically
+
+*Section: Jenkins Tips & Tricks*
+
+-: Hello and welcome back. In this video, we're going to learn how to execute the jobs automatically using a crontab. So let's say that you have a backup job or something and you want that backup job to be run every single day at, for example, at 1:00 AM. So you are not going to wake up, go to your laptop and click on build. You don't wanna do that. So Jenkins actually has a built-in cron, which is like a scheduler that allows you to define at what time you want certain jobs to be run.
+
+So for example, if I want the backup job to be run at 1:00 AM, then I can just simply go ahead and configure that. So let me show you. If you go to any job that you have, for now let's use the environment job that we created, and if you hit on configure, and if you scroll a little bit, you're going to find this build triggers section in here and you can find a build periodically. So if you click on this, here you should add a cron expression.
+
+If you don't know how to add a cron expression, let's go to Google and find it out. So let's say cron execution at 1:00 AM, at 1:00 AM for example. Every day at 1:00 AM, you're gonna find this out and this is the expression. So we're gonna copy. This means, as you can see, minute, hour, day of the month, month and day of the week. So this means at hour one which is 1:00 AM, minutes zero, every single day of the month, every month, every single day of the week.
+
+It means every day, you are going to run this at 1:00 AM. So you can just play around with this and you can say four and you can see the human readable formatting here, 4:00 AM or four and 30, whatever you want. So let's keep it like 1:00 AM for now. So we're gonna copy this expression, we're going to go to our Jenkins, and we're going to paste that in here. And if you click outside, then you're going to see that the next execution is going to be tomorrow, December 27th, because today is 26.
+
+Let me show you 26. And that's going to run at 1:00 AM. So that's pretty cool. But if you see here, we have a warning, and that warning is actually telling that we should change the zero by an H. So if we change the zero, which is the minute by a letter H, and then we click outside, you are going to see that the alert or the wording is gone. But why? Well, the thing is that, for example, you may have a lot of jobs running at 1:00 AM and that would actually waste a lot of resources like memory or CPU or things like that because suppose that you have two pretty heavy jobs running at the same time at 1:00 AM.
+
+That's going to be a little bit slow and that's gonna stress your Jenkins server. So using this H, Jenkins actually decides which job to run first. So if you have, for example, two jobs at 1:00 AM, then Jenkins is going to execute one and after that one finishes, it's going to execute the second one. So Jenkins can control the resources and can, you know, reduce the stress for that operation. So that's what the H does.
+
+So let's keep it like this. And if we hit on save, then this job is going to be executed at 1:00 AM every single day, but probably we don't want to wait until 1:00 AM. So we're going to be executing this every single minute. If you don't know how to execute it every single minute, so we're just gonna go to Google and we're going to see execute crontab or cron as you want, every minute and you're gonna find out the results.
+
+So let's go here. And every single minute means this, asterisk, asterisk, asterisk, asterisk, and asterisk. So we're gonna copy this and we're gonna paste that in here. And if we click outside, you're going to see another warning here. Now it's actually asking you do you really wanna run this every single minute? Because you know, running that job every single minute is not a great idea. Everyone knows that.
+
+But for this example, we want to run it every single minute to see this in action. I mean for you to see that Jenkins actually executes the job automatically at the time that you specify. So we're gonna click on save. And as you see here, this is going to run every single minute. So in one minute, we should have one execution. So let's refresh in here and we just need to wait one more minute. So let's wait for one minute and see what happens.
+
+That's perfect. It was automatically executed because in the cron configuration, we specified that we wanted to run the job every single minute, and we can even specify a different time or a different schedule. But for this example, we're specifying every single minute. And as you can see, this job has actually been automatically executed. And as the result, you can see that this is real because you have 36 in here and you have 37 in here.
+
+And these executions were actually triggered by the scheduler or the cron in Jenkins. If you go to any of this and you click on console output, you're going to see that it says started by timer which means that Jenkins actually started this execution. So, okay, please don't forget to revert the changes that you did. So we're just gonna click on here, build periodically and this is going to revert the changes.
+
+I mean, this is never going to build automatically. So let's hit on save, and cool. You already know how to execute automatically a Jenkins job using a cron expression to build the job whenever you want at the time that you want. I'll see you in the next lesson.

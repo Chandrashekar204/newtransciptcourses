@@ -1,0 +1,11 @@
+# 35.27 — Styling with the Host Content in Mind
+
+> Section 35: Bonus: Web Components
+
+Now to conclude the special selectors we learned about, there's one other special selector that is worth pointing out and that is the host context selector. Now let's say, and that is actually the case here, we only want to apply a certain style to our custom element when it is inside of a paragraph as our first tooltip is right, here our first tooltip is inside of a paragraph, the second one is not. So in this case, we might want to set a certain style and for that there is another special selector :host-context.
+
+This also has this function form with parentheses after the selector and in the function arguments here, so between the parentheses, you specify the surrounding conditions you want to have around your element. So in this case, we could add the p selector, so the tag selector for a paragraph element but you could also have something like it should be a paragraph with the hello class like this or a paragraph with a nested element of Hello which surrounds our custom element. All is possible, here I'll just go for p and if that is the case let's say, then we want to have a font-weight that is bold, so we want to have bold text. Now if we do that and we reload, we see for the first web component, we have bold text, for the second we don't and we have that because of this rule which kicks in due to our paragraph around our custom element and for the second web component, for our second tooltip, this rule does simply not apply because there is no paragraph around it and if we would nest is inside of a paragraph, so if I would move it here and you can drag it in the developer tools, so if I drag it here into my paragraph, you see this gets built too because it's now also inside of a paragraph and hence
+
+now this host context here also applies. If I move it out of there again, then again it's not bold anymore. So this is really cool, gives us a lot of flexibility here and with host, host in combination with this function form to set conditions, host context and slotted, you have a lot of powerful tools to style the content in your web components in exactly the way you want.
+
+----------------------------------------

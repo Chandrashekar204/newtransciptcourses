@@ -1,0 +1,40 @@
+# 10.18 — Enums (Part 2): Switch Expressions & Custom Methods in Enums
+
+> Section 10: Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums
+
+Kind: captions Language: en In the last video, I showed you the simplest form of the enum type, which lists constant labels in a specified order. And I walked through how to create and declare a variable of an enum type. In this video I'm going to continue exploring the enum type, working with the EnumProject from the last video. I'll start with another method called switchDayOfTheWeek, which takes a DayOfTheWeek parameter. This will print out information about the day that's passed.
+
+As you'll see, you can use an enum as the expression in a switch statement. This is one of the types I didn't cover in the previous switch videos, so I want to show this to you now. The switchDayOfWeek method will print out the full name of the day of the week, and the number of the day of the week we expect. What I mean by that is, that Sunday should be printed out as Day 1, not Day 0. public static void switchDayOfWeek with the parameter, DayOfTheWeek called weekDay.
+
+int weekDayInteger = weekDay.ordinal plus 1. An enum type is like any class type and can be used as a method parameter or return type. The first thing I do is get the ordinal value and add one to it, so that's going to be weekday 1 through 7. Now, I'll add an enhanced switch. switch using weekDay. Test for Wednesday and print the day. And same for Saturday. Look carefully at this code. We can switch using the enum type itself, in the switch expression, right there in the parentheses.
+
+This means we can use the variable that has the type DayOfTheWeek. You've learned that we could use the switch statement on a String, int, char, byte or short. But now we're seeing the switch statement for the first time, with an enum type. And look at the case labels. These are the constants we specified in the enum, so that's kind of neat. For Wednesday and Saturday, I'm printing them out. Let's add some default code for the rest of the labels.
+
+default, switch expression arrow, println weekDay.name.charAt, zero plus. weekDay.name.substring, one .toLowerCase plus. day is Day plus weekDayInteger. This code is a little messy, but it lets us revisit some of the String methods. The more you use these methods, the more they'll become second nature to you. First, I get the name of the weekday from the enum, and from that the first character using charAt with zero. After that, I concatenate all the remaining characters after the first character.
+
+You can see we get that using subString passing it 1. This gets all the letters starting at the second letter, through to the end of the string. Then we chain the toLowerCase method to the result of that. This is going to take the enum constant name, and change it to upper camel case, remembering that we are starting with an uppercase Enum label. Then it will append day to that, to get the full weekday name. I'll call this method from the main method.
+
+First, I'll comment out these lines of code. within the for loop. I'll then insert the call to my new method here. switchDayOfWeek passing weekDay. Ok, let's try this out. Again your results will be different to mine, but you should see that your weekdays are all properly named as mine are here. You can see that Day 1 is Sunday, and Saturday is Day 7. If we run that code a couple of times, we should eventually see the output for each day of the week.
+
+There's one other enum feature I want to show you which could've been an option in the Bills Burger Challenge, if you remember that challenge. To do this, let's create a new enum, and call it Topping. This time I want to right click the lpa folder and create the enum there. If you select a folder that is part of a package, as lpa is, then the package name is assumed, and you just type the class name (or enum in this case). If I type the package name now, we will end up doubling up on the package name, which I did earlier in this section of the course.
+
+The bottom line is if you click the src folder and want to put the class in a package, qualify the class with the package. If you click a package folder, don't enter the package as its implied. As you can see I didn't type the package and IntelliJ has placed the enum in the dev dot lpa package. Right, I'm going to add some condiment types. MUSTARD, PICKLES, BACON, CHEDDAR, TOMATO Here, we have a list of things which might be toppings on a burger.
+
+In our specific case here, the order's not really important. But what's interesting about an enum is that underneath, it's really just a class, and each of the constants is an instance of that class. We can add fields, methods, and even constructors to the enum type. Before you add any methods or code in the enum, you have to include a semi-colon after the list of values. So, the semi-colon is required if you're customizing this type any further, which I'll do now, adding a method.
+
+public double getPrice. return 0.5. Here, I've got an enum, with my own custom method available to be used. I could even include a switch statement in this method that switches on the enum instance itself. Youcan use that, to return a different price for different condiments. I'll delete 0.5 and add return switch passing this. I'll add bacon as a case with 1.5. cheddar with 1.0. and default 0.0. I'll close the switch and end the line with a semicolon.
+
+This is one way, to return a different price for different toppings. Another option would be to create a field on this enum called price and use constructors for each label. But these are more advanced features, and I'll cover them later in the course. For now, understanding that an enum can provide us with a list of constants to use in our code, with public methods available for each constant, can provide us with quite a bit of functionality. Now, let me show you how to loop through this enum, and get the price for each condiment.
+
+I'm going to use a for loop, putting this code in the main method. for Topping topping for Topping.values. print topping.name and topping.getPrice. Our loop variable has the type of the enum, which is Topping. That's the enum type and the type of that loop variable. This is followed by the colon, and next I pass in the array we want to loop through. For this code, we want to loop through all the constants in the enum. This method Topping.values returns an array of all the enum constants, so we can just put the call to that method as the second component of the loop.
+
+For each element, which I called topping, I print out the enum constant name. Finally, you can see, I also print out the result of the getPrice method on each enum value, this is our custom method. Let's check out the output from running this code. You can see the prices of each condiment and we can confirm that Bacon is 1.5, and Cheddar is 1. In general, you can use enums for a long time, without ever adding your own custom method, as I did here.
+
+I just wanted to show this to you, so that you're aware the enum is much more than just a list of constant values. You can see that with a small amount of additional code, you can include additional information or functionality for each constant. In this video and the previous one, I introduced you to the enum type, and what you can do with it. The enum is a special type of collection, where it's usually a well-known limited set of constants that can be used.
+
+When we review date-time processing in Java, you'll learn about several enums that Java provides, for things like the days of the week and months of the year. This is the last video in the Lists sections of the course. Coming up in the next section, we'll be starting on Abstraction, another very important object-oriented concept. This will include abstract classes and interfaces. The interface type gives us a lot of functionality that will lead us to more advanced topics, like generics, and lambda expressions.
+
+Let's move on to that next section.
+
+
+########################################

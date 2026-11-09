@@ -1,0 +1,39 @@
+# What Is n8n and What Are the Benefits of Using It?
+
+*Section: Old Course Videos*
+
+Welcome everyone to the course. I'm so happy to see you here. In this very short video, we'll talk about what Naarden is and general benefits of using that. So let's dive in. In general, actually what Naarden is and then is a powerful open source automation tool that lets you connect different apps and services, even if they don't normally work together. So think of that as a all in one application that connects multiple different applications together inside.
+
+So let's say for an example, Google Sheets, Gmail, let's say you've got slack, asana, different applications, and in general it allows them to work together. So let's say Melo's M you know asana to work with slack here, Google Sheets with for example, Google Docs and so on and so on. So for that I'm actually use an addon. What is a huge advantage of an addon? It's an open source so everyone can use it.
+
+You know, you can actually um get an A then on your computer and your service cloud software and in general use it totally for free. It's so, so nice. Um, so it allows to connect different apps and services. And with Na then you can easily build automations that handle boring tasks for you, saving hours every week. So in this course, we've got a lot of multiple solutions from sophisticated AI voice agents, you know, building rock agents multiple like army of agents and that are working for you.
+
+So that's a huge advantage of an AI. Then you can actually automate boring, repetitive tasks. Um, and everything is done automatically when you sleep. And this is like we've got some simple facts. Why choose an Aiden? Because we don't need coding at all. Anyone can use it. So inside we've got this interface that allows us to just drag and drop different multiple fields, different values and different nodes.
+
+Um, you know, and build workflows from them. It's so, so nice. We don't need to have coding skills actually. And then is low code platform and you will see that in the course. However, again, no coding skills are required. It's open source free, so we can use it for personal or business projects and even run it on our own computer or server to keep full control. So actually you've got different ways of using that of using an addon.
+
+You can use it either in cloud, on your server, on your website and in third party tools. However, it's a huge advantage. It's open source and it's totally free. It's super flexible. Connect hundreds of apps out of the box and add your own if you want. Build anything from simple automations to complex processes. So you know you can add like endless applications inside, you can allow them to work together to to actually talk with each other.
+
+So it's so cool. And definitely we'll see that in the course. So with an AI then you can automate your work, boost productivity, and connect all of your favorite tools without limits. Yeah, it's so, so nice. Let's go ahead. We've got there some simple example like imagine you get a new email with an attachment every day, and I then can automatically save the attachment to your Google Drive and send you a message on slack without you doing anything.
+
+Like think in a long term how much time it can save you if you have, let's say, ten of these different, you know, automations here workflows. So inside course we've got a lot of different solutions. You can download templates. You've got actually endless ideas. And now imagine how powerful it can be you know. Yeah. So who uses and then business owners looking to save time. Freelancers and agencies automating client tasks.
+
+Teams needing to connect different apps. Anyone wanting to learn automation skills no matter their experience. And it's so so cool. Again, actually, Na then allows you to work smarter, save time, and even create new job or business opportunities. So here I'm just imagine a lot of AI automation agencies are set up right there because Nathan is so, so powerful. If you learn it. Not only you can use it for your work, however, to make a lot of a lot of money, and it's a top choice for anyone who wants to get into automation without the headaches of coding or expensive software.
+
+So comparing, for example, to Zapier, it's very affordable, it's very intuitive. And yeah, it's so, so nice. Also, we know other platforms are cool. However, Nar Den is the best for this specific moment. Now let's go over to benefits. So here first one automate anything anytime. So you can connect up to 350 apps and services to automate endless tasks from emails to data synchronization, social media, business tools and more.
+
+And I then, as I said it previously, is a open source. So you can use it on your computer for free. It's no code, low code friendly, so easily create powerful workflows with a visual editor, no programming skills needed. It's super flexible. So again, you can tweak every detail. Build Built custom triggers, set up complex logic and workflows to fit your business or personal needs. So it's nice that actually we can, for example, create one simple workflow.
+
+So one project or even, you know, some agent in different ways. You know, actually like every every project, every workflow is different. It's so, so nice because we've got different people with different approaches. And for sure you can create your very own style of creating, um, you know, um, different workflows even. I have like different styles, different applications I like to use a lot for your, um, applications will be different and so on and so on.
+
+It saves time and reduces errors. So actually you let automations to do repetitive tasks, cut out mistakes and focus on what really matters. So, you know, as humans we are sometimes exhausted. Um, we are doing some mistakes. However also AI does that. All right. So we've got some mistakes with AI. However it's it's safer, I can say. All right. Because it's thinking it never sleeps. It's very cool.
+
+And that's why it's the future of doing like, tasks. Easy to learn, quick to deploy, intuitive drag and drop builder, and plenty of tutorials so anyone can get started and see results fast. So this course is a complete guide to nadhan here you can learn it, of course, when it comes. All right. It's easy to learn how to use it. However, when it comes to more sophisticated projects, I can say it's relatively hard, you know, because here you've got a lot of different steps and so on.
+
+Nevertheless, me and Damien, um, we put a lot of effort into explaining everything step by step so you can understand it. You can comprehend it very, very fast and in the most effective way. Scale as you grow. So whether you're a solo creator or a big business, and I then can handle a few workflows or thousands as you expand. So you're kind of building your entire systems, you know, without people, like everything is done automatically for your assistance.
+
+It's more affordable, it's better, it's easier and it's faster. Like you're just hiring your I can say even you're hiring your assistants and you're building your entire, you know, again, systems, active community support, get help, ideas and inspiration from a huge global community. So and then is so so popular actually also and feel free to check out our automation, um, you know community. Um, you will find that in the course.
+
+Nevertheless it's so, so popular and I then and automations are so, so popular. So here that means we have a lot of different people that are using that. And you can like connect with others here. Talk integrate like connect you know network. So it's again very very nice. And these were actually eight plus eight I can say because previously I told you even more um, actually pros of using Na then nevertheless these are the most important.
+
+And I hope you enjoyed this video. And in the next material we'll talk about differences between automations, workflows, and agents.

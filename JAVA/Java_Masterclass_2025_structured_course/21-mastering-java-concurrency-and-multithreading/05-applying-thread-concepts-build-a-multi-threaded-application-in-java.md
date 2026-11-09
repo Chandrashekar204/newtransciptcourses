@@ -1,0 +1,23 @@
+# 21.5 — Applying Thread Concepts: Build a Multi-Threaded Application in Java
+
+> Section 21: Mastering Java Concurrency and Multithreading
+
+Kind: captions Language: en Welcome to the Thread Challenge, In this challenge, you'll create and manage threads, using two approaches: by subclassing the Thread class, and by implementing the Runnable interface. Your task is to create two threads. You should make one thread subclass the java.lang.Thread class. The other should be created using a Runnable, which you can pass to the Threadconstructor. This can be any class that implements Runnable, or a lambda expression.
+
+Each thread should have a run method. The first thread's code should print 5 even numbers, and the secondthread should print 5 odd numbers. You should execute them asynchronously, calling the start method on each, in two consecutive statements, in your main code. Have your main method, after these threads run a few seconds, interrupt one or both of these threads. Your application shouldn't crash, meaning your threads should handle an interrupted exception.
+
+Go away and give that a go, and when you're ready, come back and we'll walkthrough my solution together. Pause the video now. I've created a new project called ThreadChallenge, with the usual Main class and main method, in the dev dot lpa package. Before I start with the main method, I'll create a class that extends the Thread class. I'll just put this class in the Main.java source file. I'll call this class, Odd Thread, and it'll extend the Thread class.
+
+In this class, I'll implement the run method to perform a task. In this case, I'll use Intelli J's code generation tool, to override the run method. I'll remove that super dot run call inside the run method. I'll start off with a for loop, that starts at one, printing every other number, the odd numbers, that are less than or equal to ten. In the loop, I'll print Odd Thread, and the current value of i. I want to call Thread dot sleep, so I need a try block here. I'll make the thread sleep for one second every iteration. I'll catch the Interrupted Exception that the sleep method throws, and I'll print that the thread was interrupted. Finally, I'll break out of the loop.
+
+The next class will implement the Runnable class, and I'll call this class, Even Runnable. Notice how IntelliJ is giving us an error. If I hover over that, it's telling me that I need to implement the run method. Instead of using Intelli J's override generation tool, in this case, I'll just copy the run method from the Odd Thread class, and paste it in here. I'll change the initialization of i, in the for loop, setting it to 2. I'll also change both println statements, to say Even Runnable, instead of Odd Thread.
+
+In the main method, I need to create my two thread instances. So first, I'll set up the odd thread, and that's just going to be a new instance of my Odd Thread class. For the Even Runnable thread, this is similar, but in this case, I pass a new instance of Even Runnable, to the thread's constructor. I'll start odd thread first. and then call start on the even thread instance. Next, I want to put the main thread to sleep, before I interrupt one of the threads.
+
+This lets them do a little work first. As usual, I need a try block. I'll put the thread to sleep for 2 seconds. Next, I need to catch the interrupted exception, and then I'll just print out the stack trace. I'm going to interrupt the odd thread, which means at some point it'll stop executing, but Even Runnable should continue running. Let's run this code. As you can see, the program didn't crash when Odd Thread was interrupted, but rather it handled the exception, printed a message, while Even Runnable kept executing.
+
+Now let's look at this EvenRunnable class a minute. It includes no additional code, and really kind of adds no extra value, by it's existence. What I mean by that is, because it's only a run method, it's a perfect candidate to be replaced with a lambda expression. Let's do that. I'll call this lambda runnable. Now, I'll copy the for loop from the run method in Even Runnable, and paste it inside this lambda expression. I'll also change the instance passed to the Thread constructor to runnable, so that this lambda gets executed.
+
+I'll run this. And we get the same results. Whether you use a lambda or a class that implements Runnable is a matter of style. If you need additional helper methods or some state for your running method, then obviously using a class makes more sense. In the next video, I'll be talking about Multi threading, and the types of memory that can be accessed by concurrent threads. I'll see you in that video.
+
+----------------------------------------

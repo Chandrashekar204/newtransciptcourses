@@ -1,0 +1,23 @@
+# 34.10 — Interface vs Abstract Class
+
+> Section 34: Inner and Abstract Classes & Interfaces - Old content for Java 11
+
+All right. So let's discuss the main differences between an abstract class and an interface and when to use either of them. And this should hopefully give you a better overall understanding of both. So firstly, an abstract class. Well, these are very similar to interfaces. You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation. However, with abstract classes, you can declare fields that are not static and final and define public, protected and private concrete methods.
+
+An abstract class can extend only one parent class. However, it can implement multiple interfaces. Now when an abstract class is subclassed, the subclass usually provides implementations for all of the abstract methods in its parent class. However, if it doesn't, then the subclass must also be declared abstract. So you want to use an abstract class when, firstly, you want to share code among several closely related classes, animal, for example, with field's name, age and so on.
+
+Or if you expect classes that extend your abstract class to have many common methods or fields or required access modifiers other than public so protected in private. You may also want to use an abstract class where you want to declare non-static or non-final fields. For example, name and age. So this then enables you to define methods that can access and modify the state of an object, getname, setname and so forth. And also, you may want to use an abstract class when you've got a requirement for your base class to provide a default implementation of certain methods, but other methods should be open to being overwritten by child classes.
+
+As a general summary, the purpose of an abstract class is to provide a common definition of a base class that multiple derived classes can share. All right. Interfaces. So an interface is just the declaration of methods of a class, it's not the implementation. Now in an interface, we define what kind of operation an object can perform. Now these operations are defined by the classes that implement the interface. So interfaces form a contract between the class and the outside world and this contract is enforced at build time by the java compiler.
+
+Now you cannot instantiate interfaces and they may contain a mix of methods declared with or without an implementation. Now all methods and interfaces are automatically public and abstract. Now an interface can extend another interface. Interfaces are more flexible and can deal with a lot more stress on the design of your program than the implementation. Now by introducing interfaces into your program, you're really introducing points of variation at which you can plug in different implementations for that interface.
+
+Now a interface's primary purpose is abstraction decoupling the what from the how. And just a couple of general notes here, since java 8 interfaces can now contain default methods, so in other words methods with implementation. Now the keyword default is used mostly for backwards compatibility and static methods as well before java 8, that wasn't possible. And since java 9 and interface can also contain private methods commonly used when 2 default methods in an interface share common code.
+
+All right. So when do you want to use an interface. Well, firstly, when you expect that unrelated classes will implement your interface. For example, the interfaces comparable and cloneable are implemented by many unrelated classes. Now another reason to use an interface is when you want to specify the behavior of a particular data type, but you're not concerned about who implements its behavior. Still another reason for using an interface if you want to separate different behavior.
+
+Now the collections API in java is an excellent example of interfaces. We've got the list interface and implementations array list and linked list among others and more on this later in the course. Another example is the JDBC API. Now that exists of almost only interfaces. The concrete implementation of methods are provided as JDBC drivers. So that enables you to write all the JDBC code independent of the database the db vendor, and you'll learn more about JDBC in this course.
+
+So that's the differences between abstract classes and interfaces. Let's move on now to the next video.
+
+----------------------------------------

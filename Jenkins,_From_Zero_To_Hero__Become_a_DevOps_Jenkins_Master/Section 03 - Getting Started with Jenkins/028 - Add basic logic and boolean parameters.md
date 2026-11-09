@@ -1,0 +1,35 @@
+# Add basic logic and boolean parameters
+
+*Section: Getting Started with Jenkins*
+
+Narrator: Hello and welcome back. In this video, we're going to make things harder. I mean, now we're going to apply a little bit of logic to a script. So we're going to have conditions. So the first thing that we're going to do, is that we're going to, if you're in the container, let's go out of the container and let's keep modifying the script that we created before. So here, we're going to add a third parameter which is going to be like "SHOW".
+
+And then the thing is that this parameter, it's going to be a boolean value, so it could be true or false. And then we're going to say, if this parameter is true, then you are going to print the name and the last name for that person. Let me show you here, if we go ahead and configure our job and we add a new parameter, which is going to be a boolean parameter, you can see that this is going to ask you for a name.
+
+So we're going to name it as "SHOW" and the default value, if we mark this, it's going to be true. If we don't mark this, it's going to be false, right? So this is what we're doing here. We're saying SHOW, it's going to be this SHOW, this parameter that we are passing in here. We're going to delete this second name here. We're only going to use three parameters for this video. We're going to use the FIRSTNAME of the person, the LASTNAME, which is a list and then the "SHOW" parameter, which is a boolean parameter.
+
+So, okay, we have here the name, remember that we already know how to pass parameters to a script. So in this case, as we saw before, this is going to be the first parameter, second parameter and third parameter. So we're going to apply a little bit of logic here and we're going to say if the variable "SHOW". So we say like this equals to, I'm just gonna put it inside of a string. I don't remember how it comes from Jenkins.
+
+Let's think this is an string. And then let's say then, echo "Hello, name and last name". So what are we doing here? We are asking if the variable "SHOW", which is the third parameter, is equals to true. Then we're going to print the name and the last name. But what happens if this condition doesn't meet? Then we do an else here, and we are going to print an error. So we're going to say something like, if you want to see the name, then please choose the "show" option.
+
+Please mark, let's say, please mark the "show" option. Okay, cool. And then we close the if here. Nice, so if we now execute this script, what do you think that is gonna happen? Well, the first thing that is going to happen is that this guy is telling us, if you want to see the name, please mark the "show" option. But we don't have any "show" option in here. But don't worry because this script is going to be executed from Jenkins.
+
+So what happens if we pass here a name and if we pass the last name and if we pass false, this is going to see if you want to see the name, please mark the "show" option. Okay. But what happens if we pass here true? What you see is that now the script is printing the name because the condition is being met. And in this case, the third parameter, the "SHOW" parameter, is true. So let me show you the script once again.
+
+And this is our logic. So remember that here in Jenkins, we have just created a boolean parameter with the name of "SHOW", which is going to be the third parameter for our script. And the default value for this case is going to be true because we mark this. If we just uncheck this, then it's going to become false. So let's keep it like true. And now that our script is working good, we're going to copy this script to our container.
+
+Remember that we're outside of the container. So let's copy this to the same location as before. So if you hit Ctrl and the key "r" at the same time, you are going to have something like a filtering here for searching. Then you can type like "cp" and you are going to have one command related to your input. So in this case, we want to do this again. Copy the script that we created, or that we modify, to the Jenkins container in this path.
+
+So let's copy this. Let's go ahead and exec into the container and let's look for "/tmp/script". And as you can see, all our modifications are in place. So cool, let's go ahead and then let's see how the execution would look like. We need to execute this full path, then pass one parameter, two parameters, and three parameters. Cool. If we don't pass the third parameter, or if we pause it as false, then it's not going to show it, nice.
+
+So we're going to do this, we're going to copy this in here and we're going to paste this in our shell. So this is our script. Then this is not going to be my name. This is going to refer to the name of the first parameter, which is "NAME". No, it's "FIRSTNAME", the first parameter that is coming from Jenkins. So let's say dollar sign, "FIRSTNAME" and then this is going to be the last name. The name of the parameter, remember.
+
+So we're going to choose this and we're going to paste this in here. And then this false is going to be nothing else but the "SHOW" parameter. So we go here, dollar sign and "SHOW". So remember that this is the first parameter that we're defining on our script. If we do a cat /tmp/script, you're going to see that "NAME", first parameter, "LASTNAME", second parameter and "SHOW" third parameter. First, second, and third.
+
+It's pretty cool. Okay, so now we click on the "save' button and we click "build with parameters". So as you can see now we have the first name, which is a string parameter, and we can call it like "John". And then we have the last name, that we can say "Doe" for example, from the list. And then we have this "SHOW". So remember, when you mark this, this is going to be true. When you don't mark this, this is going to be false.
+
+So in this case, let's keep it like false and let's hit the "build" button. And once the execution finishes, you are going to go to the number, console output and then you are going to see the error here, which says, "If you want to see the name, please mark the show option." Okay, so we're going to execute it back. We're going to mark this "SHOW" option. We're going to choose a random last name from here.
+
+Click on the "build" button and once the execution finishes, we can go to the number, console output and magic, you have here your output. Hello, your name and your last name. So remember that everything is being handled by the script. The only one thing that Jenkins is doing, is providing the values to populate this information. And then based on the logic that we build here, then Jenkins is going to display whatever we want to be displayed.
+
+So this is pretty cool. You already know how to create some parameters like strings, lists, booleans. Now you know how to integrate all of those parameters. Now you know how to create a script and include those parameters so you can retrieve the value from Jenkins and then pass those values to your script. That is pretty cool for now. So see you in the next lesson.

@@ -1,0 +1,11 @@
+# 35.22 — Understanding Shadow DOM Projection
+
+> Section 35: Bonus: Web Components
+
+Before we dive into anything new, let me come back to the project or the examples we worked on and there specifically, I want to have a look at our tooltip again. Now keep in mind, this here is an example for our tooltip here, this web components thing and of course here in the developer tools, the Google Chrome developer tools in the elements tab we can see our own custom element here, we see the text attribute, we see the style we assign directly to it and that is also something we'll change a little bit, the way we do that and we see our shadow roots here and conveniently, the Chrome dev tools also highlight all the shadow DOM with this light gray background.
+
+Now one interesting thing to see here, and I am not sure if you noticed that before, is the fact that web components, so this part which actually gets pulled into this slot right because web components occurs before our question mark, so technically it gets pulled into that slot, even though it gets pulled in there, we see it's not part of the shadow DOM right, web components here in the DOM tree is part of the light DOM, it's a sibling of the shadow root and that is something crucial I want you to understand. With slots, you can project content into your shadow DOM, so you got an entry point into your shadow DOM from the light DOM so to say but you don't technically move the element into the shadow DOM, the browser just displays it as if it were part of it but actually, it's rendered differently in the DOM and you can see that here by the fact or you can tell by the fact that we still have our slot element here, you see our default which is not actually getting rendered because we passed our own text here and we see that it points at some other content, in this case it points at some text and if you click on reveal here by the way, you also jump to the content that gets displayed in that place
+
+but technically it's not moved in there, the DOM node is not moved into the shadow DOM and that is one crucial thing I want you to understand and I want you to be aware of because that really is important to get right and to be aware of.
+
+----------------------------------------

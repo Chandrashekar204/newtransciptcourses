@@ -1,0 +1,35 @@
+# Create a Bash Script to feed your DB - I
+
+*Section: Jenkins & Ansible*
+
+Instructor: Hello, and welcome back. In this video we're going to be creating a script to populate the database that we created previously. So, okay, cool. We're going to think that we already have a lot of people registered on our application, which means that our database already has data. So, we're going to put that data using an script, a batch of script. So if you take a look to the people.txt file that I will leave you, this is a random file that contains a lot of names and last names.
+
+I just found this on internet, like, random names generator. Hit enter and then you're gonna find this file. Or you're gonna generate these files with a click. So I'm just gonna leave this file for you. It has like 50 name and last names in here. So we're gonna use this for this video. Cool, so the first thing that we need to do is that remember that this is the file that contains the fake information for the users.
+
+So let's go ahead and create a new script. Like put.sh. Oh, by the way, remember that in this case, I am in the jenkins-ansible folder because we're going to be working with ansible stuff and we want to make these issolated from the rest of things. So let's go ahead and create your put.sh script. And normally, we start with /bin/bash, which is going to be cool. And now, we're going to start putting a lot of logic in here because we want a strong script.
+
+So let's define a counter because we want to insert 50 records to our DV for now. So we're going to do a while because we wanna do that 50 times. And then we're gonna do something like, counter which is the variable that we define up here. In this part, well, counter is lesser than 50 because we wanna insert 50 names. We want to zoom one. I mean, for example, zero plus one, it's going to be become one, then, it's going to become two, then, it's going to become three on every single iteration.
+
+So that number is going to become the ID for every single person. We're gonna see this later, but for now, let's do like counter, which is the variable that we're defining here. We're defining it again, but now we're going to zoom one. So we're gonna say counter, counter plus one. So in this case counter, it's going to become one because we're telling zero plus one, then counter is going to become one.
+
+Then it's going to become two, because one plus one is going to be two, so one and so forth. Pretty nice. So, okay. Now, we want to start defining some variables like for example, the name and the last name for people. So how are we going to populate this information using the people.txt file that I will leave you. So this is what we're going to be doing here. So let's save this file for now, and we're going to look the people file that I will leave you, cool.
+
+So if you can see the structure of this file we have the name, and the last name. The same structure applies for all the names. Now, there is a cool command in Linux which is the nl command. And if you pass nl and then the name of the file, you are going to be finding the number of the line to that specific name. So for example, line number one, this is the name. Line number two, line number three, so on and so forth.
+
+So having this information, we want this number to become the ID for that person, right? So for example, Denice is going to have the ID number one. Cherise is going to have the ID number two. Cool, right? So we're gonna be using this nl command to get the IDs. Now the second thing that we want to do is that for example, to get a specific name, we want to grep for the ID because we don't know the name.
+
+So for example, let's say I wanna get the person, he has a name of ID too. So I will do something like grep -w, and then I say two. And then I will have the name. If I want the person with ID number 10, then I just pass that and you're gonna see the batch is always going to return the name for that person which is going to be pretty cool. So let's work with the person of the ID number one, in this case, which is Denice, cool.
+
+So after we wanna split the name and the last name. As you see here, we have one column for the ID and another column for the name and last name. So in Linux, we have acronym which is AWK, and this allows us to print a specific columns. So for example, this is the column number one, because this is the ID, and this is the column number two. So for example, if I do something like a print one, it's going to print the column number one.
+
+But if I do a print number two, it's going to print the column number two. So column number one means the ID, and column number two means the name and last name. So we're going to be using this, the column number two, and then we can retrieve the name and the last name. So finally, we wanna get either the name or the last name. So how do we split that using that comma? So that's gonna be pretty cool.
+
+We can use, for example, the AWK command again. And we can pass -F which allows us to split using in a daily meter. So we're going to be passing the daily meter as the comma, and then we're going to do exactly the same print that we did before. So what's going to happen here is that AWK, it's going to split this in two columns. It's going to say, this is going to be the first column from the comma, and this is going to be the second column from the comma.
+
+This is what we're saying here with this comma. So we say, "Please make two columns from this string." And column number one is going to be the name, column number two is going to be the last name. So if I do a print for the column number one, you're gonna see the name. And if I do a print for the number two, you're going to see the last name, pretty nice. So we're going to copy this because this is going to be the name of the person.
+
+Because for example, if I want to know the name of the person, which has, for example, an idea of 30, that's the name... Or that's the last name actually because we're printing the column number two. If we print number one, we're going to have the name. So if we want to know the name for the person 39, we're going to have that name. So this is cool. Let's copy this and let's modify our put script.
+
+So the name for this is going to be the execution of this command. But remember, that in here we need to use the counter because in this iteration counter is going to be number one. So it means the person with ID of one. So we want to do something like countering here which is going to be cool. So in the iteration number two, then counter is going to become two and then we're going to have the person with the number two in here, right?
+
+So we're gonna copy exactly the same thing here but remember that in order to get the last name, we need to print the second column. So first column is going to be the name and second column is going to be the last name. So this is cool. We have already captured the name and the last name from the people.txt file. I'll see you in the next lesson.

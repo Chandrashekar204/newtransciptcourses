@@ -1,0 +1,25 @@
+# 25.38 — Installing and Setting up Scenebuilder on Windows
+
+> Section 25: Comprehensive JavaFX UI Design
+
+All right so as I alluded to at the end of the previous video, if you actually started searching for scene builder, you might actually find some old binaries from oracle that you can install and use, but I don't recommend that because they don't include the latest updates to javafx. So fortunately though a company called gluon has taken the lead in keeping scene builder up to date and what's more they actually provide installers as well. So that's where we're going to go to get scene builder. So we're going to go to the website www.gluonhq.com/open-source/scene-builder.
+
+And just a reminder that this is the windows video and showing you how to install it for windows. If you're on a mac refer to the next video we'll actually show you how to do the same as we're about to do on windows but on a mac. And just as we scroll down this page a little bit and have a look, we can see that we've got various installers here. And Linux users even though I haven't got a separate Linux video, you can actually choose one of these options here to download the relevant version for your platform.
+
+But in this case, I'm going to be installing it on windows. The other thing you'll need to know is whether you're running a 32 or 64-bit version of windows. If you're unsure, go back and check the installation of java video right in section one of this course, because I actually show you in that particular video how to actually check whether you're running a 32 or 64-bit version. I happen to know that I'm running a 64-bit, so this is the version I'm going to choose the x64, which stands for 64-bit. So I'm going to download that version, and you would download that version if you're running 64-bit.
+
+And obviously, the other version the x86 if you're running 32-bit. All right. So you can see in the bottom left-hand corner that's downloading. So I'm going to pause the video until it's finished downloading and then we'll come back and continue on with the installation. Okay. So we can see the download is completed so I'm going to run the installer now by clicking it. And obviously, you'll navigate to the folder as it started if your browser doesn't support the clicking of a downloader like my browser does. I'll give that a moment to start.
+
+Okay. So I'm going to click on install. And notice the folder saving it to see uses Tim app data local scene builder. We will need to know that folder later in this video. Now once it's finished installing, you can see it's automatically loaded the tool. And I think I clicked that twice there this is why the second install of scene builders started. So I'm going to cancel out of that one. And the first time you load it it actually asks for your email address, you don't need to register that unless you want to keep in touch.Click on cancel.
+
+Now this is the standalone version of scene builder. So from the head there, we're going to be able to construct and set up fxml screens. But the really cool feature here is that we can actually configure intellij to use the scene builder. And it means that we can then access scene builder from within intellij. And I think that's a far more intuitive way to use it. So for that reason, I'm actually going to close this down here. And I'm also going to close down the browser.
+
+And I'm going to make sure intellij started. And what we now need to do is point intellij to the location of the scene builder that has been installed on our system. So to do that we're going to click on configure. Click on settings and come down here to languages and frameworks, click on that. I'm going to select javafx by clicking it. And what we need to do now is basically put in or select the path where scene build is installed. So we're going to click on the ellipse there.
+
+And if you recall I said the folder that it was saved to is in the users folder whatever your username is, then it will be under app data. Now you might find that you can't see files because the select the hidden files are actually selected. So that's the case. Come up here and click on show hidden files and directories. And when I do that, I can now see app data.And I can click on local and scene builder is the folder that we actually want, there's scene builder. And actually what we want is we want to open that we want to select scenebuilder.exe.
+
+I'm going to click on ok. There and that actually puts scene builder in that path and that tells it gives intellij the method of the way to actually open up scene builder from within intellij. Last thing to do then is to click on ok. And at that point, we've now configured intellij so that we can start using scene builder within intellij for our javafx projects. So that's it. So we've done. We've completed the installation now. So unless you've got a mac skip the next video and skip on instead to the video after that where we actually start using scene builder within intellij.
+
+So I'll see you in that next video.
+
+----------------------------------------

@@ -1,0 +1,25 @@
+# 5.14 — Implementing Border-radius
+
+> Section 5: Web Design Rules and Framework
+
+Instructor: And specifying border radius in CSS is actually extremely easy. And so, let's now go do that. So, all we need to do is to specify the border radius property on some element. So, let's go, for example, to images and apply a border radius to all of them. So, I'm actually going to select right here all the images and then, border radius. And so, here, of course we need to specify a length and let's just experiment with different values just so you get a sense for how much border radius corresponds to a certain amount of pixels.
+
+Like, if we say two pixels, then almost nothing is going to change. So, you see that here it is still almost completely squared. Now, if we use like, 50 pixels, then that will actually take away a lot of the corner here, right? So, that is 50 pixels but now let's use something more sensitive like 12 pixels. And so this looks a little bit nicer also because our typeface is actually quite boxy so, quite squared. And so, maybe we wouldn't even need any border radius at all in this design.
+
+But of course I still want to show it to you. And so, yeah, this project is mainly about actually showing you stuff. So, this images here has now 12 pixels and this one and this one. And so, since we're already here, let's now give this entire section here a border radius as well. So, we have it here on the image 12 pixels. And so, to make this look nice, we should give this section here the exact same amount of border radius. So, remember, that is 12 pixels.
+
+So, border radius. So, if we added something else, like 20 pixels, then that would look kind of off. Well, actually with 20 it wouldn't be so bad, but let's say 30. So, now it looks weird because this radius here is really a lot bigger. And so, that's why we make it the same also at 12 pixels. So, you see that now it looks quite consistent. And let's do the same here since we're already down here as well with these cards. So, that is the chair box, probably it's the chair, actually.
+
+So, border radius of 12 pixel. And you see it down here, we have that border radius. However, now this looks kind of strange here because we have the radius not only on the cart here, but we also have it in these two corners of the image, right? So we want it here in the top, but not at the bottom. And so, we can actually control individual corners also using CSS. So let's basically take away the border radius here in this corner and in this one.
+
+So, let's select the chair and then the image that's inside of that. So using a child selector, again, selecting the chair element, which is all of this and then in there, the image, which is this element here. So, remember that the image itself has a border radius of 12. And now we can selectively turn off one corner. So, bottom and then left radius and let's set it to zero and it's gone, right? And so, this is actually how you would also style a button like those creative buttons that I showed you in the last lecture.
+
+So, where one corner looks like this completely squared and then the other three ones are round. Here that's not what we're looking for, we also want the other one to be 0. So, just like this, right? So, that looks nice and round. And now all we need to fix is these buttons. So, this one and this one. And what we want to do with these is to actually make them completely round. So, basically, like this here. So, where is that? Right here. So, border radius.
+
+So, again, here we don't want this, which of course would still not look bad, but now I want to show you how we can actually make this really rounded. Now, there are two ways of doing this, but one only works if the element is a square. So, if the element is a square, to make it round, we give it a border radius of 50%, like this. However, since this is not a square, it will then turn us into this like, oval. And so, that is not what we want. And so, instead, in a situation like this, what we need to do is to simply specify a really big value here.
+
+So, as long as it's taller, then the element is tall, we will be fine. So we can, for example, use 100 pixels. And so, now, that's the result. But we could also have used like a 1000 pixels and it wouldn't change anything. It just cannot be less than the height. So, like this, it wouldn't work. Like this, maybe we're there, but to play it safe, I like to use a really big value here. So, that should have fixed it here and also down there since that is using the same class of button.
+
+All right. So, this nice little design is starting to look really great, I think. Now, one thing that we still need to fix is all the spacing that we have here on the page. So, there's not enough white space here which really makes it that there is a lack of visual hierarchy also on the page. And so, that's what we're going to learn about in the next two videos, so that then we can come back and fix that here in our design.
+
+----------------------------------------

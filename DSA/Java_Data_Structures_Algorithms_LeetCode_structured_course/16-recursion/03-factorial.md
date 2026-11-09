@@ -1,0 +1,34 @@
+# 16.3 — Factorial
+
+> Section 16: Recursion
+
+So now let's use recursion to solve a factorial. So if you've never seen a factorial before, you would pronounce this as four factorial. And all it is is four times three times two times one. And this is a really common example that's used for teaching recursion. And to show you why I'm going to shrink this down. These three numbers here, you could call these three numbers three times two times one. These are equal to three factorial. So you could say that four factorial is the same as.
+
+Four times three factorial and three factorial is the same as three times two factorial. And two factorial is the same as two times one factorial. But once we get to one factorial, it's different. One factorial is one. So this is the same as getting to the ball with the gift boxes. We're not going to open any more gift boxes because we've gotten to the base case. So when the gift box video, we talked about how there are two conditions to be able to use recursion.
+
+First, you have to be doing the same thing over and over, and that satisfies that requirement. The other requirement is that the problem needs to be getting smaller. So obviously this fits that requirement as well. So let's shrink this down into the corner. And I'm going to bring in all of the code for our recursive method. And then we'll walk through it line by line. So this is the method. So let's walk through this line by line. When we call the factorial method, we'll say if n is equal to one, that's this one here.
+
+If that happens we're going to return one. That's this one here. If n is not equal to one we'll return n times factorial of n minus one. And this is where the function calls itself. And when we say return n times factorial of n minus one, that's this situation here. So let's move this code up to the corner here and walk through this. First we'll say factorial of n. And N is going to be four. When we run this we're going to check to see is n equal to one.
+
+Well obviously in is four. So this is going to equate to false. And then we come down to this line here. That we say return four times factorial of three. It will check to see if n is equal to one here. In this case, n is equal to three. So we come down here and we do this again. We'll say return. Three times factorial of two. In this case n is two. So this is going to equate to false. So we're going to do this again. And we'll run this with two and one.
+
+So this time, when we check to see if n is equal to one, it is equal to one. So we're going to return one like this. That is this one here. So now that we have all of these, let's spread these out and walk through this. So at the bottom when we say return one, where is that one being returned? It's being returned. Up to this method call. And this is returning up to this one, and this is returning up to this one. And then finally. We return up to here.
+
+So now let's walk through this process step by step. That return one goes up here. And now two times one equals two. So we return this two up to here. And this returns three times two, which is six, and we return six up to here. And then four times six is 24. And that gets returned up to here. And that's our final answer of what four factorial is equal to. So now let's look at this with our gift box example. When we say factorial four that's going to contain another gift box that's going to run factorial three and then two and then one.
+
+And this is where we would return the ball in the gift box video. But in this case it's just going to be a one. That last gift box contains a one. And now it starts passing these numbers up this stack of boxes. So we return one up to here. That's here. And then two times one equals two. We pass two up to here like this. Three times two is six. That's this six here. And then finally we pass 24 up to that function call that we originated this all with.
+
+So now let's look at this with a call stack. We originally call this with factorial four. That's going to go on the call stack like that. And then we have four times factorial three. That's another method call. And that we have three times factorial two, and then finally two times factorial one. And then factorial one is just going to return one that pops off the call stack. And then we pop this off the call stack until we finally get up to here.
+
+And then factorial four is going to return 24. And after it returns it, we'll pop that from the call stack. So now let's flip over to IntelliJ and run this. So there is our factorial method there. And then I just put the main class inside of our factorial class. So I've created a variable called my fac for my factorial. And then I've set it equal to factorial four. And then we're just going to print that out. So I'll run this. And you can see that this returns 24.
+
+Now, one of the things that's interesting about factorials is how fast they grow. If you just go from four and I change this four to an eight. Our answer goes from 24. All the way to over 40,000. So this is fun to play around with. If you put something like 100 in here, you'll get a very, very large number returned. So I'm going to come up here and change this back to a four. Then I'm going to come over here and create a break point like that. Then I will come up here to debug.
+
+And bring up our debug console. So you can see our code stopped at this breakpoint. And that's what's about to run. So I'm going to come up here to where it says step into and do this step by step. And the thing I want to point out is that we have different instances of this method being added to the call stack. So the first time we run this, you can see that n is equal to four. And this if statement you can see it equates to false. We step down to the next line and this will add another instance of factorial.
+
+And then you can see here that n is equal to three. I'm going to step through this a little quicker here. And then two. And then finally in is equal to one. Now we have four different instances of the factorial method on the call stack. But you can see here because in is equal to one. And our if statement checks to see if n is equal to one is telling us that that is true. That's our base case. Now you're going to see these factorial methods on the call stack starting to come off of the call stack.
+
+So that's going to remove one. Now we only have three left. And then two and then one, and then finally we're down to this line here. And when we go to the next line is showing us that my factorial is equal to 24. And when we run this next line, it's going to print this out to the console. So I'll click this one more time and then we can come over here to the console. And you can see that it has returned 24. And that is our recursive method for factorial.
+
+
+########################################

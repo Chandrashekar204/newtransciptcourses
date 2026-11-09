@@ -1,0 +1,29 @@
+# 1.4 — Monolith vs SOA vs Microservices: Understanding the Key Differences
+
+> Section 1: Introduction to Microservices Architecture
+
+In the last lecture, we met all three architecture patterns. Now, inside this lecture, let's put them side by side and settle who wins where, because this is the comparison interviewers love to ask about. Here is a representation of all the three patterns that we discussed so far. We know how they work and what are these pros and cons based upon our discussion in the previous lecture. Here is another clean way to hold all three of them in your head.
+
+Monolith is always a single unit, one indivisible block. Whereas SOA is coarse-grained, it splits UI from backend, but the backend is still one big lump on one server, sharing one database and usually one code base. Because of that, SOA can't really build a backend around the individual business domains. Coming to the microservices, they are fine grained. We split the backend into small services, each aligned to one business domain, each with its own code base, its own database, and its own development and deployment lifecycle.
+
+SOA simply separate layers, whereas microservices separate domains. So that's a whole difference in one line. Now, let me put these three in the ring and score them feature by feature. The first feature is around the parallel development. In Monolith, there is no parallel development at all. Every team is trapped in the same code base and the developers are going to cry. SOA is neither happy nor sad. It's somewhere in the middle because at least the UI and the backend teams can move independently of each other.
+
+Coming to the microservices, it is going to provide total freedom. Every team develops, deploys, and enhances on its own schedule. Here, the winner is clearly microservices. Next we have agility. Monolith has no agility. You can't adopt a new framework or language without a massive risky effort across a whole code base. SOA gives you some agility. Coming to the microservices gives you a lot because everything works independently and upgrades on its own terms.
+
+Again, the winner is microservice. The next feature is scalability. In a monolith, scaling is always painful. Your whole app is one jumbo block. So to handle more load, you had to duplicate the entire application onto another jumbo server and wire up load balancing by hand, even if only one module was actually under pressure. SOA is barely better and it's worse in one way. You also have to scale that ESB in the middle. Microservices make this easy and automated because you scale one service at a time using products like Docker and Kubernetes, which we will dig in the coming sections.
+
+If you have busy account service, scale only accounts. You don't have to scale other services. Again, the winner is microservices. Next we have usability or speed of delivering value. When the accounts team dreams up an improvement for end users, in a microservice world, they don't have to negotiate with cards or loans developers team. They discuss it internally, get client approval and ship in a matter of days, sometime minutes through Docker and Kubernetes deployments.
+
+That speed of getting improvements into user's hand is where microservices shine. Again, winner is microservices. So far, it looks like a clean sweep, but now the monolith punches back because simplicity is a feature too. Inside the feature complexity and operational overhead, monolith wins because you have exactly one server to run, watch, and keep healthy. So what gives you three moving parts, US server, backend server, and the ESB. Coming to the microservices, this is where it gets hard.
+
+Some organizations run thousands of microservices across hundreds of servers. Imagine the day-to-day operational burden of that. It's real. Don't worry. A big part of this course is the tooling that tames exactly this complexity. Here, the winner is monolith. The next feature is around the security and performance. Here also, the monolith wins again. In a monolith, services talk to each other within process method calls. These calls will be fast and inside one trust boundary.
+
+Whereas in microservices, accounts, cards, and loans lives on different servers on talk over the network with the rest APIs. That means network latency and a large number of API calls. Each one is a phase you have to secure more calls, more hops, more to lock down. That's why here, winner is monolith. So the final tally is not a shutout, and that's a point. Microservices dominate agility, scalability, parallel development, and speed to market. Whereas monolith wins on simplicity, operational cost, security, and raw performance, there is no free lunch.
+
+So which one should you choose? This is the real takeaway, and it's exactly what interviewers probe. You have to remember, microservices are not a silver bullet. You have to know when each pattern fits. Honestly, these days, almost, nobody start a new project on SOA. The live debate is monolith versus microservices. So here is a simple decision rule. If your application is small, your organization is small, and you don't need frequent deployments, go monolith.
+
+The simplicity is a genuine advantage, not a compromise. Whereas if your application is large and your organization needs frequent deployments and enhancements, go with microservices and accept the operational complexity as the price of that agility. The reason I have spent two full lectures on monolith, SOA and microservices is simple. If you walk into any interview, and if you are asked about these patterns, I'm sure that with what we have learned across these two lectures, you can now explain what these patterns are and where each one wins.
+
+So go ahead and spread this knowledge. Thank you, and I'll catch you in the next lecture. Bye.
+
+----------------------------------------

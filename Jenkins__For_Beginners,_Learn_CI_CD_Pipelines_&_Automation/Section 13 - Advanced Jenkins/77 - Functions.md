@@ -1,0 +1,27 @@
+# Functions
+
+*Section: Advanced Jenkins*
+
+1 Now what we're going to do 2 is have a look at functions. 3 So these are great if you've got repeatable blocks of code 4 or you need to run something multiple times. 5 So in some cases, you might see this 6 as if you need to format a string 7 and you know you're going to be doing it quite often 8 throughout the pipeline 9 or you may be sanitizing inputs, 10 you'd want to use a function for that.
+
+11 Now Jenkins is a bit funny about this sort of stuff. 12 I'm going to share it with you. 13 If there's one lesson to take away 14 from this entire course that is going to save you hours 15 and possibly if not days of pain, 16 then this is probably going to be the one lesson 17 and the one following up about variable scope 18 that is going to save you from a world of pain. 19 And I'm talking about this from experience.
+
+20 A lot of engineers get caught out by this 21 and it's one of those areas that are going to be really hard 22 to try and find out what's going wrong on Google. 23 So you're about to receive 24 a tremendous amount of value here. 25 Let's jump into it. 26 Let's create a new folder 27 and I'm going to call it func or short for function. 28 And inside we're going to create a new file. 29 And by now you can tell it's going to be Jenkins file.
+
+30 Same as before, 31 what we're going to do is set up 32 a very, very simple pipeline. 33 Then we'll add our agent, 34 set it to any, 35 and we'll add stages. 36 Stage 37 and we'll call this demo. 38 Inside the brackets, then we want our steps. 39 Here comes the thing. 40 Where do you then put your function? 41 Well, the trick is it goes outside the pipeline. 42 And you saw how we use death 43 or short for define 44 that was our way of declaring 45 or defining a variable.
+
+46 Well, it's exactly the same with a function. 47 We do death and we're going to call this my. 48 And I'm going to do shorthand again, F-U-N-C. 49 And the reason for this is I sometimes misspell function, 50 so I'm playing it safe. 51 Then with two brackets like this, 52 we then declare our function. 53 And whatever we want to do inside goes inside curly braces. 54 Now at this point, if you want to pass some parameters, 55 and again, if you come from a programming background, 56 this is going to make a lot of sense.
+
+57 Normally we have to define 58 what type of variable it's going to be. 59 So you might do something like string 60 and we call it myText. 61 And we might do something else like integer 62 and put myNumber. 63 And then we can go ahead and use them inside. 64 Let's keep it really simple. 65 Let's do text. 66 And what we're going to put in here 67 is a simple line that says echo. 68 And we're going to say, 69 "MyText 70 is set to..." 71 Add a bit of string interpolation here.
+
+72 So we'll put in myText. 73 Now to use that function, we'll use my, 74 and we can see here we got my function. 75 Now it's going to require a parameter, 76 so we're going to have to put in some text 77 and we'll say, 78 "Hello from the demo stage." 79 So actually we're covering a lot of stuff here, 80 how to use parameters, how to use functions. 81 We've got string interpolation 82 of how to use those variables.
+
+83 Before we go ahead and run this, 84 I want to talk about something really important 85 and I'm going to cover it again in the next video 86 because I think it is that important. 87 And that is variable scope. 88 I can actually go ahead and declare variables inside here. 89 So we could call define and we could call it myNumber. 90 Now what happens here 91 is that I can't use this variable anywhere else.
+
+92 I can only use it inside this function. 93 Likewise, any variables declared in this pipeline block 94 can't be used in here. 95 Instead, they need to be passed in as a parameter. 96 And the reason I say this 97 is I've seen a lot of engineers get caught out 98 where they'll define something up here in the environment. 99 I'm going to do shorthand environment like this 100 and I'll say 101 define myNumber 102 and I'll set it equal to, 103 and I'll say 123.
+
+104 And I'll wonder why can't I use it in here? 105 So I'll do my number and I'll start getting errors. 106 And this is all about scoping. 107 It's pretty much anything inside these brackets here 108 are exclusive to those brackets. 109 It's one of those things 110 that you can get course out on really easily 111 and it's just a world of pain. 112 Now before we go ahead and run this, 113 I've spotted a little small mistake, 114 which is string needs a capital S.
+
+115 Now let's copy this, 116 go over to our browser, go new item. 117 Going to call it my function or shorthand. 118 Back to pipeline. 119 Go down to the bottom, paste it in. 120 As you can see here, String, myText. 121 Good way to tell if there's an issue 122 is Jenkins here automatically will give us 123 some sort of groovy debugging. 124 Sometimes what can happen if you leave it lowercase 125 and do apply, 126 you see we get this, 127 "Unable to resolve class string." 128 Now if we put capital S, apply, 129 that warning's gone.
+
+130 Now we can go ahead and save and build now. 131 Let's have a look and there we go. 132 My text is set to hello from the demo stage. 133 So there we go. 134 That is how you can use functions in Jenkins. 135 And to top it off, we've also set parameters as well. 136 Up next, we're going to talk about variable scope.

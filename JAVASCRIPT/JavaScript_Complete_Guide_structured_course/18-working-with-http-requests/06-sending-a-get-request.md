@@ -1,0 +1,17 @@
+# 18.6 — Sending a GET Request
+
+> Section 18: Working with Http Requests
+
+So how can you send a HttpRequest then? It all starts with creating a new XMLHttpRequest object and I'll name it xhr, that's the name of my constant and with new XMLHttpRequest you create such an object. So that's the starting point, this object will allow you to send HttpRequests, it is built into the browser and all browsers support this object, it has a really good browser support. Now to send a request or to get started, we need to configure the request and the first step for that is to use our object, so xhr, this constant which holds the object and call the open method there.
+
+Now open sounds like it opens a connection or anything like that, actually does not do that, by calling open alone, no network activity will be started, it's just a first step towards configuring the request. Open takes at least two arguments here and the first one describes the HTTP method you want to use. Now here that's get because you want to send a get request, so you pass a string with the value get as a first argument to open to send a get request and as you saw if we send a request to this URL, I said the browser would automatically send a get request, we get back this data and this actually looks like a list of posts we could work with, so let's send a get request.
+
+Now we need an additional argument here and that's the URL to which we want to send that request. So here, that's another string and here you can paste in that URL to which the request should be sent, so in this case the URL we just used in the browser. With that we basically configured the request, we informed the xhr object which kind of requests we want to send to which address. Now in order to send it, we have to call xhr send, this will send the request.
+
+Now if we save that and we go back to our page and we reload, huh, did something happen? Well we can find out in the developer tools by going to the network tab there, if you go there, you will see any network requests that are sent. Now if you clear that and you reload, you see here we got a bunch of requests being sent and if we have a look at the requests that were sent, we see the index.html file, that makes sense because that was loaded, we see the CSS file, also makes sense, we need to that, that was loaded as part of the HTML file.
+
+Same for app.js, this script also needed to be loaded but then we have this request here at the bottom and this was not to a file but this was to this URL we entered and if we click on that, we can inspect this request and here we actually see, wait, shrink this a little bit, here we see the data that was returned by the request which in this case is a list of dummy post data. If we click on headers, we see the configuration of the request, we see it was a get request to this URL, we see the headers that were attached to the response, these are attached by the server when it sends back a response and we also have the request headers, these are the headers that were attached to our request.
+
+Now of course, we didn't specifically add our own headers but the browser attaches some default headers, like the user agent for example. So the request indeed was sent and we get back some data. Now we just need to find out how to use that data and for that, we first of all have to understand the data format.
+
+----------------------------------------

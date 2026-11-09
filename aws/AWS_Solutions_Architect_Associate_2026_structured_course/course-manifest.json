@@ -1,0 +1,188 @@
+[
+  {
+    "section": 1,
+    "title": "Introduction - AWS Certified Solutions Architect Associate",
+    "folder": "01-introduction-aws-certified-solutions-architect-associate",
+    "lectures": 6
+  },
+  {
+    "section": 2,
+    "title": "Code & Slides Download",
+    "folder": "02-code-and-slides-download",
+    "lectures": 1
+  },
+  {
+    "section": 3,
+    "title": "Getting started with AWS",
+    "folder": "03-getting-started-with-aws",
+    "lectures": 3
+  },
+  {
+    "section": 4,
+    "title": "IAM & AWS CLI",
+    "folder": "04-iam-and-aws-cli",
+    "lectures": 20
+  },
+  {
+    "section": 5,
+    "title": "EC2 Fundamentals",
+    "folder": "05-ec2-fundamentals",
+    "lectures": 16
+  },
+  {
+    "section": 6,
+    "title": "EC2 - Solutions Architect Associate Level",
+    "folder": "06-ec2-solutions-architect-associate-level",
+    "lectures": 9
+  },
+  {
+    "section": 7,
+    "title": "EC2 Instance Storage",
+    "folder": "07-ec2-instance-storage",
+    "lectures": 14
+  },
+  {
+    "section": 8,
+    "title": "High Availability and Scalability: ELB & ASG",
+    "folder": "08-high-availability-and-scalability-elb-and-asg",
+    "lectures": 17
+  },
+  {
+    "section": 9,
+    "title": "AWS Fundamentals: RDS + Aurora + ElastiCache",
+    "folder": "09-aws-fundamentals-rds-aurora-elasticache",
+    "lectures": 14
+  },
+  {
+    "section": 10,
+    "title": "Route 53",
+    "folder": "10-route-53",
+    "lectures": 20
+  },
+  {
+    "section": 11,
+    "title": "Classic Solutions Architecture Discussions",
+    "folder": "11-classic-solutions-architecture-discussions",
+    "lectures": 7
+  },
+  {
+    "section": 12,
+    "title": "Amazon S3 Introduction",
+    "folder": "12-amazon-s3-introduction",
+    "lectures": 14
+  },
+  {
+    "section": 13,
+    "title": "Advanced Amazon S3",
+    "folder": "13-advanced-amazon-s3",
+    "lectures": 8
+  },
+  {
+    "section": 14,
+    "title": "Amazon S3 Security",
+    "folder": "14-amazon-s3-security",
+    "lectures": 15
+  },
+  {
+    "section": 15,
+    "title": "CloudFront & AWS Global Accelerator",
+    "folder": "15-cloudfront-and-aws-global-accelerator",
+    "lectures": 7
+  },
+  {
+    "section": 16,
+    "title": "AWS Storage Extras",
+    "folder": "16-aws-storage-extras",
+    "lectures": 10
+  },
+  {
+    "section": 17,
+    "title": "Decoupling applications: SQS, SNS, Kinesis, Active MQ",
+    "folder": "17-decoupling-applications-sqs-sns-kinesis-active-mq",
+    "lectures": 16
+  },
+  {
+    "section": 18,
+    "title": "Containers on AWS: ECS, Fargate, ECR & EKS",
+    "folder": "18-containers-on-aws-ecs-fargate-ecr-and-eks",
+    "lectures": 10
+  },
+  {
+    "section": 19,
+    "title": "Serverless Overviews from a Solution Architect Perspective",
+    "folder": "19-serverless-overviews-from-a-solution-architect-perspective",
+    "lectures": 18
+  },
+  {
+    "section": 20,
+    "title": "Serverless Solution Architecture Discussions",
+    "folder": "20-serverless-solution-architecture-discussions",
+    "lectures": 4
+  },
+  {
+    "section": 21,
+    "title": "Databases in AWS",
+    "folder": "21-databases-in-aws",
+    "lectures": 10
+  },
+  {
+    "section": 22,
+    "title": "Data & Analytics",
+    "folder": "22-data-and-analytics",
+    "lectures": 12
+  },
+  {
+    "section": 23,
+    "title": "Machine Learning",
+    "folder": "23-machine-learning",
+    "lectures": 12
+  },
+  {
+    "section": 24,
+    "title": "AWS Monitoring & Audit: CloudWatch, CloudTrail & Config",
+    "folder": "24-aws-monitoring-and-audit-cloudwatch-cloudtrail-and-config",
+    "lectures": 18
+  },
+  {
+    "section": 25,
+    "title": "Identity and Access Management (IAM) - Advanced",
+    "folder": "25-identity-and-access-management-iam-advanced",
+    "lectures": 10
+  },
+  {
+    "section": 26,
+    "title": "AWS Security & Encryption: KMS, SSM Parameter Store, Shield, WAF",
+    "folder": "26-aws-security-and-encryption-kms-ssm-parameter-store-shield-waf",
+    "lectures": 21
+  },
+  {
+    "section": 27,
+    "title": "Networking - VPC",
+    "folder": "27-networking-vpc",
+    "lectures": 38
+  },
+  {
+    "section": 28,
+    "title": "Disaster Recovery & Migrations",
+    "folder": "28-disaster-recovery-and-migrations",
+    "lectures": 11
+  },
+  {
+    "section": 29,
+    "title": "More Solution Architectures",
+    "folder": "29-more-solution-architectures",
+    "lectures": 5
+  },
+  {
+    "section": 30,
+    "title": "Other Services",
+    "folder": "30-other-services",
+    "lectures": 15
+  },
+  {
+    "section": 31,
+    "title": "WhitePapers and Architectures - AWS Certified Solutions Architect Associate",
+    "folder": "31-whitepapers-and-architectures-aws-certified-solutions-architect-associate",
+    "lectures": 4
+  }
+]

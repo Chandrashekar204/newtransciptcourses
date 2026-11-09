@@ -1,0 +1,27 @@
+# 1.6 — Funny memes on Security
+
+> Section 1: Getting Started
+
+Inside the next lecture, I'm going to teach you about the importance of security and why any organization or developer should care about implementing security inside of a publication. So the next lecture is going to be a theory lecture. And here I want to highlight you that this entire course is developed with both theory and the practical lectures. Most of the students, they try to follow the practical lectures and they try to ignore or skip the theory lectures.
+
+My humble request is, don't skip the theory lectures. They are also very important. For example, the next theory lecture, it is going to help you to answer a interview question, which is, what is security? What are different types of securities involved? Why security is important for any web application? So all these questions are discussed inside the next lecture. Think of a scenario where you skip the next lecture and you completed the course by only watching the practical lectures and you went to an spring security interview, and there one of the interviewer asked a question, which is, what are different types of securities?
+
+Why security is important? Unfortunately, you can't answer that and you'll be scratching your head and you'll try to explain them with whatever answer that comes onto your mind. But believe me, my friend, most of the times you end up blabbering something and with that, you're going to lose the chance of impressing the interviewer with your first answer. I hope you understand the importance of theory lectures, but inside this lecture I'm going to cheer you up by showing some memes around the security.
+
+So this is the first meme that I want to share. You can see someone secured the premises with the door, but do you think this is a valid security mechanism? Off course not. There is a very big loophole. Not everyone, they're going to enter through the door. They can take the path which is available next to the door. So most of the times we as developers, with half knowledge that we have, we end up developing the applications like this. We might have secure the web application with some basic mechanisms and we might be under the impression that I secured my web application, hooray.
+
+But in reality, we might have missed many security mechanisms. So this course is going to help you in making you understand all the security mechanisms that you need to take care while building a web application or backend APS. Shall we go to the next meme? This is the next memes. Some developer is saying, I'm using encryption inside my web application. And the other developer, she's saying, well, I'm using hashing, the third developer, she's also saying I'm using BASE64.
+
+And the last guy who is an innocent guy who doesn't know about any of the security mechanisms is simply asking, are not those the same things? There's a very good chance you might be under the same situation right now, but don't worry. Inside this course I'm going to teach you everything about encryption, hashing, BASE64 encoding. What are those, under which scenarios we should use them and how spring security is going to help us? So we are going to discuss a lot about these concepts through the course.
+
+Let's go to the next meme. Someone secured their cycle by locking to some roadside block, but do you think these a proper security mechanism? Off course not anyone can lift the cycle and they can remove the lock from the block and they can take away the cycle. The same kind of security mechanisms, like Many times developers, they also follow like having an username, like admin, password like admin. So these kind of simple security mechanisms, they're not going to save your web application from bad people like hackers.
+
+I hope you like this meme. Let's go to the next one. So this meme saying, in case of cyber attack, break glass and pull cables. It's so funny, and this is the simplest solution that anyone can propose to save an oration from a cyber attack. Obviously, the hackers to perform the attack on a web application, they need to enter into the network through the cables. If you cut those cables, then obviously no one can access the web application. So this just a simple funny meme, which I want to share here.
+
+Let's go to the next meme. So this meme says someone is trying to book an Airbnb, but they saw this image, which is http. That means the Airbnb room or house, it is not properly secured. So whatever you do inside that room, anyone can see and disturb your private life. Next, I have the last funny meme, and this is my favorite. So one of that developer in a backend application want to throw an error whenever someone is trying to register into the web application.
+
+And if or not, you can see the developer is trying to throw this error saying that this password is already used by so and so username try another. So this is what is going to happen. We are leaking both username and password. Off course there won't be any such dumb developers in real projects, but I'm trying to share this on a fun note. But in real products also, you may see such funny instance related to security on your day-to-day work. I hope you liked all these memes and you are ready for the next lecture where we are going to discuss about the importance of security.
+
+What is security, what are different types of securities involved inside of a web application? Thank you. Bye.
+
+----------------------------------------

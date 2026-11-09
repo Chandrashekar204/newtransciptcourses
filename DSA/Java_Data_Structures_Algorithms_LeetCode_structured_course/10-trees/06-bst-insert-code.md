@@ -1,0 +1,37 @@
+# 10.6 — BST: Insert - Code
+
+> Section 10: Trees
+
+So now we're going to code our insert method. And like I said we're going to pick up right where we left off in the last video. And I'm going to move these steps down to the bottom. So we have room for our code. So we're going to start our insert method like this. The return type is going to be boolean. Either we're able to insert it or not. And then we're going to pass it a value. And we're going to use that value to create a node. So we'll do this step with this line of code here.
+
+And then we can remove this from the list. So the next item in the list is if root equals null then root equals new node. That is this situation where root is equal to null which means we have an empty tree. And what we'll do is we'll just set root to be equal to the new node. We'll do that with this code. If root equals null root equals new node. So if we do this and we insert the node like this, we don't want to run any more code. So we also need a return statement.
+
+So we'll say return true. So now we can remove this from the list and we'll create our temp variable. We'll do that like this node temp equals root. And we'll remove that and move into our while loop. So our while loop is going to look like this. While true. So obviously the conditional in the while loop is never going to be false. So the way we break out of the while loop is with a return statement. So now we can remove this. And then we'll say if new node equals temp, return false.
+
+So that is this situation here where we're trying to insert a node with a value that is already in the tree. So we'll do that with this line of code. So I want you to notice in the yellow in the notes it says if new node equals temp. But in the code it's if new node dot value equals temp dot value. So it's the values that we're comparing. And if these are ever equal, we'll return false, and we can remove that. And this is where it starts getting more complicated.
+
+We'll say if it's less than it goes left. Else it's greater than and we go right. So we're going to start out with an if statement that is going to check to see if we go left. So we'll say if new node dot value is less than temp dot value. And you can see we're running out of room here. So I'm going to take this if statement and move it to the top. But I want you to notice that this if statement is inside of the while loop. So let's move this up.
+
+And the second if statement here is actually nested in the first if statement. So the best way to go through these is to actually go through this with the diagram. So I'm going to remove this and bring up a tree and a node that we're going to insert into this tree. And then I'll also bring in this temp variable. So if new node dot value is less than temp dot value, and in this case it is, that means we're going to go left. And we have two options.
+
+If we go left either that spot is open and we put that there or that spot is not open and we have to move down to that next node. So let's code for this situation first. We'll say if temp dot left equals null and temp dot left is equal to null, we're going to set temp dot left equal to new node. That is temp dot left equals new node. But there's one other thing we have to do in this if statement, because we have placed that node, we need a return statement.
+
+So we'll say return true because we were able to place the node. So the other possibility when we go left is that this spot was not open. It looks like this. In which case we need to set temp to be equal to temp dot left. That is temp dot left and that moves that down to there. So remember this was all inside of a while loop. And now that we've moved temp down, we're going to run through this all again. And the conditional in this if statement is true temp dot left does equal null.
+
+So we set temp dot left to be equal to new node that places that there. And then we return true. So let's put temp back up on top and look at how we would insert something on the right. So I'm going to move this over. So we have a little bit of room on the right. And we're going to say else. And I'm going to remove that 82 node in the lower right hand corner like this. And that will be the node that we insert into the tree. So we can basically replicate the code that we have above.
+
+So just like we did above when we moved to the right, either there's going to be a node in that spot or it's going to be empty. So we'll start with this situation first and we'll say if temprite equals null. And we'll set temp dot right to be equal to new node. That is temp dot right equals new node. And if we're able to place that, we're going to return true. The other possibility is that that spot is not open, and we have a situation that looks like this.
+
+That's going to cause the conditional in this if statement to be false. And we will skip it and we'll say temp equals temp. Right. That is temp equals temp dot. Right. And that moves that down like this. And we go through the while loop again. And this time temp dot right is equal to null. So we set temp dot right equal to new node. That is temp dot right equals new node. And then we return true. So let's take a look at all of this code and put this in with the rest of the code in the while loop.
+
+Like this. This if statement here was for if we were inserting a value that's already in the binary search tree, that's not allowed and we will return false. Then this if statement is, if it's less, we're going to go left. And this is if it's greater than we're going to go right. So now let's take this code and put it in with the rest of the code for our insert method. That is the entire method right there. So we'll look at this code in a moment in IntelliJ.
+
+And when we do. Will build this binary search tree, and then we will insert a node and this spot here. So I want you to take note of where that 27 node is. You could get to it by going root. Left right. Root left right. So we'll see that in a moment when we flip over to IntelliJ. So there is our insert method there that we've added to our binary search tree class. And I'm going to scroll to the top of this class here for what we're about to do. It is important that this part here where it says node root, that you not have this marked as private.
+
+So either like this which is default or public either way. So if you have this marked as private, remove that because we'll need that when we come up here to our main class. So what we've done here is we've created a binary search tree called my binary search tree. And these lines of code here are going to create that binary search tree that we just saw. Now what I'm going to do is add a couple of lines here. And this line is going to insert that 27 node.
+
+And then what we're going to do here is we're going to print out my binary search tree dot root dot left dot right. And then we have to add the dot value to get the value out of that node. And in order to be able to get to the root like this, this is why we need to have it not marked as private. So what you should do after we get done writing all of the code for the binary search tree class after. The fact is, you go back and mark that root variable as private.
+
+But while we're writing the code, we need access to that so we can make sure that everything is working the way that it should work. So I'll run this. And you can see up here that this returns 27, which is exactly what we would expect. And that is our method for insert.
+
+----------------------------------------
